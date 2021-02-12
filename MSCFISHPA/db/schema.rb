@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2021_02_11_023537) do
 
   create_table "members", force: :cascade do |t|
     t.string "name"
-    t.integer "is_admin"
+    t.boolean "is_admin"
     t.integer "num_referrals"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
