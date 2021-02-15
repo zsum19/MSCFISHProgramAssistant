@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_11_023537) do
+ActiveRecord::Schema.define(version: 2021_02_15_223703) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,14 +27,20 @@ ActiveRecord::Schema.define(version: 2021_02_11_023537) do
   end
 
   create_table "attendees", force: :cascade do |t|
-    t.bigint "referred_by_id"
-    t.bigint "event_id"
     t.string "name"
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["event_id"], name: "index_attendees_on_event_id"
-    t.index ["referred_by_id"], name: "index_attendees_on_referred_by_id"
+    t.index ["email"], name: "index_attendees_on_email", unique: true
+  end
+
+  create_table "eventattendances", force: :cascade do |t|
+    t.bigint "event_id"
+    t.bigint "attendee_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["attendee_id"], name: "index_eventattendances_on_attendee_id"
+    t.index ["event_id"], name: "index_eventattendances_on_event_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -56,8 +62,26 @@ ActiveRecord::Schema.define(version: 2021_02_11_023537) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "referrals", force: :cascade do |t|
+    t.bigint "member_id"
+    t.bigint "attendee_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["attendee_id"], name: "index_referrals_on_attendee_id"
+    t.index ["member_id"], name: "index_referrals_on_member_id"
+  end
+
+  create_table "roles", force: :cascade do |t|
+    t.bigint "member_id"
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["member_id"], name: "index_roles_on_member_id"
+    t.index ["name"], name: "index_roles_on_name", unique: true
+  end
+
   add_foreign_key "announcements", "events"
   add_foreign_key "announcements", "members", column: "author_id"
-  add_foreign_key "attendees", "events"
-  add_foreign_key "attendees", "members", column: "referred_by_id"
+  add_foreign_key "roles", "members"
 end
