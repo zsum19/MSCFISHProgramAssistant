@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_15_223703) do
+ActiveRecord::Schema.define(version: 2021_02_15_220810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,11 +55,12 @@ ActiveRecord::Schema.define(version: 2021_02_15_223703) do
   end
 
   create_table "members", force: :cascade do |t|
+    t.bigint "role_id"
     t.string "name"
-    t.boolean "is_admin"
     t.integer "num_referrals"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["role_id"], name: "index_members_on_role_id"
   end
 
   create_table "referrals", force: :cascade do |t|
@@ -72,16 +73,14 @@ ActiveRecord::Schema.define(version: 2021_02_15_223703) do
   end
 
   create_table "roles", force: :cascade do |t|
-    t.bigint "member_id"
     t.string "name"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["member_id"], name: "index_roles_on_member_id"
     t.index ["name"], name: "index_roles_on_name", unique: true
   end
 
   add_foreign_key "announcements", "events"
   add_foreign_key "announcements", "members", column: "author_id"
-  add_foreign_key "roles", "members"
+  add_foreign_key "members", "roles"
 end

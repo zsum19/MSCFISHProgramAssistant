@@ -1,3 +1,3 @@
 class Role < ApplicationRecord
-    belongs_to: :member, class_name: Member
+    has_many :member, class_name: Member
 end
