@@ -1,4 +1,6 @@
 class Attendee < ApplicationRecord
-    belongs_to :referred_by, class_name: Member
-    belongs_to :event, class_name: Event
+    has_many :referrals, class_name: Referral
+    has_many :referred_by, through: :referrals
+    has_many :eventattendances, class_name: Eventattendance
+    has_many :events, through: :eventattendances
 end
