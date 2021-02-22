@@ -1,10 +1,23 @@
 Rails.application.routes.draw do
+  # namespace :api do
+  #   namespace :v1 do
+  #     get 'announcements/index'
+  #     post 'announcements/create'
+  #     get 'announcements/show/:id', to: 'accouncements#show'
+  #     delete 'announcements/destroy/:id', to: 'accouncements#destroy'
+  #   end
+  # end
   namespace :api do
     namespace :v1 do
       get 'events/index'
       post 'events/create'
       get 'events/show/:id', to: 'events#show'
       delete 'events/destroy/:id', to: 'events#destroy'
+
+      get 'announcements/index'
+      post 'announcements/create'
+      get 'announcements/show/:id', to: 'accouncements#show'
+      delete 'announcements/destroy/:id', to: 'accouncements#destroy'
     end
   end
   root 'homepage#index'

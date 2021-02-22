@@ -15,7 +15,14 @@ export default () => (
           className="btn btn-lg custom-button"
           role="button"
         >
-          View Programs
+          View Events
+        </Link>
+        <Link
+          to="/announcements"
+          className="btn btn-lg custom-button"
+          role="button"
+        >
+          View Announcements
         </Link>
       </div>
     </div>
