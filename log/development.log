@@ -1,0 +1,146 @@
+Started GET "/" for ::1 at 2021-02-24 08:25:25 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 384)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 775.1ms | Allocations: 13598)
+Completed 500 Internal Server Error in 792ms (ActiveRecord: 0.0ms | Allocations: 20324)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/reomatsuda/MSCFISHProgramAssistant/MSCFISHPA/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    12:     <%= javascript_pack_tag 'Index' %>
+    13:   </head>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-02-24 08:26:05 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 277)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/reomatsuda/MSCFISHProgramAssistant/MSCFISHPA/public/packs
+[Webpacker] Hash: 559771db8baeb222deef
+Version: webpack 4.46.0
+Time: 6261ms
+Built at: 02/24/2021 8:26:12 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-07247927f62278d279b7.js   2.67 MiB        Index  [emitted] [immutable]  Index
+      js/Index-07247927f62278d279b7.js.map   2.92 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-07247927f62278d279b7.js js/Index-07247927f62278d279b7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 669 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1.73 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 46 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7464.4ms | Allocations: 9172)
+Completed 200 OK in 7477ms (Views: 7468.1ms | ActiveRecord: 0.0ms | Allocations: 14917)
+
+
+Started GET "/" for ::1 at 2021-02-24 08:26:16 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5454)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 5919)
+
+
+Started GET "/" for ::1 at 2021-02-24 08:28:17 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 7885)
+Completed 200 OK in 23ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 11046)
+
+
+Started GET "/" for ::1 at 2021-02-24 08:28:21 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 5421)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 5870)
+
+
+Started GET "/api/v1/events/index" for ::1 at 2021-02-24 08:28:22 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 8.6ms | ActiveRecord: 10.0ms | Allocations: 11643)
+
+
+Started GET "/" for ::1 at 2021-02-24 08:28:23 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5515)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 5966)
+
+
+Started GET "/" for ::1 at 2021-02-24 08:28:27 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 5421)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 5863)
+
+
+Started GET "/" for ::1 at 2021-02-24 08:28:28 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 5421)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5867)
+
+
