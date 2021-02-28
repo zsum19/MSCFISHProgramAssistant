@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_220810) do
   end
 
   create_table "attendees", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -44,10 +44,10 @@ ActiveRecord::Schema.define(version: 2021_02_15_220810) do
   end
 
   create_table "events", force: :cascade do |t|
-    t.string "name"
-    t.integer "max_size"
-    t.integer "tickets_sold"
-    t.integer "num_checked_in"
+    t.string "name", null: false
+    t.integer "max_size", null: false
+    t.integer "tickets_sold", default: 0, null: false
+    t.integer "num_checked_in", default: 0, null: false
     t.datetime "date"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
@@ -56,8 +56,8 @@ ActiveRecord::Schema.define(version: 2021_02_15_220810) do
 
   create_table "members", force: :cascade do |t|
     t.bigint "role_id"
-    t.string "name"
-    t.integer "num_referrals"
+    t.string "name", null: false
+    t.integer "num_referrals", default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["role_id"], name: "index_members_on_role_id"
