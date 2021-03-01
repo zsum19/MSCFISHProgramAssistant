@@ -492,3 +492,22 @@ Processing by Api::V1::EventsController#index as */*
 Completed 200 OK in 20ms (Views: 8.6ms | ActiveRecord: 5.4ms | Allocations: 11575)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-01 00:02:09 -0600
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 7196)
+Completed 200 OK in 100ms (Views: 86.1ms | ActiveRecord: 0.0ms | Allocations: 10246)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-01 00:02:12 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 61ms (Views: 21.7ms | ActiveRecord: 15.5ms | Allocations: 8057)
+
+
