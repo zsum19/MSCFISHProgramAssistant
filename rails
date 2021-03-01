@@ -1,0 +1,116 @@
+Script started on Sat Feb 27 21:25:39 2021
+]0;fish /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA[30m(B[m[38;5;237m⏎(B[m                                                                                                         ⏎ [KWelcome to fish, the friendly interactive shell
+Type `help` for instructions on how to use fish
+[?2004h]7;file://Angel-15.local/Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA]0;fish /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA[30m(B[m[92mSnowspeeder(B[m@(B[mAngel-15(B[m [32m~/g/M/MSCFISHPA(B[m (main)(B[m> [Kc[38;5;196mc[30m(B[m[38;5;240md ..[30m(B[m[38;5;196md[38;5;240m ..[30m(B[m[38;5;26mcd[38;5;240m ..[30m(B[m[38;5;26m [38;5;240m..[30m(B[m [38;5;240m..[30m(B[mc[K[38;5;39m[4mc[30m(B[m[38;5;240monfig/[30m(B[m[38;5;39m[4mo[38;5;240m[24mnfig/[30m(B[m[38;5;39m[4mnfig/[30m(B[m
+[30m(B[m[?2004l]0;cd /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA[30m(B[m]7;file://Angel-15.local/Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA/config[2m⏎(B[m                                                                                                         ⏎ [K[?2004h]0;fish /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA/config[30m(B[m[92mSnowspeeder(B[m@(B[mAngel-15(B[m [32m~/g/M/M/config(B[m (main)(B[m> [Kl[38;5;26ml[30m(B[m[38;5;240ms[30m(B[m[38;5;26ms[30m(B[m
+[30m(B[m[?2004l]0;ls /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA/config[30m(B[mapplication.rb       credentials.yml.enc  [34menvironments[39;49m[0m/        puma.rb              storage.yml
+boot.rb              database.yml         [34minitializers[39;49m[0m/        routes.rb            [34mwebpack[39;49m[0m/
+cable.yml            environment.rb       [34mlocales[39;49m[0m/             spring.rb            webpacker.yml
+[2m⏎(B[m                                                                                                         ⏎ [K[?2004h]0;fish /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA/config[30m(B[m[92mSnowspeeder(B[m@(B[mAngel-15(B[m [32m~/g/M/M/config(B[m (main)(B[m> [Kc[38;5;240md ..[30m(B[m[38;5;196mc[38;5;240md ..[30m(B[m[38;5;196md[38;5;240m ..[30m(B[m[38;5;26mcd[38;5;240m ..[30m(B[m[38;5;26m [38;5;240m..[30m(B[m [38;5;240m..[30m(B[m.[38;5;240m.[30m(B[m[38;5;39m[4m.[38;5;240m[24m.[30m(B[m[38;5;39m[4m.[30m(B[m
+[30m(B[m[?2004l]0;cd /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA/config[30m(B[m]7;file://Angel-15.local/Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA[2m⏎(B[m                                                                                                         ⏎ [K[?2004h]0;fish /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA[30m(B[m[92mSnowspeeder(B[m@(B[mAngel-15(B[m [32m~/g/M/MSCFISHPA(B[m (main)(B[m> [Kh[38;5;240meroku logs --tail[17D[30m(B[m[38;5;196mh[38;5;240meroku logs --tail[17D[30m(B[m[38;5;196me[38;5;240mroku logs --tail[16D[30m(B[m[38;5;196mr[38;5;240moku logs --tail[15D[30m(B[m[38;5;196mo[38;5;240mku logs --tail[14D[30m(B[m[38;5;196mk[38;5;240mu logs --tail[13D[30m(B[m[38;5;196mu[38;5;240m logs --tail[12D[30m(B[m[38;5;26mheroku[38;5;240m logs --tail[12D[30m(B[m[38;5;26m [38;5;240mlogs --tail[11D[30m(B[m [38;5;240mlogs --tail[11D[30m(B[ml[38;5;240mogs --tail[10D[30m(B[m[38;5;39m[4ml[38;5;240m[24mogs --tail[10D[30m(B[m[38;5;39m[4mo[38;5;240m[24mgs --tail[9D[30m(B[m[38;5;39m[4mg[38;5;240m[24ms --tail[30m(B[m[38;5;39m[4ms[38;5;240m[24m --tail[30m(B[m[38;5;39mlogs[38;5;240m --tail[30m(B[m[38;5;39m [38;5;240m--tail[30m(B[m [38;5;240m--tail[30m(B[m-[38;5;240m-tail[30m(B[m[38;5;39m-[38;5;240m-tail[30m(B[m[38;5;39m-[38;5;240mtail[30m(B[m[38;5;39mt[38;5;240mail[30m(B[m[38;5;39ma[38;5;240mil[30m(B[m[38;5;39mi[38;5;240ml[30m(B[m[38;5;39ml[30m(B[m
+[30m(B[m[?2004l]0;heroku /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA[30m(B[m[1m[32m2021-02-28T03:18:15.898925+00:00 app[api]:[39m[22m Starting process with command [36m[1m`rails db:migrate`[22m[39m[32m by user snowspeeder@tamu.edu[39m
+[33m2021-02-28T03:18:28.383709+00:00 heroku[run.9553]:[39m State changed from [93mstarting[39m to [92mup[39m
+[33m2021-02-28T03:18:28.842951+00:00 heroku[run.9553]:[39m Awaiting client
+[33m2021-02-28T03:18:28.877201+00:00 heroku[run.9553]:[39m Starting process with command [36m[1m`rails db:migrate`[22m[39m
+[33m2021-02-28T03:18:42.442825+00:00 heroku[run.9553]:[39m Process exited with status [92m0[39m
+[33m2021-02-28T03:18:42.509894+00:00 heroku[run.9553]:[39m State changed from [92mup[39m to [92mcomplete[39m
+[36m2021-02-28T03:18:48.076035+00:00 heroku[web.1]:[39m State changed from crashed to [93mstarting[39m
+[36m2021-02-28T03:18:55.016541+00:00 heroku[web.1]:[39m Starting process with command [36m[1m`bin/rails server -p ${PORT:-5000} -e production`[22m[39m
+[36m2021-02-28T03:18:59.679166+00:00 app[web.1]:[39m => Booting Puma
+[36m2021-02-28T03:18:59.679180+00:00 app[web.1]:[39m => Rails 6.1.2 application starting in production
+[36m2021-02-28T03:18:59.679181+00:00 app[web.1]:[39m => Run `bin/rails server --help` for more startup options
+[36m2021-02-28T03:19:00.685551+00:00 app[web.1]:[39m Exiting
+[36m2021-02-28T03:19:00.685900+00:00 app[web.1]:[39m /app/vendor/bundle/ruby/3.0.0/gems/activerecord-6.1.2/lib/active_record/reflection.rb:422:in `initialize': A class was passed to `:class_name` but we are expecting a string. (ArgumentError)
+[36m2021-02-28T03:19:00.685930+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/activerecord-6.1.2/lib/active_record/reflection.rb:17:in `new'
+[36m2021-02-28T03:19:00.685955+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/activerecord-6.1.2/lib/active_record/reflection.rb:17:in `create'
+[36m2021-02-28T03:19:00.685981+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/activerecord-6.1.2/lib/active_record/associations/builder/association.rb:49:in `create_reflection'
+[36m2021-02-28T03:19:00.686005+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/activerecord-6.1.2/lib/active_record/associations/builder/association.rb:32:in `build'
+[36m2021-02-28T03:19:00.686030+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/activerecord-6.1.2/lib/active_record/associations.rb:1458:in `has_many'
+[36m2021-02-28T03:19:00.686056+00:00 app[web.1]:[39m from /app/app/models/role.rb:2:in `<class:Role>'
+[36m2021-02-28T03:19:00.686081+00:00 app[web.1]:[39m from /app/app/models/role.rb:1:in `<main>'
+[36m2021-02-28T03:19:00.686105+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+[36m2021-02-28T03:19:00.686135+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+[36m2021-02-28T03:19:00.686161+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+[36m2021-02-28T03:19:00.686186+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+[36m2021-02-28T03:19:00.686210+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+[36m2021-02-28T03:19:00.686238+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/kernel.rb:26:in `require'
+[36m2021-02-28T03:19:00.686265+00:00 app[web.1]:[39m from /app/app/models/member.rb:2:in `<class:Member>'
+[36m2021-02-28T03:19:00.686288+00:00 app[web.1]:[39m from /app/app/models/member.rb:1:in `<main>'
+[36m2021-02-28T03:19:00.686313+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+[36m2021-02-28T03:19:00.686339+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+[36m2021-02-28T03:19:00.686363+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+[36m2021-02-28T03:19:00.686384+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+[36m2021-02-28T03:19:00.686407+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+[36m2021-02-28T03:19:00.686431+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/kernel.rb:26:in `require'
+[36m2021-02-28T03:19:00.686452+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:409:in `const_get'
+[36m2021-02-28T03:19:00.686476+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:409:in `block (2 levels) in eager_load'
+[36m2021-02-28T03:19:00.686501+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:733:in `block in ls'
+[36m2021-02-28T03:19:00.686525+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:725:in `foreach'
+[36m2021-02-28T03:19:00.686549+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:725:in `ls'
+[36m2021-02-28T03:19:00.686574+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:404:in `block in eager_load'
+[36m2021-02-28T03:19:00.686596+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:393:in `synchronize'
+[36m2021-02-28T03:19:00.686621+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:393:in `eager_load'
+[36m2021-02-28T03:19:00.686646+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:508:in `each'
+[36m2021-02-28T03:19:00.686669+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/loader.rb:508:in `eager_load_all'
+[36m2021-02-28T03:19:00.686693+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/application/finisher.rb:133:in `block in <module:Finisher>'
+[36m2021-02-28T03:19:00.686719+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/initializable.rb:32:in `instance_exec'
+[36m2021-02-28T03:19:00.686743+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/initializable.rb:32:in `run'
+[36m2021-02-28T03:19:00.686766+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/initializable.rb:61:in `block in run_initializers'
+[36m2021-02-28T03:19:00.686790+00:00 app[web.1]:[39m from /app/vendor/ruby-3.0.0/lib/ruby/3.0.0/tsort.rb:228:in `block in tsort_each'
+[36m2021-02-28T03:19:00.686814+00:00 app[web.1]:[39m from /app/vendor/ruby-3.0.0/lib/ruby/3.0.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+[36m2021-02-28T03:19:00.686839+00:00 app[web.1]:[39m from /app/vendor/ruby-3.0.0/lib/ruby/3.0.0/tsort.rb:431:in `each_strongly_connected_component_from'
+[36m2021-02-28T03:19:00.686863+00:00 app[web.1]:[39m from /app/vendor/ruby-3.0.0/lib/ruby/3.0.0/tsort.rb:349:in `block in each_strongly_connected_component'
+[36m2021-02-28T03:19:00.686889+00:00 app[web.1]:[39m from /app/vendor/ruby-3.0.0/lib/ruby/3.0.0/tsort.rb:347:in `each'
+[36m2021-02-28T03:19:00.686911+00:00 app[web.1]:[39m from /app/vendor/ruby-3.0.0/lib/ruby/3.0.0/tsort.rb:347:in `call'
+[36m2021-02-28T03:19:00.686935+00:00 app[web.1]:[39m from /app/vendor/ruby-3.0.0/lib/ruby/3.0.0/tsort.rb:347:in `each_strongly_connected_component'
+[36m2021-02-28T03:19:00.686959+00:00 app[web.1]:[39m from /app/vendor/ruby-3.0.0/lib/ruby/3.0.0/tsort.rb:226:in `tsort_each'
+[36m2021-02-28T03:19:00.686979+00:00 app[web.1]:[39m from /app/vendor/ruby-3.0.0/lib/ruby/3.0.0/tsort.rb:205:in `tsort_each'
+[36m2021-02-28T03:19:00.687004+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/initializable.rb:60:in `run_initializers'
+[36m2021-02-28T03:19:00.687027+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/application.rb:384:in `initialize!'
+[36m2021-02-28T03:19:00.687052+00:00 app[web.1]:[39m from /app/config/environment.rb:5:in `<main>'
+[36m2021-02-28T03:19:00.687074+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+[36m2021-02-28T03:19:00.687099+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+[36m2021-02-28T03:19:00.687124+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+[36m2021-02-28T03:19:00.687148+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+[36m2021-02-28T03:19:00.687177+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+[36m2021-02-28T03:19:00.687200+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/kernel.rb:34:in `require'
+[36m2021-02-28T03:19:00.687224+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/activesupport-6.1.2/lib/active_support/dependencies.rb:332:in `block in require'
+[36m2021-02-28T03:19:00.687248+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/activesupport-6.1.2/lib/active_support/dependencies.rb:299:in `load_dependency'
+[36m2021-02-28T03:19:00.687275+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/activesupport-6.1.2/lib/active_support/dependencies.rb:332:in `require'
+[36m2021-02-28T03:19:00.687299+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:53:in `require_relative'
+[36m2021-02-28T03:19:00.687324+00:00 app[web.1]:[39m from config.ru:3:in `block in <main>'
+[36m2021-02-28T03:19:00.687346+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+[36m2021-02-28T03:19:00.687370+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+[36m2021-02-28T03:19:00.687394+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+[36m2021-02-28T03:19:00.687419+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+[36m2021-02-28T03:19:00.687443+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/server.rb:349:in `build_app_and_options_from_config'
+[36m2021-02-28T03:19:00.687467+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/server.rb:249:in `app'
+[36m2021-02-28T03:19:00.687495+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/server.rb:422:in `wrapped_app'
+[36m2021-02-28T03:19:00.687519+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/server.rb:312:in `block in start'
+[36m2021-02-28T03:19:00.687547+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/server.rb:379:in `handle_profiling'
+[36m2021-02-28T03:19:00.687573+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/rack-2.2.3/lib/rack/server.rb:311:in `start'
+[36m2021-02-28T03:19:00.687597+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/commands/server/server_command.rb:39:in `start'
+[36m2021-02-28T03:19:00.687622+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/commands/server/server_command.rb:144:in `block in perform'
+[36m2021-02-28T03:19:00.687647+00:00 app[web.1]:[39m from <internal:kernel>:90:in `tap'
+[36m2021-02-28T03:19:00.687670+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/commands/server/server_command.rb:135:in `perform'
+[36m2021-02-28T03:19:00.687692+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/thor-1.1.0/lib/thor/command.rb:27:in `run'
+[36m2021-02-28T03:19:00.687718+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/thor-1.1.0/lib/thor/invocation.rb:127:in `invoke_command'
+[36m2021-02-28T03:19:00.687742+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/thor-1.1.0/lib/thor.rb:392:in `dispatch'
+[36m2021-02-28T03:19:00.687765+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/command/base.rb:69:in `perform'
+[36m2021-02-28T03:19:00.687791+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/command.rb:50:in `invoke'
+[36m2021-02-28T03:19:00.687816+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/railties-6.1.2/lib/rails/commands.rb:18:in `<main>'
+[36m2021-02-28T03:19:00.687838+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+[36m2021-02-28T03:19:00.687863+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+[36m2021-02-28T03:19:00.687888+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+[36m2021-02-28T03:19:00.687912+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+[36m2021-02-28T03:19:00.687937+00:00 app[web.1]:[39m from /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.7.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+[36m2021-02-28T03:19:00.687961+00:00 app[web.1]:[39m from bin/rails:5:in `<main>'
+[36m2021-02-28T03:19:00.776154+00:00 heroku[web.1]:[39m Process exited with status [31m1[39m
+[36m2021-02-28T03:19:00.842162+00:00 heroku[web.1]:[39m State changed from [93mstarting[39m to crashed
+[32m2021-02-28T03:19:01.951730+00:00 heroku[router]:[39m [2mat=[22m[31merror[39m [2mcode=[22m[31m[1mH10[22m[39m [2mdesc=[22m[2m"App[22m [2mcrashed"[22m [2mmethod=[22m[1m[35mGET[39m[22m [2mpath=[22m[32m"/"[39m [2mhost=[22m[2mglacial-basin-99813.herokuapp.com[22m [2mrequest_id=[22m[2m87e6e517-e371-46c2-b24d-acc3f6cf6bea[22m [2mfwd=[22m[2m"198.217.29.2"[22m [2mdyno=[22m [2mconnect=[22m [2mservice=[22m [2mstatus=[22m[31m503[39m [2mbytes=[22m [2mprotocol=[22m[2mhttps[22m
+
+
+  
+m
+^C[2m⏎(B[m                                                                                                         ⏎ [K]0;fish /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA[30m(B[m[92mSnowspeeder(B[m@(B[mAngel-15(B[m [32m~/g/M/MSCFISHPA(B[m (main)(B[m(B[m[31m [(B[m[1m[31mSIGINT(B[m[31m](B[m> [Kh[38;5;240meroku logs --tail[17D[30m(B[m[38;5;196mh[38;5;240meroku logs --tail[17D[30m(B[m[38;5;196me[38;5;240mroku logs --tail[16D[30m(B[m[38;5;196mr[38;5;240moku logs --tail[15D[30m(B[m[38;5;196mo[38;5;240mku logs --tail[14D[30m(B[m[38;5;196mk[38;5;240mu logs --tail[13D[30m(B[m[38;5;196mu[38;5;240m logs --tail[12D[30m(B[m[38;5;26mheroku[38;5;240m logs --tail[12D[30m(B[m[38;5;26m [38;5;240mlogs --tail[11D[30m(B[m [38;5;240mlogs --tail[11D[30m(B[mo[K[38;5;240mpen[30m(B[m[38;5;39mo[38;5;240mpen[30m(B[m[38;5;39mp[38;5;240men[30m(B[m[38;5;39me[38;5;240mn[30m(B[m[38;5;39mn[30m(B[m
+[30m(B[m[?2004l]0;heroku /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA[30m(B[m[?25h[2m⏎(B[m                                                                                                         ⏎ [K[?2004h]0;fish /Users/Snowspeeder/github/MSCFISHProgramAssistant/MSCFISHPA[30m(B[m[92mSnowspeeder(B[m@(B[mAngel-15(B[m [32m~/g/M/MSCFISHPA(B[m (main)(B[m> [K
