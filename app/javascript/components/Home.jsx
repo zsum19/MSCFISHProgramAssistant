@@ -7,7 +7,7 @@ export default () => (
       <div className="container secondary-color">
         <h1 className="display-4">MSC Fish - Program Assistant</h1>
         <p className="lead">
-          More info to be put here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero error enim!
+          MSCFISHPA Homepage For Navigation Ease!
         </p>
         <hr className="my-4" />
         <Link
@@ -23,6 +23,13 @@ export default () => (
           role="button"
         >
           View Announcements
+        </Link>
+        <Link
+          to="/CheckIn"
+          className="btn btn-lg custom-button"
+          role="button"
+        >
+          Check In
         </Link>
       </div>
     </div>
