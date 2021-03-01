@@ -300,3 +300,195 @@ Processing by HomepageController#index as HTML
 Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 5873)
 
 
+Started GET "/" for 127.0.0.1 at 2021-02-24 10:57:23 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 276)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/reomatsuda/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 153302ea8a1a1345e8e3
+Version: webpack 4.46.0
+Time: 1902ms
+Built at: 02/24/2021 10:57:26 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-96610895c31f0d4e30de.js   2.67 MiB        Index  [emitted] [immutable]  Index
+      js/Index-96610895c31f0d4e30de.js.map   2.92 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-96610895c31f0d4e30de.js js/Index-96610895c31f0d4e30de.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 659 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1.72 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 49 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2961.7ms | Allocations: 9158)
+Completed 200 OK in 2989ms (Views: 2978.3ms | ActiveRecord: 0.0ms | Allocations: 12290)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-02-24 10:57:28 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 25ms (Views: 9.9ms | ActiveRecord: 6.2ms | Allocations: 11366)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-24 10:57:29 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5378)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 5802)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-24 10:59:11 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 7846)
+Completed 200 OK in 56ms (Views: 45.2ms | ActiveRecord: 0.0ms | Allocations: 10980)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-02-24 10:59:13 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 25ms (Views: 8.8ms | ActiveRecord: 6.9ms | Allocations: 11366)
+
+
+Started GET "/api/v1/events/show/19" for 127.0.0.1 at 2021-02-24 10:59:14 -0600
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/events_controller.rb:36:in `event'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 1.4ms | Allocations: 2157)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-02-24 10:59:15 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.9ms | Allocations: 3456)
+
+
+Started POST "/api/v1/events/create" for 127.0.0.1 at 2021-02-24 10:59:31 -0600
+Processing by Api::V1::EventsController#create as */*
+  Parameters: {"name"=>"Ahiwdao", "max_size"=>"1", "tickets_sold"=>"1", "num_checked_in"=>"1", "date"=>"12/10/2001", "description"=>"dawfrge", "event"=>{"name"=>"Ahiwdao", "max_size"=>"1", "tickets_sold"=>"1", "num_checked_in"=>"1", "date"=>"12/10/2001", "description"=>"dawfrge"}}
+[31mUnpermitted parameter: :event[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `create'
+  [1m[36mEvent Create (3.1ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ahiwdao"], ["max_size", 1], ["tickets_sold", 1], ["num_checked_in", 1], ["date", "2001-10-12 00:00:00"], ["description", "dawfrge"], ["created_at", "2021-02-24 16:59:31.350229"], ["updated_at", "2021-02-24 16:59:31.350229"]]
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `create'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 5.5ms | Allocations: 3580)
+
+
+Started GET "/api/v1/events/show/20" for 127.0.0.1 at 2021-02-24 10:59:31 -0600
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/events_controller.rb:36:in `event'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 1087)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-02-24 10:59:36 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.8ms | Allocations: 3570)
+
+
+Started GET "/api/v1/events/show/20" for 127.0.0.1 at 2021-02-24 10:59:38 -0600
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/events_controller.rb:36:in `event'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 1088)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-02-24 10:59:39 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.8ms | Allocations: 3570)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-02-24 10:59:45 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (2.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 6.2ms | ActiveRecord: 6.0ms | Allocations: 6972)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-02-24 10:59:48 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.8ms | Allocations: 2131)
+
+
+Started GET "/" for ::1 at 2021-02-28 18:53:31 -0600
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 7885)
+Completed 200 OK in 35ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 11046)
+
+
+Started GET "/api/v1/events/index" for ::1 at 2021-02-28 18:53:33 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 8.0ms | ActiveRecord: 15.5ms | Allocations: 11601)
+
+
+Started GET "/" for ::1 at 2021-02-28 18:53:33 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 6059)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 6510)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-28 18:53:42 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 7846)
+Completed 200 OK in 57ms (Views: 43.1ms | ActiveRecord: 0.0ms | Allocations: 10978)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-02-28 18:53:44 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 8.6ms | ActiveRecord: 5.4ms | Allocations: 11575)
+
+
