@@ -6,6 +6,8 @@ import Event from "../components/Event";
 import NewEvent from "../components/NewEvent";
 
 import Announcements from "../components/Announcements";
+import Announcement from "../components/Announcement";
+import NewAnnouncement from "../components/NewAnnouncement";
 
 export default (
   <Router>
@@ -15,6 +17,8 @@ export default (
       <Route path="/event/:id" exact component={Event} />
       <Route path="/event" exact component={NewEvent} />
       <Route path="/announcements" exact component={Announcements} />
+      <Route path="/announcement/:id" exact component={Announcement} />
+      <Route path="/announcement" exact component={NewAnnouncement} />
     </Switch>
   </Router>
 );
