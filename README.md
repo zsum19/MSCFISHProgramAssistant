@@ -1,14 +1,13 @@
-# MSCFISHProgramAssistant
+# README
 
-## Welcome
- Welcome to MSC FISH Program Assistant, a Ruby on Rails application built to help the MSC FISH student organization coordinate and track their program events.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
 ## Setup - Windows/Linux
 
-First, clone the repository using git clone.
-Next, you will want to set up a user in psql with createdb permissions.
+* Ruby version
 
-The commands to do so are as follows:
+* System dependencies
 
 1. sudo -u postgres psql 
 2. CREATE USER mscfishpa_user WITH PASSWORD 'password1';

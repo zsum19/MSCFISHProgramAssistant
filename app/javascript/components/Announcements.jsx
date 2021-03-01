@@ -35,6 +35,9 @@ class Announcements extends React.Component {
                     </div>
                     <div className="card-footer">
                         {announcement.author_id}
+                        <Link to={`/announcement/${announcement.id}`} className="btn custom-button">
+                        View Announcement
+                        </Link>
                     </div>
                 </div>
             </div>
