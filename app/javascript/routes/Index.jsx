@@ -9,6 +9,8 @@ import Announcements from "../components/Announcements";
 import Announcement from "../components/Announcement";
 import NewAnnouncement from "../components/NewAnnouncement";
 
+import CheckIn from "../components/CheckIn";
+
 export default (
   <Router>
     <Switch>
@@ -19,6 +21,7 @@ export default (
       <Route path="/announcements" exact component={Announcements} />
       <Route path="/announcement/:id" exact component={Announcement} />
       <Route path="/announcement" exact component={NewAnnouncement} />
+      <Route path="/checkin" exact component={CheckIn} />
     </Switch>
   </Router>
 );
