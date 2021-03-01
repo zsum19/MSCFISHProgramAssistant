@@ -35,6 +35,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'webdrivers'
+  gem 'rubocop-rails', require: false
 end
 
 group :development do
