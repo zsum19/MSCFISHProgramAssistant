@@ -101,7 +101,7 @@ class CheckIn extends React.Component {
                   <button type="submit" className="btn custom-button mt-3">
                     Check In
                   </button>
-                  <Link to="/events" className="btn btn-link mt-3">
+                  <Link to="/" className="btn btn-link mt-3">
                     Back to Home
                   </Link>
                 </form>

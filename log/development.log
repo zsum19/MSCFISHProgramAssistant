@@ -784,3 +784,77 @@ Processing by Api::V1::AnnouncementsController#index as */*
 Completed 200 OK in 32ms (Views: 13.4ms | ActiveRecord: 14.0ms | Allocations: 6642)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-01 04:52:12 -0600
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 277)
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2021-03-01 04:52:20 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 3056d96c26b3202620f7
+Version: webpack 4.46.0
+Time: 9629ms
+Built at: 03/01/2021 4:52:25 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-411e71c3bef2c7c28527.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-411e71c3bef2c7c28527.js.map   2.93 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-411e71c3bef2c7c28527.js js/Index-411e71c3bef2c7c28527.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 52 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12679.0ms | Allocations: 13559)
+Completed 200 OK in 12694ms (Views: 12682.8ms | ActiveRecord: 0.0ms | Allocations: 16609)
+
+
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 3056d96c26b3202620f7
+Version: webpack 4.46.0
+Time: 6091ms
+Built at: 03/01/2021 4:52:31 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-411e71c3bef2c7c28527.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-411e71c3bef2c7c28527.js.map   2.93 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-411e71c3bef2c7c28527.js js/Index-411e71c3bef2c7c28527.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 52 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11441.1ms | Allocations: 10269)
+Completed 200 OK in 11442ms (Views: 11441.7ms | ActiveRecord: 0.0ms | Allocations: 10664)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-01 04:52:58 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (5.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 116ms (Views: 52.6ms | ActiveRecord: 44.7ms | Allocations: 10277)
+
+
