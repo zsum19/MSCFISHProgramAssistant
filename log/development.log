@@ -511,3 +511,52 @@ Processing by Api::V1::AnnouncementsController#index as */*
 Completed 200 OK in 61ms (Views: 21.7ms | ActiveRecord: 15.5ms | Allocations: 8057)
 
 
+Started GET "/'" for 127.0.0.1 at 2021-03-01 00:06:07 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"'"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.4ms | Allocations: 6826)
+Completed 200 OK in 93ms (Views: 85.9ms | ActiveRecord: 0.0ms | Allocations: 9974)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 00:06:09 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4371)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 4819)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-01 00:06:11 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (7.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 65ms (Views: 9.9ms | ActiveRecord: 26.3ms | Allocations: 10212)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-01 00:06:17 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (11.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 5.1ms | ActiveRecord: 11.8ms | Allocations: 2303)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 00:06:57 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 4392)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 4780)
+
+

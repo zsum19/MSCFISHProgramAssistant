@@ -1,2 +1,4 @@
-MSCFISHPA/.DS_Store
+.DS_Store
 .env
+log/
+tmp/
