@@ -560,3 +560,227 @@ Processing by HomepageController#index as HTML
 Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 4780)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-01 02:47:23 -0600
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 277)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+ERROR: [Errno 21] Is a directory: 'bin'
+CRITICAL:root:Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/cliapp/app.py", line 182, in _run
+    self.settings.load_configs()
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 829, in load_configs
+    self._read_ini(pathname, f)
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 838, in _read_ini
+    cp.readfp(f)
+  File "/usr/lib/python3.8/configparser.py", line 763, in readfp
+    self.read_file(fp, source=filename)
+  File "/usr/lib/python3.8/configparser.py", line 718, in read_file
+    self._read(f, source)
+  File "/usr/lib/python3.8/configparser.py", line 1082, in _read
+    raise MissingSectionHeaderError(fpname, lineno, line)
+configparser.MissingSectionHeaderError: File contains no section headers.
+file: '/home/treydinges/Documents/MSCFISHProgramAssistant/config/webpack/development.js', line: 1
+"process.env.NODE_ENV = process.env.NODE_ENV || 'development'\n"
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/cliapp/app.py", line 182, in _run
+    self.settings.load_configs()
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 829, in load_configs
+    self._read_ini(pathname, f)
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 838, in _read_ini
+    cp.readfp(f)
+  File "/usr/lib/python3.8/configparser.py", line 763, in readfp
+    self.read_file(fp, source=filename)
+  File "/usr/lib/python3.8/configparser.py", line 718, in read_file
+    self._read(f, source)
+  File "/usr/lib/python3.8/configparser.py", line 1082, in _read
+    raise MissingSectionHeaderError(fpname, lineno, line)
+configparser.MissingSectionHeaderError: File contains no section headers.
+file: '/home/treydinges/Documents/MSCFISHProgramAssistant/config/webpack/development.js', line: 1
+"process.env.NODE_ENV = process.env.NODE_ENV || 'development'\n"
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1878.2ms | Allocations: 8544)
+Completed 200 OK in 1894ms (Views: 1884.9ms | ActiveRecord: 0.0ms | Allocations: 11594)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-01 02:47:27 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (12.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 76ms (Views: 6.5ms | ActiveRecord: 49.0ms | Allocations: 8075)
+
+
+Started GET "/announcements" for 127.0.0.1 at 2021-03-01 02:48:23 -0600
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4419)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms | Allocations: 4866)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-01 02:48:23 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (7.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 2.3ms | ActiveRecord: 7.0ms | Allocations: 2155)
+
+
+Started GET "/announcements" for 127.0.0.1 at 2021-03-01 02:51:22 -0600
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 6874)
+Completed 200 OK in 69ms (Views: 62.2ms | ActiveRecord: 0.0ms | Allocations: 10022)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-01 02:51:23 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (8.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 43ms (Views: 11.9ms | ActiveRecord: 14.6ms | Allocations: 8000)
+
+
+Started GET "/announcements" for 127.0.0.1 at 2021-03-01 02:51:35 -0600
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 111.8ms | Allocations: 4419)
+Completed 200 OK in 117ms (Views: 112.6ms | ActiveRecord: 0.0ms | Allocations: 4866)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-01 02:51:36 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (3.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 13.4ms | ActiveRecord: 3.5ms | Allocations: 2156)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 02:51:59 -0600
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 6874)
+Completed 200 OK in 53ms (Views: 41.7ms | ActiveRecord: 0.0ms | Allocations: 10022)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-01 02:52:01 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (15.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 47ms (Views: 13.3ms | ActiveRecord: 20.4ms | Allocations: 10231)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-01 02:52:06 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 162ms (Views: 111.6ms | ActiveRecord: 27.9ms | Allocations: 6662)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-01 02:52:10 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 0.9ms | Allocations: 2155)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 02:55:31 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 6873)
+Completed 200 OK in 98ms (Views: 78.6ms | ActiveRecord: 0.0ms | Allocations: 10021)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-01 02:55:34 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (9.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 41ms (Views: 8.7ms | ActiveRecord: 23.5ms | Allocations: 8000)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 02:55:35 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 4427)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms | Allocations: 4878)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 03:04:55 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 277)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: be17ba6a81d3b27faf32
+Version: webpack 4.46.0
+Time: 16311ms
+Built at: 03/01/2021 3:05:14 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-c8982e6150fc3d406fdd.js   2.69 MiB        Index  [emitted] [immutable]  Index
+      js/Index-c8982e6150fc3d406fdd.js.map   2.93 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-c8982e6150fc3d406fdd.js js/Index-c8982e6150fc3d406fdd.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.27 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 51 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19181.3ms | Allocations: 8267)
+Completed 200 OK in 19195ms (Views: 19187.8ms | ActiveRecord: 0.0ms | Allocations: 11415)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-01 03:05:17 -0600
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 66ms (Views: 33.4ms | ActiveRecord: 17.7ms | Allocations: 10205)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-01 03:05:23 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (6.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 13.4ms | ActiveRecord: 14.0ms | Allocations: 6642)
+
+
