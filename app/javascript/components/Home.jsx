@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LinkButton from "./common/LinkButton";
 
 export default () => (
   <div className="vw-100 vh-100 primary-color d-flex align-items-center justify-content-center">
@@ -10,27 +11,9 @@ export default () => (
           MSCFISHPA Homepage For Navigation Ease!
         </p>
         <hr className="my-4" />
-        <Link
-          to="/events"
-          className="btn btn-lg custom-button"
-          role="button"
-        >
-          View Events
-        </Link>
-        <Link
-          to="/announcements"
-          className="btn btn-lg custom-button"
-          role="button"
-        >
-          View Announcements
-        </Link>
-        <Link
-          to="/CheckIn"
-          className="btn btn-lg custom-button"
-          role="button"
-        >
-          Check In
-        </Link>
+        <LinkButton to = "/events" text = "Events"></LinkButton>
+        <LinkButton to = "/announcements" text = "Announcements"></LinkButton>
+        <LinkButton to = "/CheckIn" text = "Check In"></LinkButton>
       </div>
     </div>
   </div>
