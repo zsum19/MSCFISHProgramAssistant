@@ -1,11 +1,11 @@
-class Api::V1::attendeesController < ApplicationController
+class Api::V1::AttendeesController < ApplicationController
   def index
-    attendee = attendee.all.order(created_at: :desc)
+    attendee = Attendee.all.order(created_at: :desc)
     render json: attendee
   end
 
   def create
-    attendee = attendee.create!(attendee_params)
+    attendee = Attendee.create!(attendee_params)
     if attendee
       render json: attendee
     else
@@ -25,6 +25,6 @@ class Api::V1::attendeesController < ApplicationController
   end
 
   def attendee
-    @attendee ||= attendee.find(params[:id])
+    @attendee ||= Attendee.find(params[:id])
   end
 end
