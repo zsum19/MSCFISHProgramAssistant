@@ -37,7 +37,7 @@ feature "Visit new announcement page" do
     scenario "Able to open new announcement page", :js => true do
         announcementspage.visit_announcementspage
         click_link('Create New Announcement')
-        expect(page).to have_content("Create a New announcement")
+        expect(page).to have_content("Create a new announcement")
     end
 end
 
