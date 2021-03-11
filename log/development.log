@@ -858,3 +858,2953 @@ Processing by Api::V1::EventsController#index as */*
 Completed 200 OK in 116ms (Views: 52.6ms | ActiveRecord: 44.7ms | Allocations: 10277)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-10 16:30:08 -0600
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/homepage_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/homepage_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/homepage_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/homepage_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2021-03-10 16:30:50 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 935df8c05ccea4df1882
+Version: webpack 4.46.0
+Time: 8876ms
+Built at: 03/10/2021 4:31:03 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-2519d2fa32220fe465c4.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-2519d2fa32220fe465c4.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-2519d2fa32220fe465c4.js js/Index-2519d2fa32220fe465c4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13494.7ms | Allocations: 8349)
+Completed 200 OK in 13553ms (Views: 13512.4ms | ActiveRecord: 0.0ms | Allocations: 13110)
+
+
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 16:31:15 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (11.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.2ms | Allocations: 32)
+Sent data  (20.0ms)
+Completed 200 OK in 76ms (Views: 19.8ms | ActiveRecord: 46.1ms | Allocations: 5725)
+
+
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 16:32:06 -0600
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (14.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 49)
+Sent data  (10.1ms)
+Completed 200 OK in 64ms (Views: 9.8ms | ActiveRecord: 22.7ms | Allocations: 8994)
+
+
+Started GET "/index" for 127.0.0.1 at 2021-03-10 16:37:16 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"index"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 6926)
+Completed 200 OK in 65ms (Views: 46.6ms | ActiveRecord: 0.0ms | Allocations: 10074)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 16:37:51 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 4490)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 4938)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:08 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (9.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 45ms (Views: 8.1ms | ActiveRecord: 19.7ms | Allocations: 7971)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:09 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 20ms (Views: 16.0ms | ActiveRecord: 1.5ms | Allocations: 2387)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:10 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (2.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 13ms (Views: 4.3ms | ActiveRecord: 2.6ms | Allocations: 2387)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:11 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (2.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 24ms (Views: 20.2ms | ActiveRecord: 2.2ms | Allocations: 2384)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:12 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (2.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 12ms (Views: 8.2ms | ActiveRecord: 2.2ms | Allocations: 2372)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:12 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (5.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 19ms (Views: 10.6ms | ActiveRecord: 5.2ms | Allocations: 2371)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:13 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 14ms (Views: 10.9ms | ActiveRecord: 1.7ms | Allocations: 2371)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/" for 127.0.0.1 at 2021-03-10 16:38:49 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.3ms | Allocations: 6926)
+Completed 200 OK in 115ms (Views: 80.1ms | ActiveRecord: 0.0ms | Allocations: 10075)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:53 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (5.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 54ms (Views: 21.8ms | ActiveRecord: 17.5ms | Allocations: 7741)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:55 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (3.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 15ms (Views: 5.2ms | ActiveRecord: 3.1ms | Allocations: 2383)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:38:55 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (2.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 13ms (Views: 8.7ms | ActiveRecord: 2.3ms | Allocations: 2382)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/announcement" for 127.0.0.1 at 2021-03-10 16:39:29 -0600
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcement"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 4497)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 4892)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 16:39:47 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.4ms | Allocations: 6926)
+Completed 200 OK in 95ms (Views: 87.2ms | ActiveRecord: 0.0ms | Allocations: 10074)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:39:48 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+No template found for Api::V1::AnnouncementsController#index, rendering head :no_content
+Completed 204 No Content in 33ms (ActiveRecord: 6.2ms | Allocations: 4217)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:40:22 -0600
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 78ms (Views: 28.7ms | ActiveRecord: 26.5ms | Allocations: 8497)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 16:40:29 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 1691)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 16:43:19 -0600
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 93.9ms | Allocations: 6926)
+Completed 200 OK in 117ms (Views: 110.7ms | ActiveRecord: 0.0ms | Allocations: 10074)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:43:20 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (6.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 64ms (Views: 23.9ms | ActiveRecord: 27.6ms | Allocations: 7427)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 16:43:25 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 1338)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 16:44:32 -0600
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4497)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 4888)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:44:34 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 7.4ms | ActiveRecord: 1.0ms | Allocations: 1968)
+
+
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 16:45:02 -0600
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 6926)
+Completed 200 OK in 92ms (Views: 81.8ms | ActiveRecord: 0.0ms | Allocations: 10074)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:45:02 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (2.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 74ms (Views: 35.6ms | ActiveRecord: 17.2ms | Allocations: 7434)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 16:45:07 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 1338)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 16:46:32 -0600
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 6926)
+Completed 200 OK in 65ms (Views: 58.8ms | ActiveRecord: 0.0ms | Allocations: 10074)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:46:33 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (10.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 47ms (Views: 9.2ms | ActiveRecord: 24.8ms | Allocations: 7437)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 16:46:38 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 1338)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 16:50:10 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 6926)
+Completed 200 OK in 78ms (Views: 66.8ms | ActiveRecord: 0.0ms | Allocations: 10075)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:50:11 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (13.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:6:in `block (2 levels) in index'
+Completed 200 OK in 63ms (Views: 16.6ms | ActiveRecord: 20.8ms | Allocations: 7474)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 16:50:15 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 1338)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 16:52:38 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 20ms (ActiveRecord: 0.0ms | Allocations: 2786)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 16:52:41 -0600
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.0ms | Allocations: 6698)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 0.0ms | Allocations: 8426)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:52:41 -0600
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+...ata Announcement.@announcements.to_csv }
+...                 ^~~~~~~~~~~~~~
+):
+  
+app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:52:43 -0600
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+...ata Announcement.@announcements.to_csv }
+...                 ^~~~~~~~~~~~~~
+):
+  
+app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:52:44 -0600
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+...ata Announcement.@announcements.to_csv }
+...                 ^~~~~~~~~~~~~~
+):
+  
+app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+app/controllers/api/v1/announcements_controller.rb:7: syntax error, unexpected instance variable
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 16:53:15 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:6:in `block (2 levels) in index'
+Completed 200 OK in 34ms (Views: 6.6ms | ActiveRecord: 7.8ms | Allocations: 8472)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 16:53:22 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 1692)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 16:58:25 -0600
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 39ms (ActiveRecord: 0.0ms | Allocations: 2787)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements.json" for 127.0.0.1 at 2021-03-10 16:59:47 -0600
+Processing by HomepageController#index as JSON
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 1394)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["application/json"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements.json" for 127.0.0.1 at 2021-03-10 17:00:03 -0600
+Processing by HomepageController#index as JSON
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 646)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["application/json"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements.html" for 127.0.0.1 at 2021-03-10 17:00:07 -0600
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 6698)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms | Allocations: 7936)
+
+
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 17:00:10 -0600
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 4466)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 4907)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 17:00:11 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (2.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:7:in `block (2 levels) in index'
+Completed 200 OK in 38ms (Views: 8.9ms | ActiveRecord: 16.7ms | Allocations: 7407)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 17:07:18 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 3ms (Allocations: 1170)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 17:13:48 -0600
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 6926)
+Completed 200 OK in 74ms (Views: 63.4ms | ActiveRecord: 0.0ms | Allocations: 10074)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 17:13:49 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (9.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:7:in `block (2 levels) in index'
+Completed 200 OK in 62ms (Views: 18.1ms | ActiveRecord: 16.8ms | Allocations: 7424)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 17:13:54 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 1338)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 17:30:52 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/homepage_controller.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+...ments.to_csv, send_data @events.to_csv}
+...                        ^~~~~~~
+):
+  
+app/controllers/homepage_controller.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/controllers/homepage_controller.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/controllers/homepage_controller.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 18:13:14 -0600
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 6926)
+Completed 200 OK in 79ms (Views: 62.6ms | ActiveRecord: 0.0ms | Allocations: 10075)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:13:15 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (2.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 64ms (Views: 13.6ms | ActiveRecord: 14.1ms | Allocations: 7816)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:6:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:13:17 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 13ms (Views: 7.7ms | ActiveRecord: 0.8ms | Allocations: 2377)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:6:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:13:18 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 17ms (Views: 14.1ms | ActiveRecord: 0.9ms | Allocations: 2377)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/api/v1/announcements_controller.rb:6:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:14:37 -0600
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::AnnouncementsController#index as */*
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.3ms | Allocations: 4353)
+
+
+  
+NoMethodError (To respond to a custom format, register it as a MIME type first: https://guides.rubyonrails.org/action_controller_overview.html#restful-downloads. If you meant to respond to a variant like :tablet or :phone, not a custom format, be sure to nest your variant response within a format response: format.html { |html| html.tablet { ... } }):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `block in index'
+app/controllers/api/v1/announcements_controller.rb:6:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:14:38 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 970)
+
+
+  
+NoMethodError (To respond to a custom format, register it as a MIME type first: https://guides.rubyonrails.org/action_controller_overview.html#restful-downloads. If you meant to respond to a variant like :tablet or :phone, not a custom format, be sure to nest your variant response within a format response: format.html { |html| html.tablet { ... } }):
+  
+app/controllers/api/v1/announcements_controller.rb:7:in `block in index'
+app/controllers/api/v1/announcements_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:15:06 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 6926)
+Completed 200 OK in 93ms (Views: 85.1ms | ActiveRecord: 0.0ms | Allocations: 10074)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:15:08 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.5ms | Allocations: 3400)
+
+
+  
+NoMethodError (To respond to a custom format, register it as a MIME type first: https://guides.rubyonrails.org/action_controller_overview.html#restful-downloads. If you meant to respond to a variant like :tablet or :phone, not a custom format, be sure to nest your variant response within a format response: format.html { |html| html.tablet { ... } }):
+  
+app/controllers/api/v1/announcements_controller.rb:8:in `block in index'
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:15:09 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 978)
+
+
+  
+NoMethodError (To respond to a custom format, register it as a MIME type first: https://guides.rubyonrails.org/action_controller_overview.html#restful-downloads. If you meant to respond to a variant like :tablet or :phone, not a custom format, be sure to nest your variant response within a format response: format.html { |html| html.tablet { ... } }):
+  
+app/controllers/api/v1/announcements_controller.rb:8:in `block in index'
+app/controllers/api/v1/announcements_controller.rb:7:in `index'
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:16:06 -0600
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 6926)
+Completed 200 OK in 69ms (Views: 60.5ms | ActiveRecord: 0.0ms | Allocations: 10074)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:16:07 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `block (2 levels) in index'
+Completed 200 OK in 40ms (Views: 19.3ms | ActiveRecord: 11.3ms | Allocations: 7424)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 18:16:12 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 1338)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 18:21:02 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.3ms | Allocations: 6927)
+Completed 200 OK in 74ms (Views: 67.1ms | ActiveRecord: 0.0ms | Allocations: 10075)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:21:03 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (10.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `block (2 levels) in index'
+Completed 200 OK in 48ms (Views: 18.4ms | ActiveRecord: 16.5ms | Allocations: 7424)
+
+
+Started GET "/announcements.csv" for 127.0.0.1 at 2021-03-10 18:21:07 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"announcements"}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 1338)
+
+
+  
+ActionController::UnknownFormat (HomepageController#index is missing a template for this request format and variant.
+
+request.formats: ["text/csv"]
+request.variant: []):
+  
+actionpack (6.1.2) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 18:26:44 -0600
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/homepage_controller.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+...ments.to_csv, send_data @events.to_csv}
+...                        ^~~~~~~
+):
+  
+app/controllers/homepage_controller.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/controllers/homepage_controller.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/controllers/homepage_controller.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 18:27:17 -0600
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 6918)
+Completed 200 OK in 125ms (Views: 67.7ms | ActiveRecord: 0.0ms | Allocations: 13877)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:27:17 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (5.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 7.4ms | ActiveRecord: 17.6ms | Allocations: 5780)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:27:22 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 1.7ms | Allocations: 1964)
+
+
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 18:27:29 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (2.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 31)
+Sent data  (3.4ms)
+Completed 200 OK in 11ms (Views: 3.2ms | ActiveRecord: 2.5ms | Allocations: 1896)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:30:03 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 4467)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 4969)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:50:37 -0600
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 6918)
+Completed 200 OK in 81ms (Views: 44.6ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:50:41 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 35ms (Views: 21.6ms | ActiveRecord: 10.1ms | Allocations: 5780)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:50:43 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 4467)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 4983)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:50:48 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4467)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 4978)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:50:50 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.9ms | Allocations: 1964)
+
+
+Started GET "/announcements" for 127.0.0.1 at 2021-03-10 18:50:52 -0600
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4467)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 4968)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-10 18:50:53 -0600
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.8ms | Allocations: 1955)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:50:55 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 4474)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 4974)
+
+
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 18:51:01 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (0.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.7ms | Allocations: 2504)
+
+
+  
+Errno::ENAMETOOLONG (File name too long @ rb_file_s_lstat - id,author_id,event_id,content
+1,1,1,This is a test accoucement #1
+2,1,1,This is a test accoucement #2
+3,1,1,This is a test accoucement #3
+4,1,1,This is a test accoucement #4
+5,1,1,This is a test accoucement #5
+6,1,1,This is a test accoucement #6
+7,1,1,This is a test accoucement #7
+8,1,1,This is a test accoucement #8
+9,1,1,This is a test accoucement #9
+):
+  
+app/controllers/homepage_controller.rb:12:in `block (4 levels) in index'
+app/controllers/homepage_controller.rb:11:in `each'
+app/controllers/homepage_controller.rb:11:in `block (3 levels) in index'
+app/controllers/homepage_controller.rb:10:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:54:29 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 4544)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 0.0ms | Allocations: 7711)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:55:35 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.4ms | Allocations: 6918)
+Completed 200 OK in 82ms (Views: 63.5ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 18:55:40 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mCACHE Announcement Load (0.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 10.2ms | Allocations: 10138)
+
+
+  
+NameError (undefined local variable or method `zipfile' for #<HomepageController:0x0000000000be78>):
+  
+app/controllers/homepage_controller.rb:20:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2021-03-10 18:57:08 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 6918)
+Completed 200 OK in 99ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 18:57:13 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 11.6ms | Allocations: 6313)
+
+
+  
+Zip::EntryExistsError (add failed. Entry announcements.csv already exists):
+  
+app/controllers/homepage_controller.rb:18:in `block (4 levels) in index'
+app/controllers/homepage_controller.rb:13:in `each'
+app/controllers/homepage_controller.rb:13:in `block (3 levels) in index'
+app/controllers/homepage_controller.rb:12:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:03:18 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 6918)
+Completed 200 OK in 94ms (Views: 69.9ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 19:03:24 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 3685)
+
+
+  
+NameError (undefined local variable or method `filename' for #<HomepageController:0x0000000000be50>
+Did you mean?  filenames):
+  
+app/controllers/homepage_controller.rb:16:in `block (3 levels) in index'
+app/controllers/homepage_controller.rb:14:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 19:03:41 -0600
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (1.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 10.9ms | Allocations: 13607)
+
+
+  
+NameError (undefined local variable or method `zip' for #<HomepageController:0x0000000000bc70>):
+  
+app/controllers/homepage_controller.rb:22:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 19:04:16 -0600
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (1.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.2ms | Allocations: 49)
+Sent data  (9.9ms)
+Completed 500 Internal Server Error in 83ms (Views: 9.6ms | ActiveRecord: 7.3ms | Allocations: 13020)
+
+
+  
+NoMethodError (undefined method `close' for #<Zip::Entry:0x00007f5720161290 @local_header_offset=0, @local_header_size=51, @internal_file_attributes=1, @external_file_attributes=2176057344, @header_signature=33639248, @version_needed_to_extract=20, @version=52, @ftype=:file, @filepath=#<File:tmp/announcements.csv (closed)>, @gp_flags=0, @follow_symlinks=false, @restore_times=false, @restore_permissions=false, @restore_ownership=false, @unix_uid=1000, @unix_gid=1000, @unix_perms=436, @dirty=false, @fstype=3, @zipfile="database_dump.zip", @name="tmp/announcements.csv", @comment="", @extra={}, @compressed_size=97, @crc=22846448, @compression_method=8, @size=354, @time=2021-03-10 19:04:16 -0600>
+Did you mean?  clone):
+  
+app/controllers/homepage_controller.rb:23:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 19:04:52 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms | Allocations: 5492)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - database_dump.zip):
+  
+app/controllers/homepage_controller.rb:13:in `initialize'
+app/controllers/homepage_controller.rb:13:in `open'
+app/controllers/homepage_controller.rb:13:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 19:05:45 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (3.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.3ms | Allocations: 49)
+Sent data  (8.6ms)
+Completed 200 OK in 98ms (Views: 8.3ms | ActiveRecord: 21.8ms | Allocations: 11825)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:05:54 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 249)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 6871)
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 0.0ms | Allocations: 8821)
+
+
+Started GET "/index.csv" for 127.0.0.1 at 2021-03-10 19:06:00 -0600
+Processing by HomepageController#index as CSV
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 27)
+Sent data  (3.0ms)
+Completed 200 OK in 49ms (Views: 2.8ms | ActiveRecord: 0.8ms | Allocations: 2293)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:06:27 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 6918)
+Completed 200 OK in 83ms (Views: 58.2ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:06:32 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (2.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.2ms | Allocations: 32)
+Sent data  (3.1ms)
+Completed 200 OK in 80ms (Views: 2.9ms | ActiveRecord: 10.1ms | Allocations: 6476)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:09:04 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (1.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 14.1ms | Allocations: 10914)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_file_s_lstat - announcements.csv):
+  
+app/controllers/homepage_controller.rb:21:in `block (3 levels) in index'
+app/controllers/homepage_controller.rb:15:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:09:42 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (4.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (7.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 39.1ms | Allocations: 16587)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - announcements.csv):
+  
+app/controllers/homepage_controller.rb:15:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:09:45 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (5.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (2.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 8.4ms | Allocations: 3659)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - announcements.csv):
+  
+app/controllers/homepage_controller.rb:15:in `block (2 levels) in index'
+app/controllers/homepage_controller.rb:6:in `index'
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:10:12 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (5.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (3.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 49)
+Sent data  (5.5ms)
+Completed 200 OK in 176ms (Views: 5.2ms | ActiveRecord: 49.3ms | Allocations: 17722)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:10:17 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 249)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 6874)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.0ms | Allocations: 8842)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:10:23 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (2.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (4.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 26)
+Sent data  (5.8ms)
+Completed 200 OK in 72ms (Views: 5.6ms | ActiveRecord: 6.8ms | Allocations: 3540)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:11:34 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 6918)
+Completed 200 OK in 111ms (Views: 90.2ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:11:39 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (3.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 32)
+Sent data  (2.9ms)
+Completed 200 OK in 133ms (Views: 2.6ms | ActiveRecord: 17.8ms | Allocations: 12349)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:12:45 -0600
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 6920)
+Completed 200 OK in 76ms (Views: 56.3ms | ActiveRecord: 0.0ms | Allocations: 13817)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:12:50 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (2.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (4.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file database_dump.zip (28.0ms)
+Completed 200 OK in 142ms (ActiveRecord: 28.5ms | Allocations: 14789)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:15:30 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 6918)
+Completed 200 OK in 116ms (Views: 72.4ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:15:34 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (1.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file database_dump.zip (1.9ms)
+Completed 200 OK in 129ms (ActiveRecord: 20.0ms | Allocations: 13103)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:16:42 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 6918)
+Completed 200 OK in 108ms (Views: 69.1ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:16:48 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (1.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (2.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file database_dump.zip (1.4ms)
+Completed 200 OK in 131ms (ActiveRecord: 21.8ms | Allocations: 13104)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:17:07 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (1.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file database_dump.zip (0.2ms)
+Completed 200 OK in 67ms (ActiveRecord: 2.5ms | Allocations: 3400)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:19:00 -0600
+  [1m[35m (10.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.1ms | Allocations: 6918)
+Completed 200 OK in 134ms (Views: 73.5ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:19:07 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (1.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file database_dump.zip (1.6ms)
+Completed 200 OK in 138ms (ActiveRecord: 18.9ms | Allocations: 13102)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:20:10 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.6ms | Allocations: 6924)
+Completed 200 OK in 106ms (Views: 91.5ms | ActiveRecord: 0.0ms | Allocations: 13821)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:20:21 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (2.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (12.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file database_dump.zip (1.4ms)
+Completed 200 OK in 115ms (ActiveRecord: 30.3ms | Allocations: 13102)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:24:47 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 6918)
+Completed 200 OK in 62ms (Views: 49.2ms | ActiveRecord: 0.0ms | Allocations: 13815)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:24:52 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (9.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file tmp/database_dump.zip (1.5ms)
+Completed 200 OK in 130ms (ActiveRecord: 27.2ms | Allocations: 13112)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:27:09 -0600
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 823d8339bc17aea52438
+Version: webpack 4.46.0
+Time: 7024ms
+Built at: 03/10/2021 7:27:21 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-7e2abe69e113364b7138.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-7e2abe69e113364b7138.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-7e2abe69e113364b7138.js js/Index-7e2abe69e113364b7138.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11606.4ms | Allocations: 8315)
+Completed 200 OK in 11631ms (Views: 11609.5ms | ActiveRecord: 0.0ms | Allocations: 15212)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:27:31 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file tmp/database_dump.zip (1.6ms)
+Completed 200 OK in 98ms (ActiveRecord: 18.6ms | Allocations: 13100)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 19:31:22 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 576e40dfa2d81a4d9ba6
+Version: webpack 4.46.0
+Time: 5321ms
+Built at: 03/10/2021 7:31:30 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-1cac7d9bb8317918fc92.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-1cac7d9bb8317918fc92.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-1cac7d9bb8317918fc92.js js/Index-1cac7d9bb8317918fc92.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7762.1ms | Allocations: 8305)
+Completed 200 OK in 7798ms (Views: 7775.3ms | ActiveRecord: 0.0ms | Allocations: 15202)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 19:31:37 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (10.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file tmp/database_dump.zip (1.8ms)
+Completed 200 OK in 96ms (ActiveRecord: 24.5ms | Allocations: 13100)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:12:55 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: a990c0193ce61ae7ebe2
+Version: webpack 4.46.0
+Time: 7302ms
+Built at: 03/10/2021 8:13:06 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-30de31e085b80e3138db.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-30de31e085b80e3138db.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-30de31e085b80e3138db.js js/Index-30de31e085b80e3138db.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10577.6ms | Allocations: 8309)
+Completed 200 OK in 10643ms (Views: 10596.0ms | ActiveRecord: 0.0ms | Allocations: 15206)
+
+
+Started GET "/index.zip" for 127.0.0.1 at 2021-03-10 20:20:47 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index"}
+  [1m[36mAnnouncement Load (1.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (6.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file tmp/database_dump.zip (2.8ms)
+Completed 200 OK in 115ms (ActiveRecord: 20.5ms | Allocations: 17790)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:20:52 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 261)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 743375cd42182a11547d
+Version: webpack 4.46.0
+Time: 6546ms
+Built at: 03/10/2021 8:21:01 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-de65427d385d0261f30d.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-de65427d385d0261f30d.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-de65427d385d0261f30d.js js/Index-de65427d385d0261f30d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9290.9ms | Allocations: 8279)
+Completed 200 OK in 9302ms (Views: 9300.1ms | ActiveRecord: 0.0ms | Allocations: 10771)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:21:07 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4467)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 4968)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:21:09 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 4467)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 4978)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:22:02 -0600
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 749d61eb050af8fc3b66
+Version: webpack 4.46.0
+Time: 6532ms
+Built at: 03/10/2021 8:22:11 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-55803a6a7aa4311a76fe.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-55803a6a7aa4311a76fe.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-55803a6a7aa4311a76fe.js js/Index-55803a6a7aa4311a76fe.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8639.8ms | Allocations: 8304)
+Completed 200 OK in 8684ms (Views: 8648.4ms | ActiveRecord: 0.0ms | Allocations: 15201)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:22:16 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 4467)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 4982)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:22:34 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 15e9649da7347f6c992a
+Version: webpack 4.46.0
+Time: 5920ms
+Built at: 03/10/2021 8:22:43 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-06152572884fdcbf1927.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-06152572884fdcbf1927.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-06152572884fdcbf1927.js js/Index-06152572884fdcbf1927.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8995.6ms | Allocations: 8304)
+Completed 200 OK in 9036ms (Views: 9006.3ms | ActiveRecord: 0.0ms | Allocations: 15203)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:22:50 -0600
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 4467)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 4982)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:23:30 -0600
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 6474d09d59dae3987ae0
+Version: webpack 4.46.0
+Time: 6409ms
+Built at: 03/10/2021 8:23:39 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-5521bad318850e8acc18.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-5521bad318850e8acc18.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-5521bad318850e8acc18.js js/Index-5521bad318850e8acc18.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8915.7ms | Allocations: 8307)
+Completed 200 OK in 8978ms (Views: 8927.6ms | ActiveRecord: 0.0ms | Allocations: 15204)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-10 20:23:43 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (1.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file tmp/database_dump.zip (1.3ms)
+Completed 200 OK in 96ms (ActiveRecord: 19.8ms | Allocations: 13100)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:24:13 -0600
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: dc8568dba1abb96f250c
+Version: webpack 4.46.0
+Time: 5910ms
+Built at: 03/10/2021 8:24:21 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-41bfff5cfa2b7188a8bf.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-41bfff5cfa2b7188a8bf.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-41bfff5cfa2b7188a8bf.js js/Index-41bfff5cfa2b7188a8bf.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8054.5ms | Allocations: 8304)
+Completed 200 OK in 8104ms (Views: 8069.5ms | ActiveRecord: 0.0ms | Allocations: 15201)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-10 20:24:24 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (11.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (5.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file tmp/database_dump.zip (1.7ms)
+Completed 200 OK in 116ms (ActiveRecord: 34.3ms | Allocations: 13100)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:25:17 -0600
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: fba62d818053244e2b33
+Version: webpack 4.46.0
+Time: 5832ms
+Built at: 03/10/2021 8:25:26 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-08a509adb033e59e6cec.js    2.7 MiB        Index  [emitted] [immutable]  Index
+      js/Index-08a509adb033e59e6cec.js.map   2.94 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-08a509adb033e59e6cec.js js/Index-08a509adb033e59e6cec.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 53 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8333.5ms | Allocations: 8306)
+Completed 200 OK in 8370ms (Views: 8345.4ms | ActiveRecord: 0.0ms | Allocations: 15203)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-10 20:25:28 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (2.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file tmp/database_dump.zip (1.6ms)
+Completed 200 OK in 103ms (ActiveRecord: 32.9ms | Allocations: 13079)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-10 20:25:51 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (0.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (4.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+Sent file tmp/database_dump.zip (0.2ms)
+Completed 200 OK in 48ms (ActiveRecord: 5.6ms | Allocations: 3419)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-10 20:44:44 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 6918)
+Completed 200 OK in 119ms (Views: 67.2ms | ActiveRecord: 0.0ms | Allocations: 20430)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-10 20:44:46 -0600
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (1.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements"[0m
+  ↳ app/models/announcement.rb:10:in `block in to_csv'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/models/event.rb:11:in `block in to_csv'
+  [1m[36mAttendee Load (6.8ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees"[0m
+  ↳ app/models/attendee.rb:12:in `block in to_csv'
+  [1m[36mMember Load (5.7ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/models/member.rb:12:in `block in to_csv'
+  [1m[36mRole Load (6.7ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  ↳ app/models/role.rb:9:in `block in to_csv'
+  [1m[36mEventattendance Load (4.6ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances"[0m
+  ↳ app/models/eventattendance.rb:10:in `block in to_csv'
+  [1m[36mReferral Load (9.1ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals"[0m
+  ↳ app/models/referral.rb:10:in `block in to_csv'
+Sent file tmp/database_dump.zip (3.9ms)
+Completed 200 OK in 219ms (ActiveRecord: 62.3ms | Allocations: 23538)
+
+

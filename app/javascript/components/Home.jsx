@@ -14,6 +14,9 @@ export default () => (
         <LinkButton to = "/events" text = "Events"></LinkButton>
         <LinkButton to = "/announcements" text = "Announcements"></LinkButton>
         <LinkButton to = "/CheckIn" text = "Check In"></LinkButton>
+        <a href="index/database_dump.zip" download = "database_dump.zip">
+          <button class = "btn btn-lg custom-button">Download Database</button>
+        </a>
       </div>
     </div>
   </div>
