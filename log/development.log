@@ -858,3 +858,2639 @@ Processing by Api::V1::EventsController#index as */*
 Completed 200 OK in 116ms (Views: 52.6ms | ActiveRecord: 44.7ms | Allocations: 10277)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-12 20:25:30 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 381)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: dd22d7e3be19a2b6ac2e
+Version: webpack 4.46.0
+Time: 17972ms
+Built at: 03/12/2021 8:25:53 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-01bcc859c4b0cec0275c.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-01bcc859c4b0cec0275c.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-01bcc859c4b0cec0275c.js js/Index-01bcc859c4b0cec0275c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22515.0ms | Allocations: 21370)
+Completed 200 OK in 22593ms (Views: 22538.6ms | ActiveRecord: 0.0ms | Allocations: 25527)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-12 20:28:09 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 4093c608e162dcce106e
+Version: webpack 4.46.0
+Time: 4566ms
+Built at: 03/12/2021 8:28:16 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-57c20e8b2d265df5aa59.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-57c20e8b2d265df5aa59.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-57c20e8b2d265df5aa59.js js/Index-57c20e8b2d265df5aa59.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6546.1ms | Allocations: 5814)
+Completed 200 OK in 6552ms (Views: 6548.4ms | ActiveRecord: 0.0ms | Allocations: 6263)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-12 20:28:47 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: aa554979be20c9a96ce7
+Version: webpack 4.46.0
+Time: 4486ms
+Built at: 03/12/2021 8:28:53 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-6b70c1272aef5f3843cb.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-6b70c1272aef5f3843cb.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-6b70c1272aef5f3843cb.js js/Index-6b70c1272aef5f3843cb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6017.8ms | Allocations: 5792)
+Completed 200 OK in 6021ms (Views: 6020.6ms | ActiveRecord: 0.0ms | Allocations: 6232)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-12 20:29:09 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 892a15dbbd12434bda78
+Version: webpack 4.46.0
+Time: 4602ms
+Built at: 03/12/2021 8:29:15 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-97da40c476cdd9ef449b.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-97da40c476cdd9ef449b.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-97da40c476cdd9ef449b.js js/Index-97da40c476cdd9ef449b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6103.1ms | Allocations: 5861)
+Completed 200 OK in 6106ms (Views: 6105.7ms | ActiveRecord: 0.0ms | Allocations: 6306)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-12 20:31:26 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: f3c1d22e1523e490d6c3
+Version: webpack 4.46.0
+Time: 6452ms
+Built at: 03/12/2021 8:31:37 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-c062d23f256cf9b572cc.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-c062d23f256cf9b572cc.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-c062d23f256cf9b572cc.js js/Index-c062d23f256cf9b572cc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10829.1ms | Allocations: 5825)
+Completed 200 OK in 10831ms (Views: 10829.8ms | Allocations: 6265)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:17:38 -0500
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 88.8ms | Allocations: 12629)
+Completed 200 OK in 104ms (Views: 93.5ms | ActiveRecord: 0.0ms | Allocations: 15777)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:18:57 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 9efa5d004ab723228949
+Version: webpack 4.46.0
+Time: 10605ms
+Built at: 03/13/2021 12:19:14 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-beb8372449657eb9a8b8.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-beb8372449657eb9a8b8.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-beb8372449657eb9a8b8.js js/Index-beb8372449657eb9a8b8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16518.3ms | Allocations: 5889)
+Completed 200 OK in 16525ms (Views: 16520.1ms | ActiveRecord: 0.0ms | Allocations: 6337)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:20:22 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: af073c71a42241e5e6ed
+Version: webpack 4.46.0
+Time: 6119ms
+Built at: 03/13/2021 12:20:31 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-218c43f85520d2c67c14.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-218c43f85520d2c67c14.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-218c43f85520d2c67c14.js js/Index-218c43f85520d2c67c14.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9814.1ms | Allocations: 5800)
+Completed 200 OK in 9817ms (Views: 9815.1ms | ActiveRecord: 0.0ms | Allocations: 6240)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:21:32 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 6d375bebbb0f10434fa9
+Version: webpack 4.46.0
+Time: 4840ms
+Built at: 03/13/2021 12:21:38 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-9bcd3241946106e15a93.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-9bcd3241946106e15a93.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-9bcd3241946106e15a93.js js/Index-9bcd3241946106e15a93.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6436.2ms | Allocations: 5790)
+Completed 200 OK in 6452ms (Views: 6439.1ms | ActiveRecord: 0.0ms | Allocations: 6230)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:22:05 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: bb347d0c052fdb408c46
+Version: webpack 4.46.0
+Time: 4632ms
+Built at: 03/13/2021 12:22:11 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-c3ccec6c478eb91b5c42.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-c3ccec6c478eb91b5c42.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-c3ccec6c478eb91b5c42.js js/Index-c3ccec6c478eb91b5c42.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6329.9ms | Allocations: 5790)
+Completed 200 OK in 6334ms (Views: 6332.6ms | ActiveRecord: 0.0ms | Allocations: 6230)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:22:44 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 7715)
+Completed 200 OK in 64ms (Views: 63.7ms | ActiveRecord: 0.0ms | Allocations: 8155)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:23:05 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 0a0c3907e528ba1bf22d
+Version: webpack 4.46.0
+Time: 4266ms
+Built at: 03/13/2021 12:23:11 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-1a108622cc10e687bb60.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-1a108622cc10e687bb60.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-1a108622cc10e687bb60.js js/Index-1a108622cc10e687bb60.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6023.7ms | Allocations: 5791)
+Completed 200 OK in 6028ms (Views: 6026.6ms | ActiveRecord: 0.0ms | Allocations: 6236)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:23:40 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: a9a3007fcbfd74798ed8
+Version: webpack 4.46.0
+Time: 4532ms
+Built at: 03/13/2021 12:23:46 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-0eaf3fd2346b4b10dc49.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-0eaf3fd2346b4b10dc49.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-0eaf3fd2346b4b10dc49.js js/Index-0eaf3fd2346b4b10dc49.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6210.9ms | Allocations: 5799)
+Completed 200 OK in 6224ms (Views: 6222.3ms | Allocations: 6241)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:24:12 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: b6c08b3ebdfa7f69c2e9
+Version: webpack 4.46.0
+Time: 4476ms
+Built at: 03/13/2021 12:24:18 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-76472852d7ec76f3c76c.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-76472852d7ec76f3c76c.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-76472852d7ec76f3c76c.js js/Index-76472852d7ec76f3c76c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6150.7ms | Allocations: 5791)
+Completed 200 OK in 6158ms (Views: 6156.5ms | Allocations: 6233)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:24:29 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: c29e95e111571a3a6850
+Version: webpack 4.46.0
+Time: 4541ms
+Built at: 03/13/2021 12:24:35 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-326869238c4895bc8ede.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-326869238c4895bc8ede.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-326869238c4895bc8ede.js js/Index-326869238c4895bc8ede.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6050.9ms | Allocations: 5790)
+Completed 200 OK in 6054ms (Views: 6052.3ms | Allocations: 6227)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:26:52 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: a4a33dfe895827bdcf03
+Version: webpack 4.46.0
+Time: 4846ms
+Built at: 03/13/2021 12:26:58 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-dd836ba27b3216fdecbe.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-dd836ba27b3216fdecbe.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-dd836ba27b3216fdecbe.js js/Index-dd836ba27b3216fdecbe.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6406.5ms | Allocations: 9942)
+Completed 200 OK in 6415ms (Views: 6410.6ms | Allocations: 10379)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:27:33 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 8b158a3c3ae9753d19f6
+Version: webpack 4.46.0
+Time: 5139ms
+Built at: 03/13/2021 12:27:39 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-f1fb67709ad5c6165376.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-f1fb67709ad5c6165376.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-f1fb67709ad5c6165376.js js/Index-f1fb67709ad5c6165376.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6676.5ms | Allocations: 9058)
+Completed 200 OK in 6687ms (Views: 6681.9ms | Allocations: 9495)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:27:48 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 4466)
+Completed 200 OK in 68ms (Views: 56.0ms | Allocations: 4903)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:28:13 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 132.9ms | Allocations: 8196)
+Completed 200 OK in 143ms (Views: 141.5ms | Allocations: 8633)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:28:41 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 172f0782dc4643fd9bd6
+Version: webpack 4.46.0
+Time: 7242ms
+Built at: 03/13/2021 12:28:50 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-dba79fe4bf854b58ce4a.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-dba79fe4bf854b58ce4a.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-dba79fe4bf854b58ce4a.js js/Index-dba79fe4bf854b58ce4a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9179.4ms | Allocations: 9063)
+Completed 200 OK in 9191ms (Views: 9180.7ms | Allocations: 9500)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:29:01 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 7722)
+Completed 200 OK in 59ms (Views: 56.9ms | Allocations: 8159)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:29:20 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 7722)
+Completed 200 OK in 52ms (Views: 51.0ms | Allocations: 8159)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:29:57 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.9ms | Allocations: 8185)
+Completed 200 OK in 74ms (Views: 71.1ms | Allocations: 8622)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:30:10 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.7ms | Allocations: 8148)
+Completed 200 OK in 79ms (Views: 77.7ms | Allocations: 8585)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:32:09 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 18414e369cbfd476d7f0
+Version: webpack 4.46.0
+Time: 5084ms
+Built at: 03/13/2021 12:32:15 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-4575c71b42c15be33d32.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-4575c71b42c15be33d32.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-4575c71b42c15be33d32.js js/Index-4575c71b42c15be33d32.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6699.7ms | Allocations: 9046)
+Completed 200 OK in 6734ms (Views: 6728.4ms | Allocations: 9483)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:33:01 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 056244c35eb1eb8c1482
+Version: webpack 4.46.0
+Time: 6568ms
+Built at: 03/13/2021 12:33:09 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-43f64f395fd2d1a4161f.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-43f64f395fd2d1a4161f.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-43f64f395fd2d1a4161f.js js/Index-43f64f395fd2d1a4161f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8491.0ms | Allocations: 5797)
+Completed 200 OK in 8498ms (Views: 8495.5ms | Allocations: 6234)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:33:26 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 8fbef40f9a2dcc6aea6b
+Version: webpack 4.46.0
+Time: 4734ms
+Built at: 03/13/2021 12:33:32 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-10ea8b5329282694cacd.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-10ea8b5329282694cacd.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-10ea8b5329282694cacd.js js/Index-10ea8b5329282694cacd.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6224.1ms | Allocations: 5855)
+Completed 200 OK in 6229ms (Views: 6226.0ms | Allocations: 6292)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:33:57 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 46898d5a96ac224d1762
+Version: webpack 4.46.0
+Time: 4912ms
+Built at: 03/13/2021 12:34:03 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-4892b0cc488a97d3395b.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-4892b0cc488a97d3395b.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-4892b0cc488a97d3395b.js js/Index-4892b0cc488a97d3395b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6464.3ms | Allocations: 5793)
+Completed 200 OK in 6481ms (Views: 6480.1ms | Allocations: 6230)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:34:38 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 4f6647af74d03c81fc3d
+Version: webpack 4.46.0
+Time: 4825ms
+Built at: 03/13/2021 12:34:45 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-3b106ba0696391020853.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-3b106ba0696391020853.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-3b106ba0696391020853.js js/Index-3b106ba0696391020853.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6440.4ms | Allocations: 5793)
+Completed 200 OK in 6444ms (Views: 6442.1ms | Allocations: 6230)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:37:26 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 55854b0763d9614c7ea5
+Version: webpack 4.46.0
+Time: 4641ms
+Built at: 03/13/2021 12:37:33 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-942b1396c73b0cb3c2ab.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-942b1396c73b0cb3c2ab.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-942b1396c73b0cb3c2ab.js js/Index-942b1396c73b0cb3c2ab.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6437.1ms | Allocations: 9902)
+Completed 200 OK in 6444ms (Views: 6439.4ms | Allocations: 10339)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:41:02 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 33dc3c3326989c140869
+Version: webpack 4.46.0
+Time: 4710ms
+Built at: 03/13/2021 12:41:08 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-024eab87804289d89bd5.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-024eab87804289d89bd5.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-024eab87804289d89bd5.js js/Index-024eab87804289d89bd5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6369.0ms | Allocations: 5790)
+Completed 200 OK in 6372ms (Views: 6371.4ms | Allocations: 6227)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:42:34 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.8ms | Allocations: 7730)
+Completed 200 OK in 90ms (Views: 79.9ms | Allocations: 8167)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:43:06 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 7730)
+Completed 200 OK in 46ms (Views: 45.0ms | Allocations: 8167)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:43:52 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 55854b0763d9614c7ea5
+Version: webpack 4.46.0
+Time: 5093ms
+Built at: 03/13/2021 12:43:58 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-942b1396c73b0cb3c2ab.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-942b1396c73b0cb3c2ab.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-942b1396c73b0cb3c2ab.js js/Index-942b1396c73b0cb3c2ab.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6690.1ms | Allocations: 9050)
+Completed 200 OK in 6692ms (Views: 6690.9ms | Allocations: 9487)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:46:48 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.7ms | Allocations: 8234)
+Completed 200 OK in 80ms (Views: 78.7ms | Allocations: 8671)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:49:02 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 8609)
+Completed 200 OK in 59ms (Views: 58.5ms | Allocations: 9046)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:52:18 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 9e722b61e1c19cdc7824
+Version: webpack 4.46.0
+Time: 10511ms
+Built at: 03/13/2021 12:52:36 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-47f2c54ecee942d2d02d.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-47f2c54ecee942d2d02d.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-47f2c54ecee942d2d02d.js js/Index-47f2c54ecee942d2d02d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18046.9ms | Allocations: 9550)
+Completed 200 OK in 18052ms (Views: 18050.9ms | Allocations: 9987)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:53:13 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 64d05b5310bda2d41045
+Version: webpack 4.46.0
+Time: 5612ms
+Built at: 03/13/2021 12:53:22 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-8af9e421a287f7b4be47.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-8af9e421a287f7b4be47.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-8af9e421a287f7b4be47.js js/Index-8af9e421a287f7b4be47.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9153.6ms | Allocations: 5799)
+Completed 200 OK in 9162ms (Views: 9156.7ms | Allocations: 6236)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:55:06 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 8232)
+Completed 200 OK in 59ms (Views: 57.8ms | Allocations: 8669)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:55:41 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 7737)
+Completed 200 OK in 63ms (Views: 59.6ms | Allocations: 8174)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:55:48 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 7736)
+Completed 200 OK in 52ms (Views: 38.7ms | Allocations: 8173)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:56:08 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: e7e4e9354cff8bc0b9a1
+Version: webpack 4.46.0
+Time: 5090ms
+Built at: 03/13/2021 12:56:15 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-a30c11d7bfc5aa46212c.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-a30c11d7bfc5aa46212c.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-a30c11d7bfc5aa46212c.js js/Index-a30c11d7bfc5aa46212c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6726.8ms | Allocations: 5859)
+Completed 200 OK in 6732ms (Views: 6728.1ms | Allocations: 6296)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:56:32 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 5e0cffa50ed205313d9b
+Version: webpack 4.46.0
+Time: 5127ms
+Built at: 03/13/2021 12:56:39 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-421947fb6984f2df5b39.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-421947fb6984f2df5b39.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-421947fb6984f2df5b39.js js/Index-421947fb6984f2df5b39.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7086.4ms | Allocations: 5893)
+Completed 200 OK in 7088ms (Views: 7087.3ms | Allocations: 6330)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:57:27 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 588dd2885cc5abf719da
+Version: webpack 4.46.0
+Time: 5149ms
+Built at: 03/13/2021 12:57:33 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-3023c10c3bbf792f8ae6.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-3023c10c3bbf792f8ae6.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-3023c10c3bbf792f8ae6.js js/Index-3023c10c3bbf792f8ae6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6605.7ms | Allocations: 5797)
+Completed 200 OK in 6611ms (Views: 6610.0ms | Allocations: 6234)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:57:44 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 982e109452608489b1e1
+Version: webpack 4.46.0
+Time: 4594ms
+Built at: 03/13/2021 12:57:51 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-82854ce9cc1d8e00691b.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-82854ce9cc1d8e00691b.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-82854ce9cc1d8e00691b.js js/Index-82854ce9cc1d8e00691b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6397.5ms | Allocations: 5797)
+Completed 200 OK in 6402ms (Views: 6398.9ms | Allocations: 6234)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:58:08 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 705c50acd14f889620e0
+Version: webpack 4.46.0
+Time: 4586ms
+Built at: 03/13/2021 12:58:14 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-ebc3573ce65caba5fc24.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-ebc3573ce65caba5fc24.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-ebc3573ce65caba5fc24.js js/Index-ebc3573ce65caba5fc24.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6219.1ms | Allocations: 5858)
+Completed 200 OK in 6228ms (Views: 6227.3ms | Allocations: 6295)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 00:59:01 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 58f28777cc7f36b797bc
+Version: webpack 4.46.0
+Time: 4852ms
+Built at: 03/13/2021 12:59:08 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-8123c26e4571c24113c2.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-8123c26e4571c24113c2.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-8123c26e4571c24113c2.js js/Index-8123c26e4571c24113c2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6852.3ms | Allocations: 5795)
+Completed 200 OK in 6854ms (Views: 6853.0ms | Allocations: 6232)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:03:24 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: a65d9548b2c58c4a1d11
+Version: webpack 4.46.0
+Time: 11375ms
+Built at: 03/13/2021 1:03:41 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-5f2ab3c019f3f26ac201.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-5f2ab3c019f3f26ac201.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-5f2ab3c019f3f26ac201.js js/Index-5f2ab3c019f3f26ac201.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17604.3ms | Allocations: 9112)
+Completed 200 OK in 17612ms (Views: 17607.9ms | Allocations: 9549)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:04:38 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 8187)
+Completed 200 OK in 53ms (Views: 52.1ms | Allocations: 8624)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:06:45 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 0e974319601f7ef17c1e
+Version: webpack 4.46.0
+Time: 10580ms
+Built at: 03/13/2021 1:07:03 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-862b95061c26c9490d73.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-862b95061c26c9490d73.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-862b95061c26c9490d73.js js/Index-862b95061c26c9490d73.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17826.1ms | Allocations: 9104)
+Completed 200 OK in 17835ms (Views: 17828.5ms | Allocations: 9541)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:07:39 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 107.2ms | Allocations: 8183)
+Completed 200 OK in 109ms (Views: 107.9ms | Allocations: 8620)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:08:33 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 127.8ms | Allocations: 8259)
+Completed 200 OK in 146ms (Views: 129.1ms | Allocations: 8696)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:10:38 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 108.6ms | Allocations: 8193)
+Completed 200 OK in 127ms (Views: 111.9ms | Allocations: 8630)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:20:30 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 15e02dcd9880180671fe
+Version: webpack 4.46.0
+Time: 6992ms
+Built at: 03/13/2021 1:20:40 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-cdc1934fb5aeefc14c5c.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-cdc1934fb5aeefc14c5c.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-cdc1934fb5aeefc14c5c.js js/Index-cdc1934fb5aeefc14c5c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10286.6ms | Allocations: 10443)
+Completed 200 OK in 10295ms (Views: 10291.1ms | Allocations: 10880)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:21:20 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 8237)
+Completed 200 OK in 40ms (Views: 38.5ms | Allocations: 8674)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:23:03 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 8236)
+Completed 200 OK in 41ms (Views: 39.6ms | Allocations: 8673)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:24:22 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: fa4cab957c373caf5219
+Version: webpack 4.46.0
+Time: 4259ms
+Built at: 03/13/2021 1:24:28 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-61b30a2f756c4c3c9ff2.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-61b30a2f756c4c3c9ff2.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-61b30a2f756c4c3c9ff2.js js/Index-61b30a2f756c4c3c9ff2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5608.9ms | Allocations: 10004)
+Completed 200 OK in 5612ms (Views: 5610.5ms | Allocations: 10441)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:24:40 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 9164)
+Completed 200 OK in 24ms (Views: 23.1ms | Allocations: 9601)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:26:33 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: bd2abea135a9a9aa0c87
+Version: webpack 4.46.0
+Time: 4225ms
+Built at: 03/13/2021 1:26:39 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-f71b4fcb95d20d15733a.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-f71b4fcb95d20d15733a.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-f71b4fcb95d20d15733a.js js/Index-f71b4fcb95d20d15733a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5577.1ms | Allocations: 9090)
+Completed 200 OK in 5580ms (Views: 5577.9ms | Allocations: 9527)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:27:24 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 9099)
+Completed 200 OK in 28ms (Views: 27.9ms | Allocations: 9536)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:27:34 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 8251)
+Completed 200 OK in 20ms (Views: 19.2ms | Allocations: 8688)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:27:58 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 7772)
+Completed 200 OK in 50ms (Views: 49.8ms | Allocations: 8209)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:28:51 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 7773)
+Completed 200 OK in 27ms (Views: 26.2ms | Allocations: 8210)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:29:43 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: ce5356db306004f817ad
+Version: webpack 4.46.0
+Time: 4384ms
+Built at: 03/13/2021 1:29:49 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-061d5177724ac566104d.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-061d5177724ac566104d.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-061d5177724ac566104d.js js/Index-061d5177724ac566104d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5868.5ms | Allocations: 5790)
+Completed 200 OK in 5872ms (Views: 5871.5ms | Allocations: 6227)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:30:53 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 8212)
+Completed 200 OK in 32ms (Views: 31.2ms | Allocations: 8649)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:31:14 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 8215)
+Completed 200 OK in 27ms (Views: 26.2ms | Allocations: 8652)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:31:32 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 7789)
+Completed 200 OK in 31ms (Views: 30.2ms | Allocations: 8226)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:32:56 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: e60951af098727007b00
+Version: webpack 4.46.0
+Time: 4558ms
+Built at: 03/13/2021 1:33:03 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-be3b63d25258dcda3282.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-be3b63d25258dcda3282.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-be3b63d25258dcda3282.js js/Index-be3b63d25258dcda3282.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6455.2ms | Allocations: 10005)
+Completed 200 OK in 6460ms (Views: 6459.0ms | Allocations: 10442)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:33:17 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 7789)
+Completed 200 OK in 37ms (Views: 36.5ms | Allocations: 8226)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:33:39 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 8746)
+Completed 200 OK in 43ms (Views: 42.1ms | Allocations: 9183)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:34:01 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 8224)
+Completed 200 OK in 26ms (Views: 25.3ms | Allocations: 8661)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:34:29 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 8678)
+Completed 200 OK in 51ms (Views: 50.5ms | Allocations: 9115)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:34:42 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 9623)
+Completed 200 OK in 34ms (Views: 32.1ms | Allocations: 10060)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:34:57 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 8638)
+Completed 200 OK in 30ms (Views: 29.1ms | Allocations: 9075)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:35:13 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 8714)
+Completed 200 OK in 53ms (Views: 52.2ms | Allocations: 9151)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:41:24 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 7dcae88db6ee878094f0
+Version: webpack 4.46.0
+Time: 6369ms
+Built at: 03/13/2021 1:41:34 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-e73b606fa9bc2bc219e1.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-e73b606fa9bc2bc219e1.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-e73b606fa9bc2bc219e1.js js/Index-e73b606fa9bc2bc219e1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10003.2ms | Allocations: 5800)
+Completed 200 OK in 10008ms (Views: 10004.8ms | Allocations: 6237)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:42:07 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 504df2c9577bfd3366bb
+Version: webpack 4.46.0
+Time: 4693ms
+Built at: 03/13/2021 1:42:13 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-49561c1c4853983da914.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-49561c1c4853983da914.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-49561c1c4853983da914.js js/Index-49561c1c4853983da914.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6099.8ms | Allocations: 5789)
+Completed 200 OK in 6103ms (Views: 6101.1ms | Allocations: 6226)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:42:35 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 092f12a511fe2e388bfb
+Version: webpack 4.46.0
+Time: 4236ms
+Built at: 03/13/2021 1:42:41 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-e37fd3670812b156d64e.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-e37fd3670812b156d64e.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-e37fd3670812b156d64e.js js/Index-e37fd3670812b156d64e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5630.5ms | Allocations: 5794)
+Completed 200 OK in 5632ms (Views: 5631.2ms | Allocations: 6231)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:43:12 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 504df2c9577bfd3366bb
+Version: webpack 4.46.0
+Time: 4174ms
+Built at: 03/13/2021 1:43:18 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-49561c1c4853983da914.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-49561c1c4853983da914.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-49561c1c4853983da914.js js/Index-49561c1c4853983da914.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5562.8ms | Allocations: 5796)
+Completed 200 OK in 5566ms (Views: 5565.5ms | Allocations: 6233)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:44:04 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 3aa59b564650d291104a
+Version: webpack 4.46.0
+Time: 4168ms
+Built at: 03/13/2021 1:44:10 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-fb2744f1e901123333c2.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-fb2744f1e901123333c2.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-fb2744f1e901123333c2.js js/Index-fb2744f1e901123333c2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5646.0ms | Allocations: 5793)
+Completed 200 OK in 5652ms (Views: 5648.5ms | Allocations: 6230)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:44:39 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.3ms | Allocations: 8253)
+Completed 200 OK in 60ms (Views: 59.0ms | Allocations: 8690)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:45:43 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 8217)
+Completed 200 OK in 24ms (Views: 23.2ms | Allocations: 8654)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:48:46 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 71cea6436a6d4ba1b7dd
+Version: webpack 4.46.0
+Time: 5236ms
+Built at: 03/13/2021 1:48:53 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-3ddce9f4ceaad893687c.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-3ddce9f4ceaad893687c.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-3ddce9f4ceaad893687c.js js/Index-3ddce9f4ceaad893687c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 61 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6850.5ms | Allocations: 10909)
+Completed 200 OK in 6853ms (Views: 6851.9ms | Allocations: 11346)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:50:17 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 9195)
+Completed 200 OK in 63ms (Views: 61.8ms | Allocations: 9632)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:51:06 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.5ms | Allocations: 8283)
+Completed 200 OK in 69ms (Views: 68.5ms | Allocations: 8720)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-13 01:52:34 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (17.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:4:in `index'
+Completed 200 OK in 1027ms (Views: 227.0ms | ActiveRecord: 302.2ms | Allocations: 13475)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-13 01:52:44 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (7.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:4:in `index'
+Completed 200 OK in 145ms (Views: 37.6ms | ActiveRecord: 13.5ms | Allocations: 6970)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:53:13 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 8267)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.0ms | Allocations: 8707)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:57:52 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 745ee3aa9798d6a0cfb1
+Version: webpack 4.46.0
+Time: 4409ms
+Built at: 03/13/2021 1:57:58 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-dcc1acff13a4075e4ece.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-dcc1acff13a4075e4ece.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-dcc1acff13a4075e4ece.js js/Index-dcc1acff13a4075e4ece.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 62 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5928.9ms | Allocations: 5934)
+Completed 200 OK in 5933ms (Views: 5932.3ms | ActiveRecord: 0.0ms | Allocations: 6374)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 01:59:01 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: b60439862e5d02d5d515
+Version: webpack 4.46.0
+Time: 4172ms
+Built at: 03/13/2021 1:59:06 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-9893f350c778e4c32eb7.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-9893f350c778e4c32eb7.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-9893f350c778e4c32eb7.js js/Index-9893f350c778e4c32eb7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 63 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5575.3ms | Allocations: 5941)
+Completed 200 OK in 5579ms (Views: 5576.2ms | Allocations: 6378)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:01:34 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 1f6b3a544206b21030c9
+Version: webpack 4.46.0
+Time: 4127ms
+Built at: 03/13/2021 2:01:40 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-1265e3402000e476e1e9.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-1265e3402000e476e1e9.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-1265e3402000e476e1e9.js js/Index-1265e3402000e476e1e9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 63 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5636.4ms | Allocations: 5946)
+Completed 200 OK in 5639ms (Views: 5637.2ms | Allocations: 6383)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:05:32 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 430da241de1dedb29d69
+Version: webpack 4.46.0
+Time: 4079ms
+Built at: 03/13/2021 2:05:37 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-11eca67039d0102a28a9.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-11eca67039d0102a28a9.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-11eca67039d0102a28a9.js js/Index-11eca67039d0102a28a9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 63 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5579.7ms | Allocations: 5940)
+Completed 200 OK in 5582ms (Views: 5581.4ms | Allocations: 6377)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:06:11 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 7906)
+Completed 200 OK in 25ms (Views: 24.7ms | Allocations: 8343)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:06:43 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 10568)
+Completed 200 OK in 61ms (Views: 59.9ms | Allocations: 11005)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:08:57 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 7e6193c6138033b39bce
+Version: webpack 4.46.0
+Time: 3919ms
+Built at: 03/13/2021 2:09:03 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-5e3bf134a38c16d0a17a.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-5e3bf134a38c16d0a17a.js.map   2.99 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-5e3bf134a38c16d0a17a.js js/Index-5e3bf134a38c16d0a17a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 60 hidden modules
+
+ERROR in ./app/javascript/components/Home.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/ubuntu/Documents/MSCFISHProgramAssistant/app/javascript/components/Home.jsx: Expected corresponding JSX closing tag for <p> (42:8)
+
+  40 |             <EventsView></EventsView>
+  41 |           </div>
+> 42 |         </div> 
+     |         ^
+  43 |           
+  44 |         </p>
+  45 |         <hr className="my-4" />
+    at Object._raise (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:776:17)
+    at Object.raiseWithData (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:769:17)
+    at Object.raise (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:737:17)
+    at Object.jsxParseElementAt (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5139:16)
+    at Object.jsxParseElementAt (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5107:32)
+    at Object.jsxParseElementAt (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5107:32)
+    at Object.jsxParseElementAt (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5107:32)
+    at Object.jsxParseElement (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5165:17)
+    at Object.parseExprAtom (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5172:19)
+    at Object.parseExprSubscripts (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10644:23)
+    at Object.parseUpdate (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10624:21)
+    at Object.parseMaybeUnary (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10602:23)
+    at Object.parseExprOps (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10463:23)
+    at Object.parseMaybeConditional (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10437:23)
+    at Object.parseMaybeAssign (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10400:21)
+    at /home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10367:39
+    at Object.allowInAnd (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:12043:12)
+    at Object.parseMaybeAssignAllowIn (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10367:17)
+    at Object.parseParenAndDistinguishExpression (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:11246:28)
+    at Object.parseExprAtom (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10964:21)
+    at Object.parseExprAtom (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5177:20)
+    at Object.parseExprSubscripts (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10644:23)
+    at Object.parseUpdate (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10624:21)
+    at Object.parseMaybeUnary (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10602:23)
+    at Object.parseExprOps (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10463:23)
+    at Object.parseMaybeConditional (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10437:23)
+    at Object.parseMaybeAssign (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10400:21)
+    at Object.parseFunctionBody (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:11708:24)
+    at Object.parseArrowExpression (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:11687:10)
+    at Object.parseParenAndDistinguishExpression (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:11260:12)
+ @ ./app/javascript/routes/Index.jsx 4:0-38 29:13-17
+ @ ./app/javascript/components/App.jsx
+ @ ./app/javascript/packs/Index.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5358.2ms | Allocations: 5866)
+Completed 200 OK in 5361ms (Views: 5360.7ms | Allocations: 6303)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:10:17 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e4c9d7570014182eb217
+Version: webpack 4.46.0
+Time: 3985ms
+Built at: 03/13/2021 2:10:23 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-082b926969250c46d51d.js   2.76 MiB        Index  [emitted] [immutable]  Index
+      js/Index-082b926969250c46d51d.js.map   2.99 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-082b926969250c46d51d.js js/Index-082b926969250c46d51d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 60 hidden modules
+
+ERROR in ./app/javascript/components/Home.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/ubuntu/Documents/MSCFISHProgramAssistant/app/javascript/components/Home.jsx: Expected corresponding JSX closing tag for <p> (42:8)
+
+  40 |             <EventsView></EventsView>
+  41 |           </div>
+> 42 |         </div> 
+     |         ^
+  43 |           
+  44 |         
+  45 |         <hr className="my-4" />
+    at Object._raise (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:776:17)
+    at Object.raiseWithData (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:769:17)
+    at Object.raise (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:737:17)
+    at Object.jsxParseElementAt (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5139:16)
+    at Object.jsxParseElementAt (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5107:32)
+    at Object.jsxParseElementAt (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5107:32)
+    at Object.jsxParseElementAt (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5107:32)
+    at Object.jsxParseElement (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5165:17)
+    at Object.parseExprAtom (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5172:19)
+    at Object.parseExprSubscripts (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10644:23)
+    at Object.parseUpdate (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10624:21)
+    at Object.parseMaybeUnary (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10602:23)
+    at Object.parseExprOps (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10463:23)
+    at Object.parseMaybeConditional (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10437:23)
+    at Object.parseMaybeAssign (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10400:21)
+    at /home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10367:39
+    at Object.allowInAnd (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:12043:12)
+    at Object.parseMaybeAssignAllowIn (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10367:17)
+    at Object.parseParenAndDistinguishExpression (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:11246:28)
+    at Object.parseExprAtom (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10964:21)
+    at Object.parseExprAtom (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:5177:20)
+    at Object.parseExprSubscripts (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10644:23)
+    at Object.parseUpdate (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10624:21)
+    at Object.parseMaybeUnary (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10602:23)
+    at Object.parseExprOps (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10463:23)
+    at Object.parseMaybeConditional (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10437:23)
+    at Object.parseMaybeAssign (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:10400:21)
+    at Object.parseFunctionBody (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:11708:24)
+    at Object.parseArrowExpression (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:11687:10)
+    at Object.parseParenAndDistinguishExpression (/home/ubuntu/Documents/MSCFISHProgramAssistant/node_modules/@babel/parser/lib/index.js:11260:12)
+ @ ./app/javascript/routes/Index.jsx 4:0-38 29:13-17
+ @ ./app/javascript/components/App.jsx
+ @ ./app/javascript/packs/Index.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5382.7ms | Allocations: 5871)
+Completed 200 OK in 5386ms (Views: 5385.1ms | Allocations: 6308)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:12:18 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: a85c8684a170e791eac9
+Version: webpack 4.46.0
+Time: 4309ms
+Built at: 03/13/2021 2:12:24 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-eb67b8ad7748b71c9772.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-eb67b8ad7748b71c9772.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-eb67b8ad7748b71c9772.js js/Index-eb67b8ad7748b71c9772.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 63 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5621.2ms | Allocations: 5940)
+Completed 200 OK in 5622ms (Views: 5621.6ms | Allocations: 6377)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:13:50 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 7485eded8e9a1e7e5d3d
+Version: webpack 4.46.0
+Time: 4292ms
+Built at: 03/13/2021 2:13:55 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-69eaf7c9d02dee5e7d7f.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-69eaf7c9d02dee5e7d7f.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-69eaf7c9d02dee5e7d7f.js js/Index-69eaf7c9d02dee5e7d7f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 63 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5737.4ms | Allocations: 5940)
+Completed 200 OK in 5740ms (Views: 5738.4ms | Allocations: 6377)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:15:01 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 35d5b4f2df3e143d20cf
+Version: webpack 4.46.0
+Time: 4933ms
+Built at: 03/13/2021 2:15:07 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-465322d7d51988607ece.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-465322d7d51988607ece.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-465322d7d51988607ece.js js/Index-465322d7d51988607ece.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 63 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6247.7ms | Allocations: 5934)
+Completed 200 OK in 6251ms (Views: 6250.0ms | Allocations: 6371)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:15:34 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 8418)
+Completed 200 OK in 39ms (Views: 38.6ms | Allocations: 8855)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:15:47 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 9278)
+Completed 200 OK in 63ms (Views: 60.0ms | Allocations: 9715)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:16:10 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 8807)
+Completed 200 OK in 33ms (Views: 32.7ms | Allocations: 9244)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:22:59 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 9b778ea00167203de569
+Version: webpack 4.46.0
+Time: 5417ms
+Built at: 03/13/2021 2:23:06 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-0d36809895526369573c.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-0d36809895526369573c.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-0d36809895526369573c.js js/Index-0d36809895526369573c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 63 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6817.9ms | Allocations: 5941)
+Completed 200 OK in 6819ms (Views: 6818.7ms | Allocations: 6378)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:31:43 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 59407fe5c3e52591f816
+Version: webpack 4.46.0
+Time: 4414ms
+Built at: 03/13/2021 2:31:48 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-858a36f428930e231080.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-858a36f428930e231080.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-858a36f428930e231080.js js/Index-858a36f428930e231080.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 64 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5904.3ms | Allocations: 10153)
+Completed 200 OK in 5910ms (Views: 5906.0ms | Allocations: 10590)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:34:33 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 3c75dd3d1f88364ce909
+Version: webpack 4.46.0
+Time: 5093ms
+Built at: 03/13/2021 2:34:39 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-fe820d3c5fec38d6eb9d.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-fe820d3c5fec38d6eb9d.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-fe820d3c5fec38d6eb9d.js js/Index-fe820d3c5fec38d6eb9d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 64 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6626.7ms | Allocations: 10679)
+Completed 200 OK in 6631ms (Views: 6629.6ms | Allocations: 11116)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:35:20 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 9699)
+Completed 200 OK in 48ms (Views: 47.6ms | Allocations: 10136)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:35:41 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 7917)
+Completed 200 OK in 38ms (Views: 36.6ms | Allocations: 8354)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:36:15 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: fa0a6c00bbed81d68362
+Version: webpack 4.46.0
+Time: 4249ms
+Built at: 03/13/2021 2:36:20 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-3d1dd2921f4f5058c2e5.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-3d1dd2921f4f5058c2e5.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-3d1dd2921f4f5058c2e5.js js/Index-3d1dd2921f4f5058c2e5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 64 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5590.7ms | Allocations: 5940)
+Completed 200 OK in 5592ms (Views: 5591.2ms | Allocations: 6377)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:36:38 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 9287)
+Completed 200 OK in 60ms (Views: 59.9ms | Allocations: 9724)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:37:07 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: c46b6ed7417a693a0c89
+Version: webpack 4.46.0
+Time: 4026ms
+Built at: 03/13/2021 2:37:12 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-2c3957faf67d274d60e9.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-2c3957faf67d274d60e9.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-2c3957faf67d274d60e9.js js/Index-2c3957faf67d274d60e9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 64 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5307.4ms | Allocations: 5933)
+Completed 200 OK in 5312ms (Views: 5311.6ms | Allocations: 6370)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:42:43 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: b86b59928c7971a7a83a
+Version: webpack 4.46.0
+Time: 4100ms
+Built at: 03/13/2021 2:42:48 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-174a3011317e0124bbc9.js   2.77 MiB        Index  [emitted] [immutable]  Index
+      js/Index-174a3011317e0124bbc9.js.map      3 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-174a3011317e0124bbc9.js js/Index-174a3011317e0124bbc9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 664 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.51 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 64 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5736.1ms | Allocations: 5934)
+Completed 200 OK in 5741ms (Views: 5737.6ms | Allocations: 6371)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-13 02:44:22 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.6ms | Allocations: 9751)
+Completed 200 OK in 70ms (Views: 69.4ms | Allocations: 10188)
+
+
