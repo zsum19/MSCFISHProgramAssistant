@@ -1,0 +1,68 @@
+
+Visit announcements page
+Capybara starting Puma...
+* Version 5.2.1 , codename: Fettisdagsbulle
+* Min threads: 0, max threads: 4
+* Listening on http://127.0.0.1:34909
+.  Able to open announcements page
+
+New announcement link
+.  Able to open link to create new announcement
+
+Back to home link
+.  Able to go back home from announcement page
+
+Visit new announcement page
+.  Able to open new announcement page
+
+Back to all announcements link
+.  Back to all announcements link on new announcement page
+
+Card (view announcement link)
+.  Able to view announcement details if there is an announcement created
+
+Visit events page
+.  Able to open events page
+
+New event link
+.  Able to open link to create new event
+
+Back to home link
+.  Able to go back home from event page
+
+Visit new event page
+.  Able to open new event page
+
+New event form
+.  Form on new events page is working correctly
+
+Back to all events link
+.  Back to all events link on new event page
+
+Card (view event link)
+.  Able to view event details if there is an event created
+
+Announcement
+.  Should not save an announcement without any arguments
+.  Should not save an announcement without content
+.  Should not save an announcement without an event id
+.  Should not save an announcement without author id
+.  Should save an announcement with valid attributes
+
+Event
+.  Should not save an event without any arguments
+.  Should not save an event without a name
+.  Should not save an event without a max_size
+.  Should not save an event without a ticket_sold
+.  Should not save an event without a num_checked_in
+.  Should save an event with valid attributes
+
+
+Finished in 21.86 seconds (files took 2.4 seconds to load)
+24 examples, 0 failures
+
+Finished in 21.86 seconds (files took 2.4 seconds to load)
+24 examples, 0 failures
+
+
+Coverage report generated for RSpec to /home/treydinges/Documents/MSCFISHProgramAssistant/coverage. 230 / 262 LOC (87.79%) covered.

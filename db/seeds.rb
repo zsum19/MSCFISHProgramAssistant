@@ -37,6 +37,5 @@ end
         author_id: 1,
         event_id: 1,
         content: "This is a test accoucement \##{i+1}",
-        date_posted: DateTime.current.to_date
     )
 end
