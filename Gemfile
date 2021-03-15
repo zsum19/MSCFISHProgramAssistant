@@ -36,6 +36,8 @@ group :development, :test do
   gem 'capybara'
   gem 'webdrivers'
   gem 'rubocop-rails', require: false
+  gem 'csv'
+  gem 'rubyzip'
 end
 
 group :development do
