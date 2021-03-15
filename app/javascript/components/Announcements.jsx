@@ -64,7 +64,7 @@ class Announcements extends React.Component {
                 <main className="container">
                     <div className="text-right mb-3">
                     <Link to="/announcement" className="btn custom-button">
-                        Create New announcement
+                        Create New Announcement
                     </Link>
                     </div>
                     <div className="row">

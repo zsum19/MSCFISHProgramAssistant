@@ -3,6 +3,11 @@ class Event < ApplicationRecord
     has_many :eventattendances, class_name: "Eventattendance"
     has_many :attendees, through: :eventattendances
 
+    validates :name, presence: true
+    validates :max_size, presence: true
+    validates :tickets_sold, presence: true
+    validates :num_checked_in, presence: true
+
     def self.to_csv
         attributes = %w{id name max_size tickets_sold num_checked_in date description}
         CSV.generate(headers: true) do |csv|
