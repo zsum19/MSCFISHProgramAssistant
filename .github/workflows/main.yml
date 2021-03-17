@@ -25,7 +25,7 @@ jobs:
         env:
           HUB_URL: http://chrome:4444/wd/hub
         volumes:
-          - dev/shm:/dev/shm
+          - /dev/shm:/dev/shm
 
     steps:
       - uses: actions/checkout@v1
