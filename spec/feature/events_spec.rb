@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
 class EventsPage
@@ -8,6 +6,13 @@ class EventsPage
     visit('/events')
   end
 end
+
+# RSpec.describe 'Visit events page', type: :feature do
+#   scenario 'Able to open events page', js: true do
+#     visit events_index_path
+#       expect(page).to have_content('MSC Fish Events')
+#   end
+# end
 
 describe 'Visit events page', :type => :feature do
   let(:eventspage) { EventsPage.new }
