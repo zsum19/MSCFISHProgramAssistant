@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-03-16T22:49:09-05:00">2021-03-16T22:49:09-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-03-17T16:14:05-05:00">2021-03-17T16:14:05-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  63.97%
+  67.4%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.94
+         1.0
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>29</b> files in total.
+    <b>30</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>247</b> relevant lines,
-    <span class="green"><b>158</b> lines covered</span> and
+    <b>273</b> relevant lines,
+    <span class="green"><b>184</b> lines covered</span> and
     <span class="red"><b>89</b> lines missed. </span>
     (<span class="red">
-  63.97%
+  67.4%
 </span>
 )
   </div>
@@ -69,6 +69,17 @@
         </tr>
       </thead>
       <tbody>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#6edf27737323d236338217b094988d0859cfcb27" class="src_link" title="app/controllers/api/v1/events_controller.rb">app/controllers/api/v1/events_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">52.17 %</td>
+            <td class="cell--number">44</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">1.13</td>
+            
+          </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#edcc12143fe2ae50d100a7b3a21db793f28452b1" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
@@ -369,23 +380,23 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#a1011735832935d3efb12337fde0f8cfdc7a36d5" class="src_link" title="spec/feature/events_spec.rb">spec/feature/events_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">72.73 %</td>
-            <td class="cell--number">92</td>
-            <td class="cell--number">55</td>
-            <td class="cell--number">40</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">0.96</td>
+            <td class="green strong cell--number t-file__coverage">93.33 %</td>
+            <td class="cell--number">98</td>
+            <td class="cell--number">60</td>
+            <td class="cell--number">56</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">1.15</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ed3d4fd713a1b652ed79f6b70f27dde8e80213cd" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">86.67 %</td>
-            <td class="cell--number">69</td>
-            <td class="cell--number">15</td>
+            <td class="yellow strong cell--number t-file__coverage">84.62 %</td>
+            <td class="cell--number">81</td>
             <td class="cell--number">13</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">2</td>
-            <td class="cell--number">0.87</td>
+            <td class="cell--number">0.85</td>
             
           </tr>
         
@@ -405,6 +416,521 @@
       </div>
 
       <div class="source_files">
+      
+        <div class="source_table" id="6edf27737323d236338217b094988d0859cfcb27">
+  <div class="header">
+    <h3>app/controllers/api/v1/events_controller.rb</h3>
+    <h4>
+      <span class="red">
+  52.17%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>23</b> relevant lines.
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>11</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module Api</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  module V1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    class EventsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      def index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="7">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">        event = Event.all.order(created_at: :desc)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="8">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">        render json: event</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      def create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">        event = Event.create!(event_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">        if event</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">          render json: event</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">        else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">          render json: event.errors</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">        if event</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">          render json: event</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">        else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">          render json: event.errors</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      def destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">        event&amp;.destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">        render json: { message: &#39;Event Deleted!&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      def event_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby">        params.permit(:name, :max_size, :tickets_sold, :num_checked_in, :date, :description)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      def event</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">        @event ||= Event.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
       
         <div class="source_table" id="edcc12143fe2ae50d100a7b3a21db793f28452b1">
   <div class="header">
@@ -6109,8 +6635,8 @@
   <div class="header">
     <h3>spec/feature/events_spec.rb</h3>
     <h4>
-      <span class="red">
-  72.73%
+      <span class="green">
+  93.33%
 </span>
 
       lines covered
@@ -6119,9 +6645,9 @@
     
 
     <div class="t-line-summary">
-      <b>55</b> relevant lines.
-      <span class="green"><b>40</b> lines covered</span> and
-      <span class="red"><b>15</b> lines missed.</span>
+      <b>60</b> relevant lines.
+      <span class="green"><b>56</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
 
     
@@ -6132,13 +6658,13 @@
     <ol>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="1">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"># frozen_string_literal: true</code>
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
           </li>
         </div>
       
@@ -6160,34 +6686,12 @@
 
             
 
-            <code class="ruby">require &#39;rails_helper&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">class EventsPage</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
+          <li class="covered" data-hits="1" data-linenumber="4">
             <span class="hits">1</span>
             
 
@@ -6198,7 +6702,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
+          <li class="covered" data-hits="1" data-linenumber="5">
             <span class="hits">1</span>
             
 
@@ -6209,7 +6713,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="8">
+          <li class="covered" data-hits="7" data-linenumber="6">
             <span class="hits">7</span>
             
 
@@ -6220,7 +6724,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -6231,7 +6735,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -6242,13 +6746,35 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &#39;Visit events page&#39;, type: :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  scenario &#39;Able to open events page&#39;, js: true do</code>
           </li>
         </div>
       
@@ -6259,67 +6785,34 @@
 
             
 
-            <code class="ruby">describe &#39;Visit events page&#39;, :type =&gt; :feature do</code>
+            <code class="ruby">    visit &#39;api/v1/events/index&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="13">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
+          <li class="covered" data-hits="1" data-linenumber="13">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  it &#39;Able to open events page&#39;, js: true do</code>
+            <code class="ruby">    sleep(15)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="16">
+          <li class="covered" data-hits="1" data-linenumber="14">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    eventspage.visit_eventspage</code>
+            <code class="ruby">      expect(page).to have_content(&#39;MSC Fish Events&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;MSC Fish Events&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="18">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -6330,13 +6823,46 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="19">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
             
 
             <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe &#39;Visit events page&#39;, :type =&gt; :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="19">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
           </li>
         </div>
       
@@ -6358,45 +6884,12 @@
 
             
 
-            <code class="ruby">describe &#39;New event link&#39;, :type =&gt; :feature do</code>
+            <code class="ruby">  it &#39;Able to open events page&#39;, js: true do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="22">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="24">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  it &#39;Able to open link to create new event&#39;, js: true do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="25">
+          <li class="covered" data-hits="1" data-linenumber="22">
             <span class="hits">1</span>
             
 
@@ -6407,18 +6900,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="26">
+          <li class="covered" data-hits="1" data-linenumber="23">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/event&#39;)</code>
+            <code class="ruby">    expect(page).to have_content(&#39;MSC Fish Events&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
@@ -6429,13 +6922,46 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
             
 
             <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe &#39;New event link&#39;, :type =&gt; :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="28">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
           </li>
         </div>
       
@@ -6457,45 +6983,12 @@
 
             
 
-            <code class="ruby">describe &#39;Back to home link&#39;, :type =&gt; :feature do</code>
+            <code class="ruby">  it &#39;Able to open link to create new event&#39;, js: true do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="31">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="32">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="33">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  it &#39;Able to go back home from event page&#39;, js: true do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="34">
+          <li class="covered" data-hits="1" data-linenumber="31">
             <span class="hits">1</span>
             
 
@@ -6506,18 +6999,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
+          <li class="covered" data-hits="1" data-linenumber="32">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(page).to have_link(&#39;Home&#39;, href: &#39;/&#39;)</code>
+            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/event&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="36">
+          <li class="never" data-hits="" data-linenumber="33">
             
             
 
@@ -6528,13 +7021,46 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="37">
+          <li class="never" data-hits="" data-linenumber="34">
             
             
 
             
 
             <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe &#39;Back to home link&#39;, :type =&gt; :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="37">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
           </li>
         </div>
       
@@ -6550,13 +7076,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"># Test the new event page</code>
+            
+
+            <code class="ruby">  it &#39;Able to go back home from event page&#39;, js: true do</code>
           </li>
         </div>
       
@@ -6567,18 +7093,18 @@
 
             
 
-            <code class="ruby">describe &#39;Visit new event page&#39;, :type =&gt; :feature do</code>
+            <code class="ruby">    eventspage.visit_eventspage</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="41">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
+            <code class="ruby">    expect(page).to have_link(&#39;Home&#39;, href: &#39;/&#39;)</code>
           </li>
         </div>
       
@@ -6589,62 +7115,62 @@
 
             
 
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby"># Test the new event page</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  it &#39;Able to open new event page&#39;, js: true do</code>
+            <code class="ruby">describe &#39;Visit new event page&#39;, :type =&gt; :feature do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="47">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    eventspage.visit_eventspage</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_link(&#39;Create New Event&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="46">
-            
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;Create a new event&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="47">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
+            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
           </li>
         </div>
       
@@ -6655,18 +7181,18 @@
 
             
 
-            <code class="ruby">end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="49">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  it &#39;Able to open new event page&#39;, js: true do</code>
           </li>
         </div>
       
@@ -6677,23 +7203,56 @@
 
             
 
-            <code class="ruby">describe &#39;New event form&#39;, :type =&gt; :feature do</code>
+            <code class="ruby">    eventspage.visit_eventspage</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="51">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="51">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
+            <code class="ruby">    click_link(&#39;Create New Event&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;Create a new event&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="54">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
             
             
 
@@ -6704,7 +7263,40 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="53">
+          <li class="covered" data-hits="1" data-linenumber="56">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe &#39;New event form&#39;, :type =&gt; :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="57">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
             <span class="hits">1</span>
             
 
@@ -6715,7 +7307,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
+          <li class="covered" data-hits="1" data-linenumber="60">
             <span class="hits">1</span>
             
 
@@ -6726,7 +7318,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
+          <li class="covered" data-hits="1" data-linenumber="61">
             <span class="hits">1</span>
             
 
@@ -6737,8 +7329,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="56">
-            
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
             
 
             
@@ -6748,8 +7340,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="57">
-            
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
             
 
             
@@ -6759,8 +7351,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="58">
-            
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
             
 
             
@@ -6770,8 +7362,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="59">
-            
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
             
 
             
@@ -6781,8 +7373,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="60">
-            
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
             
 
             
@@ -6792,8 +7384,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="61">
-            
+          <li class="covered" data-hits="1" data-linenumber="67">
+            <span class="hits">1</span>
             
 
             
@@ -6803,79 +7395,13 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="62">
-            
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
             
 
             
 
             <code class="ruby">      fill_in &#39;Date of Event&#39;, with: &#39;2021-01-01&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="63">
-            
-            
-
-            
-
-            <code class="ruby">      fill_in &#39;Event Description&#39;, with: &#39;This is a test event&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="64">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="65">
-            
-            
-
-            
-
-            <code class="ruby">    click_on(&#39;Create Event&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="66">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="67">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="68">
-            
-            
-
-            
-
-            <code class="ruby"></code>
           </li>
         </div>
       
@@ -6886,232 +7412,12 @@
 
             
 
-            <code class="ruby">describe &#39;Back to all events link&#39;, :type =&gt; :feature do</code>
+            <code class="ruby">      fill_in &#39;Event Description&#39;, with: &#39;This is a test event&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="70">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="71">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="72">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  it &#39;Back to all events link on new event page&#39;, js: true do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="73">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    eventspage.visit_eventspage</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="74">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_link(&#39;Create New Event&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="75">
-            
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_link(&#39;Back to All Events&#39;, href: &#39;/events&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="76">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="77">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="78">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="79">
-            
-            
-
-            
-
-            <code class="ruby"># Test the cards</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="80">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">describe &#39;Card (view event link)&#39;, :type =&gt; :feature do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="81">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="82">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="83">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  it &#39;Able to view event details if there is an event created&#39;, js: true do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="84">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    eventspage.visit_eventspage</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="85">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    page.all(&#39;View Event&#39;).each do |f|</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="86">
-            
-            
-
-            
-
-            <code class="ruby">      click_on(f)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="87">
-            
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_content(&#39;Max Size&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="88">
-            
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_content(&#39;Event Description&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="89">
-            
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_button(&#39;Delete Event&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="90">
+          <li class="never" data-hits="" data-linenumber="70">
             
             
 
@@ -7122,7 +7428,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="91">
+          <li class="covered" data-hits="1" data-linenumber="71">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on(&#39;Create Event&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
             
             
 
@@ -7133,7 +7450,282 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="92">
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="74">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="75">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe &#39;Back to all events link&#39;, :type =&gt; :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="76">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="77">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="78">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;Back to all events link on new event page&#39;, js: true do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="79">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    eventspage.visit_eventspage</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="80">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_link(&#39;Create New Event&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="81">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_link(&#39;Back to All Events&#39;, href: &#39;/events&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="82">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="83">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="84">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby"># Test the cards</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="86">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe &#39;Card (view event link)&#39;, :type =&gt; :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="87">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:eventspage) { EventsPage.new }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="88">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="89">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;Able to view event details if there is an event created&#39;, js: true do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="90">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    eventspage.visit_eventspage</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="91">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    page.all(&#39;View Event&#39;).each do |f|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="92">
+            
+            
+
+            
+
+            <code class="ruby">      click_on(f)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="93">
+            
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&#39;Max Size&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="94">
+            
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&#39;Event Description&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="95">
+            
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_button(&#39;Delete Event&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="96">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="97">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="98">
             
             
 
@@ -7153,7 +7745,7 @@
     <h3>spec/rails_helper.rb</h3>
     <h4>
       <span class="yellow">
-  86.67%
+  84.62%
 </span>
 
       lines covered
@@ -7162,8 +7754,8 @@
     
 
     <div class="t-line-summary">
-      <b>15</b> relevant lines.
-      <span class="green"><b>13</b> lines covered</span> and
+      <b>13</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>2</b> lines missed.</span>
     </div>
 
@@ -7181,34 +7773,12 @@
 
             
 
-            <code class="ruby"># frozen_string_literal: true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
             <code class="ruby"># This file is copied to spec/ when you run &#39;rails generate rspec:install&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="2">
             <span class="hits">1</span>
             
 
@@ -7219,7 +7789,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="3">
             <span class="hits">1</span>
             
 
@@ -7230,7 +7800,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
+          <li class="covered" data-hits="1" data-linenumber="4">
             <span class="hits">1</span>
             
 
@@ -7241,7 +7811,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -7252,7 +7822,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
+          <li class="covered" data-hits="1" data-linenumber="6">
             <span class="hits">1</span>
             
 
@@ -7263,7 +7833,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -7274,7 +7844,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -7285,7 +7855,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
+          <li class="covered" data-hits="1" data-linenumber="9">
             <span class="hits">1</span>
             
 
@@ -7296,24 +7866,46 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="10">
+            
             
 
             
 
-            <code class="ruby">require &#39;capybara/poltergeist&#39;</code>
+            <code class="ruby"># require &#39;capybara/rails&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="11">
+            
             
 
             
 
-            <code class="ruby">Capybara.javascript_driver = :poltergeist</code>
+            <code class="ruby"># require &#39;capybara/poltergeist&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"># Capybara.register_driver :poltergeist do |app|</code>
           </li>
         </div>
       
@@ -7324,7 +7916,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">#   Capybara::Poltergeist::Driver.new(app, {</code>
           </li>
         </div>
       
@@ -7335,7 +7927,7 @@
 
             
 
-            <code class="ruby"># Requires supporting ruby files with custom matchers and macros, etc, in</code>
+            <code class="ruby">#     js_errors: false,</code>
           </li>
         </div>
       
@@ -7346,7 +7938,7 @@
 
             
 
-            <code class="ruby"># spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are</code>
+            <code class="ruby">#     # js_errors: true, #setting this to true outputs all my console.logs to Terminal</code>
           </li>
         </div>
       
@@ -7357,7 +7949,7 @@
 
             
 
-            <code class="ruby"># run as spec files by default. This means that files in spec/support that end</code>
+            <code class="ruby">#     phantomjs_options: [&#39;--ignore-ssl-errors=yes&#39;, &#39;--ssl-protocol=any&#39;],</code>
           </li>
         </div>
       
@@ -7368,7 +7960,7 @@
 
             
 
-            <code class="ruby"># in _spec.rb will both be required and run as specs, causing the specs to be</code>
+            <code class="ruby">#     debug: false,</code>
           </li>
         </div>
       
@@ -7379,7 +7971,7 @@
 
             
 
-            <code class="ruby"># run twice. It is recommended that you do not name files matching this glob to</code>
+            <code class="ruby">#     timeout: 500,</code>
           </li>
         </div>
       
@@ -7390,7 +7982,7 @@
 
             
 
-            <code class="ruby"># end with _spec.rb. You can configure this pattern with the --pattern</code>
+            <code class="ruby">#     phantomjs: File.absolute_path(Phantomjs.path)</code>
           </li>
         </div>
       
@@ -7401,7 +7993,7 @@
 
             
 
-            <code class="ruby"># option on the command line or in ~/.rspec, .rspec or `.rspec-local`.</code>
+            <code class="ruby">#   })</code>
           </li>
         </div>
       
@@ -7412,7 +8004,7 @@
 
             
 
-            <code class="ruby">#</code>
+            <code class="ruby"># end</code>
           </li>
         </div>
       
@@ -7423,7 +8015,7 @@
 
             
 
-            <code class="ruby"># The following line is provided for convenience purposes. It has the downside</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7434,7 +8026,7 @@
 
             
 
-            <code class="ruby"># of increasing the boot-up time by auto-requiring all files in the support</code>
+            <code class="ruby"># Capybara.javascript_driver = :poltergeist</code>
           </li>
         </div>
       
@@ -7445,7 +8037,7 @@
 
             
 
-            <code class="ruby"># directory. Alternatively, in the individual `*_spec.rb` files, manually</code>
+            <code class="ruby"># Capybara.default_driver = :poltergeist</code>
           </li>
         </div>
       
@@ -7456,7 +8048,7 @@
 
             
 
-            <code class="ruby"># require only the support files necessary.</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7467,7 +8059,7 @@
 
             
 
-            <code class="ruby">#</code>
+            <code class="ruby"># Requires supporting ruby files with custom matchers and macros, etc, in</code>
           </li>
         </div>
       
@@ -7478,7 +8070,7 @@
 
             
 
-            <code class="ruby"># Dir[Rails.root.join(&#39;spec&#39;, &#39;support&#39;, &#39;**&#39;, &#39;*.rb&#39;)].sort.each { |f| require f }</code>
+            <code class="ruby"># spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are</code>
           </li>
         </div>
       
@@ -7489,7 +8081,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby"># run as spec files by default. This means that files in spec/support that end</code>
           </li>
         </div>
       
@@ -7500,7 +8092,7 @@
 
             
 
-            <code class="ruby"># Checks for pending migrations and applies them before tests are run.</code>
+            <code class="ruby"># in _spec.rb will both be required and run as specs, causing the specs to be</code>
           </li>
         </div>
       
@@ -7511,7 +8103,7 @@
 
             
 
-            <code class="ruby"># If you are not using ActiveRecord, you can remove these lines.</code>
+            <code class="ruby"># run twice. It is recommended that you do not name files matching this glob to</code>
           </li>
         </div>
       
@@ -7522,18 +8114,18 @@
 
             
 
-            <code class="ruby">begin</code>
+            <code class="ruby"># end with _spec.rb. You can configure this pattern with the --pattern</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="33">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="33">
+            
             
 
             
 
-            <code class="ruby">  ActiveRecord::Migration.maintain_test_schema!</code>
+            <code class="ruby"># option on the command line or in ~/.rspec, .rspec or `.rspec-local`.</code>
           </li>
         </div>
       
@@ -7544,29 +8136,29 @@
 
             
 
-            <code class="ruby">rescue ActiveRecord::PendingMigrationError =&gt; e</code>
+            <code class="ruby">#</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="35">
+          <li class="never" data-hits="" data-linenumber="35">
             
             
 
             
 
-            <code class="ruby">  puts e.to_s.strip</code>
+            <code class="ruby"># The following line is provided for convenience purposes. It has the downside</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="36">
+          <li class="never" data-hits="" data-linenumber="36">
             
             
 
             
 
-            <code class="ruby">  exit 1</code>
+            <code class="ruby"># of increasing the boot-up time by auto-requiring all files in the support</code>
           </li>
         </div>
       
@@ -7577,18 +8169,18 @@
 
             
 
-            <code class="ruby">end</code>
+            <code class="ruby"># directory. Alternatively, in the individual `*_spec.rb` files, manually</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="38">
+            
             
 
             
 
-            <code class="ruby">RSpec.configure do |config|</code>
+            <code class="ruby"># require only the support files necessary.</code>
           </li>
         </div>
       
@@ -7599,18 +8191,18 @@
 
             
 
-            <code class="ruby">  # Remove this line if you&#39;re not using ActiveRecord or ActiveRecord fixtures</code>
+            <code class="ruby">#</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="40">
+            
             
 
             
 
-            <code class="ruby">  config.fixture_path = &quot;#{::Rails.root}/spec/fixtures&quot;</code>
+            <code class="ruby"># Dir[Rails.root.join(&#39;spec&#39;, &#39;support&#39;, &#39;**&#39;, &#39;*.rb&#39;)].sort.each { |f| require f }</code>
           </li>
         </div>
       
@@ -7632,7 +8224,7 @@
 
             
 
-            <code class="ruby">  # If you&#39;re not using ActiveRecord, or you&#39;d prefer not to run each of your</code>
+            <code class="ruby"># Checks for pending migrations and applies them before tests are run.</code>
           </li>
         </div>
       
@@ -7643,7 +8235,7 @@
 
             
 
-            <code class="ruby">  # examples within a transaction, remove the following line or assign false</code>
+            <code class="ruby"># If you are not using ActiveRecord, you can remove these lines.</code>
           </li>
         </div>
       
@@ -7654,7 +8246,7 @@
 
             
 
-            <code class="ruby">  # instead of true.</code>
+            <code class="ruby">begin</code>
           </li>
         </div>
       
@@ -7665,7 +8257,7 @@
 
             
 
-            <code class="ruby">  config.use_transactional_fixtures = true</code>
+            <code class="ruby">  ActiveRecord::Migration.maintain_test_schema!</code>
           </li>
         </div>
       
@@ -7676,29 +8268,29 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">rescue ActiveRecord::PendingMigrationError =&gt; e</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="missed" data-hits="0" data-linenumber="47">
             
             
 
             
 
-            <code class="ruby">  # You can uncomment this line to turn off ActiveRecord support entirely.</code>
+            <code class="ruby">  puts e.to_s.strip</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="48">
+          <li class="missed" data-hits="0" data-linenumber="48">
             
             
 
             
 
-            <code class="ruby">  # config.use_active_record = false</code>
+            <code class="ruby">  exit 1</code>
           </li>
         </div>
       
@@ -7709,18 +8301,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="50">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  # RSpec Rails can automatically mix in different behaviours to your tests</code>
+            
+
+            <code class="ruby">RSpec.configure do |config|</code>
           </li>
         </div>
       
@@ -7731,18 +8323,18 @@
 
             
 
-            <code class="ruby">  # based on their file location, for example enabling you to call `get` and</code>
+            <code class="ruby">  # Remove this line if you&#39;re not using ActiveRecord or ActiveRecord fixtures</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  # `post` in specs under `spec/controllers`.</code>
+            
+
+            <code class="ruby">  config.fixture_path = &quot;#{::Rails.root}/spec/fixtures&quot;</code>
           </li>
         </div>
       
@@ -7753,7 +8345,7 @@
 
             
 
-            <code class="ruby">  #</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7764,7 +8356,7 @@
 
             
 
-            <code class="ruby">  # You can disable this behaviour by removing the line below, and instead</code>
+            <code class="ruby">  # If you&#39;re not using ActiveRecord, or you&#39;d prefer not to run each of your</code>
           </li>
         </div>
       
@@ -7775,7 +8367,7 @@
 
             
 
-            <code class="ruby">  # explicitly tag your specs with their type, e.g.:</code>
+            <code class="ruby">  # examples within a transaction, remove the following line or assign false</code>
           </li>
         </div>
       
@@ -7786,18 +8378,18 @@
 
             
 
-            <code class="ruby">  #</code>
+            <code class="ruby">  # instead of true.</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  #     RSpec.describe UsersController, type: :controller do</code>
+            
+
+            <code class="ruby">  config.use_transactional_fixtures = true</code>
           </li>
         </div>
       
@@ -7808,7 +8400,7 @@
 
             
 
-            <code class="ruby">  #       # ...</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7819,7 +8411,7 @@
 
             
 
-            <code class="ruby">  #     end</code>
+            <code class="ruby">  # You can uncomment this line to turn off ActiveRecord support entirely.</code>
           </li>
         </div>
       
@@ -7830,7 +8422,7 @@
 
             
 
-            <code class="ruby">  #</code>
+            <code class="ruby">  # config.use_active_record = false</code>
           </li>
         </div>
       
@@ -7841,7 +8433,7 @@
 
             
 
-            <code class="ruby">  # The different available types are documented in the features, such as in</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7852,18 +8444,18 @@
 
             
 
-            <code class="ruby">  # https://relishapp.com/rspec/rspec-rails/docs</code>
+            <code class="ruby">  # RSpec Rails can automatically mix in different behaviours to your tests</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="63">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="63">
+            
             
 
             
 
-            <code class="ruby">  config.infer_spec_type_from_file_location!</code>
+            <code class="ruby">  # based on their file location, for example enabling you to call `get` and</code>
           </li>
         </div>
       
@@ -7874,7 +8466,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  # `post` in specs under `spec/controllers`.</code>
           </li>
         </div>
       
@@ -7885,18 +8477,18 @@
 
             
 
-            <code class="ruby">  # Filter lines from Rails gems in backtraces.</code>
+            <code class="ruby">  #</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="66">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="66">
+            
             
 
             
 
-            <code class="ruby">  config.filter_rails_from_backtrace!</code>
+            <code class="ruby">  # You can disable this behaviour by removing the line below, and instead</code>
           </li>
         </div>
       
@@ -7907,7 +8499,7 @@
 
             
 
-            <code class="ruby">  # arbitrary gems may also be filtered via:</code>
+            <code class="ruby">  # explicitly tag your specs with their type, e.g.:</code>
           </li>
         </div>
       
@@ -7918,12 +8510,144 @@
 
             
 
-            <code class="ruby">  # config.filter_gems_from_backtrace(&quot;gem name&quot;)</code>
+            <code class="ruby">  #</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby">  #     RSpec.describe UsersController, type: :controller do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby">  #       # ...</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">  #     end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">  #</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby">  # The different available types are documented in the features, such as in</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="74">
+            
+            
+
+            
+
+            <code class="ruby">  # https://relishapp.com/rspec/rspec-rails/docs</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="75">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  config.infer_spec_type_from_file_location!</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="77">
+            
+            
+
+            
+
+            <code class="ruby">  # Filter lines from Rails gems in backtraces.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="78">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  config.filter_rails_from_backtrace!</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="79">
+            
+            
+
+            
+
+            <code class="ruby">  # arbitrary gems may also be filtered via:</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">  # config.filter_gems_from_backtrace(&quot;gem name&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
             
             
 

@@ -33,7 +33,6 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara'
   gem 'csv'
-  # gem 'poltergeist'
   gem 'rexml'
   gem 'rspec-rails'
   gem 'rubocop'
@@ -57,8 +56,9 @@ group :development do
 end
 
 group :test do
-  gem 'selenium-webdriver'
   gem 'simplecov'
+  # gem 'phantomjs'
+  # gem 'poltergeist'
   # Easy installation and use of web drivers to run system tests with browsers
 end
 
