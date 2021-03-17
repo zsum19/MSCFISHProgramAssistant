@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 3.0.x
-      - uses: borales/actions-yarn@v1.22.5
+      - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
       - name: Build and run test
