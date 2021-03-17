@@ -43,4 +43,5 @@ jobs:
           bundle install --jobs 4 --retry 3
           bundle exec rake db:create
           bundle exec rake db:migrate
+          bundle exec rake db:seed
           bundle exec rspec .
