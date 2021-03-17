@@ -9,7 +9,7 @@ class AnnouncementsPage
   end
 end
 
-describe 'Visit announcements page' do
+describe 'Visit announcements page', :type => :feature do
   let(:announcementspage) { AnnouncementsPage.new }
 
   it 'Able to open announcements page', js: true do
@@ -18,7 +18,7 @@ describe 'Visit announcements page' do
   end
 end
 
-describe 'New announcement link' do
+describe 'New announcement link', :type => :feature do
   let(:announcementspage) { AnnouncementsPage.new }
 
   it 'Able to open link to create new announcement', js: true do
@@ -27,7 +27,7 @@ describe 'New announcement link' do
   end
 end
 
-describe 'Back to home link' do
+describe 'Back to home link', :type => :feature do
   let(:announcementspage) { AnnouncementsPage.new }
 
   it 'Able to go back home from announcement page', js: true do
@@ -37,7 +37,7 @@ describe 'Back to home link' do
 end
 
 # Test the new announcement page
-describe 'Visit new announcement page' do
+describe 'Visit new announcement page', :type => :feature do
   let(:announcementspage) { AnnouncementsPage.new }
 
   it 'Able to open new announcement page', js: true do
@@ -65,7 +65,7 @@ end
 #     end
 # end
 
-describe 'Back to all announcements link' do
+describe 'Back to all announcements link', :type => :feature do
   let(:announcementspage) { AnnouncementsPage.new }
 
   it 'Back to all announcements link on new announcement page', js: true do
@@ -76,7 +76,7 @@ describe 'Back to all announcements link' do
 end
 
 # Test the cards
-describe 'Card (view announcement link)' do
+describe 'Card (view announcement link)', :type => :feature do
   let(:announcementspage) { AnnouncementsPage.new }
 
   it 'Able to view announcement details if there is an announcement created', js: true do

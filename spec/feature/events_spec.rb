@@ -9,7 +9,7 @@ class EventsPage
   end
 end
 
-describe 'Visit events page' do
+describe 'Visit events page', :type => :feature do
   let(:eventspage) { EventsPage.new }
 
   it 'Able to open events page', js: true do
@@ -18,7 +18,7 @@ describe 'Visit events page' do
   end
 end
 
-describe 'New event link' do
+describe 'New event link', :type => :feature do
   let(:eventspage) { EventsPage.new }
 
   it 'Able to open link to create new event', js: true do
@@ -27,7 +27,7 @@ describe 'New event link' do
   end
 end
 
-describe 'Back to home link' do
+describe 'Back to home link', :type => :feature do
   let(:eventspage) { EventsPage.new }
 
   it 'Able to go back home from event page', js: true do
@@ -37,7 +37,7 @@ describe 'Back to home link' do
 end
 
 # Test the new event page
-describe 'Visit new event page' do
+describe 'Visit new event page', :type => :feature do
   let(:eventspage) { EventsPage.new }
 
   it 'Able to open new event page', js: true do
@@ -47,7 +47,7 @@ describe 'Visit new event page' do
   end
 end
 
-describe 'New event form' do
+describe 'New event form', :type => :feature do
   let(:eventspage) { EventsPage.new }
 
   it 'Form on new events page is working correctly', js: true do
@@ -66,7 +66,7 @@ describe 'New event form' do
   end
 end
 
-describe 'Back to all events link' do
+describe 'Back to all events link', :type => :feature do
   let(:eventspage) { EventsPage.new }
 
   it 'Back to all events link on new event page', js: true do
@@ -77,7 +77,7 @@ describe 'Back to all events link' do
 end
 
 # Test the cards
-describe 'Card (view event link)' do
+describe 'Card (view event link)', :type => :feature do
   let(:eventspage) { EventsPage.new }
 
   it 'Able to view event details if there is an event created', js: true do
