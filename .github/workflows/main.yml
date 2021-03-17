@@ -20,6 +20,12 @@ jobs:
         image: redis
         ports: ["6379:6379"]
         options: --entrypoint redis-server
+      chrome:
+        image: selenium/standalone-chrome:3.142.7
+        env:
+          HUB_URL: http://chrome:4444/wd/hub
+        volumes:
+          - dev/shm:/dev/shm
 
     steps:
       - uses: actions/checkout@v1

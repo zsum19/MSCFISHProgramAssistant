@@ -9,7 +9,8 @@ end
 
 # RSpec.describe 'Visit events page', type: :feature do
 #   scenario 'Able to open events page', js: true do
-#     visit events_path
+#     visit 'api/v1/events/index'
+#     sleep(15)
 #       expect(page).to have_content('MSC Fish Events')
 #   end
 # end
