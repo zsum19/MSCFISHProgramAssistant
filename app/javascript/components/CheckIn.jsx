@@ -25,11 +25,11 @@ class CheckIn extends React.Component {
     }
     
     onSubmit(e) {
-        e.prattendeeDefault();
+        e.preventDefault();
         const url = "/api/v1/attendees/create";
         const { name, email} = this.state;
     
-        if (name.length == 0 || date.length == 0)
+        if (name.length == 0)
           return;
     
         const body = {
@@ -52,7 +52,7 @@ class CheckIn extends React.Component {
             }
             throw new Error("Network response was not ok.");
           })
-          //.then(response => this.props.history.push(`/home`))
+          .then(response => this.props.history.push(`/`))
           .catch(error => console.log(error.message));
     }
 

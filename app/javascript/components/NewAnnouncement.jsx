@@ -27,7 +27,7 @@ class NewAnnouncement extends React.Component {
     }
     
     onSubmit(e) {
-        e.prannouncementDefault();
+        e.preventDefault();
         const url = "/api/v1/announcements/create";
         const { author_id, event_id, content, date_posted } = this.state;
     
