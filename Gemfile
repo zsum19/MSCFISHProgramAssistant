@@ -57,8 +57,6 @@ end
 
 group :test do
   gem 'simplecov'
-  # gem 'phantomjs'
-  # gem 'poltergeist'
   # Easy installation and use of web drivers to run system tests with browsers
 end
 

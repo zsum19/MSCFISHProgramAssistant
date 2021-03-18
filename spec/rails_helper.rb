@@ -7,22 +7,6 @@ abort('The Rails environment is running in production mode!') if Rails.env.produ
 # Add additional requires below this line. Rails is not loaded until this point!
 
 require 'rspec/rails'
-# require 'capybara/rails'
-# require 'capybara/poltergeist'
-
-# Capybara.register_driver :poltergeist do |app|
-#   Capybara::Poltergeist::Driver.new(app, {
-#     js_errors: false,
-#     # js_errors: true, #setting this to true outputs all my console.logs to Terminal
-#     phantomjs_options: ['--ignore-ssl-errors=yes', '--ssl-protocol=any'],
-#     debug: false,
-#     timeout: 500,
-#     phantomjs: File.absolute_path(Phantomjs.path)
-#   })
-# end
-
-# Capybara.javascript_driver = :poltergeist
-# Capybara.default_driver = :poltergeist
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
