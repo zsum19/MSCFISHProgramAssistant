@@ -2476,3 +2476,284 @@ Processing by Api::V1::EventsController#index as */*
 Completed 200 OK in 156ms (Views: 72.2ms | ActiveRecord: 53.3ms | Allocations: 7545)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-17 16:56:50 -0500
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 377)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 182.2ms | Allocations: 21271)
+Completed 200 OK in 301ms (Views: 207.5ms | ActiveRecord: 0.0ms | Allocations: 36241)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 16:56:53 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (7.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 38ms (Views: 15.1ms | ActiveRecord: 20.2ms | Allocations: 7544)
+
+
+Started POST "/api/v1/events/create" for 127.0.0.1 at 2021-03-17 16:57:03 -0500
+Processing by Api::V1::EventsController#create as */*
+  Parameters: {"name"=>"sadf", "max_size"=>"3", "tickets_sold"=>"2", "num_checked_in"=>"2", "date"=>"2021-03-31", "description"=>"fdasfdsa", "event"=>{"name"=>"sadf", "max_size"=>"3", "tickets_sold"=>"2", "num_checked_in"=>"2", "date"=>"2021-03-31", "description"=>"fdasfdsa"}}
+[31mUnpermitted parameter: :event[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/events_controller.rb:12:in `create'
+  [1m[36mEvent Create (6.0ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "sadf"], ["max_size", 3], ["tickets_sold", 2], ["num_checked_in", 2], ["date", "2021-03-31 00:00:00"], ["description", "fdasfdsa"], ["created_at", "2021-03-17 21:57:03.853561"], ["updated_at", "2021-03-17 21:57:03.853561"]]
+  ↳ app/controllers/api/v1/events_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/events_controller.rb:12:in `create'
+Completed 200 OK in 31ms (Views: 0.5ms | ActiveRecord: 9.5ms | Allocations: 3841)
+
+
+Started GET "/api/v1/events/show/11" for 127.0.0.1 at 2021-03-17 16:57:04 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mEvent Load (3.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/events_controller.rb:40:in `event'
+Completed 200 OK in 58ms (Views: 9.1ms | ActiveRecord: 4.4ms | Allocations: 2076)
+
+
+Started DELETE "/api/v1/events/destroy/11" for 127.0.0.1 at 2021-03-17 16:57:08 -0500
+Processing by Api::V1::EventsController#destroy as */*
+  Parameters: {"id"=>"11", "event"=>{}}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/events_controller.rb:40:in `event'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/events_controller.rb:29:in `destroy'
+  [1m[36mEvent Destroy (20.8ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/api/v1/events_controller.rb:29:in `destroy'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/events_controller.rb:29:in `destroy'
+Completed 200 OK in 34ms (Views: 0.2ms | ActiveRecord: 25.8ms | Allocations: 2858)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 16:57:08 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.9ms | Allocations: 2288)
+
+
+Started GET "/events" for 127.0.0.1 at 2021-03-17 17:02:15 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"events"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.3ms | Allocations: 7025)
+Completed 200 OK in 108ms (Views: 47.2ms | ActiveRecord: 0.0ms | Allocations: 20471)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:02:16 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 8.9ms | ActiveRecord: 16.9ms | Allocations: 7547)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:02:28 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (2.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 8.7ms | ActiveRecord: 2.4ms | Allocations: 2303)
+
+
+Started GET "/api/v1/events/show/9" for 127.0.0.1 at 2021-03-17 17:02:29 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/events_controller.rb:40:in `event'
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 5.1ms | Allocations: 1882)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:02:35 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.9ms | Allocations: 2288)
+
+
+Started GET "/events" for 127.0.0.1 at 2021-03-17 17:07:46 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"events"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 7025)
+Completed 200 OK in 137ms (Views: 54.7ms | ActiveRecord: 0.0ms | Allocations: 20470)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:07:46 -0500
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+...  render json: event { message: 'Event Created!' }
+...                              ^
+/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+...t { message: 'Event Created!' }
+...                              ^
+):
+  
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:07:49 -0500
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+...  render json: event { message: 'Event Created!' }
+...                              ^
+/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+...t { message: 'Event Created!' }
+...                              ^
+):
+  
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:07:50 -0500
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+...  render json: event { message: 'Event Created!' }
+...                              ^
+/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+...t { message: 'Event Created!' }
+...                              ^
+):
+  
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:07:50 -0500
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+...  render json: event { message: 'Event Created!' }
+...                              ^
+/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+...t { message: 'Event Created!' }
+...                              ^
+):
+  
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:07:51 -0500
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+...  render json: event { message: 'Event Created!' }
+...                              ^
+/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+...t { message: 'Event Created!' }
+...                              ^
+):
+  
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/events_controller.rb:14: syntax error, unexpected '}', expecting `end'
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:08:55 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 71ms (Views: 22.5ms | ActiveRecord: 9.4ms | Allocations: 11482)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:09:00 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 16.6ms | ActiveRecord: 0.9ms | Allocations: 2289)
+
+
+Started GET "/api/v1/events/show/9" for 127.0.0.1 at 2021-03-17 17:09:00 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/events_controller.rb:40:in `event'
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 4.0ms | Allocations: 1889)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 17:09:02 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (4.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 4.9ms | ActiveRecord: 4.8ms | Allocations: 2303)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-17 18:29:52 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 7025)
+Completed 200 OK in 202ms (Views: 85.9ms | ActiveRecord: 0.0ms | Allocations: 20471)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 18:29:55 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 9.9ms | ActiveRecord: 16.8ms | Allocations: 7544)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-17 18:29:57 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 4565)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 5147)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-17 18:30:00 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 4565)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 5137)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-17 18:30:03 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (3.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 3.5ms | Allocations: 2288)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-17 18:30:47 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (6.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 41ms (Views: 5.6ms | ActiveRecord: 14.8ms | Allocations: 5071)
+
+
