@@ -7,27 +7,27 @@ import EventsView from "./EventsView";
 export default () => (
   
     
-      
-      <div className="center-desktop">
+      <div style = {{width: "100vw", height: "100vh", backgroundColor: "whitesmoke"}}>
+        <div className="center-desktop">
 
+          
+          <div>
+            <h1 className = "heading">MSCFISH <i>Program Assistant</i></h1>
+          </div>
         
-        <div>
-          <h1>MSCFISH <i>Program Assistant</i></h1>
+          <div className="left">
+            <AnnouncementsView></AnnouncementsView>
+          </div>
+  
+          <div className="right">
+            <EventsView></EventsView>
+          </div>
+          
+          <LinkButton className =  "to-button" to = "/events" text = "Events"></LinkButton>
+          <LinkButton className =  "to-button" to = "/announcements" text = "Announcements"></LinkButton>
+          <LinkButton className =  "to-button" to = "/CheckIn" text = "Check In"></LinkButton>
+        
         </div>
-       
-        <div className="left">
-          <AnnouncementsView></AnnouncementsView>
-        </div>
- 
-        <div className="right">
-          <EventsView></EventsView>
-        </div>
-       
-        <LinkButton className =  "to-button" to = "/events" text = "Events"></LinkButton>
-        <LinkButton className =  "to-button" to = "/announcements" text = "Announcements"></LinkButton>
-        <LinkButton className =  "to-button" to = "/CheckIn" text = "Check In"></LinkButton>
-       
       </div>
-   
   
 );
