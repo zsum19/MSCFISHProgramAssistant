@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import EventView from "./EventView";
+
 
 class Events extends React.Component {
     constructor(props) {
@@ -24,17 +26,19 @@ class Events extends React.Component {
 
     render() {
         const { events } = this.state;
+        console.log("EVENTS:", events);
         const allEvents = events.map((event, index) => (
-            <div key={index} className="col-md-6 col-lg-4">
-                <div className="card mb-4">
-                <div className="card-body">
-                    <h5 className="card-title">{event.name}</h5>
-                    <Link to={`/event/${event.id}`} className="btn custom-button">
-                    View Event
-                    </Link>
-                    </div>
-                </div>
+            <div key={index} >
+                <EventView 
+                    title = {event.name}
+                    max_size = {event.max_size}
+                    tickets_sold = {event.tickets_sold}
+                    description = {event.description}
+                    date = {event.date}
+                    id = {event.id}
+                ></EventView>
             </div>
+
         ));
         const noEvent = (
             <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
@@ -45,30 +49,10 @@ class Events extends React.Component {
         );
 
         return (
-            <>
-                <section className="jumbotron jumbotron-fluid text-center">
-                <div className="container py-5">
-                    <h1 className="display-4">MSC Fish Events</h1>
-                    <p className="lead text-muted">
-                    A list of all current events.
-                    </p>
-                </div>
-                </section>
-                <div className="py-5">
-                <main className="container">
-                    <div className="text-right mb-3">
-                    <Link to="/event" className="btn custom-button">
-                        Create New Event
-                    </Link>
-                    </div>
-                    <div className="row">
-                    {events.length > 0 ? allEvents : noEvent}
-                    </div>
-                    <Link to="/" className="btn btn-link">
-                    Home
-                    </Link>
-                </main>
-                </div>
+            <>  
+                <div className="row">
+                {   events.length > 0 ? allEvents : noEvent}
+                </div>      
             </>
         );
     }

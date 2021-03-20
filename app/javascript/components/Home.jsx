@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AnnouncementsView from "./AnnouncementsView";
 import LinkButton from "./common/LinkButton";
-import EventsView from "./EventsView";
+import LatestEventsView from "./LatestEventsView";
 
 export default () => (
   
@@ -20,10 +20,10 @@ export default () => (
           </div>
   
           <div className="right">
-            <EventsView></EventsView>
+            <LatestEventsView></LatestEventsView>
           </div>
           
-          <LinkButton className =  "to-button" to = "/events" text = "Events"></LinkButton>
+          <LinkButton className =  "to-button" to = "/allevents" text = "Events"></LinkButton>
           <LinkButton className =  "to-button" to = "/announcements" text = "Announcements"></LinkButton>
           <LinkButton className =  "to-button" to = "/CheckIn" text = "Check In"></LinkButton>
         

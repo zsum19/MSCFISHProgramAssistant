@@ -24,10 +24,10 @@ export default () => (
             >  
             </AnnouncementView>
             <AnnouncementView
-                title = "I love playing in the mud"
-                eventName = "Another One"
-                description = "Help the kids with their chucky cheese games!"
-                author = "Nicolas Belovoskey"
+                title = "All the frogs ran away"
+                eventName = "Frog Catching Social"
+                description = "Those dang frogs slipped through our hands!"
+                author = "Bingus"
                 time = "Wednesday, March 17th at 3:00 AM"
             >  
             </AnnouncementView>
