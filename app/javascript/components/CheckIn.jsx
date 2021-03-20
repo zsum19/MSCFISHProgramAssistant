@@ -6,7 +6,8 @@ class CheckIn extends React.Component {
         super(props);
         this.state = {
             name: "",
-            email: ""
+            email: "",
+            referral: ""
         };
 
         this.onChange = this.onChange.bind(this);
@@ -24,10 +25,9 @@ class CheckIn extends React.Component {
         this.setState({ [e.target.name]: e.target.value });
     }
     
-    onSubmit(e) {
-        e.preventDefault();
-        const url = "/api/v1/attendees/create";
-        const { name, email} = this.state;
+    tryUpdate(){
+      const url = "/api/v1/attendees/update";
+        const { name, email, referral } = this.state;
     
         if (name.length == 0)
           return;
@@ -35,6 +35,39 @@ class CheckIn extends React.Component {
         const body = {
             name, 
             email
+        };
+    
+        const token = document.querySelector('meta[name="csrf-token"]').content;
+        fetch(url, {
+          method: "PATCH",
+          headers: {
+            "X-CSRF-Token": token,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(body)
+        })
+          .then(response => {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error("Network response was not ok.");
+          })
+          .then(response => this.props.history.push(`/`))
+          .catch(error => console.log(error.message));
+    }
+
+    onSubmit(e) {
+        e.preventDefault();
+        const url = "/api/v1/attendees/create";
+        const { name, email, referral } = this.state;
+    
+        if (name.length == 0)
+          return;
+    
+        const body = {
+            name, 
+            email,
+            referral
         };
     
         const token = document.querySelector('meta[name="csrf-token"]').content;
@@ -53,7 +86,7 @@ class CheckIn extends React.Component {
             throw new Error("Network response was not ok.");
           })
           .then(response => this.props.history.push(`/`))
-          .catch(error => console.log(error.message));
+          .catch(error => this.tryUpdate());
     }
 
     render() {
@@ -95,7 +128,7 @@ class CheckIn extends React.Component {
                       id="referral"
                       className="form-control"
                       //For future joining of tables
-                      //onChange={this.onChange}
+                      onChange={this.onChange}
                     />
                   </div>
                   <button type="submit" className="btn custom-button mt-3">

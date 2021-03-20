@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       delete 'announcements/destroy/:id', to: 'announcements#destroy'
 
       post 'attendees/create'
+      patch 'attendees/update'
     end
   end
   root 'homepage#index'
