@@ -7,35 +7,35 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 9.times do |i|
-    Event.create(
-        name: "Test Event #{i+1}",
-        max_size: 10,
-        tickets_sold: i,
-        num_checked_in: i*2,
-        date: DateTime.current.to_date,
-        description: "This is a test"
-    )
+  Event.create(
+    name: "Test Event #{i+1}",
+    max_size: 10,
+    tickets_sold: i,
+    num_checked_in: i*2,
+    date: DateTime.current.to_date,
+    description: "This is a test"
+  )
 end
 
 2.times do |i|
-    Role.create!(
-        name: "Test #{i}",
-        description: "Just a test role"
-    )
+  Role.create!(
+    name: "Test #{i}",
+    description: "Just a test role"
+  )
 end
 
 9.times do |i|
-    Member.create!(
-        role_id: 1,
-        name: "Test",
-        num_referrals: 0
-    )
+  Member.create!(
+    role_id: 1,
+    name: "Test #{i}",
+    num_referrals: 0
+  )
 end
 
 9.times do |i|
-    Announcement.create!(
-        author_id: 1,
-        event_id: 1,
-        content: "This is a test accoucement \##{i+1}",
-    )
+  Announcement.create!(
+    author_id: 1,
+    event_id: 1,
+    content: "This is a test accoucement \##{i+1}",
+  )
 end

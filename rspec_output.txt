@@ -1,68 +1,64 @@
 
-Visit announcements page
+Announcements page
 Capybara starting Puma...
-* Version 5.2.1 , codename: Fettisdagsbulle
+* Version 5.2.2 , codename: Fettisdagsbulle
 * Min threads: 0, max threads: 4
-* Listening on http://127.0.0.1:34909
+* Listening on http://127.0.0.1:35619
 .  Able to open announcements page
+.  Able to open link to create new announcements
+.  Able to go back home from announcements page
 
-New announcement link
-.  Able to open link to create new announcement
-
-Back to home link
-.  Able to go back home from announcement page
-
-Visit new announcement page
+New announcement page
 .  Able to open new announcement page
-
-Back to all announcements link
+.  New announcement form valid inputs
+.  New announcement form invalid inputs
 .  Back to all announcements link on new announcement page
 
 Card (view announcement link)
 .  Able to view announcement details if there is an announcement created
 
-Visit events page
+Events page
 .  Able to open events page
+.  Able to open link to create new events
+.  Able to go back home from events page
 
-New event link
-.  Able to open link to create new event
-
-Back to home link
-.  Able to go back home from event page
-
-Visit new event page
+New event page
 .  Able to open new event page
-
-New event form
-.  Form on new events page is working correctly
-
-Back to all events link
+.  New event form valid inputs
+.  New event form invalid inputs
 .  Back to all events link on new event page
 
 Card (view event link)
 .  Able to view event details if there is an event created
 
+Homepage
+.  Able to open home page
+.  Link to events page
+.  Link to announcements page
+.  Link to check in page
+.  Button to download database
+
 Announcement
-.  Should not save an announcement without any arguments
-.  Should not save an announcement without content
-.  Should not save an announcement without an event id
-.  Should not save an announcement without author id
-.  Should save an announcement with valid attributes
+.  does not save an announcement without any arguments
+.  does not save an announcement without content
+.  does not save an announcement without an event id
+.  does not save an announcement without author id
+.  saves an announcement with valid attributes
 
 Event
-.  Should not save an event without any arguments
-.  Should not save an event without a name
-.  Should not save an event without a max_size
-.  Should not save an event without a ticket_sold
-.  Should not save an event without a num_checked_in
-.  Should save an event with valid attributes
+.  does not save an event without any arguments
+.  does not save an event without a name
+.  does not save an event without a max_size
+.  does not save an event without a ticket_sold
+.  does not save an event without a num_checked_in
+.  saves an event with valid attributes
 
 
-Finished in 21.86 seconds (files took 2.4 seconds to load)
-24 examples, 0 failures
+Finished in 38.41 seconds (files took 4.85 seconds to load)
+32 examples, 0 failures
 
-Finished in 21.86 seconds (files took 2.4 seconds to load)
-24 examples, 0 failures
+Finished in 38.41 seconds (files took 4.85 seconds to load)
+32 examples, 0 failures
 
 
-Coverage report generated for RSpec to /home/treydinges/Documents/MSCFISHProgramAssistant/coverage. 230 / 262 LOC (87.79%) covered.
+Coverage report generated for RSpec to /home/treydinges/Documents/MSCFISHProgramAssistant/coverage. 374 / 413 LOC (90.56%) covered.
