@@ -10,6 +10,11 @@ module Api
 
       def create
         attendee = Attendee.create!(attendee_params)
+
+        member = Member.find_by!(params[:referral])
+        member.increment!(:num_referrals)
+        member.reload.num_referrals
+        
         if attendee
           render json: attendee
         else
@@ -20,6 +25,12 @@ module Api
       def destroy
         attendee&.destroy
         render json: { message: 'attendee Deleted!' }
+      end
+
+      def update
+        attendee = Attendee.find_by!(email: params[:email])
+        attendee.update(name: params[:name])
+        render json: attendee
       end
 
       private
