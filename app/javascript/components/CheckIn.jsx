@@ -7,12 +7,27 @@ class CheckIn extends React.Component {
         this.state = {
             name: "",
             email: "",
-            referral: ""
+            referral: "",
+            members: []
         };
 
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
         this.stripHtmlEntities = this.stripHtmlEntities.bind(this);
+    }
+
+    componentDidMount() {
+        let memberList = [];
+        const url = "/api/v1/members/index";
+        fetch(url)
+          .then(response => {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error("Network response was not ok.");
+          })
+          .then(response => this.setState({ members: response }))
+          .catch(error => console.log(error.message));
     }
 
     stripHtmlEntities(str) {
@@ -26,7 +41,7 @@ class CheckIn extends React.Component {
     }
     
     tryUpdate(){
-      const url = "/api/v1/attendees/update";
+        const url = "/api/v1/attendees/update";
         const { name, email, referral } = this.state;
     
         if (name.length == 0)
@@ -90,6 +105,10 @@ class CheckIn extends React.Component {
     }
 
     render() {
+        const { members } = this.state;
+        let memberOptionItems = members.map((members, index) => (
+          <option key={members.name}>{members.name}</option>
+        ));
         return (
           <div className="container mt-5">
             <div className="row">
@@ -122,14 +141,16 @@ class CheckIn extends React.Component {
                   </div>
                   <div className="form-group">
                     <label htmlFor="referral">Referred By</label>
-                    <input
-                      type="text"
+                    <select
                       name="referral"
                       id="referral"
                       className="form-control"
+                      value="Test"
                       //For future joining of tables
                       onChange={this.onChange}
-                    />
+                    >
+                      {memberOptionItems}
+                    </select>
                   </div>
                   <button type="submit" className="btn custom-button mt-3">
                     Check In
