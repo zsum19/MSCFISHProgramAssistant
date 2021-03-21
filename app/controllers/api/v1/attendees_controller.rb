@@ -11,10 +11,12 @@ module Api
       def create
         attendee = Attendee.create!(attendee_params)
 
-        member = Member.find_by!(params[:referral])
+        member = Member.find_by!(name: params[:referral])
         member.increment!(:num_referrals)
         member.reload.num_referrals
         
+        eventattendances = Eventattendance.create!(event_id: params[:event_id], attendee_id: attendee.id)
+
         if attendee
           render json: attendee
         else

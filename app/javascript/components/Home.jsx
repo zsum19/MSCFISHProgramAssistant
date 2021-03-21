@@ -25,7 +25,7 @@ export default () => (
           
           <LinkButton className =  "to-button" to = "/events" text = "Events"></LinkButton>
           <LinkButton className =  "to-button" to = "/announcements" text = "Announcements"></LinkButton>
-          <LinkButton className =  "to-button" to = "/CheckIn" text = "Check In"></LinkButton>
+          <LinkButton className =  "to-button" to = "/checkin/1" text = "Check In"></LinkButton>
           <a href="index/database_dump.zip" download = "database_dump.zip">
             <button class = "btn btn-lg custom-button">Download Database</button>
           </a>
