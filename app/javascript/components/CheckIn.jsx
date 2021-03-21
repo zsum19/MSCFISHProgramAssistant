@@ -107,7 +107,7 @@ class CheckIn extends React.Component {
     render() {
         const { members } = this.state;
         let memberOptionItems = members.map((members, index) => (
-          <option key={members.name}>{members.name}</option>
+          <option value={members.name}>{members.name}</option>
         ));
         return (
           <div className="container mt-5">
