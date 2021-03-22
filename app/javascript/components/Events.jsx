@@ -28,7 +28,7 @@ class Events extends React.Component {
         const { events } = this.state;
         console.log("EVENTS:", events);
         const allEvents = events.map((event, index) => (
-            <div key={index} >
+            <div key={index} className="col-md-6 col-lg-4">
                 <EventView 
                     title = {event.name}
                     max_size = {event.max_size}
@@ -38,7 +38,6 @@ class Events extends React.Component {
                     id = {event.id}
                 ></EventView>
             </div>
-
         ));
         const noEvent = (
             <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">

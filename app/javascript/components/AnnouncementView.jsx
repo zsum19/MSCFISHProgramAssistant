@@ -4,6 +4,8 @@ import EventBadge from "./common/EventBadge";
 import LocaleBadge from "./common/LocaleBadge";
 import LinkButton from "./common/LinkButton";
 
+
+
 export default (props) => ( 
     <div className = "single-post announcement-view">
         <h2 className = "post-heading">{props.title}</h2>

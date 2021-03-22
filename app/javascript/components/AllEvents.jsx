@@ -29,9 +29,9 @@ class AllEvents extends React.Component {
                     </Link>
                     </div>
                     <div className="row">
-                        <div className = "col-md-12 col-lg-12">
-                            <Events></Events>
-                        </div>
+                        
+                        <Events></Events>
+                        
                     </div>
                     <Link to="/" className="btn btn-link">
                     Home

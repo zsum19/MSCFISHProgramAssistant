@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AnnouncementView from "./AnnouncementView";
 import EventBadge from "./common/EventBadge"
-class Announcements extends React.Component {
+
+class LatestAnnouncementsView extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -25,7 +27,7 @@ class Announcements extends React.Component {
     render() {
         const { announcements } = this.state;
         const allAnnouncements = announcements.map((announcement, index) => (
-            <div key={index} className="col-md-6 col-lg-4">               
+            <div key={index} className="col-lg-12">               
                 <div className = "single-post announcement-view">
                     <h2 className = "post-heading">This does not exist yet</h2>
                     <EventBadge text = {announcement.event_id}></EventBadge>
@@ -52,32 +54,17 @@ class Announcements extends React.Component {
         );
 
         return (
-            <>
-                <section className="jumbotron jumbotron-fluid text-center">
-                <div className="container py-5">
-                    <h1 className="display-4">MSC Fish Announcements</h1>
-                    <p className="lead text-muted">
-                    A list of all current announcements.
-                    </p>
+            <div style = {{border: "1px solid #bbb"}} className = "announcements-view">
+                <div className = "colored-heading">
+                    <h2 className = "text test"> LATEST ANNOUNCEMENTS </h2>
                 </div>
-                </section>
-                <div className="py-5">
-                <main className="container">
-                    <div className="text-right mb-3">
-                    <Link to="/announcement" className="btn custom-button">
-                        Create New announcement
-                    </Link>
-                    </div>
+                <div className = "small-padding scroll-box"> 
                     <div className="row">
-                    {announcements.length > 0 ? allAnnouncements : noAnnouncement}
+                        {announcements.length > 0 ? allAnnouncements : noAnnouncement}
                     </div>
-                    <Link to="/" className="btn btn-link">
-                    Home
-                    </Link>
-                </main>
                 </div>
-            </>
+            </div>               
         );
     }
 }
-export default Announcements;
+export default LatestAnnouncementsView;
