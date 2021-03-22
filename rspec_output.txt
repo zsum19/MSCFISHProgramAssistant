@@ -3,7 +3,7 @@ Announcements page
 Capybara starting Puma...
 * Version 5.2.2 , codename: Fettisdagsbulle
 * Min threads: 0, max threads: 4
-* Listening on http://127.0.0.1:35619
+* Listening on http://127.0.0.1:43039
 .  Able to open announcements page
 .  Able to open link to create new announcements
 .  Able to go back home from announcements page
@@ -16,6 +16,12 @@ New announcement page
 
 Card (view announcement link)
 .  Able to view announcement details if there is an announcement created
+
+New checkin page
+.  Able to open checkin page
+.  Able to open checkin page
+.  Checkin form valid inputs
+.  Checkin form invalid inputs
 
 Events page
 .  Able to open events page
@@ -45,6 +51,12 @@ Announcement
 .  does not save an announcement without author id
 .  saves an announcement with valid attributes
 
+Attendee
+.  does not save an attendee without any arguments
+.  does not save an attendee without name
+.  does not save an attendee without email
+.  saves an attendee with valid attributes
+
 Event
 .  does not save an event without any arguments
 .  does not save an event without a name
@@ -53,12 +65,29 @@ Event
 .  does not save an event without a num_checked_in
 .  saves an event with valid attributes
 
+Member
+.  does not save an member without any arguments
+.  does not save an member without name
+.  does not save an member without num referrals
+.  does not save an member without role id
+.  saves an member with valid attributes
 
-Finished in 38.41 seconds (files took 4.85 seconds to load)
-32 examples, 0 failures
+Api::V1::Members
+  GET /index
+.    returns http success
+  GET /create
+.    returns http success
+  GET /show
+.    returns http success
+  GET /destroy
+.    returns http success
 
-Finished in 38.41 seconds (files took 4.85 seconds to load)
-32 examples, 0 failures
+
+Finished in 37.71 seconds (files took 4.19 seconds to load)
+49 examples, 0 failures
+
+Finished in 37.71 seconds (files took 4.19 seconds to load)
+49 examples, 0 failures
 
 
-Coverage report generated for RSpec to /home/treydinges/Documents/MSCFISHProgramAssistant/coverage. 374 / 413 LOC (90.56%) covered.
+Coverage report generated for RSpec to /home/treydinges/Documents/MSCFISHProgramAssistant/coverage. 476 / 526 LOC (90.49%) covered.
