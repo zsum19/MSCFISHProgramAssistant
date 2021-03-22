@@ -29,7 +29,7 @@ describe 'Homepage', :type => :feature do
 
   it 'Link to check in page', js: true do
     homepage.visit_homepage
-    expect(page).to have_link(nil, href: '/CheckIn')
+    expect(page).to have_link(nil, href: '/checkin/1')
   end
 
   it 'Button to download database', js: true do

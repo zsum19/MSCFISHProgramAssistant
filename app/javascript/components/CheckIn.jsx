@@ -8,15 +8,17 @@ class CheckIn extends React.Component {
             name: "",
             email: "",
             referral: "",
-            members: []
+            members: [],
+            event_id: ""
         };
-
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
         this.stripHtmlEntities = this.stripHtmlEntities.bind(this);
     }
 
     componentDidMount() {
+        console.log(this.props.match.params.event_id);
+        this.setState({ event_id: this.props.match.params.event_id});
         let memberList = [];
         const url = "/api/v1/members/index";
         fetch(url)
@@ -74,7 +76,7 @@ class CheckIn extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/attendees/create";
-        const { name, email, referral } = this.state;
+        const { name, email, referral, event_id } = this.state;
     
         if (name.length == 0)
           return;
@@ -82,7 +84,8 @@ class CheckIn extends React.Component {
         const body = {
             name, 
             email,
-            referral
+            referral,
+            event_id
         };
     
         const token = document.querySelector('meta[name="csrf-token"]').content;
