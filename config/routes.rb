@@ -10,6 +10,14 @@ Rails.application.routes.draw do
       post 'announcements/create'
       get 'announcements/show/:id', to: 'announcements#show'
       delete 'announcements/destroy/:id', to: 'announcements#destroy'
+
+      post 'attendees/create'
+      patch 'attendees/update'
+
+      get 'members/index'
+      post 'members/create'
+      get 'members/show/:id', to: 'members#show'
+      delete 'members/destroy/:id', to: 'members#destroy'
     end
   end
   root 'homepage#index'

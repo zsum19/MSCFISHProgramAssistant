@@ -6,12 +6,32 @@ class CheckIn extends React.Component {
         super(props);
         this.state = {
             name: "",
-            email: ""
+            email: "",
+            referral: "",
+            members: [],
+            event_id: ""
         };
-
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
         this.stripHtmlEntities = this.stripHtmlEntities.bind(this);
+    }
+
+    componentDidMount() {
+        this.setState({ event_id: this.props.match.params.event_id});
+        let memberList = [];
+        const url = "/api/v1/members/index";
+        fetch(url)
+          .then(response => {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error("Network response was not ok.");
+          })
+          .then(response => {
+            this.setState({ members: response });
+            this.setState({ referral: this.state.members[0].name });
+          })
+          .catch(error => console.log(error.message));
     }
 
     stripHtmlEntities(str) {
@@ -24,17 +44,50 @@ class CheckIn extends React.Component {
         this.setState({ [e.target.name]: e.target.value });
     }
     
-    onSubmit(e) {
-        e.prattendeeDefault();
-        const url = "/api/v1/attendees/create";
-        const { name, email} = this.state;
+    tryUpdate(){
+        const url = "/api/v1/attendees/update";
+        const { name, email } = this.state;
     
-        if (name.length == 0 || date.length == 0)
+        if (name.length == 0)
           return;
     
         const body = {
             name, 
             email
+        };
+    
+        const token = document.querySelector('meta[name="csrf-token"]').content;
+        fetch(url, {
+          method: "PATCH",
+          headers: {
+            "X-CSRF-Token": token,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(body)
+        })
+          .then(response => {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error("Network response was not ok.");
+          })
+          .then(response => this.props.history.push(`/`))
+          .catch(error => console.log(error.message));
+    }
+
+    onSubmit(e) {
+        e.preventDefault();
+        const url = "/api/v1/attendees/create";
+        const { name, email, referral, event_id } = this.state;
+    
+        if (name.length == 0)
+          return;
+    
+        const body = {
+            name, 
+            email,
+            referral,
+            event_id
         };
     
         const token = document.querySelector('meta[name="csrf-token"]').content;
@@ -52,11 +105,15 @@ class CheckIn extends React.Component {
             }
             throw new Error("Network response was not ok.");
           })
-          //.then(response => this.props.history.push(`/home`))
-          .catch(error => console.log(error.message));
+          .then(response => this.props.history.push(`/`))
+          .catch(error => this.tryUpdate());
     }
 
     render() {
+        const { members } = this.state;
+        let memberOptionItems = members.map((members, index) => (
+          <option value={members.name}>{members.name}</option>
+        ));
         return (
           <div className="container mt-5">
             <div className="row">
@@ -89,14 +146,16 @@ class CheckIn extends React.Component {
                   </div>
                   <div className="form-group">
                     <label htmlFor="referral">Referred By</label>
-                    <input
-                      type="text"
+                    <select
                       name="referral"
                       id="referral"
                       className="form-control"
+                      value={this.state.referral}
                       //For future joining of tables
-                      //onChange={this.onChange}
-                    />
+                      onChange={this.onChange}
+                    >
+                      {memberOptionItems}
+                    </select>
                   </div>
                   <button type="submit" className="btn custom-button mt-3">
                     Check In

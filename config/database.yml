@@ -22,6 +22,8 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: mscfishpa_user
   password: password1
+  # username: postgres
+  # password: postgres
 
 development:
   <<: *default

@@ -18,8 +18,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_220810) do
   create_table "announcements", force: :cascade do |t|
     t.bigint "author_id"
     t.bigint "event_id"
-    t.text "content"
-    t.datetime "date_posted"
+    t.text "content", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["author_id"], name: "index_announcements_on_author_id"
@@ -28,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_220810) do
 
   create_table "attendees", force: :cascade do |t|
     t.string "name", null: false
-    t.string "email"
+    t.string "email", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_attendees_on_email", unique: true

@@ -74,7 +74,7 @@ class NewEvent extends React.Component {
                 </h1>
                 <form onSubmit={this.onSubmit}>
                   <div className="form-group">
-                    <label htmlFor="name">Event name</label>
+                    <label htmlFor="name">Event Name</label>
                     <input
                       type="text"
                       name="name"

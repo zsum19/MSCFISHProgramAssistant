@@ -23,6 +23,7 @@ export default (
       <Route path="/announcement/:id" exact component={Announcement} />
       <Route path="/announcement" exact component={NewAnnouncement} />
       <Route path="/checkin" exact component={CheckIn} />
+      <Route path="/checkin/:event_id" exact component={CheckIn} />
     </Switch>
   </Router>
 );
