@@ -12,14 +12,14 @@ describe 'Homepage', :type => :feature do
 
   it 'Able to open home page', js: true do
     homepage.visit_homepage
-    expect(page).to have_content('MSCFISH Program Assistant')
-    expect(page).to have_content('ANNOUNCEMENTS')
-    expect(page).to have_content('EVENTS')
+    expect(page).to have_content('MSC FISH Program Assistant')
+    expect(page).to have_content('LATEST ANNOUNCEMENTS')
+    expect(page).to have_content('LATEST EVENTS')
   end
 
   it 'Link to events page', js: true do
     homepage.visit_homepage
-    expect(page).to have_link(nil, href: '/events')
+    expect(page).to have_link(nil, href: '/allevents')
   end
 
   it 'Link to announcements page', js: true do

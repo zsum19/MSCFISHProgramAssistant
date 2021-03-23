@@ -1,22 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import EventView from "./EventView";
+import Events from "./Events";
 
 
-class Events extends React.Component {
+
+class LatestEvents extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             events: []
         };
     }
-
     componentDidMount() {
         const url = "/api/v1/events/index";
         fetch(url)
           .then(response => {
             if (response.ok) {
-              return response.json();
+                let res = response.json();
+                console.log("RES", res);
+                return res;
             }
             throw new Error("Network response was not ok.");
           })
@@ -25,10 +28,13 @@ class Events extends React.Component {
       }
 
     render() {
+        console.log("THIS.STATE", this.state);
+        console.log("THIS.STATE.EVENTS", this.state.events);
         const { events } = this.state;
+        //console.log("THIS.STATE", this.state);
         console.log("EVENTS:", events);
         const allEvents = events.map((event, index) => (
-            <div key={index} className="col-md-6 col-lg-4">
+            <div key={index} className="col-lg-12">
                 <EventView 
                     title = {event.name}
                     max_size = {event.max_size}
@@ -47,13 +53,33 @@ class Events extends React.Component {
             </div>
         );
 
-        return (
-            <>  
+        return (  
+          
+            
                 <div className="row">
-                {   events.length > 0 ? allEvents : noEvent}
-                </div>      
-            </>
+                    
+                    <div style = {{border: "1px solid #bbb"}} className = "events-view">
+                        <div className = "colored-heading">
+                            <h2 className = "text test"> LATEST EVENTS </h2>
+                        </div>
+                        <div className = "small-padding scroll-box"> 
+                            <div className = "col-md-12 col-lg-12">
+                                {/*<Events></Events>*/}
+                                <>  
+                                    <div className="row">
+                                        {   events.length > 0 ? allEvents : noEvent}
+                                    </div>      
+                                </>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+           
+             
         );
     }
 }
-export default Events;
+export default LatestEvents;
+
