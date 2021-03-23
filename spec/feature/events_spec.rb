@@ -3,7 +3,7 @@ require 'rails_helper'
 class EventsPage
   include Capybara::DSL
   def visit_eventspage
-    visit('/events')
+    visit('/allevents')
   end
 end
 
@@ -74,7 +74,7 @@ describe 'New event page', :type => :feature do
   it 'Back to all events link on new event page', js: true do
     eventspage.visit_eventspage
     click_link('Create New Event')
-    expect(page).to have_link('Back to All Events', href: '/events')
+    expect(page).to have_link('Back to All Events', href: '/allevents')
   end
 end
 

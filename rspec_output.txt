@@ -3,7 +3,7 @@ Announcements page
 Capybara starting Puma...
 * Version 5.2.2 , codename: Fettisdagsbulle
 * Min threads: 0, max threads: 4
-* Listening on http://127.0.0.1:43039
+* Listening on http://127.0.0.1:39411
 .  Able to open announcements page
 .  Able to open link to create new announcements
 .  Able to go back home from announcements page
@@ -83,10 +83,10 @@ Api::V1::Members
 .    returns http success
 
 
-Finished in 37.71 seconds (files took 4.19 seconds to load)
+Finished in 46.28 seconds (files took 4.05 seconds to load)
 49 examples, 0 failures
 
-Finished in 37.71 seconds (files took 4.19 seconds to load)
+Finished in 46.28 seconds (files took 4.05 seconds to load)
 49 examples, 0 failures
 
 

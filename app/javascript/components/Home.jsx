@@ -10,7 +10,7 @@ export default () => (
       <div style = {{width: "100vw", height: "100vh", backgroundColor: "whitesmoke"}}>
         
         <div class="sidebar">
-          <img src = "logo.jpeg" alt = "MSC FISH logo"></img>
+          {/* <img src = "logo.jpeg" alt = "MSC FISH logo"></img> */}
           <Link className =  "custom-button lg" to = "/allevents">Events</Link>
           <Link className =  "custom-button lg" to = "/announcements">Announcements</Link>
           <Link className =  "custom-button lg" to = "/checkin/1">Check In</Link>
@@ -22,7 +22,7 @@ export default () => (
         <div className = "py-5">
           <div className="center-desktop">
             <div>
-              <h1 className = "heading">MSCFISH <i>Program Assistant</i></h1>
+              <h1 className = "heading">MSC FISH <i>Program Assistant</i></h1>
             </div>
           
             <div className="left">

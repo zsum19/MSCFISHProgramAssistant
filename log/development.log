@@ -4126,3 +4126,400 @@ Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 671)
 ActionController::UnknownFormat (ActionController::UnknownFormat):
   
 app/controllers/homepage_controller.rb:13:in `index'
+Started GET "/" for 127.0.0.1 at 2021-03-22 22:53:59 -0500
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  Peer authentication failed for user "postgres"
+):
+  
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-03-22 22:54:29 -0500
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 273)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: c000db4f4665feb8909c
+Version: webpack 4.46.0
+Time: 13948ms
+Built at: 03/22/2021 10:54:49 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-640992f38cfae339ad6a.js   2.81 MiB        Index  [emitted] [immutable]  Index
+      js/Index-640992f38cfae339ad6a.js.map   3.02 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-640992f38cfae339ad6a.js js/Index-640992f38cfae339ad6a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.78 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 73 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19311.5ms | Allocations: 14909)
+Completed 200 OK in 19409ms (Views: 19320.9ms | ActiveRecord: 0.0ms | Allocations: 28946)
+
+
+Started GET "/logo.jpeg" for 127.0.0.1 at 2021-03-22 22:54:50 -0500
+Processing by HomepageController#index as JPEG
+  Parameters: {"path"=>"logo"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 727)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/homepage_controller.rb:13:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 22:54:50 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 22:54:50 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (20.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 157ms (Views: 53.4ms | ActiveRecord: 89.6ms | Allocations: 19633)
+
+
+  [1m[36mEvent Load (11.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 217ms (Views: 23.5ms | ActiveRecord: 156.5ms | Allocations: 28787)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 22:55:05 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 1.2ms | Allocations: 2288)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-22 22:55:07 -0500
+Started GET "/logo.jpeg" for 127.0.0.1 at 2021-03-22 22:55:07 -0500
+Processing by HomepageController#index as JPEG
+  Parameters: {"path"=>"logo"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 674)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 22:55:07 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 22:55:07 -0500
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/homepage_controller.rb:13:in `index'
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+  [1m[36mEvent Load (24.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 159ms (Views: 127.3ms | ActiveRecord: 24.9ms | Allocations: 21609)
+
+
+  [1m[36mAnnouncement Load (127.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+[Webpacker] Everything's up-to-date. Nothing to do
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 328ms (Views: 180.6ms | ActiveRecord: 127.5ms | Allocations: 44120)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 229.1ms | Allocations: 36939)
+Completed 200 OK in 367ms (Views: 358.8ms | ActiveRecord: 0.0ms | Allocations: 56200)
+
+
+Started GET "/logo.jpeg" for 127.0.0.1 at 2021-03-22 22:55:08 -0500
+Processing by HomepageController#index as JPEG
+  Parameters: {"path"=>"logo"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 664)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/homepage_controller.rb:13:in `index'
+Started GET "/" for 127.0.0.1 at 2021-03-22 22:55:10 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 4814)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 5375)
+
+
+Started GET "/logo.jpeg" for 127.0.0.1 at 2021-03-22 22:55:11 -0500
+Processing by HomepageController#index as JPEG
+  Parameters: {"path"=>"logo"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 664)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/homepage_controller.rb:13:in `index'
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 22:55:11 -0500
+Processing by Api::V1::EventsController#index as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 22:55:11 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (22.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 45ms (Views: 10.8ms | ActiveRecord: 22.2ms | Allocations: 9184)
+
+
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 75ms (Views: 48.6ms | ActiveRecord: 0.8ms | Allocations: 29806)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 22:55:48 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (4.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 4.6ms | Allocations: 2288)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-22 22:55:51 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4814)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 5379)
+
+
+Started GET "/logo.jpeg" for 127.0.0.1 at 2021-03-22 22:55:51 -0500
+Processing by HomepageController#index as JPEG
+  Parameters: {"path"=>"logo"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 664)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/homepage_controller.rb:13:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 22:55:51 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 22:55:51 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (65.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 119ms (Views: 27.5ms | ActiveRecord: 65.5ms | Allocations: 13745)
+
+
+  [1m[36mEvent Load (7.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 77ms (Views: 65.2ms | ActiveRecord: 7.2ms | Allocations: 29178)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-22 22:55:53 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 4814)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5376)
+
+
+Started GET "/logo.jpeg" for 127.0.0.1 at 2021-03-22 22:55:53 -0500
+Processing by HomepageController#index as JPEG
+  Parameters: {"path"=>"logo"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 665)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/homepage_controller.rb:13:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 22:55:53 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 22:55:54 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (13.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+  [1m[36mEvent Load (14.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 109ms (Views: 27.0ms | ActiveRecord: 13.5ms | Allocations: 10984)
+
+
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 74ms (Views: 54.6ms | ActiveRecord: 14.2ms | Allocations: 20013)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-22 22:58:56 -0500
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 7502)
+Completed 200 OK in 144ms (Views: 59.0ms | ActiveRecord: 0.0ms | Allocations: 21143)
+
+
+Started GET "/logo.jpeg" for 127.0.0.1 at 2021-03-22 22:58:57 -0500
+Processing by HomepageController#index as JPEG
+  Parameters: {"path"=>"logo"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 699)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/homepage_controller.rb:13:in `index'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 22:58:58 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 22:58:58 -0500
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (19.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 157ms (Views: 41.5ms | ActiveRecord: 103.4ms | Allocations: 22746)
+
+
+  [1m[36mAnnouncement Load (35.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 233ms (Views: 25.8ms | ActiveRecord: 154.8ms | Allocations: 32450)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-22 23:02:21 -0500
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (1.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/announcement.rb:14:in `block in to_csv'
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/event.rb:18:in `block in to_csv'
+  [1m[36mAttendee Load (6.0ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/attendee.rb:17:in `block in to_csv'
+  [1m[36mMember Load (22.2ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/member.rb:17:in `block in to_csv'
+  [1m[36mRole Load (16.9ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/role.rb:11:in `block in to_csv'
+  [1m[36mEventattendance Load (12.1ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/eventattendance.rb:12:in `block in to_csv'
+  [1m[36mReferral Load (10.0ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/referral.rb:12:in `block in to_csv'
+Sent file tmp/database_dump.zip (8.1ms)
+Completed 200 OK in 523ms (ActiveRecord: 125.6ms | Allocations: 42514)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-22 23:02:25 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 262)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 3cf86f347ec7f81ad441
+Version: webpack 4.46.0
+Time: 6700ms
+Built at: 03/22/2021 11:02:34 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-f1dda7124d36c4c7bb52.js   2.81 MiB        Index  [emitted] [immutable]  Index
+      js/Index-f1dda7124d36c4c7bb52.js.map   3.02 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-f1dda7124d36c4c7bb52.js js/Index-f1dda7124d36c4c7bb52.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.78 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 73 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8913.8ms | Allocations: 9027)
+Completed 200 OK in 8939ms (Views: 8937.3ms | ActiveRecord: 0.0ms | Allocations: 11565)
+
+
+Started GET "/logo.jpeg" for 127.0.0.1 at 2021-03-22 23:02:35 -0500
+Processing by HomepageController#index as JPEG
+  Parameters: {"path"=>"logo"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 691)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/homepage_controller.rb:13:in `index'
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 23:02:35 -0500
+Processing by Api::V1::EventsController#index as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 23:02:35 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (27.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 144ms (Views: 85.0ms | ActiveRecord: 27.9ms | Allocations: 31796)
+
+
+  [1m[36mAnnouncement Load (26.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 169ms (Views: 33.1ms | ActiveRecord: 118.1ms | Allocations: 25420)
+
+
