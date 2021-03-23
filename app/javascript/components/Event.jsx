@@ -58,7 +58,7 @@ class Event extends React.Component {
             }
             throw new Error("Network response was not ok.");
           })
-          .then(() => this.props.history.push("/events"))
+          .then(() => this.props.history.push("/allevents"))
           .catch(error => console.log(error.message));
       }
 
