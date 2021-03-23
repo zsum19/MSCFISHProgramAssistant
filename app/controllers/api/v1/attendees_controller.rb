@@ -15,9 +15,9 @@ module Api
         member.increment!(:num_referrals)
         member.reload.num_referrals
 
-        referral = Referral.create!(member_id: member.id, attendee_id: attendee.id)
-        
-        eventattendances = Eventattendance.create!(event_id: params[:event_id], attendee_id: attendee.id)
+        Referral.create!(member_id: member.id, attendee_id: attendee.id)
+
+        Eventattendance.create!(event_id: params[:event_id], attendee_id: attendee.id)
 
         event = Event.find_by!(id: params[:event_id])
         event.increment!(:num_checked_in)
