@@ -3077,3 +3077,900 @@ Migrating to CreateReferrals (20210215220810)
   [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mAnnouncement Create (0.6ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #9"], ["created_at", "2021-03-19 20:20:09.657589"], ["updated_at", "2021-03-19 20:20:09.657589"]]
   [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2021-03-22 14:48:03 -0500
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  Peer authentication failed for user "postgres"
+):
+  
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-03-22 14:48:30 -0500
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 28.4ms | Allocations: 274)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 97f95b0ffc61a96849f5
+Version: webpack 4.46.0
+Time: 10098ms
+Built at: 03/22/2021 2:48:46 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-ddedfc2b86a576f91363.js   2.79 MiB        Index  [emitted] [immutable]  Index
+      js/Index-ddedfc2b86a576f91363.js.map   3.01 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-ddedfc2b86a576f91363.js js/Index-ddedfc2b86a576f91363.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.72 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 70 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15586.2ms | Allocations: 13546)
+Completed 200 OK in 15748ms (Views: 15594.3ms | ActiveRecord: 0.0ms | Allocations: 28290)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-03-22 14:49:12 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (14.4ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 64ms (Views: 14.7ms | ActiveRecord: 45.8ms | Allocations: 5796)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4341533906286689490)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateReferrals (20210215220810)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (36.6ms)[0m  [1m[35mDROP TABLE "referrals"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (5.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210215220810"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEventattendances (20210215220629)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "eventattendances"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210215220629"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttendees (20210211023537)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mDROP TABLE "attendees"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210211023537"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAnnouncements (20210211023531)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.5ms)[0m  [1m[35mDROP TABLE "announcements"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210211023531"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMembers (20210211023523)
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "members"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210211023523"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20210211023522)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "roles"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210211023522"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEvents (20210211023456)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.9ms)[0m  [1m[35mDROP TABLE "events"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210211023456"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4341533906286689490)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4341533906286689490)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvents (20210211023456)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (66.6ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "name" character varying NOT NULL, "max_size" integer NOT NULL, "tickets_sold" integer DEFAULT 0 NOT NULL, "num_checked_in" integer DEFAULT 0 NOT NULL, "date" timestamp, "description" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210211023456"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20210211023522)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (23.6ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "name" character varying, "description" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210211023522"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMembers (20210211023523)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.7ms)[0m  [1m[35mCREATE TABLE "members" ("id" bigserial primary key, "role_id" bigint, "name" character varying NOT NULL, "num_referrals" integer DEFAULT 0 NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ba7343b1aa"
+FOREIGN KEY ("role_id")
+  REFERENCES "roles" ("id")
+)[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE INDEX "index_members_on_role_id" ON "members" ("role_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210211023523"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAnnouncements (20210211023531)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.9ms)[0m  [1m[35mCREATE TABLE "announcements" ("id" bigserial primary key, "author_id" bigint, "event_id" bigint, "content" text NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_994ada01bd"
+FOREIGN KEY ("author_id")
+  REFERENCES "members" ("id")
+, CONSTRAINT "fk_rails_1c38ebbbf3"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE INDEX "index_announcements_on_author_id" ON "announcements" ("author_id")[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE INDEX "index_announcements_on_event_id" ON "announcements" ("event_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210211023531"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttendees (20210211023537)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "attendees" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_attendees_on_email" ON "attendees" ("email")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210211023537"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEventattendances (20210215220629)
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "eventattendances" ("id" bigserial primary key, "event_id" bigint, "attendee_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE INDEX "index_eventattendances_on_event_id" ON "eventattendances" ("event_id")[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE INDEX "index_eventattendances_on_attendee_id" ON "eventattendances" ("attendee_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210215220629"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReferrals (20210215220810)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "referrals" ("id" bigserial primary key, "member_id" bigint, "attendee_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE INDEX "index_referrals_on_member_id" ON "referrals" ("member_id")[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE INDEX "index_referrals_on_attendee_id" ON "referrals" ("attendee_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210215220810"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(4341533906286689490)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (2.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Test Event 1"], ["max_size", 10], ["date", "2021-03-22 00:00:00"], ["description", "This is a test"], ["created_at", "2021-03-22 20:06:48.169387"], ["updated_at", "2021-03-22 20:06:48.169387"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Test Event 2"], ["max_size", 10], ["tickets_sold", 1], ["num_checked_in", 2], ["date", "2021-03-22 00:00:00"], ["description", "This is a test"], ["created_at", "2021-03-22 20:06:48.184736"], ["updated_at", "2021-03-22 20:06:48.184736"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Test Event 3"], ["max_size", 10], ["tickets_sold", 2], ["num_checked_in", 4], ["date", "2021-03-22 00:00:00"], ["description", "This is a test"], ["created_at", "2021-03-22 20:06:48.197839"], ["updated_at", "2021-03-22 20:06:48.197839"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Test Event 4"], ["max_size", 10], ["tickets_sold", 3], ["num_checked_in", 6], ["date", "2021-03-22 00:00:00"], ["description", "This is a test"], ["created_at", "2021-03-22 20:06:48.210932"], ["updated_at", "2021-03-22 20:06:48.210932"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Test Event 5"], ["max_size", 10], ["tickets_sold", 4], ["num_checked_in", 8], ["date", "2021-03-22 00:00:00"], ["description", "This is a test"], ["created_at", "2021-03-22 20:06:48.225023"], ["updated_at", "2021-03-22 20:06:48.225023"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Test Event 6"], ["max_size", 10], ["tickets_sold", 5], ["num_checked_in", 10], ["date", "2021-03-22 00:00:00"], ["description", "This is a test"], ["created_at", "2021-03-22 20:06:48.236355"], ["updated_at", "2021-03-22 20:06:48.236355"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Test Event 7"], ["max_size", 10], ["tickets_sold", 6], ["num_checked_in", 12], ["date", "2021-03-22 00:00:00"], ["description", "This is a test"], ["created_at", "2021-03-22 20:06:48.248015"], ["updated_at", "2021-03-22 20:06:48.248015"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Test Event 8"], ["max_size", 10], ["tickets_sold", 7], ["num_checked_in", 14], ["date", "2021-03-22 00:00:00"], ["description", "This is a test"], ["created_at", "2021-03-22 20:06:48.259561"], ["updated_at", "2021-03-22 20:06:48.259561"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Test Event 9"], ["max_size", 10], ["tickets_sold", 8], ["num_checked_in", 16], ["date", "2021-03-22 00:00:00"], ["description", "This is a test"], ["created_at", "2021-03-22 20:06:48.273803"], ["updated_at", "2021-03-22 20:06:48.273803"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.5ms)[0m  [1m[32mINSERT INTO "roles" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Test 0"], ["description", "Just a test role"], ["created_at", "2021-03-22 20:06:48.291433"], ["updated_at", "2021-03-22 20:06:48.291433"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Test 1"], ["description", "Just a test role"], ["created_at", "2021-03-22 20:06:48.301752"], ["updated_at", "2021-03-22 20:06:48.301752"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (5.6ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["role_id", 1], ["name", "Test 0"], ["created_at", "2021-03-22 20:06:48.395018"], ["updated_at", "2021-03-22 20:06:48.395018"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (2.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (2.6ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["role_id", 1], ["name", "Test 1"], ["created_at", "2021-03-22 20:06:48.423180"], ["updated_at", "2021-03-22 20:06:48.423180"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (2.8ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["role_id", 1], ["name", "Test 2"], ["created_at", "2021-03-22 20:06:48.435941"], ["updated_at", "2021-03-22 20:06:48.435941"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (4.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (0.4ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["role_id", 1], ["name", "Test 3"], ["created_at", "2021-03-22 20:06:48.451041"], ["updated_at", "2021-03-22 20:06:48.451041"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (1.6ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (0.8ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["role_id", 1], ["name", "Test 4"], ["created_at", "2021-03-22 20:06:48.465569"], ["updated_at", "2021-03-22 20:06:48.465569"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["role_id", 1], ["name", "Test 5"], ["created_at", "2021-03-22 20:06:48.475128"], ["updated_at", "2021-03-22 20:06:48.475128"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (0.4ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["role_id", 1], ["name", "Test 6"], ["created_at", "2021-03-22 20:06:48.490038"], ["updated_at", "2021-03-22 20:06:48.490038"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (0.4ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["role_id", 1], ["name", "Test 7"], ["created_at", "2021-03-22 20:06:48.504453"], ["updated_at", "2021-03-22 20:06:48.504453"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (2.4ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["role_id", 1], ["name", "Test 8"], ["created_at", "2021-03-22 20:06:48.531492"], ["updated_at", "2021-03-22 20:06:48.531492"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnnouncement Create (7.2ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #1"], ["created_at", "2021-03-22 20:06:48.583818"], ["updated_at", "2021-03-22 20:06:48.583818"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnnouncement Create (0.4ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #2"], ["created_at", "2021-03-22 20:06:48.608646"], ["updated_at", "2021-03-22 20:06:48.608646"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnnouncement Create (0.5ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #3"], ["created_at", "2021-03-22 20:06:48.621302"], ["updated_at", "2021-03-22 20:06:48.621302"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnnouncement Create (0.4ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #4"], ["created_at", "2021-03-22 20:06:48.653344"], ["updated_at", "2021-03-22 20:06:48.653344"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnnouncement Create (0.4ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #5"], ["created_at", "2021-03-22 20:06:48.671331"], ["updated_at", "2021-03-22 20:06:48.671331"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnnouncement Create (0.4ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #6"], ["created_at", "2021-03-22 20:06:48.687446"], ["updated_at", "2021-03-22 20:06:48.687446"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnnouncement Create (0.3ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #7"], ["created_at", "2021-03-22 20:06:48.702921"], ["updated_at", "2021-03-22 20:06:48.702921"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (2.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnnouncement Create (1.9ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #8"], ["created_at", "2021-03-22 20:06:48.726709"], ["updated_at", "2021-03-22 20:06:48.726709"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnnouncement Create (0.4ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "This is a test accoucement #9"], ["created_at", "2021-03-22 20:06:48.741060"], ["updated_at", "2021-03-22 20:06:48.741060"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/checkin/1" for 127.0.0.1 at 2021-03-22 15:35:10 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 272)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 83229f0296bc3752674c
+Version: webpack 4.46.0
+Time: 6314ms
+Built at: 03/22/2021 3:35:19 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-e93894ee114bed7ffe74.js   2.79 MiB        Index  [emitted] [immutable]  Index
+      js/Index-e93894ee114bed7ffe74.js.map   3.01 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-e93894ee114bed7ffe74.js js/Index-e93894ee114bed7ffe74.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.72 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 70 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8851.9ms | Allocations: 8636)
+Completed 200 OK in 8891ms (Views: 8855.0ms | ActiveRecord: 0.0ms | Allocations: 22348)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-03-22 15:35:20 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 20.1ms | ActiveRecord: 6.6ms | Allocations: 5767)
+
+
+Started POST "/api/v1/attendees/create" for 127.0.0.1 at 2021-03-22 15:35:38 -0500
+Processing by Api::V1::AttendeesController#create as */*
+  Parameters: {"name"=>"test", "email"=>"test@test.com", "referral"=>"Test 0", "event_id"=>"1", "attendee"=>{"name"=>"test", "email"=>"test@test.com"}}
+[31mUnpermitted parameters: :referral, :event_id, :attendee[0m
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mAttendee Create (4.6ms)[0m  [1m[32mINSERT INTO "attendees" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test"], ["email", "test@test.com"], ["created_at", "2021-03-22 20:35:38.775815"], ["updated_at", "2021-03-22 20:35:38.775815"]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (11.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."name" = $1 LIMIT $2[0m  [["name", "Test 0"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:14:in `create'
+  [1m[36mMember Update All (7.7ms)[0m  [1m[33mUPDATE "members" SET "num_referrals" = COALESCE("num_referrals", 0) + $1 WHERE "members"."id" = $2[0m  [["num_referrals", 1], ["id", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:15:in `create'
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:18:in `create'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:18:in `create'
+  [1m[36mAttendee Load (0.8ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" WHERE "attendees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:18:in `create'
+  [1m[36mEventattendance Create (1.1ms)[0m  [1m[32mINSERT INTO "eventattendances" ("event_id", "attendee_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 1], ["attendee_id", 1], ["created_at", "2021-03-22 20:35:38.905619"], ["updated_at", "2021-03-22 20:35:38.905619"]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:18:in `create'
+Completed 200 OK in 164ms (Views: 0.3ms | ActiveRecord: 61.1ms | Allocations: 22993)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-22 15:39:31 -0500
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 7144)
+Completed 200 OK in 105ms (Views: 31.9ms | ActiveRecord: 0.0ms | Allocations: 20778)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-03-22 15:39:33 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (3.4ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 10.2ms | ActiveRecord: 14.2ms | Allocations: 5768)
+
+
+Started POST "/api/v1/attendees/create" for 127.0.0.1 at 2021-03-22 15:39:41 -0500
+Processing by Api::V1::AttendeesController#create as */*
+  Parameters: {"name"=>"test", "email"=>"test@test.com", "referral"=>"Test 0", "event_id"=>"1", "attendee"=>{"name"=>"test", "email"=>"test@test.com"}}
+[31mUnpermitted parameters: :referral, :event_id, :attendee[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mAttendee Create (14.7ms)[0m  [1m[32mINSERT INTO "attendees" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test"], ["email", "test@test.com"], ["created_at", "2021-03-22 20:39:41.275067"], ["updated_at", "2021-03-22 20:39:41.275067"]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 20.8ms | Allocations: 6246)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_attendees_on_email"
+DETAIL:  Key (email)=(test@test.com) already exists.
+):
+  
+app/controllers/api/v1/attendees_controller.rb:12:in `create'
+Started PATCH "/api/v1/attendees/update" for 127.0.0.1 at 2021-03-22 15:39:42 -0500
+Processing by Api::V1::AttendeesController#update as */*
+  Parameters: {"name"=>"test", "email"=>"test@test.com", "attendee"=>{"name"=>"test", "email"=>"test@test.com"}}
+  [1m[36mAttendee Load (0.6ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" WHERE "attendees"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:33:in `update'
+Completed 200 OK in 30ms (Views: 0.7ms | ActiveRecord: 9.7ms | Allocations: 5274)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-03-22 15:44:02 -0500
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (4.8ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 58ms (Views: 5.4ms | ActiveRecord: 29.2ms | Allocations: 10094)
+
+
+Started POST "/api/v1/attendees/create" for 127.0.0.1 at 2021-03-22 15:44:12 -0500
+Processing by Api::V1::AttendeesController#create as */*
+  Parameters: {"name"=>"test", "email"=>"test@test.com", "referral"=>"Test 0", "event_id"=>"1", "attendee"=>{"name"=>"test", "email"=>"test@test.com"}}
+[31mUnpermitted parameters: :referral, :event_id, :attendee[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mAttendee Create (6.7ms)[0m  [1m[32mINSERT INTO "attendees" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test"], ["email", "test@test.com"], ["created_at", "2021-03-22 20:44:12.293252"], ["updated_at", "2021-03-22 20:44:12.293252"]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 11.4ms | Allocations: 6290)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_attendees_on_email"
+DETAIL:  Key (email)=(test@test.com) already exists.
+):
+  
+app/controllers/api/v1/attendees_controller.rb:12:in `create'
+Started PATCH "/api/v1/attendees/update" for 127.0.0.1 at 2021-03-22 15:44:13 -0500
+Processing by Api::V1::AttendeesController#update as */*
+  Parameters: {"name"=>"test", "email"=>"test@test.com", "attendee"=>{"name"=>"test", "email"=>"test@test.com"}}
+  [1m[36mAttendee Load (0.8ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" WHERE "attendees"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:33:in `update'
+Completed 200 OK in 44ms (Views: 0.3ms | ActiveRecord: 18.3ms | Allocations: 5291)
+
+
+Started GET "/checkin/1" for 127.0.0.1 at 2021-03-22 15:52:57 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 7144)
+Completed 200 OK in 146ms (Views: 47.9ms | ActiveRecord: 0.0ms | Allocations: 20778)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-03-22 15:52:58 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (19.2ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 80ms (Views: 40.9ms | ActiveRecord: 28.4ms | Allocations: 5767)
+
+
+Started POST "/api/v1/attendees/create" for 127.0.0.1 at 2021-03-22 15:53:09 -0500
+Processing by Api::V1::AttendeesController#create as */*
+  Parameters: {"name"=>"asdf", "email"=>"test@test.com", "referral"=>"Test 0", "event_id"=>"1", "attendee"=>{"name"=>"asdf", "email"=>"test@test.com"}}
+[31mUnpermitted parameters: :referral, :event_id, :attendee[0m
+  [1m[36mTRANSACTION (8.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mAttendee Create (4.2ms)[0m  [1m[32mINSERT INTO "attendees" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "asdf"], ["email", "test@test.com"], ["created_at", "2021-03-22 20:53:09.581689"], ["updated_at", "2021-03-22 20:53:09.581689"]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 19.1ms | Allocations: 6247)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_attendees_on_email"
+DETAIL:  Key (email)=(test@test.com) already exists.
+):
+  
+app/controllers/api/v1/attendees_controller.rb:12:in `create'
+Started PATCH "/api/v1/attendees/update" for 127.0.0.1 at 2021-03-22 15:53:10 -0500
+Processing by Api::V1::AttendeesController#update as */*
+  Parameters: {"name"=>"asdf", "email"=>"test@test.com", "attendee"=>{"name"=>"asdf", "email"=>"test@test.com"}}
+  [1m[36mAttendee Load (0.8ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" WHERE "attendees"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:33:in `update'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:34:in `update'
+  [1m[36mAttendee Update (1.5ms)[0m  [1m[33mUPDATE "attendees" SET "name" = $1, "updated_at" = $2 WHERE "attendees"."id" = $3[0m  [["name", "asdf"], ["updated_at", "2021-03-22 20:53:10.544283"], ["id", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:34:in `update'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:34:in `update'
+Completed 200 OK in 27ms (Views: 0.5ms | ActiveRecord: 11.2ms | Allocations: 4302)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-03-22 15:54:07 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.8ms | Allocations: 1955)
+
+
+Started POST "/api/v1/attendees/create" for 127.0.0.1 at 2021-03-22 15:54:14 -0500
+Processing by Api::V1::AttendeesController#create as */*
+  Parameters: {"name"=>"asdf", "email"=>"test@test.com", "referral"=>"Test 6", "event_id"=>"1", "attendee"=>{"name"=>"asdf", "email"=>"test@test.com"}}
+[31mUnpermitted parameters: :referral, :event_id, :attendee[0m
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mAttendee Create (3.4ms)[0m  [1m[32mINSERT INTO "attendees" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "asdf"], ["email", "test@test.com"], ["created_at", "2021-03-22 20:54:15.002351"], ["updated_at", "2021-03-22 20:54:15.002351"]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/attendees_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 11.1ms | Allocations: 3597)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_attendees_on_email"
+DETAIL:  Key (email)=(test@test.com) already exists.
+):
+  
+app/controllers/api/v1/attendees_controller.rb:12:in `create'
+Started PATCH "/api/v1/attendees/update" for 127.0.0.1 at 2021-03-22 15:54:15 -0500
+Processing by Api::V1::AttendeesController#update as */*
+  Parameters: {"name"=>"asdf", "email"=>"test@test.com", "attendee"=>{"name"=>"asdf", "email"=>"test@test.com"}}
+  [1m[36mAttendee Load (0.7ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" WHERE "attendees"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attendees_controller.rb:33:in `update'
+Completed 200 OK in 40ms (Views: 0.4ms | ActiveRecord: 12.5ms | Allocations: 4560)
+
+
+Started GET "/checkin/1" for 127.0.0.1 at 2021-03-22 16:14:30 -0500
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 7144)
+Completed 200 OK in 128ms (Views: 56.6ms | ActiveRecord: 0.0ms | Allocations: 20778)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-03-22 16:14:30 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (8.6ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 43ms (Views: 18.4ms | ActiveRecord: 22.0ms | Allocations: 5768)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-22 16:14:33 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4717)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 5299)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 16:14:35 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (3.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 33ms (Views: 14.7ms | ActiveRecord: 8.4ms | Allocations: 5107)
+
+
+Started POST "/api/v1/announcements/create" for 127.0.0.1 at 2021-03-22 16:14:39 -0500
+Processing by Api::V1::AnnouncementsController#create as */*
+  Parameters: {"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds", "date_posted"=>"2021-02-28 00:00:00", "announcement"=>{"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds"}}
+[31mUnpermitted parameter: :announcement[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 956)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'date_posted' for Announcement.):
+  
+app/controllers/api/v1/announcements_controller.rb:12:in `create'
+Started POST "/api/v1/announcements/create" for 127.0.0.1 at 2021-03-22 16:14:43 -0500
+Processing by Api::V1::AnnouncementsController#create as */*
+  Parameters: {"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds", "date_posted"=>"2021-02-28 00:00:00", "announcement"=>{"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds"}}
+[31mUnpermitted parameter: :announcement[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 776)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'date_posted' for Announcement.):
+  
+app/controllers/api/v1/announcements_controller.rb:12:in `create'
+Started POST "/api/v1/announcements/create" for 127.0.0.1 at 2021-03-22 16:14:46 -0500
+Processing by Api::V1::AnnouncementsController#create as */*
+  Parameters: {"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds", "date_posted"=>"2021-02-28 00:00:00", "announcement"=>{"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds"}}
+[31mUnpermitted parameter: :announcement[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 784)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'date_posted' for Announcement.):
+  
+app/controllers/api/v1/announcements_controller.rb:12:in `create'
+Started POST "/api/v1/announcements/create" for 127.0.0.1 at 2021-03-22 16:14:46 -0500
+Processing by Api::V1::AnnouncementsController#create as */*
+  Parameters: {"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds", "date_posted"=>"2021-02-28 00:00:00", "announcement"=>{"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds"}}
+[31mUnpermitted parameter: :announcement[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 776)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'date_posted' for Announcement.):
+  
+app/controllers/api/v1/announcements_controller.rb:12:in `create'
+Started POST "/api/v1/announcements/create" for 127.0.0.1 at 2021-03-22 16:14:50 -0500
+Processing by Api::V1::AnnouncementsController#create as */*
+  Parameters: {"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds", "date_posted"=>"2021-02-28 00:00:00", "announcement"=>{"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds"}}
+[31mUnpermitted parameter: :announcement[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 784)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'date_posted' for Announcement.):
+  
+app/controllers/api/v1/announcements_controller.rb:12:in `create'
+Started POST "/api/v1/announcements/create" for 127.0.0.1 at 2021-03-22 16:15:00 -0500
+Processing by Api::V1::AnnouncementsController#create as */*
+  Parameters: {"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds", "date_posted"=>"2021-02-28 00:00:00", "announcement"=>{"author_id"=>1, "event_id"=>1, "content"=>"dfsgdsgfds"}}
+[31mUnpermitted parameter: :announcement[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 776)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'date_posted' for Announcement.):
+  
+app/controllers/api/v1/announcements_controller.rb:12:in `create'
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 16:15:01 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (7.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 2.3ms | ActiveRecord: 7.4ms | Allocations: 1948)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 16:15:06 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (4.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 11.1ms | ActiveRecord: 9.7ms | Allocations: 6826)
+
+
+Started POST "/api/v1/events/create" for 127.0.0.1 at 2021-03-22 16:15:18 -0500
+Processing by Api::V1::EventsController#create as */*
+  Parameters: {"name"=>"asdf", "max_size"=>"2", "tickets_sold"=>"2", "num_checked_in"=>"2", "date"=>"2021-03-31", "description"=>"afdsafdsafd", "event"=>{"name"=>"asdf", "max_size"=>"2", "tickets_sold"=>"2", "num_checked_in"=>"2", "date"=>"2021-03-31", "description"=>"afdsafdsafd"}}
+[31mUnpermitted parameter: :event[0m
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/events_controller.rb:12:in `create'
+  [1m[36mEvent Create (1.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "max_size", "tickets_sold", "num_checked_in", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "asdf"], ["max_size", 2], ["tickets_sold", 2], ["num_checked_in", 2], ["date", "2021-03-31 00:00:00"], ["description", "afdsafdsafd"], ["created_at", "2021-03-22 21:15:18.276781"], ["updated_at", "2021-03-22 21:15:18.276781"]]
+  ↳ app/controllers/api/v1/events_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/events_controller.rb:12:in `create'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 11.4ms | Allocations: 3710)
+
+
+Started GET "/api/v1/events/show/10" for 127.0.0.1 at 2021-03-22 16:15:18 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/events_controller.rb:40:in `event'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 1805)
+
+
+Started DELETE "/api/v1/events/destroy/10" for 127.0.0.1 at 2021-03-22 16:15:20 -0500
+Processing by Api::V1::EventsController#destroy as */*
+  Parameters: {"id"=>"10", "event"=>{}}
+  [1m[36mEvent Load (1.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/events_controller.rb:40:in `event'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/events_controller.rb:29:in `destroy'
+  [1m[36mEvent Destroy (0.9ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/api/v1/events_controller.rb:29:in `destroy'
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/events_controller.rb:29:in `destroy'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 13.2ms | Allocations: 2858)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-22 16:15:20 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 3.1ms | ActiveRecord: 0.9ms | Allocations: 2288)
+
+
+Started GET "/events" for 127.0.0.1 at 2021-03-22 16:16:11 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"events"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 272)
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2021-03-22 16:16:14 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 7b599da0f5acac672eba
+Version: webpack 4.46.0
+Time: 12214ms
+Built at: 03/22/2021 4:16:25 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-9b55625f781a86bf6306.js   2.79 MiB        Index  [emitted] [immutable]  Index
+      js/Index-9b55625f781a86bf6306.js.map   3.01 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-9b55625f781a86bf6306.js js/Index-9b55625f781a86bf6306.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.72 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 70 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14632.6ms | Allocations: 13813)
+Completed 200 OK in 14657ms (Views: 14635.9ms | ActiveRecord: 0.0ms | Allocations: 27446)
+
+
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 7b599da0f5acac672eba
+Version: webpack 4.46.0
+Time: 10750ms
+Built at: 03/22/2021 4:16:30 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-9b55625f781a86bf6306.js   2.79 MiB        Index  [emitted] [immutable]  Index
+      js/Index-9b55625f781a86bf6306.js.map   3.01 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-9b55625f781a86bf6306.js js/Index-9b55625f781a86bf6306.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.72 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 70 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15937.5ms | Allocations: 10872)
+Completed 200 OK in 15944ms (Views: 15943.2ms | ActiveRecord: 0.0ms | Allocations: 11453)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-22 16:16:31 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 4690)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 5263)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 16:16:32 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (3.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 28ms (Views: 10.3ms | ActiveRecord: 13.5ms | Allocations: 5769)
+
+
+Started POST "/api/v1/announcements/create" for 127.0.0.1 at 2021-03-22 16:16:34 -0500
+Processing by Api::V1::AnnouncementsController#create as */*
+  Parameters: {"author_id"=>1, "event_id"=>1, "content"=>"sdafdsg", "announcement"=>{"author_id"=>1, "event_id"=>1, "content"=>"sdafdsg"}}
+[31mUnpermitted parameter: :announcement[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+  [1m[36mAnnouncement Create (1.2ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "sdafdsg"], ["created_at", "2021-03-22 21:16:35.053992"], ["updated_at", "2021-03-22 21:16:35.053992"]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+Completed 200 OK in 116ms (Views: 0.4ms | ActiveRecord: 30.2ms | Allocations: 16543)
+
+
+Started GET "/api/v1/announcements/show/10" for 127.0.0.1 at 2021-03-22 16:16:35 -0500
+Processing by Api::V1::AnnouncementsController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mAnnouncement Load (1.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:40:in `announcement'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 1190)
+
+
+Started DELETE "/api/v1/announcements/destroy/10" for 127.0.0.1 at 2021-03-22 16:16:37 -0500
+Processing by Api::V1::AnnouncementsController#destroy as */*
+  Parameters: {"id"=>"10", "announcement"=>{}}
+  [1m[36mAnnouncement Load (0.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:40:in `announcement'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:29:in `destroy'
+  [1m[36mAnnouncement Destroy (2.5ms)[0m  [1m[31mDELETE FROM "announcements" WHERE "announcements"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:29:in `destroy'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:29:in `destroy'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 8.1ms | Allocations: 2862)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 16:16:37 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (3.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 3.5ms | Allocations: 1949)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-22 16:25:33 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 7144)
+Completed 200 OK in 132ms (Views: 75.8ms | ActiveRecord: 0.0ms | Allocations: 20778)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 16:25:36 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (4.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 10.3ms | Allocations: 5780)
+
+
+Started POST "/api/v1/announcements/create" for 127.0.0.1 at 2021-03-22 16:25:39 -0500
+Processing by Api::V1::AnnouncementsController#create as */*
+  Parameters: {"author_id"=>1, "event_id"=>1, "content"=>"asdfdsafddsaf", "announcement"=>{"author_id"=>1, "event_id"=>1, "content"=>"asdfdsafddsaf"}}
+[31mUnpermitted parameter: :announcement[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+  [1m[36mAnnouncement Create (4.0ms)[0m  [1m[32mINSERT INTO "announcements" ("author_id", "event_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["event_id", 1], ["content", "asdfdsafddsaf"], ["created_at", "2021-03-22 21:25:40.079454"], ["updated_at", "2021-03-22 21:25:40.079454"]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:12:in `create'
+Completed 200 OK in 100ms (Views: 0.4ms | ActiveRecord: 48.3ms | Allocations: 16545)
+
+
+Started GET "/api/v1/announcements/show/11" for 127.0.0.1 at 2021-03-22 16:25:40 -0500
+Processing by Api::V1::AnnouncementsController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mAnnouncement Load (4.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:40:in `announcement'
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 4.8ms | Allocations: 1191)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-22 16:25:41 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (3.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 3.7ms | ActiveRecord: 3.8ms | Allocations: 2040)
+
+
