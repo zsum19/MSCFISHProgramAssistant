@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class Attendee < ApplicationRecord
-  has_many :referrals, class_name: 'Referral', dependent: :nil
+  has_many :referrals, class_name: 'Referral'
   has_many :referred_by, through: :referrals
-  has_many :eventattendances, class_name: 'Eventattendance', dependent: :nil
+  has_many :eventattendances, class_name: 'Eventattendance'
   has_many :events, through: :eventattendances
 
   validates :name, presence: true

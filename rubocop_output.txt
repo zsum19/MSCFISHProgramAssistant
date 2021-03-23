@@ -1,5 +1,5 @@
 Inspecting 34 files
-....C.C.C.........................
+....C.C.C......CC.C.C.............
 
 Offenses:
 
@@ -36,5 +36,26 @@ app/controllers/homepage_controller.rb:15:7: C: Metrics/BlockLength: Block has t
 app/controllers/homepage_controller.rb:23:9: C: Metrics/BlockLength: Block has too many lines. [28/25]
         Zip::File.open(zipname, Zip::File::CREATE) do |zipfile| ...
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/models/attendee.rb:4:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
+  has_many :referrals, class_name: 'Referral'
+  ^^^^^^^^
+app/models/attendee.rb:6:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
+  has_many :eventattendances, class_name: 'Eventattendance'
+  ^^^^^^^^
+app/models/event.rb:4:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
+  has_many :announcements, class_name: 'Announcement'
+  ^^^^^^^^
+app/models/event.rb:5:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
+  has_many :eventattendances, class_name: 'Eventattendance'
+  ^^^^^^^^
+app/models/member.rb:5:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
+  has_many :announcements, class_name: 'Announcement'
+  ^^^^^^^^
+app/models/member.rb:6:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
+  has_many :referrals, class_name: 'Referral'
+  ^^^^^^^^
+app/models/role.rb:4:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
+  has_many :member, class_name: 'Member'
+  ^^^^^^^^
 
-34 files inspected, 11 offenses detected
+34 files inspected, 18 offenses detected

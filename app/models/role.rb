@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Role < ApplicationRecord
-  has_many :member, class_name: 'Member', dependent: :nil
+  has_many :member, class_name: 'Member'
 
   def self.to_csv
     attributes = %w[id name description]
