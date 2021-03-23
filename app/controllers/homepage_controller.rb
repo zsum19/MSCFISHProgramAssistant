@@ -14,7 +14,7 @@ class HomepageController < ApplicationController
       format.html
       format.zip do
         filenames = ['announcements.csv', 'events.csv', 'attendees.csv', 'members.csv',
-                     'roles.csv', 'eventattendances.csv', 'referral.csv']
+                     'roles.csv', 'eventattendances.csv', 'referrals.csv']
 
         zipname = 'tmp/database_dump.zip'
         File.delete(zipname) if File.exist?(zipname)

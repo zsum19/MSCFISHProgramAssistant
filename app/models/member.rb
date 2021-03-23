@@ -6,6 +6,9 @@ class Member < ApplicationRecord
   has_many :referrals, class_name: 'Referral'
   has_many :attendees, through: :referrals
 
+  validates :name, presence: true
+  validates :num_referrals, presence: true
+
   def self.to_csv
     attributes = %w[id name num_referrals role_id]
     CSV.generate(headers: true) do |csv|
