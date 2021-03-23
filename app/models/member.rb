@@ -21,5 +21,4 @@ class Member < ApplicationRecord
   end
 
   devise :omniauthable, omniauth_providers: [:google_oauth2]
-  
 end
