@@ -8,6 +8,7 @@ class NewAnnouncement extends React.Component {
             author_id: 1,
             event_id: 1,
             content: "",
+            date_posted: "2021-02-28 00:00:00"
         };
 
         this.onChange = this.onChange.bind(this);
@@ -28,12 +29,13 @@ class NewAnnouncement extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/announcements/create";
-        const { author_id, event_id, content } = this.state;
+        const { author_id, event_id, content, date_posted } = this.state;
     
         const body = {
           author_id,
           event_id,
           content,
+          date_posted
         };
     
         const token = document.querySelector('meta[name="csrf-token"]').content;

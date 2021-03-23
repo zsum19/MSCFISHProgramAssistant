@@ -17,6 +17,7 @@ class CheckIn extends React.Component {
     }
 
     componentDidMount() {
+        console.log(this.props.match.params.event_id);
         this.setState({ event_id: this.props.match.params.event_id});
         let memberList = [];
         const url = "/api/v1/members/index";
@@ -27,10 +28,7 @@ class CheckIn extends React.Component {
             }
             throw new Error("Network response was not ok.");
           })
-          .then(response => {
-            this.setState({ members: response });
-            this.setState({ referral: this.state.members[0].name });
-          })
+          .then(response => this.setState({ members: response }))
           .catch(error => console.log(error.message));
     }
 
@@ -46,7 +44,7 @@ class CheckIn extends React.Component {
     
     tryUpdate(){
         const url = "/api/v1/attendees/update";
-        const { name, email } = this.state;
+        const { name, email, referral } = this.state;
     
         if (name.length == 0)
           return;
@@ -150,7 +148,7 @@ class CheckIn extends React.Component {
                       name="referral"
                       id="referral"
                       className="form-control"
-                      value={this.state.referral}
+                      value="Test"
                       //For future joining of tables
                       onChange={this.onChange}
                     >
