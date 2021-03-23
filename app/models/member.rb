@@ -19,4 +19,7 @@ class Member < ApplicationRecord
       end
     end
   end
+
+  devise :omniauthable, omniauth_providers: [:google_oauth2]
+  
 end
