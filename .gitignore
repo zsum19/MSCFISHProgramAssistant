@@ -3,5 +3,4 @@
 node_modules
 tmp
 .vscode
-public/packs/js
 log/*.log
