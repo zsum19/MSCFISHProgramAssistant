@@ -1,0 +1,176 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+ * {
+  box-sizing:border-box;
+}
+
+.left {
+  padding:10px;
+  float:left;
+  width:50%; 
+}
+
+.right {
+  padding:10px;
+  float:left;
+  width:50%; 
+}
+.center-desktop{
+  margin: auto;
+  width: 60%;
+  align-content: center;
+}
+.to-button {
+  padding:10px;
+  float:left;
+  width:33%; 
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .center-desktop{
+    width: 95%;
+  }
+  .to-button{
+    width: 100%;
+  }
+}
+.heading {
+  color: #333;
+}
+ .bg_primary-color {
+    background-color: #333333;
+  }
+  .primary-color {
+    color: #333333;
+  }
+  .bg_secondary-color {
+    background-color: #74d5dd;
+  }
+  .secondary-color {
+    color: #293241;
+  }
+  .custom-button.btn {
+    background-color: #74d5dd;
+    color: #333333;
+    border: none;
+  }
+  .custom-button.btn:hover {
+    color: #74d5dd !important;
+    background-color: #333333;
+    border: none;
+  }
+  .hero {
+    width: 100vw;
+    height: 50vh;
+  }
+  .hero img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  .scroll-box{
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .text{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+  .small-padding{
+    padding: 10px;
+  }
+  .test{
+    font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+  }
+  .subtitle{
+    font-size:medium;
+    color: #555;
+  }
+  .event-heading{
+    font-size: larger;
+    font-weight: bold;
+    color: hsl(185, 61%, 20%);
+  }
+  .post-heading{
+    font-size: larger;
+    font-weight: bold;
+    color: hsl(185, 0%, 30%);
+  }
+  .single-post{
+    padding: 10px;
+    border: 1px solid #333333;
+    
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  .announcement-view{
+    background-color: hsl(185, 0%, 91%);
+    border-color: hsl(185, 0%, 30%);
+
+  }
+  .event-view{
+    background-color: hsl(185, 61%, 91%);
+    border-color: hsl(185, 61%, 30%);
+  }
+  .single-event-2{
+    padding: 10px;
+    border: 1px solid #bbb;
+    
+    background-color: #fafafa;
+    margin: 10px 0;
+  }
+  .single-event-description{
+    padding: 0 5px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+  .colored-heading{
+    background: hsl(185, 61%, 57%);
+    /*background: linear-gradient(90deg, rgba(116,213,221,1) 0%, rgba(241,241,241,1) 83%);*/
+    color: hsl(185, 61%, 17%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+  }
+  .events-view, .announcements-view{
+    border-radius: 10px;
+  }
