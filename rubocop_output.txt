@@ -1,8 +1,26 @@
-Inspecting 33 files
-.......C......CC.C.C.............
+Inspecting 34 files
+....C.C.C......CC.C.C.............
 
 Offenses:
 
+app/controllers/api/v1/attendees_controller.rb:11:7: C: Metrics/AbcSize: Assignment Branch Condition size for create is too high. [<3, 24, 2> 24.27/17]
+      def create ...
+      ^^^^^^^^^^
+app/controllers/api/v1/attendees_controller.rb:11:7: C: Metrics/MethodLength: Method has too many lines. [14/10]
+      def create ...
+      ^^^^^^^^^^
+app/controllers/api/v1/attendees_controller.rb:15:16: C: Rails/SkipsModelValidations: Avoid using increment! because it skips validations.
+        member.increment!(:num_referrals)
+               ^^^^^^^^^^
+app/controllers/api/v1/attendees_controller.rb:23:15: C: Rails/SkipsModelValidations: Avoid using increment! because it skips validations.
+        event.increment!(:num_checked_in)
+              ^^^^^^^^^^
+app/controllers/api/v1/members_controller.rb:23:11: C: Style/IdenticalConditionalBranches: Move render json: member out of the conditional.
+          render json: member
+          ^^^^^^^^^^^^^^^^^^^
+app/controllers/api/v1/members_controller.rb:25:11: C: Style/IdenticalConditionalBranches: Move render json: member out of the conditional.
+          render json: member
+          ^^^^^^^^^^^^^^^^^^^
 app/controllers/homepage_controller.rb:4:3: C: Metrics/AbcSize: Assignment Branch Condition size for index is too high. [<20, 74, 3> 76.71/17]
   def index ...
   ^^^^^^^^^
@@ -40,4 +58,4 @@ app/models/role.rb:4:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent 
   has_many :member, class_name: 'Member'
   ^^^^^^^^
 
-33 files inspected, 12 offenses detected
+34 files inspected, 18 offenses detected
