@@ -23,13 +23,14 @@ describe 'New checkin page', :type => :feature do
 
   it 'Checkin form valid inputs', js: true do
     checkinpage.visit_checkinpage
-    @member = Member.find_by!(name: 'Test 1')
-    @referrals_pre = @member.num_referrals
+    # @member = Member.find_by!(first_name: 'Test 1')
+    # @referrals_pre = @member.num_referrals
     expect(page).to have_css('form')
     within('form') do
-      fill_in 'Your Name', with: 'Test Name'
+      fill_in 'Your First Name', with: 'Test First Name'
+      fill_in 'Your Last Name', with: 'Test Last Name'
       fill_in 'Your Email', with: 'test@test.com'
-      page.select 'Test 1', from: 'Referred By'
+      page.select 'Test 1 Test 1', from: 'Referred By'
     end
     click_on('Check In')
     # should increment the member's number of referrals
@@ -43,9 +44,10 @@ describe 'New checkin page', :type => :feature do
     checkinpage.visit_checkinpage
     expect(page).to have_css('form')
     within('form') do
-      fill_in 'Your Name', with: 'Test Name'
+      fill_in 'Your First Name', with: 'Test First Name'
+      fill_in 'Your Last Name', with: 'Test Last Name'
       fill_in 'Your Email', with: ''
-      page.select 'Test 1', from: 'Referred By'
+      page.select 'Test 1 Test 1', from: 'Referred By'
     end
     click_on('Check In')
     expect(page).to have_content('Check in to')

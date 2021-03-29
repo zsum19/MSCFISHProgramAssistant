@@ -7,8 +7,8 @@ class CreateEvents < ActiveRecord::Migration[6.1]
       t.integer "max_size", null: false
       t.integer "tickets_sold", null: false, default: 0
       t.integer "num_checked_in", null: false, default: 0
-      t.timestamp :date
-      t.text :description
+      t.timestamp "date"
+      t.text "description"
 
       t.timestamps
     end

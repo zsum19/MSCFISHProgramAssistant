@@ -29,7 +29,8 @@ end
 9.times do |i|
   Member.create!(
     role_id: 1,
-    name: "Test #{i+1}",
+    first_name: "Test #{i+1}",
+    last_name: "Test #{i+1}",
     email: "test#{i+1}@test.com",
     num_referrals: 0
   )

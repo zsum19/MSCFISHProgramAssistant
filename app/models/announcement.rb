@@ -6,7 +6,6 @@ class Announcement < ApplicationRecord
 
   validates :title, presence: true
   validates :content, presence: true
-  validates :external, presence: true
 
   def self.to_csv
     attributes = %w[id author_id event_id content]

@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_220810) do
     t.bigint "event_id"
     t.string "title", null: false
     t.text "content", null: false
-    t.boolean "external", default: false, null: false
+    t.boolean "external", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["author_id"], name: "index_announcements_on_author_id"
@@ -28,7 +28,8 @@ ActiveRecord::Schema.define(version: 2021_02_15_220810) do
   end
 
   create_table "attendees", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "first_name", null: false
+    t.string "last_name", null: false
     t.string "email", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -59,7 +60,8 @@ ActiveRecord::Schema.define(version: 2021_02_15_220810) do
 
   create_table "members", force: :cascade do |t|
     t.bigint "role_id"
-    t.string "name", null: false
+    t.string "first_name", null: false
+    t.string "last_name", null: false
     t.string "email", null: false
     t.integer "num_referrals", default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
