@@ -18,7 +18,6 @@ class CheckIn extends React.Component {
 
     componentDidMount() {
         this.setState({ event_id: this.props.match.params.event_id});
-        let memberList = [];
         const url = "/api/v1/members/index";
         fetch(url)
           .then(response => {

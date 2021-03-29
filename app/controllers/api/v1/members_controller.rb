@@ -26,6 +26,13 @@ module Api
         end
       end
 
+      def update
+        member = Member.find(params[:id])
+        member.update(member_params)
+
+        render json: member
+      end
+
       def destroy
         member&.destroy
         render json: { message: 'Member Deleted!' }

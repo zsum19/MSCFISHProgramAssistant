@@ -11,6 +11,9 @@ import Announcement from "../components/Announcement";
 import NewAnnouncement from "../components/NewAnnouncement";
 
 import CheckIn from "../components/CheckIn";
+import MemberPage from "../components/MemberPage";
+import AdminPage from "../components/AdminPage";
+import NewMember from "../components/NewMember"
 
 export default (
   <Router>
@@ -24,6 +27,9 @@ export default (
       <Route path="/announcement" exact component={NewAnnouncement} />
       <Route path="/checkin" exact component={CheckIn} />
       <Route path="/checkin/:event_id" exact component={CheckIn} />
+      <Route path="/memberpage" exact component={MemberPage} />
+      <Route path="/admin" exact component={AdminPage} />
+      <Route path="/member/create" exact component={NewMember} />
     </Switch>
   </Router>
 );

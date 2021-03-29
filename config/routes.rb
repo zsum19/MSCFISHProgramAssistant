@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
       get 'members/index'
       post 'members/create'
+      patch 'members/update'
       get 'members/show/:id', to: 'members#show'
       delete 'members/destroy/:id', to: 'members#destroy'
     end
