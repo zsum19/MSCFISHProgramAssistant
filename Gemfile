@@ -31,7 +31,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # User Authentication Group
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
 gem 'omniauth'
-gem 'omniauth-google-oauth2'
+gem 'omniauth-google-oauth2' #Adding test comment
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
