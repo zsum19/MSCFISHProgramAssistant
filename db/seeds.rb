@@ -9,6 +9,8 @@
 9.times do |i|
   Event.create(
     name: "Test Event #{i+1}",
+    location: "Zoom",
+    event_type: "Service",
     max_size: 10,
     tickets_sold: i,
     num_checked_in: i*2,
@@ -19,7 +21,7 @@ end
 
 2.times do |i|
   Role.create!(
-    name: "Test #{i}",
+    name: "Test #{i+1}",
     description: "Just a test role"
   )
 end
@@ -27,7 +29,8 @@ end
 9.times do |i|
   Member.create!(
     role_id: 1,
-    name: "Test #{i}",
+    name: "Test #{i+1}",
+    email: "test#{i+1}@test.com",
     num_referrals: 0
   )
 end
@@ -36,6 +39,8 @@ end
   Announcement.create!(
     author_id: 1,
     event_id: 1,
+    title: "Test Announcement \##{i+1}",
     content: "This is a test accoucement \##{i+1}",
+    external: false
   )
 end

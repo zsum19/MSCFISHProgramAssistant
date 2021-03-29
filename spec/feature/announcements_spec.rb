@@ -43,7 +43,9 @@ describe 'New announcement page', :type => :feature do
     click_link('Create New Announcement')
     expect(page).to have_css('form')
     within("form") do
-      fill_in 'Announcement Content', with: 'Test Announcement'
+      fill_in 'Announcement Title', with: 'Test Announcement 1'
+      fill_in 'Announcement Content', with: 'This is a test announcement.'
+      page.select 'External', from: 'Announcement Type'
     end
     click_on('Create Announcement')
     # will not pass because does not actually create the new object
@@ -57,7 +59,9 @@ describe 'New announcement page', :type => :feature do
     click_link('Create New Announcement')
     expect(page).to have_css('form')
     within("form") do
+      fill_in 'Announcement Title', with: 'Test Announcement 1'
       fill_in 'Announcement Content', with: ''
+      page.select 'External', from: 'Announcement Type'
     end
     click_on('Create Announcement')
     expect(page).to have_content('Create a new announcement')

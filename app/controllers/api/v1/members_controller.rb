@@ -34,7 +34,7 @@ module Api
       private
 
       def member_params
-        params.permit(:role_id, :name, :num_referrals)
+        params.permit(:role_id, :name, :email, :num_referrals)
       end
 
       def member

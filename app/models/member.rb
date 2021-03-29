@@ -7,6 +7,7 @@ class Member < ApplicationRecord
   has_many :attendees, through: :referrals
 
   validates :name, presence: true
+  validates :email, presence: true
   validates :num_referrals, presence: true
 
   def self.to_csv

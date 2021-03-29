@@ -42,6 +42,8 @@ describe 'New event page', :type => :feature do
     expect(page).to have_css('form')
     within('form') do
       fill_in 'Event Name', with: 'Test event 10'
+      fill_in 'Event Location', with: 'Test site #01'
+      fill_in 'Event Type', with: 'Test type'
       fill_in 'Max Size', with: '123456'
       fill_in 'Tickets Sold', with: '5'
       fill_in 'Number of People Checked In', with: '1'
@@ -61,6 +63,8 @@ describe 'New event page', :type => :feature do
     expect(page).to have_css('form')
     within('form') do
       fill_in 'Event Name', with: 'Test event 10'
+      fill_in 'Event Location', with: 'Test site #01'
+      fill_in 'Event Type', with: 'Test type'
       fill_in 'Max Size', with: '123456'
       fill_in 'Tickets Sold', with: ''
       fill_in 'Number of People Checked In', with: '1'
