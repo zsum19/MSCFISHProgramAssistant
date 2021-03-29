@@ -4970,3 +4970,119 @@ Sent file tmp/database_dump.zip (2.6ms)
 Completed 200 OK in 192ms (ActiveRecord: 36.8ms | Allocations: 14429)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-29 14:27:53 -0500
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 377)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 74f0bea3648e3c7c7347
+Version: webpack 4.46.0
+Time: 10302ms
+Built at: 03/29/2021 2:28:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-62b8378a941b297017d4.js   2.81 MiB        Index  [emitted] [immutable]  Index
+      js/Index-62b8378a941b297017d4.js.map   3.02 MiB        Index  [emitted] [dev]        Index
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-62b8378a941b297017d4.js js/Index-62b8378a941b297017d4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.78 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 73 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16108.6ms | Allocations: 11900)
+Completed 200 OK in 16194ms (Views: 16125.6ms | ActiveRecord: 0.0ms | Allocations: 15875)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-29 14:28:11 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-29 14:28:12 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (16.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 218ms (Views: 45.2ms | ActiveRecord: 80.8ms | Allocations: 11375)
+
+
+  [1m[36mEvent Load (12.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 437ms (Views: 168.0ms | ActiveRecord: 79.5ms | Allocations: 17547)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-29 14:28:16 -0500
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/announcement.rb:14:in `block in to_csv'
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/event.rb:18:in `block in to_csv'
+  [1m[36mAttendee Load (6.7ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/attendee.rb:17:in `block in to_csv'
+  [1m[36mMember Load (9.5ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/member.rb:17:in `block in to_csv'
+  [1m[36mRole Load (5.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/role.rb:11:in `block in to_csv'
+  [1m[36mEventattendance Load (15.2ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/eventattendance.rb:12:in `block in to_csv'
+  [1m[36mReferral Load (15.0ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/referral.rb:12:in `block in to_csv'
+Sent file database_dump.zip (50.1ms)
+Completed 200 OK in 450ms (ActiveRecord: 82.0ms | Allocations: 35024)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-29 14:36:21 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 109.4ms | Allocations: 7545)
+Completed 200 OK in 190ms (Views: 140.4ms | ActiveRecord: 0.0ms | Allocations: 10874)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-29 14:36:23 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-29 14:36:23 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (93.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 221ms (Views: 30.7ms | ActiveRecord: 132.5ms | Allocations: 13193)
+
+
+  [1m[36mEvent Load (4.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 266ms (Views: 47.3ms | ActiveRecord: 72.1ms | Allocations: 17460)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-29 14:36:31 -0500
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (3.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/announcement.rb:14:in `block in to_csv'
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/event.rb:18:in `block in to_csv'
+  [1m[36mAttendee Load (1.9ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/attendee.rb:17:in `block in to_csv'
+  [1m[36mMember Load (2.5ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/member.rb:17:in `block in to_csv'
+  [1m[36mRole Load (1.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/role.rb:11:in `block in to_csv'
+  [1m[36mEventattendance Load (1.1ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/eventattendance.rb:12:in `block in to_csv'
+  [1m[36mReferral Load (0.9ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/referral.rb:12:in `block in to_csv'
+Sent file database_dump.zip (40.9ms)
+Completed 200 OK in 466ms (ActiveRecord: 72.2ms | Allocations: 32436)
+
+
