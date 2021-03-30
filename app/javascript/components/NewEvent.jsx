@@ -6,6 +6,8 @@ class NewEvent extends React.Component {
         super(props);
         this.state = {
             name: "",
+            location: "",
+            event_type: "",
             max_size: 0,
             tickets_sold: 0,
             num_checked_in: 0,
@@ -31,13 +33,15 @@ class NewEvent extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/events/create";
-        const { name, max_size, tickets_sold, num_checked_in, date, description } = this.state;
+        const { name, location, event_type, max_size, tickets_sold, num_checked_in, date, description } = this.state;
     
         if (name.length == 0 || date.length == 0)
           return;
     
         const body = {
           name,
+          location,
+          event_type,
           max_size,
           tickets_sold,
           num_checked_in,
@@ -79,6 +83,28 @@ class NewEvent extends React.Component {
                       type="text"
                       name="name"
                       id="name"
+                      className="form-control"
+                      required
+                      onChange={this.onChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="location">Event Location</label>
+                    <input
+                      type="text"
+                      name="location"
+                      id="location"
+                      className="form-control"
+                      required
+                      onChange={this.onChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="event_type">Event Type</label>
+                    <input
+                      type="text"
+                      name="event_type"
+                      id="event_type"
                       className="form-control"
                       required
                       onChange={this.onChange}
