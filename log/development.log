@@ -8465,3 +8465,52 @@ Sent file public/database_dump.zip (3.7ms)
 Completed 200 OK in 286ms (ActiveRecord: 51.9ms | Allocations: 29333)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-30 01:45:52 -0500
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 98.0ms | Allocations: 7549)
+Completed 200 OK in 113ms (Views: 103.6ms | ActiveRecord: 0.0ms | Allocations: 10878)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-30 01:45:54 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-30 01:45:54 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (6.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 83ms (Views: 30.6ms | ActiveRecord: 41.0ms | Allocations: 14247)
+
+
+  [1m[36mEvent Load (8.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 186ms (Views: 72.2ms | ActiveRecord: 68.0ms | Allocations: 19252)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-30 01:45:57 -0500
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (1.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/announcement.rb:15:in `block in to_csv'
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/event.rb:18:in `block in to_csv'
+  [1m[36mAttendee Load (1.9ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/attendee.rb:18:in `block in to_csv'
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/member.rb:19:in `block in to_csv'
+  [1m[36mRole Load (0.7ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/role.rb:11:in `block in to_csv'
+  [1m[36mEventattendance Load (0.9ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/eventattendance.rb:12:in `block in to_csv'
+  [1m[36mReferral Load (1.0ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/referral.rb:12:in `block in to_csv'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 32)
+Sent data  (12.8ms)
+Completed 200 OK in 254ms (Views: 12.5ms | ActiveRecord: 40.0ms | Allocations: 26458)
+
+

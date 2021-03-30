@@ -20,7 +20,6 @@ class HomepageController < ApplicationController
 
         zipname = 'public/database_dump.zip'
         File.delete(zipname) if File.exist?(zipname)
-        zip = File.open(zipname, 'w')
 
         Zip::File.open(zipname, Zip::File::CREATE) do |zipfile|
           objects.count.times do |i|
@@ -31,8 +30,10 @@ class HomepageController < ApplicationController
           end
         end
 
-        send_file zipname
-        zip.close
+        File.open(zipname, 'r') do |f|
+          send_data f.read
+        end
+
         filenames.each do |filename|
           File.delete(filename)
         end
