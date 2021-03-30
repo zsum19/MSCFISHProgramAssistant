@@ -36,7 +36,7 @@ class HomepageController < ApplicationController
         send_file zipname
 
         filenames.each do |filename|
-          File.delete(filenames[i])
+          File.delete(filename)
         end
       end
     end
