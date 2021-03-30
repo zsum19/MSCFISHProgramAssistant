@@ -5,11 +5,11 @@ import TypeBadge from "./common/TypeBadge";
 import CalendarBadge from "./common/CalendarBadge";
 import AttendanceBadge from "./common/AttendanceBadge";
 import RemainingTicketsBadge from "./common/RemainingTicketsBadge";
+import { checkPropTypes } from "prop-types";
 
 function calculateRemainingTickets(max_size, tickets_sold){
     let max_size_as_num = parseInt(max_size);
-    let tickets_sold_as_num = parseInt(tickets_sold); 
-    // Is it guaranteed size and tickets sold are not empty?
+    let tickets_sold_as_num = parseInt(tickets_sold);
     return max_size_as_num - tickets_sold_as_num;
 }
 
@@ -72,10 +72,10 @@ function getTime(ts){
 export default (props) => ( 
     <div className = "single-post event-view">
         <h2 className = "event-heading">{props.title}</h2>
-        {/*<TypeBadge text = "Service"></TypeBadge>*/}
+        <TypeBadge text = {props.event_type}></TypeBadge>
         <AttendanceBadge text = {props.tickets_sold}></AttendanceBadge>
         <RemainingTicketsBadge text = {calculateRemainingTickets(props.max_size, props.tickets_sold)}></RemainingTicketsBadge>
-        <LocaleBadge text = "Simp Drill Field"></LocaleBadge>
+        <LocaleBadge text = {props.location}></LocaleBadge>
         <CalendarBadge text = {formatDay(props.date)}></CalendarBadge>
         
         <p className = "single-event-description">{props.description}</p>

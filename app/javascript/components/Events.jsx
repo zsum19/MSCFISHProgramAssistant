@@ -31,6 +31,8 @@ class Events extends React.Component {
             <div key={index} className="col-md-6 col-lg-4">
                 <EventView 
                     title = {event.name}
+                    location = {event.location}
+                    event_type = {event.event_type}
                     max_size = {event.max_size}
                     tickets_sold = {event.tickets_sold}
                     description = {event.description}

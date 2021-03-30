@@ -5,7 +5,8 @@ class CheckIn extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: "",
+            first_name: "",
+            last_name: "",
             email: "",
             referral: "",
             members: [],
@@ -45,13 +46,17 @@ class CheckIn extends React.Component {
     
     tryUpdate(){
         const url = "/api/v1/attendees/update";
-        const { name, email } = this.state;
+        const { first_name, last_name, email } = this.state;
     
-        if (name.length == 0)
+        if (first_name.length == 0)
+          return;
+
+        if (last_name.length == 0)
           return;
     
         const body = {
-            name, 
+            first_name,
+            last_name, 
             email
         };
     
@@ -77,13 +82,17 @@ class CheckIn extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/attendees/create";
-        const { name, email, referral, event_id } = this.state;
+        const { first_name, last_name, email, referral, event_id } = this.state;
     
-        if (name.length == 0)
+        if (first_name.length == 0)
+          return;
+
+        if (last_name.length == 0)
           return;
     
         const body = {
-            name, 
+            first_name,
+            last_name,
             email,
             referral,
             event_id
@@ -111,7 +120,7 @@ class CheckIn extends React.Component {
     render() {
         const { members } = this.state;
         let memberOptionItems = members.map((members, index) => (
-          <option value={members.name}>{members.name}</option>
+          <option value={members.first_name + " " + members.last_name}>{members.first_name + " " + members.last_name}</option>
         ));
         return (
           <div className="container mt-5">
@@ -122,11 +131,22 @@ class CheckIn extends React.Component {
                 </h1>
                 <form onSubmit={this.onSubmit}>
                   <div className="form-group">
-                    <label htmlFor="name">Your Name</label>
+                    <label htmlFor="first_name">Your First Name</label>
                     <input
                       type="text"
-                      name="name"
-                      id="name"
+                      name="first_name"
+                      id="first_name"
+                      className="form-control"
+                      required
+                      onChange={this.onChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="last_name">Your Last Name</label>
+                    <input
+                      type="text"
+                      name="last_name"
+                      id="last_name"
                       className="form-control"
                       required
                       onChange={this.onChange}

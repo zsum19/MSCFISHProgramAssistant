@@ -44,7 +44,7 @@ module Api
       private
 
       def attendee_params
-        params.permit(:name, :email, :created_at, :updated_at)
+        params.permit(:first_name, :last_name, :email, :created_at, :updated_at)
       end
 
       def attendee

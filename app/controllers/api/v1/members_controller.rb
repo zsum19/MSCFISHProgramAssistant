@@ -4,7 +4,7 @@ module Api
   module V1
     class MembersController < ApplicationController
       def index
-        member = Member.all.order(name: :desc)
+        member = Member.all.order(first_name: :desc)
         render json: member
       end
 
@@ -41,7 +41,7 @@ module Api
       private
 
       def member_params
-        params.permit(:role_id, :name, :num_referrals)
+        params.permit(:role_id, :first_name, :last_name, :email, :num_referrals)
       end
 
       def member
