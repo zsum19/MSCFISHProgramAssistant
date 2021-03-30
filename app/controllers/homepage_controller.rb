@@ -22,7 +22,7 @@ class HomepageController < ApplicationController
         zipname = current_directory + '/public/downloads/database_dump.zip'
         File.delete(zipname) if File.exist?(zipname)
 
-        Zip::File.open(zipname, Zip::File::CREATE) do |zipfile|
+        ::Zip::File.open(zipname, ::Zip::File::CREATE) do |zipfile|
           objects.count.times do |i|
             file = File.open('public' + filenames[i], 'w')
             File.write('public' + filenames[i], objects[i].to_csv)
