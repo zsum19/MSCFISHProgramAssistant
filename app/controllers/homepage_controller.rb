@@ -18,24 +18,22 @@ class HomepageController < ApplicationController
         filenames = ['announcements.csv', 'events.csv', 'attendees.csv', 'members.csv',
                      'roles.csv', 'eventattendances.csv', 'referrals.csv']
 
-        zipname = 'public/database_dump.zip'
+        zipname = 'public/downloads/database_dump.zip'
         File.delete(zipname) if File.exist?(zipname)
 
         Zip::File.open(zipname, Zip::File::CREATE) do |zipfile|
           objects.count.times do |i|
-            file = File.open(filenames[i], 'w')
-            File.write(filenames[i], objects[i].to_csv)
+            file = File.open('public/' + filenames[i], 'w')
+            File.write('public/' + filenames[i], objects[i].to_csv)
             file.close
-            zipfile.add(filenames[i], file)
+            zipfile.add('public/' + filenames[i], file)
           end
         end
 
-        File.open(zipname, 'r') do |f|
-          send_data f.read
-        end
+        send_file zipname
 
         filenames.each do |filename|
-          File.delete(filename)
+          File.delete('public/' + filename)
         end
       end
     end
