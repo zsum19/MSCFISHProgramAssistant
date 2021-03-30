@@ -24,10 +24,10 @@ class HomepageController < ApplicationController
 
         ::Zip::File.open(zipname, ::Zip::File::CREATE) do |zipfile|
           objects.count.times do |i|
-            file = File.open('public' + filenames[i], 'w')
-            File.write('public' + filenames[i], objects[i].to_csv)
+            file = File.open('public/' + filenames[i], 'w')
+            File.write('public/' + filenames[i], objects[i].to_csv)
             file.close
-            zipfile.add('public' + filenames[i], file)
+            zipfile.add('public/' + filenames[i], file)
           end
         end
 
@@ -38,7 +38,7 @@ class HomepageController < ApplicationController
         send_file zipname
 
         filenames.each do |filename|
-          File.delete('public' + filename)
+          File.delete('public/' + filename)
         end
       end
     end
