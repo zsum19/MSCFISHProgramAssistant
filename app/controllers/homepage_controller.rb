@@ -1,4 +1,6 @@
 # frozen_string_literal: true
+require 'rubygems'
+require 'zip'
 
 class HomepageController < ApplicationController
   def index
