@@ -29,8 +29,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 # User Authentication Group
-gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
-gem 'omniauth'
+gem 'devise'#, github: 'heartcombo/devise', branch: 'ca-omniauth-2'
+gem 'omniauth', '~>1.9.1'
 gem 'omniauth-google-oauth2' # Adding comment for dependency test
 
 group :development, :test do

@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import AnnouncementsView from "./LatestAnnouncementsView";
 import LinkButton from "./common/LinkButton";
 import LatestEventsView from "./LatestEventsView";
+import {GoogleAPI, GoogleLogin, GoogleLogout} from 'react-google-oauth';
 
 export default () => (
   
 
       <div style = {{width: "100vw", height: "100vh", backgroundColor: "whitesmoke"}}>
+
         
         <div class="sidebar">
           {/* <img src = "logo.jpeg" alt = "MSC FISH logo"></img> */}
@@ -17,6 +19,11 @@ export default () => (
           <a href="index/database_dump.zip" className =  "custom-button lg" download = "database_dump.zip">
               Download Database
           </a>
+          {/* <GoogleAPI className="GoogleLogin" clientId="441360430821-7u2gsltnqc59p0b2vqkenbmkpganmr3i.apps.googleusercontent.com">
+      <div>
+    <GoogleLogin height="10" width="500px" backgroundColor="#4285f4" access="offline" scope="email profile" onLoginSuccess={this.responseGoogle} onFailure={this.responseGoogle}/>
+      </div>
+    </GoogleAPI> */}
         </div>
         
         <div className = "py-5">
