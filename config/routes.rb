@@ -21,6 +21,15 @@ Rails.application.routes.draw do
     end
   end
   root 'homepage#index'
+  #root to: 'dashboards#show'
   get '/*path' => 'homepage#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  # Members routes for Oauth purposes
+  devise_for :members, controllers: { omniauth_callbacks: 'members/omniauth_callbacks' }
+  devise_scope :members do
+    get 'members/sign_in', to: 'members/sessions#new', as: :new_member_session
+    get 'members/sign_out', to: 'members/sessions#destroy', as: :destroy_member_session
+  end
+
 end
