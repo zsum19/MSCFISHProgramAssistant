@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import EventBadge from "./common/EventBadge"
 class Announcements extends React.Component {
     constructor(props) {
         super(props);
@@ -25,21 +25,22 @@ class Announcements extends React.Component {
     render() {
         const { announcements } = this.state;
         const allAnnouncements = announcements.map((announcement, index) => (
-            <div key={index} className="col-md-6 col-lg-4">
-                <div className="card mb-4">
-                    <div className="card-header">
-                        {announcement.date_posted}
-                    </div>
-                    <div className="card-body">
-                        <h5 className="card-text">{announcement.content}</h5>
-                    </div>
-                    <div className="card-footer">
-                        {announcement.author_id}
-                        <Link to={`/announcement/${announcement.id}`} className="btn custom-button">
-                        View Announcement
-                        </Link>
-                    </div>
-                </div>
+            <div key={index} className="col-md-6 col-lg-4">               
+                <div className = "single-post announcement-view">
+                    <h2 className = "post-heading">{announcement.title}</h2>
+                    <EventBadge text = {announcement.event_id}></EventBadge>
+                    <p className = "single-event-description">{announcement.content}</p>
+                    <p 
+                        style = {{
+                            fontSize: "medium",
+                            fontWeight: "lighter"
+                        }}
+                    > - <i>{announcement.author_id}</i></p>
+                    <p className = "subtitle">{announcement.date_posted}</p>
+                    <Link to={`/announcement/${announcement.id}`} className="btn custom-button">
+                    View Announcement
+                    </Link>
+                </div>                 
             </div>
         ));
         const noAnnouncement = (

@@ -33,7 +33,7 @@ module Api
       private
 
       def announcement_params
-        params.permit(:author_id, :event_id, :content, :date_posted)
+        params.permit(:author_id, :event_id, :title, :content, :external)
       end
 
       def announcement

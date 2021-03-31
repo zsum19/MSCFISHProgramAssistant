@@ -5,7 +5,8 @@ class CheckIn extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: "",
+            first_name: "",
+            last_name: "",
             email: "",
             referral: "",
             members: [],
@@ -17,7 +18,6 @@ class CheckIn extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.props.match.params.event_id);
         this.setState({ event_id: this.props.match.params.event_id});
         let memberList = [];
         const url = "/api/v1/members/index";
@@ -28,7 +28,10 @@ class CheckIn extends React.Component {
             }
             throw new Error("Network response was not ok.");
           })
-          .then(response => this.setState({ members: response }))
+          .then(response => {
+            this.setState({ members: response });
+            this.setState({ referral: this.state.members[0].name });
+          })
           .catch(error => console.log(error.message));
     }
 
@@ -44,13 +47,17 @@ class CheckIn extends React.Component {
     
     tryUpdate(){
         const url = "/api/v1/attendees/update";
-        const { name, email, referral } = this.state;
+        const { first_name, last_name, email } = this.state;
     
-        if (name.length == 0)
+        if (first_name.length == 0)
+          return;
+
+        if (last_name.length == 0)
           return;
     
         const body = {
-            name, 
+            first_name,
+            last_name, 
             email
         };
     
@@ -76,13 +83,17 @@ class CheckIn extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/attendees/create";
-        const { name, email, referral, event_id } = this.state;
+        const { first_name, last_name, email, referral, event_id } = this.state;
     
-        if (name.length == 0)
+        if (first_name.length == 0)
+          return;
+
+        if (last_name.length == 0)
           return;
     
         const body = {
-            name, 
+            first_name,
+            last_name,
             email,
             referral,
             event_id
@@ -110,7 +121,7 @@ class CheckIn extends React.Component {
     render() {
         const { members } = this.state;
         let memberOptionItems = members.map((members, index) => (
-          <option value={members.name}>{members.name}</option>
+          <option value={members.first_name + " " + members.last_name}>{members.first_name + " " + members.last_name}</option>
         ));
         return (
           <div className="container mt-5">
@@ -121,11 +132,22 @@ class CheckIn extends React.Component {
                 </h1>
                 <form onSubmit={this.onSubmit}>
                   <div className="form-group">
-                    <label htmlFor="name">Your Name</label>
+                    <label htmlFor="first_name">Your First Name</label>
                     <input
                       type="text"
-                      name="name"
-                      id="name"
+                      name="first_name"
+                      id="first_name"
+                      className="form-control"
+                      required
+                      onChange={this.onChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="last_name">Your Last Name</label>
+                    <input
+                      type="text"
+                      name="last_name"
+                      id="last_name"
                       className="form-control"
                       required
                       onChange={this.onChange}
@@ -148,7 +170,7 @@ class CheckIn extends React.Component {
                       name="referral"
                       id="referral"
                       className="form-control"
-                      value="Test"
+                      value={this.state.referral}
                       //For future joining of tables
                       onChange={this.onChange}
                     >

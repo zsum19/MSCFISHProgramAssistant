@@ -7,8 +7,9 @@ class NewAnnouncement extends React.Component {
         this.state = {
             author_id: 1,
             event_id: 1,
+            title: "",
             content: "",
-            date_posted: "2021-02-28 00:00:00"
+            external: false
         };
 
         this.onChange = this.onChange.bind(this);
@@ -29,13 +30,14 @@ class NewAnnouncement extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/announcements/create";
-        const { author_id, event_id, content, date_posted } = this.state;
+        const { author_id, event_id, title, content, external } = this.state;
     
         const body = {
           author_id,
           event_id,
+          title,
           content,
-          date_posted
+          external
         };
     
         const token = document.querySelector('meta[name="csrf-token"]').content;
@@ -67,16 +69,41 @@ class NewAnnouncement extends React.Component {
                 </h1>
                 <form onSubmit={this.onSubmit}>
                   <div className="form-group">
+                    <label htmlFor="title">Announcement Title</label>
+                    <input
+                      type="text"
+                      name="title"
+                      id="title"
+                      className="form-control"
+                      required
+                      onChange={this.onChange}
+                    />
                   </div>
-                  <label htmlFor="content">Announcement Content</label>
-                  <textarea
-                    className="form-control"
-                    id="content"
-                    name="content"
-                    rows="5"
-                    required
-                    onChange={this.onChange}
-                  />
+                  <div className="form-group">
+                    <label htmlFor="content">Announcement Content</label>
+                    <textarea
+                      className="form-control"
+                      id="content"
+                      name="content"
+                      rows="5"
+                      required
+                      onChange={this.onChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="external">Announcement Type</label>
+                    <select
+                      type="select"
+                      name="external"
+                      id="external"
+                      className="form-control"
+                      required
+                      onChange={this.onChange}
+                    >
+                      <option value={false}>Internal</option>
+                      <option value={true}>External</option>
+                    </select>
+                  </div>
                   <button type="submit" className="btn custom-button mt-3">
                     Create Announcement
                   </button>

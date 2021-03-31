@@ -7,18 +7,23 @@ RSpec.describe Attendee, type: :model do
     expect(attendee).not_to be_valid
   end
 
-  it 'does not save an attendee without name' do
-    attendee = described_class.new(name: nil, email: 'test@test.com')
+  it 'does not save an attendee without first name' do
+    attendee = described_class.new(first_name: nil, last_name: 'test', email: 'test@test.com')
+    expect(attendee).not_to be_valid
+  end
+
+  it 'does not save an attendee without last name' do
+    attendee = described_class.new(first_name: 'test', last_name: nil, email: 'test@test.com')
     expect(attendee).not_to be_valid
   end
 
   it 'does not save an attendee without email' do
-    attendee = described_class.new(name: 'test', email: nil)
+    attendee = described_class.new(first_name: 'test', last_name: 'test', email: nil)
     expect(attendee).not_to be_valid
   end
 
   it 'saves an attendee with valid attributes' do
-    attendee = described_class.new(name: 'test', email: 'test@test.com')
+    attendee = described_class.new(first_name: 'test', last_name: 'test', email: 'test@test.com')
     expect(attendee).to be_valid
   end
 end

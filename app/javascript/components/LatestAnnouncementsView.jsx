@@ -29,7 +29,7 @@ class LatestAnnouncementsView extends React.Component {
         const allAnnouncements = announcements.map((announcement, index) => (
             <div key={index} className="col-lg-12">               
                 <div className = "single-post announcement-view">
-                    <h2 className = "post-heading">This does not exist yet</h2>
+                    <h2 className = "post-heading">{announcement.title}</h2>
                     <EventBadge text = {announcement.event_id}></EventBadge>
                     <p className = "single-event-description">{announcement.content}</p>
                     <p 

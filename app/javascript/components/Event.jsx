@@ -104,7 +104,7 @@ class Event extends React.Component {
                   </button>
                 </div>
               </div>
-              <Link to="/events" className="btn btn-link">
+              <Link to="/allevents" className="btn btn-link">
                 Back to All Events
               </Link>
             </div>
