@@ -78,7 +78,7 @@ class NewEvent extends React.Component {
                 <h1 className="font-weight-normal mb-5">
                   Create a new event
                 </h1>
-                <EventForm onSubmit={this.onSubmit} onChange={this.onChange} btnLabel="Create Event"/>
+                <EventForm onSubmit={this.onSubmit} onChange={this.onChange} btnLabel="Create Event" state={this.state}/>
               </div>
             </div>
           </div>
