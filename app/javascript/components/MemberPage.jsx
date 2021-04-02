@@ -1,14 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import MemberList from "./MemberList";
 
 class MemberPage extends React.Component {
     constructor() {
         super();
-    }
-
-    componentDidMount() {
-        console.log("Hello");
     }
 
     render() {

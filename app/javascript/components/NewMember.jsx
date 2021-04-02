@@ -6,7 +6,9 @@ class NewMember extends React.Component {
         super(props);
         this.state = {
             role_id: 1,
-            name: "John Doe",
+            first_name: "John",
+            last_name: "Doe",
+            email: "johndoe@gmail.com",
             num_referrals: 0,
         };
 
@@ -28,11 +30,13 @@ class NewMember extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/members/create";
-        const { role_id, name, num_referrals } = this.state;
+        const { role_id, first_name, last_name, email, num_referrals } = this.state;
     
         const body = {
           role_id,
-          name,
+          first_name,
+          last_name,
+          email,
           num_referrals
         };
     
@@ -65,34 +69,56 @@ class NewMember extends React.Component {
                 </h1>
                 <form onSubmit={this.onSubmit}>
                 <div className="form-group">
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">First Name</label>
                     <input
                       type="text"
-                      name="name"
-                      id="name"
+                      name="first_name"
+                      id="first_name"
                       className="form-control"
                       required
                       onChange={this.onChange}
                     />
-                  </div>
-                  <div className="form-group">
+                </div>
+                <div className="form-group">
+                    <label htmlFor="name">Last Name</label>
+                    <input
+                      type="text"
+                      name="last_name"
+                      id="last_name"
+                      className="form-control"
+                      required
+                      onChange={this.onChange}
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="name">Email</label>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      className="form-control"
+                      required
+                      onChange={this.onChange}
+                    />
+                </div>
+                <div className="form-group">
                     <label htmlFor="num_referrals">Number of Referrals</label>
                     <input
-                      type="number"
-                      name="num_referrals"
-                      id="num_referrals"
-                      min="0"
-                      className="form-control"
-                      required
-                      onChange={this.onChange}
+                        type="number"
+                        name="num_referrals"
+                        id="num_referrals"
+                        min="0"
+                        className="form-control"
+                        required
+                        onChange={this.onChange}
                     />
-                  </div>
-                  <button type="submit" className="btn custom-button mt-3">
-                    Create Member
-                  </button>
-                  <Link to="/admin" className="btn btn-link mt-3">
-                    Admin Page
-                  </Link>
+                </div>
+                <button type="submit" className="btn custom-button mt-3">
+                Create Member
+                </button>
+                <Link to="/admin" className="btn btn-link mt-3">
+                Admin Page
+                </Link>
                 </form>
               </div>
             </div>

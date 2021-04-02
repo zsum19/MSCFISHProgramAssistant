@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AnnouncementForm from "./AnnouncementForm";
 
 class NewAnnouncement extends React.Component {
     constructor(props) {
@@ -55,7 +56,7 @@ class NewAnnouncement extends React.Component {
             }
             throw new Error("Network response was not ok.");
           })
-          .then(response => this.props.history.push(`/announcement/${response.id}`))
+          .then(response => this.props.history.push(`/admin/Announcement%20List`))
           .catch(error => console.log(error.message));
     }
     
@@ -67,50 +68,7 @@ class NewAnnouncement extends React.Component {
                 <h1 className="font-weight-normal mb-5">
                   Create a new announcement
                 </h1>
-                <form onSubmit={this.onSubmit}>
-                  <div className="form-group">
-                    <label htmlFor="title">Announcement Title</label>
-                    <input
-                      type="text"
-                      name="title"
-                      id="title"
-                      className="form-control"
-                      required
-                      onChange={this.onChange}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="content">Announcement Content</label>
-                    <textarea
-                      className="form-control"
-                      id="content"
-                      name="content"
-                      rows="5"
-                      required
-                      onChange={this.onChange}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="external">Announcement Type</label>
-                    <select
-                      type="select"
-                      name="external"
-                      id="external"
-                      className="form-control"
-                      required
-                      onChange={this.onChange}
-                    >
-                      <option value={false}>Internal</option>
-                      <option value={true}>External</option>
-                    </select>
-                  </div>
-                  <button type="submit" className="btn custom-button mt-3">
-                    Create Announcement
-                  </button>
-                  <Link to="/announcements" className="btn btn-link mt-3">
-                    Back to All Announcements
-                  </Link>
-                </form>
+                <AnnouncementForm onSubmit={this.onSubmit} onChange={this.onChange} btnLabel="Create Announcement" />
               </div>
             </div>
           </div>

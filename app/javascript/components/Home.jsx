@@ -3,21 +3,14 @@ import { Link } from "react-router-dom";
 import AnnouncementsView from "./LatestAnnouncementsView";
 import LinkButton from "./common/LinkButton";
 import LatestEventsView from "./LatestEventsView";
+import Navbar from "./common/Navbar";
 
 export default () => (
   
 
       <div style = {{width: "100vw", height: "100vh", backgroundColor: "whitesmoke"}}>
         
-        <div class="sidebar">
-          {/* <img src = "logo.jpeg" alt = "MSC FISH logo"></img> */}
-          <Link className =  "custom-button lg" to = "/allevents">Events</Link>
-          <Link className =  "custom-button lg" to = "/announcements">Announcements</Link>
-          <Link className =  "custom-button lg" to = "/checkin/1">Check In</Link>
-          <a href="index/database_dump.zip" className =  "custom-button lg" download = "database_dump.zip">
-              Download Database
-          </a>
-        </div>
+        <Navbar/>
         
         <div className = "py-5">
           <div className="center-desktop">

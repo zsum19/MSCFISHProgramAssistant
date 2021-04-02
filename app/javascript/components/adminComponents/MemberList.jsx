@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import LinkButton from "../common/LinkButton";
 import MemberForm from "./MemberForm";
 
 class MemberList extends React.Component {
@@ -37,7 +37,16 @@ class MemberList extends React.Component {
         ));
 
         return (
-            <div className="">
+            <div className="container-fluid mb-4 px-3">
+                <div className="container-fluid d-flex justify-content-between my-3">
+                <h1 className="d-inline-block">Member List</h1>
+                <LinkButton className =  "to-button pull-right" to = "/member/create" text = "Add Member"/>
+                </div>
+                <div className="row">
+                    <div className="col-md-2 ml-1">First Name</div>
+                    <div className="col-md-2 ml-1">Last Name</div>
+                    <div className="col-md-2 ml-1">Email</div>
+                </div>
                 {memberForms}
             </div>
         );

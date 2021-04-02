@@ -27,9 +27,7 @@ module Api
       end
 
       def update
-        member = Member.find(params[:id])
-        member.update(member_params)
-
+        member&.update(member_params)
         render json: member
       end
 
