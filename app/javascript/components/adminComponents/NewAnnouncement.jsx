@@ -68,7 +68,7 @@ class NewAnnouncement extends React.Component {
                 <h1 className="font-weight-normal mb-5">
                   Create a new announcement
                 </h1>
-                <AnnouncementForm onSubmit={this.onSubmit} onChange={this.onChange} btnLabel="Create Announcement" />
+                <AnnouncementForm onSubmit={this.onSubmit} onChange={this.onChange} btnLabel="Create Announcement" state={this.state} />
               </div>
             </div>
           </div>
