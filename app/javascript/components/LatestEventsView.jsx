@@ -44,6 +44,7 @@ class LatestEvents extends React.Component {
                     description = {event.description}
                     date = {event.date}
                     id = {event.id}
+                    admin = {false}
                 ></EventView>
             </div>
         ));
@@ -56,8 +57,6 @@ class LatestEvents extends React.Component {
         );
 
         return (  
-          
-            
                 <div className="row">
                     
                     <div style = {{border: "1px solid #bbb"}} className = "events-view">
@@ -77,9 +76,6 @@ class LatestEvents extends React.Component {
                     </div>
                     
                 </div>
-                
-           
-             
         );
     }
 }

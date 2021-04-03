@@ -3,11 +3,13 @@ Rails.application.routes.draw do
     namespace :v1 do
       get 'events/index'
       post 'events/create'
+      patch 'events/update/:id', to: 'events#update'
       get 'events/show/:id', to: 'events#show'
       delete 'events/destroy/:id', to: 'events#destroy'
 
       get 'announcements/index'
       post 'announcements/create'
+      patch 'announcements/update/:id', to: 'announcements#update'
       get 'announcements/show/:id', to: 'announcements#show'
       delete 'announcements/destroy/:id', to: 'announcements#destroy'
 
@@ -16,6 +18,7 @@ Rails.application.routes.draw do
 
       get 'members/index'
       post 'members/create'
+      patch 'members/update/:id', to: 'members#update'
       get 'members/show/:id', to: 'members#show'
       delete 'members/destroy/:id', to: 'members#destroy'
     end

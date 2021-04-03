@@ -32,7 +32,7 @@ module Api
 
       def destroy
         attendee&.destroy
-        render json: { message: 'attendee Deleted!' }
+        render json: { message: 'Attendee Deleted!' }
       end
 
       def update

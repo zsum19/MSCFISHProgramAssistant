@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LinkButton from "./common/LinkButton";
 
 class Event extends React.Component {
     constructor(props) {
@@ -63,7 +64,14 @@ class Event extends React.Component {
       }
 
     render() {
+        const {
+          match: {
+            params: { id }
+          }
+        } = this.props;
         const { event } = this.state;
+
+        const url = `/checkin/${id}`
 
         const eventDescription = this.addHtmlEntities(event.description);
     
@@ -103,6 +111,7 @@ class Event extends React.Component {
                     Delete Event
                   </button>
                 </div>
+                <LinkButton className =  "to-button" to = {url} text = "Check In"></LinkButton>
               </div>
               <Link to="/allevents" className="btn btn-link">
                 Back to All Events
