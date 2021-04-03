@@ -53,11 +53,8 @@ class AnnouncementForm extends React.Component {
                 <button type="submit" className="btn custom-button mt-3">
                 {btnLabel}
                 </button>
-                {/* <Link to="/admin/Announcement%20List" className="btn btn-link mt-3">
+                <Link to="/admin/Announcement%20List" className="btn btn-link mt-3">
                 Back to Admin Page
-                </Link> */}
-                <Link to="/announcements" className="btn btn-link mt-3">
-                Back to All Announcements
                 </Link>
             </form>
             </>
