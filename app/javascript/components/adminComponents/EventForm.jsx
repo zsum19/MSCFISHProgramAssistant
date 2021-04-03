@@ -111,11 +111,8 @@ class EventForm extends React.Component {
                 <button type="submit" className="btn custom-button mt-3">
                 {btnLabel}
                 </button>
-                {/* <Link to="/admin/Event%20List" className="btn btn-link mt-3">
+                <Link to="/admin/Event%20List" className="btn btn-link mt-3">
                 Back to Admin Page
-                </Link> */}
-                <Link to="/allevents" className="btn btn-link mt-3">
-                Back to All Events
                 </Link>
             </form>
             </>

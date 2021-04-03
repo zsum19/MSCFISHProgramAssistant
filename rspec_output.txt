@@ -3,7 +3,7 @@ Announcements page
 Capybara starting Puma...
 * Version 5.2.2 , codename: Fettisdagsbulle
 * Min threads: 0, max threads: 4
-* Listening on http://127.0.0.1:35415
+* Listening on http://127.0.0.1:36493
 .  Able to open announcements page
 .  Able to open link to create new announcements
 .  Able to go back home from announcements page
@@ -46,6 +46,7 @@ Homepage
 
 Announcement
 .  does not save an announcement without any arguments
+.  does not save an announcement without title
 .  does not save an announcement without content
 .  does not save an announcement without an event id
 .  does not save an announcement without author id
@@ -53,7 +54,8 @@ Announcement
 
 Attendee
 .  does not save an attendee without any arguments
-.  does not save an attendee without name
+.  does not save an attendee without first name
+.  does not save an attendee without last name
 .  does not save an attendee without email
 .  saves an attendee with valid attributes
 
@@ -67,7 +69,9 @@ Event
 
 Member
 .  does not save an member without any arguments
-.  does not save an member without name
+.  does not save an member without first name
+.  does not save an member without last name
+.  does not save an member without email
 .  does not save an member without num referrals
 .  does not save an member without role id
 .  saves an member with valid attributes
@@ -83,11 +87,11 @@ Api::V1::Members
 .    returns http success
 
 
-Finished in 52.47 seconds (files took 5.49 seconds to load)
-49 examples, 0 failures
+Finished in 1 minute 11.15 seconds (files took 5.22 seconds to load)
+53 examples, 0 failures
 
-Finished in 52.47 seconds (files took 5.49 seconds to load)
-49 examples, 0 failures
+Finished in 1 minute 11.15 seconds (files took 5.22 seconds to load)
+53 examples, 0 failures
 
 
-Coverage report generated for RSpec to /home/treydinges/Documents/MSCFISHProgramAssistant/coverage. 491 / 541 LOC (90.76%) covered.
+Coverage report generated for RSpec to /home/treydinges/Documents/MSCFISHProgramAssistant/coverage. 500 / 556 LOC (89.93%) covered.
