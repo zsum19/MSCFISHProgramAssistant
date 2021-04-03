@@ -70,7 +70,7 @@ describe 'New announcement page', :type => :feature do
   it 'Back to all announcements link on new announcement page', js: true do
     announcementspage.visit_announcementspage
     click_link('Create New Announcement')
-    expect(page).to have_link('Back to All Announcements', href: '/announcements')
+    expect(page).to have_link('Back to Admin Page', href: '/admin/Announcement List')
   end
 end
 

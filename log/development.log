@@ -8514,134 +8514,190 @@ Sent data  (12.8ms)
 Completed 200 OK in 254ms (Views: 12.5ms | ActiveRecord: 40.0ms | Allocations: 26458)
 
 
-Started GET "/" for 127.0.0.1 at 2021-03-30 15:50:55 -0500
-  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-03-30 16:01:30 -0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomepageController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering homepage/index.html.erb within layouts/application
-  Rendered homepage/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 273)
+  Rendered homepage/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 273)
 [Webpacker] Everything's up-to-date. Nothing to do
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 98.2ms | Allocations: 7551)
-Completed 200 OK in 132ms (Views: 109.1ms | ActiveRecord: 0.0ms | Allocations: 10880)
+  Rendered layout layouts/application.html.erb (Duration: 95.1ms | Allocations: 7553)
+Completed 200 OK in 131ms (Views: 105.5ms | ActiveRecord: 0.0ms | Allocations: 10882)
 
 
-Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-30 15:50:56 -0500
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-30 16:01:31 -0500
 Processing by Api::V1::AnnouncementsController#index as */*
-Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-30 15:50:56 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-30 16:01:31 -0500
 Processing by Api::V1::EventsController#index as */*
-  [1m[36mAnnouncement Load (10.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  [1m[36mAnnouncement Load (3.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
   ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
-Completed 200 OK in 72ms (Views: 28.4ms | ActiveRecord: 16.8ms | Allocations: 13338)
+Completed 200 OK in 84ms (Views: 14.3ms | ActiveRecord: 20.7ms | Allocations: 13347)
 
 
-  [1m[36mEvent Load (9.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  [1m[36mEvent Load (5.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
   ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
-Completed 200 OK in 170ms (Views: 45.3ms | ActiveRecord: 87.3ms | Allocations: 20678)
+Completed 200 OK in 191ms (Views: 34.9ms | ActiveRecord: 113.8ms | Allocations: 20675)
 
 
-Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-30 15:50:57 -0500
-Processing by HomepageController#index as ZIP
-  Parameters: {"path"=>"index/database_dump"}
-Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 8132)
-
-
-  
-Errno::ENOENT (No such file or directory @ rb_sysopen - public/downloads/database_dump.zip20210330-12869-xuap74):
-  
-app/controllers/homepage_controller.rb:24:in `block (2 levels) in index'
-app/controllers/homepage_controller.rb:6:in `index'
-Started GET "/" for 127.0.0.1 at 2021-03-30 15:51:33 -0500
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by HomepageController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering homepage/index.html.erb within layouts/application
-  Rendered homepage/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 273)
-[Webpacker] Everything's up-to-date. Nothing to do
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 78.1ms | Allocations: 7551)
-Completed 200 OK in 97ms (Views: 90.1ms | ActiveRecord: 0.0ms | Allocations: 10885)
-
-
-Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-30 15:51:34 -0500
-Processing by Api::V1::AnnouncementsController#index as */*
-  [1m[36mAnnouncement Load (4.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
-  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
-Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-30 15:51:34 -0500
-Processing by Api::V1::EventsController#index as */*
-Completed 200 OK in 51ms (Views: 10.8ms | ActiveRecord: 31.0ms | Allocations: 11425)
-
-
-  [1m[36mEvent Load (14.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
-  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
-Completed 200 OK in 148ms (Views: 32.5ms | ActiveRecord: 90.7ms | Allocations: 13981)
-
-
-Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-30 15:51:36 -0500
-Processing by HomepageController#index as ZIP
-  Parameters: {"path"=>"index/database_dump"}
-  [1m[36mAnnouncement Load (10.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
-  ↳ app/models/announcement.rb:15:in `block in to_csv'
-  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
-  ↳ app/models/event.rb:18:in `block in to_csv'
-  [1m[36mAttendee Load (0.8ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
-  ↳ app/models/attendee.rb:18:in `block in to_csv'
-  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
-  ↳ app/models/member.rb:19:in `block in to_csv'
-  [1m[36mRole Load (0.9ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
-  ↳ app/models/role.rb:11:in `block in to_csv'
-  [1m[36mEventattendance Load (3.2ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
-  ↳ app/models/eventattendance.rb:12:in `block in to_csv'
-  [1m[36mReferral Load (1.0ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
-  ↳ app/models/referral.rb:12:in `block in to_csv'
-Sent file public/downloads/database_dump.zip (15.3ms)
-Completed 200 OK in 257ms (ActiveRecord: 43.5ms | Allocations: 29408)
-
-
-Started GET "/" for 127.0.0.1 at 2021-03-30 15:53:35 -0500
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by HomepageController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering homepage/index.html.erb within layouts/application
-  Rendered homepage/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 273)
-[Webpacker] Everything's up-to-date. Nothing to do
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 48.8ms | Allocations: 7551)
-Completed 200 OK in 72ms (Views: 60.1ms | ActiveRecord: 0.0ms | Allocations: 10880)
-
-
-Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-03-30 15:53:36 -0500
-Processing by Api::V1::AnnouncementsController#index as */*
-  [1m[36mAnnouncement Load (2.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
-  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
-Completed 200 OK in 43ms (Views: 15.5ms | ActiveRecord: 18.3ms | Allocations: 8559)
-
-
-Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-03-30 15:53:36 -0500
-Processing by Api::V1::EventsController#index as */*
-  [1m[36mEvent Load (2.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
-  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
-Completed 200 OK in 58ms (Views: 35.9ms | ActiveRecord: 7.3ms | Allocations: 10236)
-
-
-Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-30 15:53:38 -0500
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-03-30 16:01:32 -0500
 Processing by HomepageController#index as ZIP
   Parameters: {"path"=>"index/database_dump"}
   [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
   ↳ app/models/announcement.rb:15:in `block in to_csv'
-  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mEvent Load (2.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
   ↳ app/models/event.rb:18:in `block in to_csv'
-  [1m[36mAttendee Load (1.2ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mAttendee Load (0.9ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
   ↳ app/models/attendee.rb:18:in `block in to_csv'
-  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mMember Load (6.3ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
   ↳ app/models/member.rb:19:in `block in to_csv'
-  [1m[36mRole Load (2.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mRole Load (1.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
   ↳ app/models/role.rb:11:in `block in to_csv'
-  [1m[36mEventattendance Load (0.7ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mEventattendance Load (1.4ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
   ↳ app/models/eventattendance.rb:12:in `block in to_csv'
   [1m[36mReferral Load (0.9ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
   ↳ app/models/referral.rb:12:in `block in to_csv'
-Sent file public/downloads/database_dump.zip (4.5ms)
-Completed 200 OK in 261ms (ActiveRecord: 43.4ms | Allocations: 29384)
+Sent file /home/treydinges/Documents/MSCFISHProgramAssistant/public/downloads/database_dump.zip (3.4ms)
+Completed 200 OK in 259ms (ActiveRecord: 53.1ms | Allocations: 29411)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-02 22:34:30 -0500
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 273)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: f7940c79c4f28763e06c
+Version: webpack 4.46.0
+Time: 8135ms
+Built at: 04/02/2021 10:34:44 PM
+                                                              Asset       Size       Chunks                         Chunk Names
+                                   js/Index-ae558a9e4c027a5b598c.js   2.87 MiB        Index  [emitted] [immutable]  Index
+                               js/Index-ae558a9e4c027a5b598c.js.map      3 MiB        Index  [emitted] [dev]        Index
+                             js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+                         js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                                                      manifest.json  779 bytes               [emitted]              
+media/components/MSC-FISH-LOGO-c1ab8a3d409b9300eb7f1b2202683daa.png   10.1 KiB               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-ae558a9e4c027a5b598c.js js/Index-ae558a9e4c027a5b598c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 4.36 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 82 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13585.7ms | Allocations: 14015)
+Completed 200 OK in 13643ms (Views: 13606.9ms | ActiveRecord: 0.0ms | Allocations: 17249)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-02 22:34:45 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-02 22:34:45 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (12.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 213ms (Views: 29.1ms | ActiveRecord: 108.6ms | Allocations: 14142)
+
+
+  [1m[36mEvent Load (4.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 251ms (Views: 50.7ms | ActiveRecord: 101.4ms | Allocations: 20261)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-02 22:34:51 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 2.8ms | ActiveRecord: 0.9ms | Allocations: 2505)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-02 22:35:07 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (3.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 3.2ms | Allocations: 2520)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-02 22:35:11 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (6.3ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 82ms (Views: 18.2ms | ActiveRecord: 19.1ms | Allocations: 8846)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-02 22:35:13 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (3.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 3.4ms | Allocations: 2508)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-02 22:35:24 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (3.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 3.7ms | Allocations: 2136)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-02 22:35:26 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (3.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 6.6ms | ActiveRecord: 3.1ms | Allocations: 2505)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-02 22:35:27 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 8.2ms | ActiveRecord: 0.9ms | Allocations: 2112)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-02 22:35:27 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (3.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 3.6ms | Allocations: 2505)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-02 22:35:29 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 3.6ms | ActiveRecord: 0.9ms | Allocations: 2382)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-02 22:35:29 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 0.8ms | Allocations: 2505)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-02 22:35:30 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (14.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 16.4ms | ActiveRecord: 14.1ms | Allocations: 2112)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-02 22:35:31 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 0.8ms | Allocations: 2505)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-02 22:35:31 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (1.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.2ms | Allocations: 2112)
 
 

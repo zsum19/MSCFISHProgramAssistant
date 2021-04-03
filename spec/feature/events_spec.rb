@@ -78,7 +78,7 @@ describe 'New event page', :type => :feature do
   it 'Back to all events link on new event page', js: true do
     eventspage.visit_eventspage
     click_link('Create New Event')
-    expect(page).to have_link('Back to All Events', href: '/allevents')
+    expect(page).to have_link('Back to Admin Page', href: '/admin/Event List')
   end
 end
 

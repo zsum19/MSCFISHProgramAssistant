@@ -30,6 +30,11 @@ module Api
         render json: { message: 'Event Deleted!' }
       end
 
+      def update
+        event&.update(event_params)
+        render json: event
+      end
+
       private
 
       def event_params

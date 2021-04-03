@@ -14,7 +14,7 @@ function calculateRemainingTickets(max_size, tickets_sold){
 }
 
 function formatDay(time_stamp){
-    console.log("TIME STAMP: ", time_stamp);
+    // console.log("TIME STAMP: ", time_stamp);
     let date = getDate(time_stamp);
     let fields = date.split("-");
     let y = fields[0], m = fields[1], d = fields[2];
@@ -69,6 +69,7 @@ function getDate(ts){
 function getTime(ts){
     return ts.split("T")[1];
 }
+
 export default (props) => ( 
     <div className = "single-post event-view">
         <h2 className = "event-heading">{props.title}</h2>
@@ -80,8 +81,18 @@ export default (props) => (
         
         <p className = "single-event-description">{props.description}</p>
         <p className = "subtitle">{getTime(props.date)}</p>
+
+        {(props.admin == false || props.admin == undefined) ? (
         <Link to={`/event/${props.id}`} className="btn custom-button">
             View Event
         </Link>
+        ) : (
+        <>
+            <Link to={`/event/edit/${props.id}`} className="btn custom-button">
+                Edit
+            </Link>
+            <button type="button" className="btn btn-danger pull-right" onClick={props.onClick}>Delete</button>
+         </>
+        )}
     </div>    
 ); 
