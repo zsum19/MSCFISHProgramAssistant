@@ -31,8 +31,8 @@ Rails.application.routes.draw do
   # Members routes for Oauth purposes
   devise_for :members, controllers: { omniauth_callbacks: 'members/omniauth_callbacks' }
   devise_scope :members do
-    get 'members/sign_in', to: 'members/sessions#new', as: :new_member_session
-    get 'members/sign_out', to: 'members/sessions#destroy', as: :destroy_member_session
+    get 'members/sign_in', to: 'members/session#new', as: :new_member_session
+    get 'members/sign_out', to: 'members/session#destroy', as: :destroy_member_session
   end
 
 end

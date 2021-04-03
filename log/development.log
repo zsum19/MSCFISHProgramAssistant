@@ -11916,3 +11916,456 @@ Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.2ms | Allocations: 2112)
 
 
 >>>>>>> dbbca37b59ae85781b23f1343bd4c1e0b99ef97c
+Started GET "/" for 127.0.0.1 at 2021-04-03 10:52:57 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 467)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Snowspeeder/github/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 9de290d0ee623f55e199
+Version: webpack 4.46.0
+Time: 4772ms
+Built at: 04/03/2021 10:53:05 AM
+                                                              Asset       Size       Chunks                         Chunk Names
+                                   js/Index-31eb8c87d0c73d651afa.js   2.87 MiB        Index  [emitted] [immutable]  Index
+                               js/Index-31eb8c87d0c73d651afa.js.map      3 MiB        Index  [emitted] [dev]        Index
+                             js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+                         js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                                                      manifest.json  779 bytes               [emitted]              
+media/components/MSC-FISH-LOGO-c1ab8a3d409b9300eb7f1b2202683daa.png   10.1 KiB               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-31eb8c87d0c73d651afa.js js/Index-31eb8c87d0c73d651afa.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 667 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 4.36 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 82 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7454.8ms | Allocations: 15406)
+Completed 200 OK in 7473ms (Views: 7460.1ms | ActiveRecord: 0.0ms | Allocations: 18645)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-03 10:53:05 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-03 10:53:05 -0500
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (8.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 25ms (Views: 1.7ms | ActiveRecord: 11.2ms | Allocations: 5630)
+
+
+  [1m[36mAnnouncement Load (8.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 69ms (Views: 1.5ms | ActiveRecord: 28.2ms | Allocations: 8493)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-03 10:53:25 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 1.8ms | Allocations: 1189)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-03 10:53:27 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-03 10:53:27 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (2.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 2.4ms | Allocations: 1758)
+
+
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 4.1ms | ActiveRecord: 2.5ms | Allocations: 2342)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 10:53:28 -0500
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 10:53:28 -0500
+Started GET "/members/auth/google_oauth2/callback?state=6b9678860471f0bcc7486ca7ba8ebda076f73708f7975ab6&code=4%2F0AY0e-g5AoOocC3dZu4wHhCZ38GciSHRtQC0tBSxFSU_jzlzLYWSNYxRPkP37KmJCYc2NOQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&hd=tamu.edu&prompt=consent" for 127.0.0.1 at 2021-04-03 10:55:55 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"state"=>"6b9678860471f0bcc7486ca7ba8ebda076f73708f7975ab6", "code"=>"4/0AY0e-g5AoOocC3dZu4wHhCZ38GciSHRtQC0tBSxFSU_jzlzLYWSNYxRPkP37KmJCYc2NOQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"consent", "path"=>"members/auth/google_oauth2/callback"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 7627)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms | Allocations: 7994)
+
+
+Started GET "/members/auth/google_oauth2/callback?state=6b9678860471f0bcc7486ca7ba8ebda076f73708f7975ab6&code=4%2F0AY0e-g5AjFJbfKMS-URa5bisGdfWuCdwU0v2MH-CPmF7D06_eejsQdg2yaxOWzCPUp5dLw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent" for 127.0.0.1 at 2021-04-03 11:09:03 -0500
+Processing by Members::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"6b9678860471f0bcc7486ca7ba8ebda076f73708f7975ab6", "code"=>"4/0AY0e-g5AjFJbfKMS-URa5bisGdfWuCdwU0v2MH-CPmF7D06_eejsQdg2yaxOWzCPUp5dLw", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"consent"}
+Redirected to http://127.0.0.1:3000/members/sign_in
+Completed 302 Found in 93ms (Allocations: 4090)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:09:03 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 8054)
+Completed 200 OK in 69ms (Views: 63.3ms | Allocations: 9405)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-03 11:09:14 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 467)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 10720)
+Completed 200 OK in 45ms (Views: 32.2ms | ActiveRecord: 0.0ms | Allocations: 14056)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-03 11:09:14 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-03 11:09:14 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (1.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 1.7ms | ActiveRecord: 3.9ms | Allocations: 5802)
+
+
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 2.0ms | ActiveRecord: 14.1ms | Allocations: 9731)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:09:16 -0500
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:09:16 -0500
+Started GET "/members/auth/google_oauth2/callback?state=5662f57bcd87776bc822204902f3aff4cd7cc1d9b8b6b989&code=4/0AY0e-g5IBRnXk_TWRVK9Ew_JM73g56WPhA2X40bsSDPYZHZfRVLAtfyYH_xvttdjtwNt-A&scope=email%20profile%20openid%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:09:19 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"state"=>"5662f57bcd87776bc822204902f3aff4cd7cc1d9b8b6b989", "code"=>"4/0AY0e-g5IBRnXk_TWRVK9Ew_JM73g56WPhA2X40bsSDPYZHZfRVLAtfyYH_xvttdjtwNt-A", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none", "path"=>"members/auth/google_oauth2/callback"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 7670)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 8043)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-03 11:18:52 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 467)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 10720)
+Completed 200 OK in 48ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 14056)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-03 11:18:52 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-03 11:18:52 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (2.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 2.6ms | ActiveRecord: 6.1ms | Allocations: 5809)
+
+
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 1.3ms | ActiveRecord: 20.3ms | Allocations: 9730)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:18:57 -0500
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:18:57 -0500
+Started GET "/members/auth/google_oauth2/callback?state=8ffd75fef2c53ae8024416f1088cc5ae606a05653995f9e6&code=4/0AY0e-g7FhvSWYvI3P2nPohUBj6UzF16B_TLD8TIbCUwVHXnhBCtnZEmTrEh5gRYs1KIzRA&scope=email%20profile%20openid%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:18:59 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"state"=>"8ffd75fef2c53ae8024416f1088cc5ae606a05653995f9e6", "code"=>"4/0AY0e-g7FhvSWYvI3P2nPohUBj6UzF16B_TLD8TIbCUwVHXnhBCtnZEmTrEh5gRYs1KIzRA", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none", "path"=>"members/auth/google_oauth2/callback"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 7671)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 8042)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-03 11:36:05 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 467)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 10750)
+Completed 200 OK in 74ms (Views: 61.9ms | ActiveRecord: 0.0ms | Allocations: 13989)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-03 11:36:05 -0500
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-03 11:36:05 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mAnnouncement Load (20.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 29ms (Views: 2.6ms | ActiveRecord: 14.2ms | Allocations: 8632)
+
+
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 33ms (Views: 2.7ms | ActiveRecord: 22.7ms | Allocations: 10535)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:36:10 -0500
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:36:10 -0500
+Started GET "/members/auth/google_oauth2/callback?state=e411234ac6a96d7538dbf24a0fdc18c44e87081a6edd0488&code=4/0AY0e-g5yxAFxsgOlgWr_KwByZbNI6FGdPSm8aT65i_MWsWTGL5JfH6GzQqNY4rBiAhGPAQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:36:12 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"state"=>"e411234ac6a96d7538dbf24a0fdc18c44e87081a6edd0488", "code"=>"4/0AY0e-g5yxAFxsgOlgWr_KwByZbNI6FGdPSm8aT65i_MWsWTGL5JfH6GzQqNY4rBiAhGPAQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none", "path"=>"members/auth/google_oauth2/callback"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 7663)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 8037)
+
+
+Started GET "/members/auth/google_oauth2/callback?state=e411234ac6a96d7538dbf24a0fdc18c44e87081a6edd0488&code=4/0AY0e-g5yxAFxsgOlgWr_KwByZbNI6FGdPSm8aT65i_MWsWTGL5JfH6GzQqNY4rBiAhGPAQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:36:18 -0500
+Processing by Members::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"e411234ac6a96d7538dbf24a0fdc18c44e87081a6edd0488", "code"=>"4/0AY0e-g5yxAFxsgOlgWr_KwByZbNI6FGdPSm8aT65i_MWsWTGL5JfH6GzQqNY4rBiAhGPAQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none"}
+Redirected to http://127.0.0.1:3000/members/sign_in
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms | Allocations: 3602)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:18 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 7572)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 8063)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:19 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 7567)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 8047)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:20 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 7563)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 8040)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:21 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 7568)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 8046)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:21 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 7563)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 8040)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:36:23 -0500
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:36:23 -0500
+Started GET "/members/auth/google_oauth2/callback?state=6e19367bfef1989ac4fd6d369f740b8d1dc28c6f922b34f3&code=4/0AY0e-g79W4SiSNgX3zfC2FSpJ4VcfGPdKxS5dR1-3iRDcBUcFjUTInlCHzRWJdmEaAgFdQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:36:24 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"state"=>"6e19367bfef1989ac4fd6d369f740b8d1dc28c6f922b34f3", "code"=>"4/0AY0e-g79W4SiSNgX3zfC2FSpJ4VcfGPdKxS5dR1-3iRDcBUcFjUTInlCHzRWJdmEaAgFdQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none", "path"=>"members/auth/google_oauth2/callback"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 7661)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 8026)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:36:26 -0500
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:36:26 -0500
+Started GET "/members/auth/google_oauth2/callback?state=6e19367bfef1989ac4fd6d369f740b8d1dc28c6f922b34f3&code=4/0AY0e-g79W4SiSNgX3zfC2FSpJ4VcfGPdKxS5dR1-3iRDcBUcFjUTInlCHzRWJdmEaAgFdQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:36:27 -0500
+Processing by Members::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"6e19367bfef1989ac4fd6d369f740b8d1dc28c6f922b34f3", "code"=>"4/0AY0e-g79W4SiSNgX3zfC2FSpJ4VcfGPdKxS5dR1-3iRDcBUcFjUTInlCHzRWJdmEaAgFdQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none"}
+Redirected to http://127.0.0.1:3000/members/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:27 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 7568)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 8053)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:28 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 7566)
+Completed 200 OK in 31ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 8043)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:29 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 7569)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 8049)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:29 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 7568)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 8047)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:36:30 -0500
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:36:30 -0500
+Started GET "/members/auth/google_oauth2/callback?state=c10e8dc1e4a75bc8443728f9c855d5c6c617c21e2a003546&code=4/0AY0e-g5kuQ_z5LTGHmVpnotbthzKrRV5bTYigHs7IOgIyAIFRDI_mdRYhcEN8Mpe6zwWyQ&scope=email%20profile%20openid%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:36:31 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"state"=>"c10e8dc1e4a75bc8443728f9c855d5c6c617c21e2a003546", "code"=>"4/0AY0e-g5kuQ_z5LTGHmVpnotbthzKrRV5bTYigHs7IOgIyAIFRDI_mdRYhcEN8Mpe6zwWyQ", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none", "path"=>"members/auth/google_oauth2/callback"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 7663)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 8028)
+
+
+Started GET "/members/auth/google_oauth2/callback?state=c10e8dc1e4a75bc8443728f9c855d5c6c617c21e2a003546&code=4/0AY0e-g5kuQ_z5LTGHmVpnotbthzKrRV5bTYigHs7IOgIyAIFRDI_mdRYhcEN8Mpe6zwWyQ&scope=email%20profile%20openid%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:36:33 -0500
+Processing by Members::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"c10e8dc1e4a75bc8443728f9c855d5c6c617c21e2a003546", "code"=>"4/0AY0e-g5kuQ_z5LTGHmVpnotbthzKrRV5bTYigHs7IOgIyAIFRDI_mdRYhcEN8Mpe6zwWyQ", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none"}
+Redirected to http://127.0.0.1:3000/members/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:36:33 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 7568)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 8053)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-03 11:38:09 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 10721)
+Completed 200 OK in 30ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 14057)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-03 11:38:10 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-03 11:38:10 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (1.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 4.4ms | Allocations: 7240)
+
+
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 1.7ms | ActiveRecord: 15.5ms | Allocations: 9738)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:38:12 -0500
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-03 11:38:12 -0500
+Started GET "/members/auth/google_oauth2/callback?state=1a3d19d3f360625fba5c384ebb02cd9a742c60ce3724dd77&code=4/0AY0e-g4htKt67BKiJO23TLB3mKEObHuxlJcxh1iRy8GnsUMlLm_7FTPOQLm_Xox1erJJVg&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:38:13 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"state"=>"1a3d19d3f360625fba5c384ebb02cd9a742c60ce3724dd77", "code"=>"4/0AY0e-g4htKt67BKiJO23TLB3mKEObHuxlJcxh1iRy8GnsUMlLm_7FTPOQLm_Xox1erJJVg", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none", "path"=>"members/auth/google_oauth2/callback"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 7670)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 8038)
+
+
+Started GET "/members/auth/google_oauth2/callback?state=1a3d19d3f360625fba5c384ebb02cd9a742c60ce3724dd77&code=4/0AY0e-g4htKt67BKiJO23TLB3mKEObHuxlJcxh1iRy8GnsUMlLm_7FTPOQLm_Xox1erJJVg&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-03 11:38:16 -0500
+Processing by Members::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"1a3d19d3f360625fba5c384ebb02cd9a742c60ce3724dd77", "code"=>"4/0AY0e-g4htKt67BKiJO23TLB3mKEObHuxlJcxh1iRy8GnsUMlLm_7FTPOQLm_Xox1erJJVg", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"1", "hd"=>"tamu.edu", "prompt"=>"none"}
+Redirected to http://127.0.0.1:3000/members/sign_in
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms | Allocations: 3602)
+
+
+Started GET "/members/sign_in" for 127.0.0.1 at 2021-04-03 11:38:16 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"members/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 7572)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 8063)
+
+
