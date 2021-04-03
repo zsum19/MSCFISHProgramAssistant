@@ -20,12 +20,8 @@ class HomepageController < ApplicationController
         filenames = ['announcements.csv', 'events.csv', 'attendees.csv', 'members.csv',
                      'roles.csv', 'eventattendances.csv', 'referrals.csv']
 
-<<<<<<< HEAD
-        zipname = 'public/downloads/database_dump.zip'
-=======
         current_directory = Dir.pwd
         zipname = current_directory + '/public/downloads/database_dump.zip'
->>>>>>> origin
         File.delete(zipname) if File.exist?(zipname)
 
         ::Zip::File.open(zipname, ::Zip::File::CREATE) do |zipfile|
