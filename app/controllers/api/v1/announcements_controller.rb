@@ -30,6 +30,11 @@ module Api
         render json: { message: 'Announcement Deleted!' }
       end
 
+      def update
+        announcement&.update(announcement_params)
+        render json: announcement
+      end
+
       private
 
       def announcement_params

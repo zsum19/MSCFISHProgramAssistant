@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "Index.js": "/packs/js/Index-c9fbd6d519f626be7e79.js",
   "Index.js.map": "/packs/js/Index-c9fbd6d519f626be7e79.js.map",
+=======
+  "Index.js": "/packs/js/Index-ae558a9e4c027a5b598c.js",
+  "Index.js.map": "/packs/js/Index-ae558a9e4c027a5b598c.js.map",
+>>>>>>> dbbca37b59ae85781b23f1343bd4c1e0b99ef97c
   "application.js": "/packs/js/application-b43fa54005da8e229d8c.js",
   "application.js.map": "/packs/js/application-b43fa54005da8e229d8c.js.map",
   "entrypoints": {
@@ -14,11 +19,19 @@
     },
     "Index": {
       "js": [
+<<<<<<< HEAD
         "/packs/js/Index-c9fbd6d519f626be7e79.js"
       ],
       "js.map": [
         "/packs/js/Index-c9fbd6d519f626be7e79.js.map"
+=======
+        "/packs/js/Index-ae558a9e4c027a5b598c.js"
+      ],
+      "js.map": [
+        "/packs/js/Index-ae558a9e4c027a5b598c.js.map"
+>>>>>>> dbbca37b59ae85781b23f1343bd4c1e0b99ef97c
       ]
     }
-  }
+  },
+  "media/components/MSC-FISH-LOGO.png": "/packs/media/components/MSC-FISH-LOGO-c1ab8a3d409b9300eb7f1b2202683daa.png"
 }
