@@ -44,7 +44,7 @@ class Events extends React.Component {
         const noEvent = (
             <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
                 <h4>
-                No events yet. Why not <Link to="/new_event">create one</Link>
+                No events yet. Why not <Link to="/event">create one</Link>
                 </h4>
             </div>
         );
