@@ -8,7 +8,6 @@ class Event extends React.Component {
         this.state = { event: { name: "" } };
 
         this.addHtmlEntities = this.addHtmlEntities.bind(this);
-        this.deleteEvent = this.deleteEvent.bind(this);
     }
 
     componentDidMount() {
@@ -37,32 +36,6 @@ class Event extends React.Component {
           .replace(/&gt;/g, ">");
     }
 
-    deleteEvent() {
-        const {
-          match: {
-            params: { id }
-          }
-        } = this.props;
-        const url = `/api/v1/events/destroy/${id}`;
-        const token = document.querySelector('meta[name="csrf-token"]').content;
-    
-        fetch(url, {
-          method: "DELETE",
-          headers: {
-            "X-CSRF-Token": token,
-            "Content-Type": "application/json"
-          }
-        })
-          .then(response => {
-            if (response.ok) {
-              return response.json();
-            }
-            throw new Error("Network response was not ok.");
-          })
-          .then(() => this.props.history.push("/allevents"))
-          .catch(error => console.log(error.message));
-      }
-
     render() {
         const {
           match: {
@@ -77,17 +50,44 @@ class Event extends React.Component {
     
         return (
           <div className="">
-            <div className="hero position-relative d-flex align-items-center justify-content-center">
-              <img
-                src="https://via.placeholder.com/550x150"
-                alt={`${event.name} image`}
-                className="img-fluid position-absolute"
-              />
-              <div className="overlay bg-dark position-absolute" />
-              <h1 className="display-4 position-relative text-white">
-                {event.name}
-              </h1>
+            <section className="jumbotron jumbotron-fluid text-center">
+              <div className="container py-5">
+                  <h1 className="display-4">{event.name}</h1>
+              </div>
+            </section>
+
+            <div className="container py-5">
+              <Link to="/allevents" className="btn btn-link">Back to All Events</Link>
+
+              <div className="row">
+                <div className="col-sm-12 col-lg-3">
+                  <ul className="list-group">
+                    <h5 className="mb-2">Location</h5>
+                    <li>
+                        {event.location}
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-12 col-lg-3">
+                  <ul className="list-group">
+                    <h5 className="mb-2">Event Type</h5>
+                    <li>
+                        {event.event_type}
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-12 col-lg-3">
+                  <ul className="list-group">
+                    <h5 className="mb-2">Event Date</h5>
+                    <li>
+                        {event.date}
+                    </li>
+                  </ul>
+                </div>
+                <LinkButton className="btn custom-button" to={url} text="Check In"></LinkButton>
+              </div>
             </div>
+
             <div className="container py-5">
               <div className="row">
                 <div className="col-sm-12 col-lg-3">
@@ -98,6 +98,27 @@ class Event extends React.Component {
                     </li>
                   </ul>
                 </div>
+                <div className="col-sm-12 col-lg-3">
+                  <ul className="list-group">
+                    <h5 className="mb-2">Tickets Sold</h5>
+                    <li>
+                        {event.tickets_sold}
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-12 col-lg-3">
+                  <ul className="list-group">
+                    <h5 className="mb-2">People Checked In</h5>
+                    <li>
+                        {event.num_checked_in}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="container py-5">
+              <div className="row">
                 <div className="col-sm-12 col-lg-7">
                   <h5 className="mb-2">Event Description</h5>
                   <div
@@ -106,16 +127,7 @@ class Event extends React.Component {
                     }}
                   />
                 </div>
-                <div className="col-sm-12 col-lg-2">
-                  <button type="button" className="btn btn-danger" onClick={this.deleteEvent}>
-                    Delete Event
-                  </button>
-                </div>
-                <LinkButton className =  "to-button" to = {url} text = "Check In"></LinkButton>
               </div>
-              <Link to="/allevents" className="btn btn-link">
-                Back to All Events
-              </Link>
             </div>
           </div>
         );

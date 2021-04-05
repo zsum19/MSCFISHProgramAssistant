@@ -23,7 +23,7 @@ class AdminPage extends React.Component {
     render() {
         const { activeTab } = this.props.match.params;
         return (
-            <div style = {{width: "100vw", height: "100vh", backgroundColor: "whitesmoke"}}>
+            <div style = {{width: "100vw", height: "105vh", backgroundColor: "whitesmoke"}}>
                 <Navbar/>
                 <div className="container p-3">
                     <h1>Hello World!</h1>
@@ -38,9 +38,15 @@ class AdminPage extends React.Component {
 
                         activeTab={activeTab}
                     />
-                    <Link to="/" className="btn btn-link mt-3">
-                        Home
-                    </Link>
+
+                    <div>
+                        <Link to="/" className="btn btn-link mt-3">Home</Link>
+                        <LinkButton className =  "to-button" to = "/allevents" text = "Events"></LinkButton>
+                        <LinkButton className =  "to-button" to = "/announcements" text = "Announcements"></LinkButton>
+                        <a href="index/database_dump.zip" download = "database_dump.zip">
+                            <button className = "btn btn-lg custom-button">Download Database</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         );

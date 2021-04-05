@@ -46,7 +46,7 @@ class Announcements extends React.Component {
         const noAnnouncement = (
             <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
                 <h4>
-                No announcements yet. Why not <Link to="/new_announcement">create one</Link>
+                No announcements yet. Why not <Link to="/announcement">create one</Link>
                 </h4>
             </div>
         );
@@ -63,17 +63,11 @@ class Announcements extends React.Component {
                 </section>
                 <div className="py-5">
                 <main className="container">
-                    <div className="text-right mb-3">
-                    <Link to="/announcement" className="btn custom-button">
-                        Create New Announcement
-                    </Link>
-                    </div>
+                    <Link to="/" className="btn btn-link">Home</Link>
+                    <Link to="/announcement" className="btn custom-button pull-right">Create New Announcement</Link>
                     <div className="row">
                     {announcements.length > 0 ? allAnnouncements : noAnnouncement}
                     </div>
-                    <Link to="/" className="btn btn-link">
-                    Home
-                    </Link>
                 </main>
                 </div>
             </>
