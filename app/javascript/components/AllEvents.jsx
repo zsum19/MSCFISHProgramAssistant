@@ -23,19 +23,13 @@ class AllEvents extends React.Component {
                 </section>
                 <div className="py-5">
                 <main className="container">
-                    <div className="text-right mb-3">
-                    <Link to="/event" className="btn custom-button">
-                        Create New Event
-                    </Link>
-                    </div>
+                    <Link to="/" className="btn btn-link">Home</Link>
+                    <Link to="/event" className="btn custom-button pull-right">Create New Event</Link>
                     <div className="row">
                         
                         <Events></Events>
                         
                     </div>
-                    <Link to="/" className="btn btn-link">
-                    Home
-                    </Link>
                 </main>
                 </div>
             </>

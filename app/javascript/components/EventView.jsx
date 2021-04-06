@@ -83,15 +83,25 @@ export default (props) => (
         <p className = "subtitle">{getTime(props.date)}</p>
 
         {(props.admin == false || props.admin == undefined) ? (
-        <Link to={`/event/${props.id}`} className="btn custom-button">
-            View Event
-        </Link>
+        <>
+            <Link to={`/event/${props.id}`} className="btn custom-button">
+                View Event
+            </Link>
+            <Link to={`/checkin/${props.id}`} className="btn custom-button pull-right">
+                Check In
+            </Link>
+        </>
         ) : (
         <>
             <Link to={`/event/edit/${props.id}`} className="btn custom-button">
                 Edit
             </Link>
-            <button type="button" className="btn btn-danger pull-right" onClick={props.onClick}>Delete</button>
+            <Link to={`/checkin/${props.id}`} className="btn custom-button">
+                Check In Link
+            </Link>
+            <button type="button" className="btn btn-danger pull-right" onClick={props.onClick}>
+                Delete
+            </button>
          </>
         )}
     </div>    
