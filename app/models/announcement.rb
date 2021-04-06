@@ -8,7 +8,7 @@ class Announcement < ApplicationRecord
   validates :content, presence: true
 
   def self.to_csv
-    attributes = %w[id author_id event_id content]
+    attributes = %w[author_id event_id content]
     CSV.generate(headers: true) do |csv|
       csv << attributes
 

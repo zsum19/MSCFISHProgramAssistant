@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       patch 'events/update/:id', to: 'events#update'
       get 'events/show/:id', to: 'events#show'
       delete 'events/destroy/:id', to: 'events#destroy'
+      post "events/overwrite"
 
       get 'announcements/index'
       post 'announcements/create'

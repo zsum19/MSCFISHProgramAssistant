@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 class Role < ApplicationRecord
-  has_many :member, class_name: 'Member'
+  has_many :member, class_name: 'Member', dependent: :nullify
 
   def self.to_csv
-    attributes = %w[id name description]
+    attributes = %w[name description]
     CSV.generate(headers: true) do |csv|
       csv << attributes
 

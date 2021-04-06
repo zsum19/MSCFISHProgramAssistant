@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import JSZip from "jszip";
 
 import LinkButton from "./common/LinkButton";
 import MemberList from "./adminComponents/MemberList";
@@ -14,6 +15,94 @@ import AnnouncementList from "./adminComponents/AnnouncementList";
 class AdminPage extends React.Component {
     constructor() {
         super();
+    }
+
+    onChange(evt) {
+        function to_JSON(csv) {
+            var lines = csv.split("\n");
+            var result = [];
+            var headers = lines[0].split(",");
+            
+            for (var i = 1; i < lines.length-1; i++) {
+                var obj = {};
+                var current_line = lines[i].split(",");
+    
+                for (var j = 0; j < headers.length; j++) {
+                    obj[headers[j]] = current_line[j];
+                }
+    
+                result.push(obj);
+            }
+
+            // return JSON.stringify(result);
+            return result;
+        }
+
+        function handleFile(f) {
+            JSZip.loadAsync(f)
+                .then(function(zip) {
+                    zip.file("events.csv").async("string").then(function (data) {
+                        var json_data = to_JSON(data);
+                        console.log(json_data);
+                        const url = "/api/v1/events/create";
+                        const token = document.querySelector('meta[name="csrf-token"]').content;
+                        fetch("/api/v1/events/overwrite", {
+                            method: "POST",
+                            headers: {
+                              "X-CSRF-Token": token,
+                              "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(json_data)
+                          })
+                        for (var i = 0; i < json_data.length; i++) {
+                            var obj = json_data[i];
+                            fetch(url, {
+                                method: "POST",
+                                headers: {
+                                  "X-CSRF-Token": token,
+                                  "Content-Type": "application/json"
+                                },
+                                body: obj
+                              })
+                                .then(response => {
+                                  if (response.ok) {
+                                    return response.json();
+                                  }
+                                  throw new Error("Network response was not ok.");
+                                })
+                        }
+                    });
+                    zip.file("roles.csv").async("string").then(function (data) {
+                        var json = to_JSON(data);
+                        // console.log(json);
+                    });
+                    zip.file("members.csv").async("string").then(function (data) {
+                        var json = to_JSON(data);
+                        // console.log(json);
+                    });
+                    zip.file("announcements.csv").async("string").then(function (data) {
+                        var json = to_JSON(data);
+                        // console.log(json);
+                    });
+                    zip.file("attendees.csv").async("string").then(function (data) {
+                        var json = to_JSON(data);
+                        // console.log(json);
+                    });
+                    zip.file("eventattendances.csv").async("string").then(function (data) {
+                        var json = to_JSON(data);
+                        // console.log(json);
+                    });
+                    zip.file("referrals.csv").async("string").then(function (data) {
+                        var json = to_JSON(data);
+                        // console.log(json);
+                    });
+                });
+        }
+    
+        var files = evt.target.files;
+        for (var i = 0; i < files.length; i++) {
+            handleFile(files[i]);
+        }
     }
 
     componentDidMount() {
@@ -43,9 +132,13 @@ class AdminPage extends React.Component {
                         <Link to="/" className="btn btn-link mt-3">Home</Link>
                         <LinkButton className =  "to-button" to = "/allevents" text = "Events"></LinkButton>
                         <LinkButton className =  "to-button" to = "/announcements" text = "Announcements"></LinkButton>
-                        <a href="index/database_dump.zip" download = "database_dump.zip">
-                            <button className = "btn btn-lg custom-button">Download Database</button>
-                        </a>
+                        <div>
+                            <a href="index/database_dump.zip" download = "database_dump.zip">
+                                <button className = "btn btn-lg custom-button">Download Database</button>
+                            </a>
+
+                            <input type="file" id="file" name="file" multiple className="btn custom-button" onChange={this.onChange}/><br/>
+                        </div>
                     </div>
                 </div>
             </div>

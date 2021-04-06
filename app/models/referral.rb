@@ -5,7 +5,7 @@ class Referral < ApplicationRecord
   belongs_to :attendee, class_name: 'Attendee'
 
   def self.to_csv
-    attributes = %w[id member_id attendee_id]
+    attributes = %w[member_id attendee_id]
     CSV.generate(headers: true) do |csv|
       csv << attributes
 

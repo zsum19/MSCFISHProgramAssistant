@@ -30,6 +30,13 @@ module Api
         render json: { message: 'Event Deleted!' }
       end
 
+      def overwrite
+        @events = Event.all
+        @events.each do |f|
+          f.destroy
+        end
+      end
+
       def update
         event&.update(event_params)
         render json: event
@@ -39,6 +46,10 @@ module Api
 
       def event_params
         params.permit(:name, :location, :event_type, :max_size, :tickets_sold, :num_checked_in, :date, :description)
+      end
+
+      def upload_params
+        params.permit(:_json, :event)
       end
 
       def event
