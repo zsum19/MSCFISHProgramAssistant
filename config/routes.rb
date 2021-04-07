@@ -26,7 +26,7 @@ Rails.application.routes.draw do
       get 'referrals/index'
       get 'referrals/index/:member_id', to: 'referrals#index'
       post 'referrals/create'
-      get 'referrals/show', to: 'referrals#show'
+      get 'referrals/show/:id', to: 'referrals#show'
       delete 'referrals/destroy', to: 'referrals#destroy'
     end
   end
