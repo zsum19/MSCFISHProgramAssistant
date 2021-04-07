@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       delete 'events/destroy/:id', to: 'events#destroy'
 
       get 'announcements/index'
+      get 'announcements/index/:external', to: 'announcements#index'
       post 'announcements/create'
       patch 'announcements/update/:id', to: 'announcements#update'
       get 'announcements/show/:id', to: 'announcements#show'
@@ -21,6 +22,12 @@ Rails.application.routes.draw do
       patch 'members/update/:id', to: 'members#update'
       get 'members/show/:id', to: 'members#show'
       delete 'members/destroy/:id', to: 'members#destroy'
+
+      get 'referrals/index'
+      get 'referrals/index/:member_id', to: 'referrals#index'
+      post 'referrals/create'
+      get 'referrals/show/:id', to: 'referrals#show'
+      delete 'referrals/destroy', to: 'referrals#destroy'
     end
   end
   root 'homepage#index'
