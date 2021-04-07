@@ -14,15 +14,26 @@ module Api
       end
 
       def create
+        referral = Referral.create!(referral_params)
 
+        if referral
+          render json: referral
+        else
+          render json: referral.errors
+        end
       end
 
       def show
-
+        if referral
+          render json: referral
+        else
+          render json: referral
+        end
       end
 
       def destroy
-
+        referral&.destroy
+        render json: { message: 'Referral Deleted!' }
       end
 
       private
