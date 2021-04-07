@@ -46,7 +46,7 @@ class LatestAnnouncementsView extends React.Component {
             </div>
         ));
         const noAnnouncement = (
-            <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center">
                 <h4>
                 No announcements yet. Why not <Link to="/new_announcement">create one</Link>
                 </h4>
@@ -54,7 +54,7 @@ class LatestAnnouncementsView extends React.Component {
         );
 
         return (
-            <div style = {{border: "1px solid #bbb"}} className = "announcements-view">
+            <div style = {{border: "1px solid #bbb"}} className = "announcements-view post-view">
                 <div className = "colored-heading">
                     <h2 className = "text test"> LATEST ANNOUNCEMENTS </h2>
                 </div>

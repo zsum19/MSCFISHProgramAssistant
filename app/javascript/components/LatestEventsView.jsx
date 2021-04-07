@@ -49,7 +49,7 @@ class LatestEvents extends React.Component {
             </div>
         ));
         const noEvent = (
-            <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center">
                 <h4>
                 No events yet. Why not <Link to="/new_event">create one</Link>
                 </h4>
@@ -59,19 +59,19 @@ class LatestEvents extends React.Component {
         return (  
                 <div className="row">
                     
-                    <div style = {{border: "1px solid #bbb"}} className = "events-view">
+                    <div style = {{border: "1px solid #bbb"}} className = "events-view post-view">
                         <div className = "colored-heading">
                             <h2 className = "text test"> LATEST EVENTS </h2>
                         </div>
                         <div className = "small-padding scroll-box"> 
-                            <div className = "col-md-12 col-lg-12">
-                                {/*<Events></Events>*/}
-                                <>  
-                                    <div className="row">
-                                        {   events.length > 0 ? allEvents : noEvent}
-                                    </div>      
-                                </>
-                            </div>
+                            
+                            {/*<Events></Events>*/}
+                            <>  
+                                <div className="row">
+                                    {   events.length > 0 ? allEvents : noEvent}
+                                </div>      
+                            </>
+                            
                         </div>
                     </div>
                     

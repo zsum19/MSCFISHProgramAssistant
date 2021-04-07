@@ -20,13 +20,13 @@
 .left {
   padding:10px;
   float:left;
-  width:50%; 
+  width:30vw; 
 }
 
 .right {
   padding:10px;
   float:left;
-  width:50%; 
+  width:30vw; 
 }
 .center-desktop{
   margin: auto;
@@ -40,9 +40,9 @@
 }
 
 /* Use a media query to add a break point at 800px: */
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
   .left, .right {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    width:80vw; /* The width is 100%, when the viewport is 1000px or smaller */
   }
   .center-desktop{
     width: 90%;
@@ -100,7 +100,7 @@
     padding: 10px;
   }
   .scroll-box{
-    max-height: 400px;
+    max-height: 40vh;
     overflow-y: auto;
     background-color: #f0f0f0;
   }
@@ -153,6 +153,9 @@
   .event-view{
     background-color: hsl(185, 61%, 91%);
     border-color: hsl(185, 61%, 30%);
+  }
+  .post-view{
+    width: fit-content;
   }
   .single-event-2{
     padding: 10px;
@@ -215,8 +218,8 @@ div.content {
   height: 1000px;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+/* On screens that are less than 7100px wide, make the sidebar into a topbar */
+@media screen and (max-width: 1000px) {
   .sidebar {
     width: 100%;
     height: auto;
