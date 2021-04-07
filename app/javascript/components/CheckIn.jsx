@@ -82,7 +82,10 @@ class CheckIn extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/attendees/create";
-        const { first_name, last_name, email, referral, event_id } = this.state;
+        const { first_name, last_name, email, referral, event_id} = this.state;
+
+        var referral_first_name = referral.split(" ")[0];
+        var referral_last_name = referral.split(" ")[1];
     
         if (first_name.length == 0)
           return;
@@ -94,7 +97,8 @@ class CheckIn extends React.Component {
             first_name,
             last_name,
             email,
-            referral,
+            referral_first_name,
+            referral_last_name,
             event_id
         };
     

@@ -31,7 +31,7 @@ export default (
       <Route path="/announcement" exact component={NewAnnouncement} />
       <Route path="/checkin" exact component={CheckIn} />
       <Route path="/checkin/:event_id" exact component={CheckIn} />
-      <Route path="/memberpage" exact component={MemberPage} />
+      <Route path="/memberpage/:member_id" exact component={MemberPage} />
       <Route path="/admin" exact component={AdminPage} />
       <Route path="/admin/:activeTab" exact component={AdminPage} />
       <Route path="/member/create" exact component={NewMember} />
