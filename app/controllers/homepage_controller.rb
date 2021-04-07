@@ -2,7 +2,7 @@
 
 class HomepageController < ApplicationController
   def index
-
+    # redirect_to root_path
     respond_to do |format|
       format.html
       format.zip do
