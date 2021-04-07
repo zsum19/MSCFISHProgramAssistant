@@ -30,6 +30,13 @@ module Api
         render json: { message: 'Announcement Deleted!' }
       end
 
+      def overwrite
+        @announcements = Announcement.all
+        @announcements.each do |f|
+          f.destroy
+        end
+      end
+
       def update
         announcement&.update(announcement_params)
         render json: announcement
@@ -38,7 +45,7 @@ module Api
       private
 
       def announcement_params
-        params.permit(:author_id, :event_id, :title, :content, :external)
+        params.permit(:id, :author_id, :event_id, :title, :content, :external)
       end
 
       def announcement

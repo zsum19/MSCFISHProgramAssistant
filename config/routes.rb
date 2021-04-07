@@ -13,15 +13,18 @@ Rails.application.routes.draw do
       patch 'announcements/update/:id', to: 'announcements#update'
       get 'announcements/show/:id', to: 'announcements#show'
       delete 'announcements/destroy/:id', to: 'announcements#destroy'
+      post "announcements/overwrite"
 
       post 'attendees/create'
       patch 'attendees/update'
+      post "attendees/overwrite"
 
       get 'members/index'
       post 'members/create'
       patch 'members/update/:id', to: 'members#update'
       get 'members/show/:id', to: 'members#show'
       delete 'members/destroy/:id', to: 'members#destroy'
+      post "members/overwrite"
     end
   end
   root 'homepage#index'

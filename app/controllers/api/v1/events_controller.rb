@@ -45,11 +45,7 @@ module Api
       private
 
       def event_params
-        params.permit(:name, :location, :event_type, :max_size, :tickets_sold, :num_checked_in, :date, :description)
-      end
-
-      def upload_params
-        params.permit(:_json, :event)
+        params.permit(:id, :name, :location, :event_type, :max_size, :tickets_sold, :num_checked_in, :date, :description)
       end
 
       def event

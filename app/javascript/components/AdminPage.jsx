@@ -34,7 +34,6 @@ class AdminPage extends React.Component {
                 result.push(obj);
             }
 
-            // return JSON.stringify(result);
             return result;
         }
 
@@ -55,14 +54,14 @@ class AdminPage extends React.Component {
                             body: JSON.stringify(json_data)
                           })
                         for (var i = 0; i < json_data.length; i++) {
-                            var obj = json_data[i];
+                            var obj = json_data[i]; 
                             fetch(url, {
                                 method: "POST",
                                 headers: {
                                   "X-CSRF-Token": token,
                                   "Content-Type": "application/json"
                                 },
-                                body: obj
+                                body: JSON.stringify(obj)
                               })
                                 .then(response => {
                                   if (response.ok) {
@@ -77,16 +76,97 @@ class AdminPage extends React.Component {
                         // console.log(json);
                     });
                     zip.file("members.csv").async("string").then(function (data) {
-                        var json = to_JSON(data);
-                        // console.log(json);
+                        var json_data = to_JSON(data);
+                        console.log(json_data);
+                        const url = "/api/v1/members/create";
+                        const token = document.querySelector('meta[name="csrf-token"]').content;
+                        fetch("/api/v1/members/overwrite", {
+                            method: "POST",
+                            headers: {
+                              "X-CSRF-Token": token,
+                              "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(json_data)
+                          })
+                        for (var i = 0; i < json_data.length; i++) {
+                            var obj = json_data[i];
+                            fetch(url, {
+                                method: "POST",
+                                headers: {
+                                  "X-CSRF-Token": token,
+                                  "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify(obj)
+                              })
+                                .then(response => {
+                                  if (response.ok) {
+                                    return response.json();
+                                  }
+                                  throw new Error("Network response was not ok.");
+                                })
+                        }
                     });
                     zip.file("announcements.csv").async("string").then(function (data) {
-                        var json = to_JSON(data);
-                        // console.log(json);
+                        var json_data = to_JSON(data);
+                        console.log(json_data);
+                        const url = "/api/v1/announcements/create";
+                        const token = document.querySelector('meta[name="csrf-token"]').content;
+                        fetch("/api/v1/announcements/overwrite", {
+                            method: "POST",
+                            headers: {
+                              "X-CSRF-Token": token,
+                              "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(json_data)
+                          })
+                        for (var i = 0; i < json_data.length; i++) {
+                            var obj = json_data[i];
+                            fetch(url, {
+                                method: "POST",
+                                headers: {
+                                  "X-CSRF-Token": token,
+                                  "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify(obj)
+                              })
+                                .then(response => {
+                                  if (response.ok) {
+                                    return response.json();
+                                  }
+                                  throw new Error("Network response was not ok.");
+                                })
+                        }
                     });
                     zip.file("attendees.csv").async("string").then(function (data) {
-                        var json = to_JSON(data);
-                        // console.log(json);
+                        var json_data = to_JSON(data);
+                        console.log(json_data);
+                        const url = "/api/v1/attendees/create";
+                        const token = document.querySelector('meta[name="csrf-token"]').content;
+                        fetch("/api/v1/attendees/overwrite", {
+                            method: "POST",
+                            headers: {
+                              "X-CSRF-Token": token,
+                              "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(json_data)
+                          })
+                        for (var i = 0; i < json_data.length; i++) {
+                            var obj = json_data[i];
+                            fetch(url, {
+                                method: "POST",
+                                headers: {
+                                  "X-CSRF-Token": token,
+                                  "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify(obj)
+                              })
+                                .then(response => {
+                                  if (response.ok) {
+                                    return response.json();
+                                  }
+                                  throw new Error("Network response was not ok.");
+                                })
+                        }
                     });
                     zip.file("eventattendances.csv").async("string").then(function (data) {
                         var json = to_JSON(data);

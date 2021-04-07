@@ -11,7 +11,7 @@ class Attendee < ApplicationRecord
   validates :email, presence: true
 
   def self.to_csv
-    attributes = %w[first_name last_name email]
+    attributes = %w[id first_name last_name email]
     CSV.generate(headers: true) do |csv|
       csv << attributes
 

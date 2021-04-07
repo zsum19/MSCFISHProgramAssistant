@@ -35,6 +35,13 @@ module Api
         render json: { message: 'Attendee Deleted!' }
       end
 
+      def overwrite
+        @attendees = Attendee.all
+        @attendees.each do |f|
+          f.destroy
+        end
+      end
+
       def update
         attendee = Attendee.find_by!(email: params[:email])
         attendee.update(name: params[:name])
@@ -44,7 +51,7 @@ module Api
       private
 
       def attendee_params
-        params.permit(:first_name, :last_name, :email, :created_at, :updated_at)
+        params.permit(:id, :first_name, :last_name, :email, :created_at, :updated_at)
       end
 
       def attendee

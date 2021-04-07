@@ -36,10 +36,17 @@ module Api
         render json: { message: 'Member Deleted!' }
       end
 
+      def overwrite
+        @members = Member.all
+        @members.each do |f|
+          f.destroy
+        end
+      end
+
       private
 
       def member_params
-        params.permit(:role_id, :first_name, :last_name, :email, :num_referrals)
+        params.permit(:id, :role_id, :first_name, :last_name, :email, :num_referrals)
       end
 
       def member

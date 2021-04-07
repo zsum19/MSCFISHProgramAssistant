@@ -12,7 +12,7 @@ class Member < ApplicationRecord
   validates :num_referrals, presence: true
 
   def self.to_csv
-    attributes = %w[first_name last_name num_referrals role_id]
+    attributes = %w[first_name last_name email num_referrals role_id]
     CSV.generate(headers: true) do |csv|
       csv << attributes
 
