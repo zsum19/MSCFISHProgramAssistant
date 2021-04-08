@@ -18,7 +18,7 @@ class AdminPage extends React.Component {
     }
 
     onChange(evt) {
-        function to_JSON(csv) {
+        function ToJSON(csv) {
             var lines = csv.split("\n");
             var result = [];
             var headers = lines[0].split(",");
@@ -37,144 +37,76 @@ class AdminPage extends React.Component {
             return result;
         }
 
+        function DeleteAndUpdate(table, json) {
+          const url = `/api/v1/${table}/`;
+          const token = document.querySelector('meta[name="csrf-token"]').content;
+          fetch(url + `remigrate`, {
+              method: "POST",
+              headers: {
+                "X-CSRF-Token": token,
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(json)
+            })
+              .then(response => {
+                if (response.ok) {
+                  for (var i = 0; i < json.length; i++) {
+                    var obj = json[i];
+                    var controller_method = `create`;
+
+                    if (table == 'attendee') {
+                      controller_method = `create_this_only`;
+                    }
+
+                    fetch(url + controller_method, {
+                        method: "POST",
+                        headers: {
+                          "X-CSRF-Token": token,
+                          "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(obj)
+                      })
+                        .then(response => {
+                          if (response.ok) {
+                            return response.json();
+                          }
+                          throw new Error("Network response was not ok.");
+                        })
+                    }
+                }
+              })
+        }
+
         function handleFile(f) {
             JSZip.loadAsync(f)
                 .then(function(zip) {
                     zip.file("events.csv").async("string").then(function (data) {
-                        var json_data = to_JSON(data);
-                        console.log(json_data);
-                        const url = "/api/v1/events/create";
-                        const token = document.querySelector('meta[name="csrf-token"]').content;
-                        fetch("/api/v1/events/overwrite", {
-                            method: "POST",
-                            headers: {
-                              "X-CSRF-Token": token,
-                              "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify(json_data)
-                          })
-                        for (var i = 0; i < json_data.length; i++) {
-                            var obj = json_data[i]; 
-                            fetch(url, {
-                                method: "POST",
-                                headers: {
-                                  "X-CSRF-Token": token,
-                                  "Content-Type": "application/json"
-                                },
-                                body: JSON.stringify(obj)
-                              })
-                                .then(response => {
-                                  if (response.ok) {
-                                    return response.json();
-                                  }
-                                  throw new Error("Network response was not ok.");
-                                })
-                        }
+                      var json_data = ToJSON(data);
+                      DeleteAndUpdate('events', json_data)
                     });
                     zip.file("roles.csv").async("string").then(function (data) {
-                        var json = to_JSON(data);
-                        // console.log(json);
+                      // var json_data = ToJSON(data);
+                      // DeleteAndUpdate('roles', json_data)
                     });
                     zip.file("members.csv").async("string").then(function (data) {
-                        var json_data = to_JSON(data);
-                        console.log(json_data);
-                        const url = "/api/v1/members/create";
-                        const token = document.querySelector('meta[name="csrf-token"]').content;
-                        fetch("/api/v1/members/overwrite", {
-                            method: "POST",
-                            headers: {
-                              "X-CSRF-Token": token,
-                              "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify(json_data)
-                          })
-                        for (var i = 0; i < json_data.length; i++) {
-                            var obj = json_data[i];
-                            fetch(url, {
-                                method: "POST",
-                                headers: {
-                                  "X-CSRF-Token": token,
-                                  "Content-Type": "application/json"
-                                },
-                                body: JSON.stringify(obj)
-                              })
-                                .then(response => {
-                                  if (response.ok) {
-                                    return response.json();
-                                  }
-                                  throw new Error("Network response was not ok.");
-                                })
-                        }
+                      var json_data = ToJSON(data);
+                      DeleteAndUpdate('members', json_data)
                     });
                     zip.file("announcements.csv").async("string").then(function (data) {
-                        var json_data = to_JSON(data);
-                        console.log(json_data);
-                        const url = "/api/v1/announcements/create";
-                        const token = document.querySelector('meta[name="csrf-token"]').content;
-                        fetch("/api/v1/announcements/overwrite", {
-                            method: "POST",
-                            headers: {
-                              "X-CSRF-Token": token,
-                              "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify(json_data)
-                          })
-                        for (var i = 0; i < json_data.length; i++) {
-                            var obj = json_data[i];
-                            fetch(url, {
-                                method: "POST",
-                                headers: {
-                                  "X-CSRF-Token": token,
-                                  "Content-Type": "application/json"
-                                },
-                                body: JSON.stringify(obj)
-                              })
-                                .then(response => {
-                                  if (response.ok) {
-                                    return response.json();
-                                  }
-                                  throw new Error("Network response was not ok.");
-                                })
-                        }
+                      var json_data = ToJSON(data);
+                      DeleteAndUpdate('announcements', json_data)
                     });
                     zip.file("attendees.csv").async("string").then(function (data) {
-                        var json_data = to_JSON(data);
-                        console.log(json_data);
-                        const url = "/api/v1/attendees/create";
-                        const token = document.querySelector('meta[name="csrf-token"]').content;
-                        fetch("/api/v1/attendees/overwrite", {
-                            method: "POST",
-                            headers: {
-                              "X-CSRF-Token": token,
-                              "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify(json_data)
-                          })
-                        for (var i = 0; i < json_data.length; i++) {
-                            var obj = json_data[i];
-                            fetch(url, {
-                                method: "POST",
-                                headers: {
-                                  "X-CSRF-Token": token,
-                                  "Content-Type": "application/json"
-                                },
-                                body: JSON.stringify(obj)
-                              })
-                                .then(response => {
-                                  if (response.ok) {
-                                    return response.json();
-                                  }
-                                  throw new Error("Network response was not ok.");
-                                })
-                        }
+                      var json_data = ToJSON(data);
+                      DeleteAndUpdate('attendees', json_data)
                     });
                     zip.file("eventattendances.csv").async("string").then(function (data) {
-                        var json = to_JSON(data);
-                        // console.log(json);
+                      // var json_data = ToJSON(data);
+                      // DeleteAndUpdate('eventattendances', json_data)
                     });
                     zip.file("referrals.csv").async("string").then(function (data) {
-                        var json = to_JSON(data);
-                        // console.log(json);
+                      // var json_data = ToJSON(data);
+                      // DeleteAndUpdate('referrals', json_data)
                     });
                 });
         }

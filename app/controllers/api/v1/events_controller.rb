@@ -30,11 +30,19 @@ module Api
         render json: { message: 'Event Deleted!' }
       end
 
-      def overwrite
-        @events = Event.all
-        @events.each do |f|
-          f.destroy
-        end
+      def remigrate
+        ActiveRecord::Migration.drop_table(:events, force: :cascade)
+        ActiveRecord::Migration.create_table(:events)
+        ActiveRecord::Migration.add_column(:events, :name, :string, null: false)
+        ActiveRecord::Migration.add_column(:events, :location, :string)
+        ActiveRecord::Migration.add_column(:events, :event_type, :string)
+        ActiveRecord::Migration.add_column(:events, :max_size, :integer, null: false)
+        ActiveRecord::Migration.add_column(:events, :tickets_sold, :integer, default: 0, null: false)
+        ActiveRecord::Migration.add_column(:events, :num_checked_in, :integer, default: 0, null: false)
+        ActiveRecord::Migration.add_column(:events, :date, :timestamp)
+        ActiveRecord::Migration.add_column(:events, :description, :text)
+        ActiveRecord::Migration.add_column(:events, :created_at, :timestamp)
+        ActiveRecord::Migration.add_column(:events, :updated_at, :timestamp)
       end
 
       def update
@@ -45,7 +53,7 @@ module Api
       private
 
       def event_params
-        params.permit(:id, :name, :location, :event_type, :max_size, :tickets_sold, :num_checked_in, :date, :description)
+        params.permit(:name, :location, :event_type, :max_size, :tickets_sold, :num_checked_in, :date, :description)
       end
 
       def event
