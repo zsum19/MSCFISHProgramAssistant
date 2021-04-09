@@ -10,8 +10,7 @@ module Api
 
       def create
         attendee = Attendee.create!(attendee_params)
-
-        # member = Member.find_by!(:first_name + " " + :last_name: params[:referral])
+        
         @name = params[:referral].split(' ', 2)
         member = Member.find_by!(first_name: @name[0], last_name: @name[1])
         member.increment!(:num_referrals)

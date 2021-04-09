@@ -13,19 +13,28 @@ Rails.application.routes.draw do
       patch 'announcements/update/:id', to: 'announcements#update'
       get 'announcements/show/:id', to: 'announcements#show'
       delete 'announcements/destroy/:id', to: 'announcements#destroy'
-      post "announcements/remigrate"
+      post 'announcements/remigrate'
 
       post 'attendees/create'
       patch 'attendees/update'
-      post "attendees/remigrate"
-      post "attendees/create_this_only"
+      post 'attendees/remigrate'
+      post 'attendees/create_this_only'
 
       get 'members/index'
       post 'members/create'
       patch 'members/update/:id', to: 'members#update'
       get 'members/show/:id', to: 'members#show'
       delete 'members/destroy/:id', to: 'members#destroy'
-      post "members/remigrate"
+      post 'members/remigrate'
+
+      post 'roles/create'
+      post 'roles/remigrate'
+
+      post 'eventattendances/create'
+      post 'eventattendances/remigrate'
+
+      post 'referrals/create'
+      post 'referrals/remigrate'
     end
   end
   root 'homepage#index'
