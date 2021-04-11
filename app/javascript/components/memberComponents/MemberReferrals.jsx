@@ -36,11 +36,9 @@ class MemberReferrals extends React.Component {
         ));
 
         const noReferrals = (
-            <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
-                <h4>
-                No announcements!
-                </h4>
-            </div>
+            <tr>
+                <td>No referrals!</td>
+            </tr>
         );
 
         return (

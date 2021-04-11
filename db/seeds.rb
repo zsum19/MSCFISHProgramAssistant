@@ -36,12 +36,62 @@ end
   )
 end
 
+Member.create!(
+  role_id: 1,
+  first_name: "Reo",
+  last_name: "Matsuda",
+  email: "reo.matsuda@gmail.com",
+  num_referrals: 0
+)
+
+Member.create!(
+  role_id: 1,
+  first_name: "Trey",
+  last_name: "Dinges",
+  email: "treydinges@tamu.edu",
+  num_referrals: 0
+)
+
+Member.create!(
+  role_id: 1,
+  first_name: "Michael",
+  last_name: "Gallegos",
+  email: "snowspeeder@tamu.edu",
+  num_referrals: 0
+)
+
+Member.create!(
+  role_id: 1,
+  first_name: "Zachary",
+  last_name: "Summers",
+  email: "zsum19@tamu.edu",
+  num_referrals: 0
+)
+
+Member.create!(
+  role_id: 1,
+  first_name: "Nicholas",
+  last_name: "Belovoskey",
+  email: "nhb368@tamu.edu",
+  num_referrals: 0
+)
+
 9.times do |i|
   Announcement.create!(
     author_id: 1,
     event_id: 1,
-    title: "Test Announcement \##{i+1}",
+    title: "Internal Test Announcement \##{i+1}",
     content: "This is a test accoucement \##{i+1}",
     external: false
+  )
+end
+
+9.times do |i|
+  Announcement.create!(
+    author_id: 1,
+    event_id: 1,
+    title: "External Test Announcement \##{i+1}",
+    content: "This is a test accoucement \##{i+1}",
+    external: true
   )
 end

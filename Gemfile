@@ -29,9 +29,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 # User Authentication Group
-gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
-gem 'omniauth'
-gem 'omniauth-google-oauth2' # Adding comment for dependency test
+gem 'devise'
+gem 'omniauth', '~> 1.9.0'
+gem 'omniauth-google-oauth2', '~> 0.7.0' # Adding comment for dependency test
 gem 'csv'
 gem 'rexml'
 gem 'rubyzip'

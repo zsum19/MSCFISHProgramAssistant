@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  # devise_for :members
+  devise_for :members, controllers: { omniauth_callbacks: 'members/omniauth_callbacks' }
+  # devise_scope :member do
+  #   get 'members/sign_in', to: 'members/sessions#new', as: :new_admin_session
+  #   get 'members/sign_out', to: 'members/sessions#destroy', as: :destroy_admin_session
+  # end
   namespace :api do
     namespace :v1 do
       get 'events/index'
@@ -22,6 +28,7 @@ Rails.application.routes.draw do
       patch 'members/update/:id', to: 'members#update'
       get 'members/show/:id', to: 'members#show'
       delete 'members/destroy/:id', to: 'members#destroy'
+      get 'members/currentMember'
 
       get 'referrals/index'
       get 'referrals/index/:member_id', to: 'referrals#index'
@@ -31,6 +38,8 @@ Rails.application.routes.draw do
     end
   end
   root 'homepage#index'
+  get '/admin', action: :index, controller: 'homepage'
+  get '/memberpage', action: :index, controller: 'homepage'
   get '/*path' => 'homepage#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

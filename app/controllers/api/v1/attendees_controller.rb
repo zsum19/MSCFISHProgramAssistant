@@ -13,7 +13,6 @@ module Api
 
         member = Member.find_by!(first_name: params[:referral_first_name], last_name: params[:referral_last_name])
         member.increment!(:num_referrals)
-        member.reload.num_referrals
 
         Referral.create!(member_id: member.id, attendee_id: attendee.id)
 
@@ -22,6 +21,7 @@ module Api
         event = Event.find_by!(id: params[:event_id])
         event.increment!(:num_checked_in)
         event.reload.num_checked_in
+        member.reload.num_referrals
 
         if attendee
           render json: attendee

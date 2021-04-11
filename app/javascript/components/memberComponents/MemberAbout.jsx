@@ -6,39 +6,20 @@ class MemberAbout extends React.Component {
         super(props);
 
         this.state = {
-            member: {
-                first_name: "", 
-                last_name: "", 
-                email: "",
-                num_referral: 0
-            }
+            member: {}
         }
     }
 
-    componentDidMount() {
-        const { member_id } = this.props;
-      
-          const url = `/api/v1/members/show/${member_id}`;
-      
-          fetch(url)
-            .then(response => {
-              if (response.ok) {
-                return response.json();
-              }
-              throw new Error("Network response was not ok.");
-            })
-            .then(response => this.setState({ member: response }))
-            .catch(error => console.log(error.message));
-    }
-
     render() {
-        const { member } = this.state;
+        const { member } = this.props;
+
+        console.log(this.props);
 
         return (
             <div>
                 <p>Name: {member.first_name + " " + member.last_name}</p>
                 <p>Email: {member.email}</p>
-                <p>{member.num_referral} Referrals</p>
+                <p>{member.num_referrals} Referrals</p>
             </div>
         );
       }
