@@ -36,6 +36,10 @@ module Api
         render json: { message: 'Member Deleted!' }
       end
 
+      def currentMember
+        render json: current_member
+      end
+
       private
 
       def member_params

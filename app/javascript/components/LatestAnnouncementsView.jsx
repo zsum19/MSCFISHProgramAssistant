@@ -12,7 +12,7 @@ class LatestAnnouncementsView extends React.Component {
     }
 
     componentDidMount() {
-        const url = "/api/v1/announcements/index";
+        const url = "/api/v1/announcements/index/true";
         fetch(url)
           .then(response => {
             if (response.ok) {
