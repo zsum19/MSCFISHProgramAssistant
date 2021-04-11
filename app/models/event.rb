@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class Event < ApplicationRecord
-  has_many :announcements, class_name: 'Announcement', dependent: :nullify
-  has_many :eventattendances, class_name: 'Eventattendance', dependent: :nullify
+  has_many :announcements, class_name: 'Announcement', dependent: :delete_all
+  has_many :eventattendances, class_name: 'Eventattendance', dependent: :delete_all
   has_many :attendees, through: :eventattendances
 
   validates :name, presence: true

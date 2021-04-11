@@ -39,10 +39,12 @@ class AdminPage extends React.Component {
 
     function InOrderFetches(table, json, current) {
       if (current >= json.length) {
-        return new Promise(resolve => {
-          setTimeout(() => {
-            resolve('resolved');
-          }, 2000);
+        return new Promise((resolve, reject) => {
+          if (1==1) {
+            resolve("done");
+          } else {
+            reject("error");
+          }
         });
       }
       const url = `/api/v1/${table}/`;
@@ -70,7 +72,7 @@ class AdminPage extends React.Component {
         })
     }
 
-    async function DeleteAndUpdate(table, json) {
+    function DeleteAndUpdate(table, json) {
       const url = `/api/v1/${table}/`;
       const token = document.querySelector('meta[name="csrf-token"]').content;
       var i = 0;
@@ -91,16 +93,18 @@ class AdminPage extends React.Component {
 
     function handleFile(f) {
       JSZip.loadAsync(f).then(async function(zip) {
-        var data = await zip.file("events.csv").async("string");
-        var json_data = ToJSON(data);
-        await DeleteAndUpdate('events', json_data);
-        data = await zip.file("roles.csv").async("string");
-        json_data = ToJSON(data);
-        await DeleteAndUpdate('roles', json_data);
-        // zip.file("members.csv").async("string").then(function (data) {
+        // zip.file("events.csv").async("string").then(function (data) {
         //   var json_data = ToJSON(data);
-        //   DeleteAndUpdate('members', json_data);
+        //   DeleteAndUpdate('events', json_data);
         // });
+        // zip.file("roles.csv").async("string").then(function (data) {
+        //   var json_data = ToJSON(data);
+        //   DeleteAndUpdate('roles', json_data);
+        // });
+        zip.file("members.csv").async("string").then(function (data) {
+          var json_data = ToJSON(data);
+          DeleteAndUpdate('members', json_data);
+        });
         // zip.file("announcements.csv").async("string").then(function (data) {
         //   var json_data = ToJSON(data);
         //   DeleteAndUpdate('announcements', json_data);

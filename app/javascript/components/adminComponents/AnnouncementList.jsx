@@ -60,7 +60,7 @@ class AnnouncementList extends React.Component {
                 <AnnouncementView 
                     title = {announcement.title}
                     content = {announcement.content}
-                    author = {announcement.author_id}
+                    author = {announcement.member_id}
                     date_posted = {announcement.date_posted}
                     id = {announcement.id}
                     event_id = {announcement.event_id}

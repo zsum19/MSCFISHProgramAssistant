@@ -3,7 +3,7 @@
 class Member < ApplicationRecord
   belongs_to :role, class_name: 'Role'
   has_many :announcements, class_name: 'Announcement', dependent: :nullify
-  has_many :referrals, class_name: 'Referral', dependent: :nullify
+  has_many :referrals, class_name: 'Referral', dependent: :delete_all
   has_many :attendees, through: :referrals
 
   validates :first_name, presence: true

@@ -36,25 +36,25 @@ module Api
         render json: { message: 'Attendee Deleted!' }
       end
 
-      def remigrate
-        ActiveRecord::Migration.drop_table(:attendees, force: :cascade)
-        ActiveRecord::Migration.create_table(:attendees)
-        ActiveRecord::Migration.add_column(:attendees, :first_name, :string, null: false)
-        ActiveRecord::Migration.add_column(:attendees, :last_name, :string, null: false)
-        ActiveRecord::Migration.add_column(:attendees, :email, :string, null: false)
-        ActiveRecord::Migration.add_index(:attendees, :email, unique: true)
-        ActiveRecord::Migration.add_column(:attendees, :created_at, :timestamp)
-        ActiveRecord::Migration.add_column(:attendees, :updated_at, :timestamp)
-      end
+      # def remigrate
+      #   ActiveRecord::Migration.drop_table(:attendees, force: :cascade)
+      #   ActiveRecord::Migration.create_table(:attendees)
+      #   ActiveRecord::Migration.add_column(:attendees, :first_name, :string, null: false)
+      #   ActiveRecord::Migration.add_column(:attendees, :last_name, :string, null: false)
+      #   ActiveRecord::Migration.add_column(:attendees, :email, :string, null: false)
+      #   ActiveRecord::Migration.add_index(:attendees, :email, unique: true)
+      #   ActiveRecord::Migration.add_column(:attendees, :created_at, :timestamp)
+      #   ActiveRecord::Migration.add_column(:attendees, :updated_at, :timestamp)
+      # end
 
-      def create_this_only
-        attendee = Attendee.create!(backup_params)
-        if attendee
-          render json: attendee
-        else
-          render json: attendee.errors
-        end
-      end
+      # def create_this_only
+      #   attendee = Attendee.create!(backup_params)
+      #   if attendee
+      #     render json: attendee
+      #   else
+      #     render json: attendee.errors
+      #   end
+      # end
 
       def update
         attendee = Attendee.find_by!(email: params[:email])
