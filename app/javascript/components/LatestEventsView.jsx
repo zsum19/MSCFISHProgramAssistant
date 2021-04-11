@@ -33,7 +33,19 @@ class LatestEvents extends React.Component {
         const { events } = this.state;
         //console.log("THIS.STATE", this.state);
         console.log("EVENTS:", events);
-        const allEvents = events.map((event, index) => (
+        var latestEvents = [];
+        if(events.length > 5){
+            console.log("latest event", events[0]);
+            var latest = 5;
+            for(var i = 0; i < latest; i++){
+                latestEvents.push(events[i]);
+            }
+        }
+        else {
+            latestEvents = events;
+        }
+        const showEvents = latestEvents
+        const allEvents = showEvents.map((event, index) => (
             <div key={index} className="col-lg-12">
                 <EventView 
                     title = {event.name}
@@ -49,7 +61,7 @@ class LatestEvents extends React.Component {
             </div>
         ));
         const noEvent = (
-            <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center">
                 <h4>
                 No events yet. Why not <Link to="/new_event">create one</Link>
                 </h4>
@@ -59,19 +71,16 @@ class LatestEvents extends React.Component {
         return (  
                 <div className="row">
                     
-                    <div style = {{border: "1px solid #bbb"}} className = "events-view">
+                    <div className = "events-view post-view">
                         <div className = "colored-heading">
                             <h2 className = "text test"> LATEST EVENTS </h2>
                         </div>
                         <div className = "small-padding scroll-box"> 
-                            <div className = "col-md-12 col-lg-12">
-                                {/*<Events></Events>*/}
-                                <>  
+                            
                                     <div className="row">
                                         {   events.length > 0 ? allEvents : noEvent}
                                     </div>      
-                                </>
-                            </div>
+                               
                         </div>
                     </div>
                     

@@ -26,7 +26,24 @@ class LatestAnnouncementsView extends React.Component {
 
     render() {
         const { announcements } = this.state;
-        const allAnnouncements = announcements.map((announcement, index) => (
+        console.log("STATE", this.state);
+        console.log("announcements: ",announcements);
+        console.log("announcements.length", announcements.length);
+        console.log("announcements.length > 5 ?", announcements.length > 5);
+        //console.log()
+        var latestAnnouncements = [];
+        if(announcements.length > 5){
+            console.log("latest announcement", announcements[0]);
+            var latest = 5;
+            for(var i = 0; i < latest; i++){
+                latestAnnouncements.push(announcements[i]);
+            }
+        }
+        else {
+            latestAnnouncements = announcements;
+        }
+        const showAnnouncements = latestAnnouncements;
+        const allAnnouncements = showAnnouncements.map((announcement, index) => (
             <div key={index} className="col-lg-12">               
                 <div className = "single-post announcement-view">
                     <h2 className = "post-heading">{announcement.title}</h2>
@@ -45,8 +62,9 @@ class LatestAnnouncementsView extends React.Component {
                 </div>                 
             </div>
         ));
+        
         const noAnnouncement = (
-            <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center">
                 <h4>
                 No announcements yet. Why not <Link to="/new_announcement">create one</Link>
                 </h4>
@@ -54,7 +72,7 @@ class LatestAnnouncementsView extends React.Component {
         );
 
         return (
-            <div style = {{border: "1px solid #bbb"}} className = "announcements-view">
+            <div className = "announcements-view post-view">
                 <div className = "colored-heading">
                     <h2 className = "text test"> LATEST ANNOUNCEMENTS </h2>
                 </div>

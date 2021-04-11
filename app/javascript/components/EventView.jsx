@@ -87,7 +87,7 @@ export default (props) => (
             <Link to={`/event/${props.id}`} className="btn custom-button">
                 View Event
             </Link>
-            <Link to={`/checkin/${props.id}`} className="btn custom-button pull-right">
+            <Link to={`/checkin/${props.id}`} className="btn custom-button">
                 Check In
             </Link>
         </>
