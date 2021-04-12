@@ -30445,6 +30445,7 @@ Processing by HomepageController#index as HTML
   Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 2850)
 Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 3250)
   [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
+<<<<<<< HEAD
   [1m[35m (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
@@ -31643,3 +31644,5 @@ Processing by HomepageController#index as HTML
   Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 2850)
 Completed 200 OK in 43ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 3250)
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+=======
+>>>>>>> f2b0b1889333e158051fecaa7d541d8835f0bd2f
