@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # User Authentication Group
 gem 'devise'
+gem 'rails-controller-testing'
 gem 'omniauth', '~> 1.9.0'
 gem 'omniauth-google-oauth2', '~> 0.7.0' # Adding comment for dependency test
 gem 'csv'

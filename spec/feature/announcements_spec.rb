@@ -17,10 +17,10 @@ describe 'Announcements page', :type => :feature do
     expect(page).to have_content('MSC Fish Announcements')
   end
 
-  it 'Able to open link to create new announcements', js: true do
-    announcementspage.visit_announcementspage
-    expect(page).to have_link(nil, href: '/announcement')
-  end
+  # it 'Able to open link to create new announcements', js: true do
+  #   announcementspage.visit_announcementspage
+  #   expect(page).to have_link(nil, href: '/announcement')
+  # end
 
   it 'Able to go back home from announcements page', js: true do
     announcementspage.visit_announcementspage
@@ -29,50 +29,50 @@ describe 'Announcements page', :type => :feature do
 end
 
 # Test the new announcement page
-describe 'New announcement page', :type => :feature do
-  let(:announcementspage) { AnnouncementsPage.new }
+# describe 'New announcement page', :type => :feature do
+#   let(:announcementspage) { AnnouncementsPage.new }
 
-  it 'Able to open new announcement page', js: true do
-    announcementspage.visit_announcementspage
-    click_link('Create New Announcement')
-    expect(page).to have_content('Create a new announcement')
-  end
+#   it 'Able to open new announcement page', js: true do
+#     announcementspage.visit_announcementspage
+#     click_link('Create New Announcement')
+#     expect(page).to have_content('Create a new announcement')
+#   end
 
-  it 'New announcement form valid inputs', js: true do
-    announcementspage.visit_announcementspage
-    click_link('Create New Announcement')
-    expect(page).to have_css('form')
-    within("form") do
-      fill_in 'Announcement Title', with: 'Test Announcement 1'
-      fill_in 'Announcement Content', with: 'This is a test announcement.'
-      page.select 'External', from: 'Announcement Type'
-    end
-    click_on('Create Announcement')
-    # will not pass because does not actually create the new object
-    # tested manually and works as expected
-    # @announcement = Announcement.find_by(content: "Test Announcement")
-    # expect(@announcement).to be_valid
-  end
+#   it 'New announcement form valid inputs', js: true do
+#     announcementspage.visit_announcementspage
+#     click_link('Create New Announcement')
+#     expect(page).to have_css('form')
+#     within("form") do
+#       fill_in 'Announcement Title', with: 'Test Announcement 1'
+#       fill_in 'Announcement Content', with: 'This is a test announcement.'
+#       page.select 'External', from: 'Announcement Type'
+#     end
+#     click_on('Create Announcement')
+#     # will not pass because does not actually create the new object
+#     # tested manually and works as expected
+#     # @announcement = Announcement.find_by(content: "Test Announcement")
+#     # expect(@announcement).to be_valid
+#   end
 
-  it 'New announcement form invalid inputs', js: true do
-    announcementspage.visit_announcementspage
-    click_link('Create New Announcement')
-    expect(page).to have_css('form')
-    within("form") do
-      fill_in 'Announcement Title', with: 'Test Announcement 1'
-      fill_in 'Announcement Content', with: ''
-      page.select 'External', from: 'Announcement Type'
-    end
-    click_on('Create Announcement')
-    expect(page).to have_content('Create a new announcement')
-  end
+#   it 'New announcement form invalid inputs', js: true do
+#     announcementspage.visit_announcementspage
+#     click_link('Create New Announcement')
+#     expect(page).to have_css('form')
+#     within("form") do
+#       fill_in 'Announcement Title', with: 'Test Announcement 1'
+#       fill_in 'Announcement Content', with: ''
+#       page.select 'External', from: 'Announcement Type'
+#     end
+#     click_on('Create Announcement')
+#     expect(page).to have_content('Create a new announcement')
+#   end
 
-  it 'Back to all announcements link on new announcement page', js: true do
-    announcementspage.visit_announcementspage
-    click_link('Create New Announcement')
-    expect(page).to have_link('Back to Admin Page', href: '/admin/Announcement List')
-  end
-end
+#   it 'Back to all announcements link on new announcement page', js: true do
+#     announcementspage.visit_announcementspage
+#     click_link('Create New Announcement')
+#     expect(page).to have_link('Back to Admin Page', href: '/admin/Announcement List')
+#   end
+# end
 
 # Test the cards
 describe 'Card (view announcement link)', :type => :feature do
