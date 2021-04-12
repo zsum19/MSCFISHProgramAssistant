@@ -5,6 +5,11 @@ module Api
         role = Role.create!(role_params)
       end
 
+      def index
+        role = Role.all.order(name: :desc)
+        render json: role
+      end
+
 #       def remigrate
 #         ActiveRecord::Migration.drop_table(:roles, force: :cascade)
 #         ActiveRecord::Migration.create_table(:roles)

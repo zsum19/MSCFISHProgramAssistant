@@ -6,7 +6,8 @@ class MemberList extends React.Component {
     constructor() {
         super();
         this.state = {
-            members: []
+            members: [],
+            roles: []
         }
     }
 
@@ -104,12 +105,25 @@ class MemberList extends React.Component {
             this.setState({ referral: this.state.members[0].name });
           })
           .catch(error => console.log(error.message));
+        
+        const url2 = "/api/v1/roles/index";
+        fetch(url2)
+          .then(response => {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error("Network response was not ok.");
+          })
+          .then(response => {
+            this.setState({ roles: response });
+          })
+          .catch(error => console.log(error.message));
     }
 
     render() {
-        const { members } = this.state;
+        const { members, roles } = this.state;
         let memberForms = members.map((member, index) => (
-            <MemberForm key={member.id} member={member} test={this.test}></MemberForm>
+            <MemberForm key={member.id} member={member} roles={roles} test={this.test}></MemberForm>
         ));
 
         return (
@@ -124,6 +138,7 @@ class MemberList extends React.Component {
                     <div className="col-md-2 ml-1">First Name</div>
                     <div className="col-md-2 ml-1">Last Name</div>
                     <div className="col-md-2 ml-1">Email</div>
+                    <div className="col-md-2 ml-1">Role</div>
                 </div>
                 {memberForms}
             </div>

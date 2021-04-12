@@ -43,6 +43,7 @@ Rails.application.routes.draw do
       # post 'referrals/create'
       # post 'referrals/remigrate'
 
+      get 'roles/index'
       # post 'roles/create'
       # post 'roles/remigrate'
 

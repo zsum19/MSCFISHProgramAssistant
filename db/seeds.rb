@@ -19,16 +19,24 @@
   )
 end
 
-2.times do |i|
-  Role.create!(
-    name: "Test #{i+1}",
+Role.create!(
+    name: "Chair",
     description: "Just a test role"
   )
-end
+
+Role.create!(
+  name: "Director",
+  description: "Just a test role"
+)
+
+Role.create!(
+    name: "Member",
+    description: "Just a test role"
+  )
 
 9.times do |i|
   Member.create!(
-    role_id: 1,
+    role_id: 3,
     first_name: "Test#{i+1}",
     last_name: "Test#{i+1}",
     email: "test#{i+1}@test.com",
