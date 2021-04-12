@@ -18863,6 +18863,7 @@ Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 2.0ms | Allocations: 4094)
 Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 3.8ms | Allocations: 5540)
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2021-04-12 02:45:37 -0500
   
 ActiveRecord::ConnectionNotEstablished (FATAL:  Peer authentication failed for user "postgres"
@@ -18938,22 +18939,49 @@ Built at: 04/12/2021 2:46:08 AM
                                                               Asset       Size       Chunks                         Chunk Names
                                    js/Index-8944fef8d808097078f3.js   2.93 MiB        Index  [emitted] [immutable]  Index
                                js/Index-8944fef8d808097078f3.js.map   3.03 MiB        Index  [emitted] [dev]        Index
+=======
+Started GET "/" for ::1 at 2021-04-12 02:38:02 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 272)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/reomatsuda/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: d86d9a3133ba908ee5c2
+Version: webpack 4.46.0
+Time: 3001ms
+Built at: 04/12/2021 2:38:07 AM
+                                                              Asset       Size       Chunks                         Chunk Names
+                                   js/Index-965287b4da7cde073173.js   2.93 MiB        Index  [emitted] [immutable]  Index
+                               js/Index-965287b4da7cde073173.js.map   3.03 MiB        Index  [emitted] [dev]        Index
+>>>>>>> origin
                              js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
                          js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
                                                       manifest.json  779 bytes               [emitted]              
 media/components/MSC-FISH-LOGO-c1ab8a3d409b9300eb7f1b2202683daa.png   10.1 KiB               [emitted]              
 Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+<<<<<<< HEAD
 Entrypoint Index = js/Index-8944fef8d808097078f3.js js/Index-8944fef8d808097078f3.js.map
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
 [./app/javascript/routes/Index.jsx] 4.58 KiB {Index} [built]
+=======
+Entrypoint Index = js/Index-965287b4da7cde073173.js js/Index-965287b4da7cde073173.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 659 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 4.57 KiB {Index} [built]
+>>>>>>> origin
 [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
     + 87 hidden modules
 
 [Webpacker] Everything's up-to-date. Nothing to do
+<<<<<<< HEAD
   Rendered layout layouts/application.html.erb (Duration: 9677.9ms | Allocations: 10082)
 Completed 200 OK in 9699ms (Views: 9687.7ms | ActiveRecord: 0.0ms | Allocations: 13416)
 
@@ -19856,5 +19884,162 @@ Completed 200 OK in 61ms (Views: 30.9ms | ActiveRecord: 6.6ms | Allocations: 432
   [1m[36mEvent Load (4.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
   ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
 Completed 200 OK in 78ms (Views: 55.7ms | ActiveRecord: 4.3ms | Allocations: 6152)
+=======
+  Rendered layout layouts/application.html.erb (Duration: 4986.2ms | Allocations: 12204)
+Completed 200 OK in 5000ms (Views: 4989.7ms | ActiveRecord: 0.0ms | Allocations: 15547)
+
+
+Started GET "/api/v1/announcements/index" for ::1 at 2021-04-12 02:38:07 -0500
+Started GET "/api/v1/members/currentMember" for ::1 at 2021-04-12 02:38:07 -0500
+Started GET "/api/v1/events/index" for ::1 at 2021-04-12 02:38:07 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::MembersController#currentMember as */*
+Processing by Api::V1::EventsController#index as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 347)
+
+
+  [1m[36mAnnouncement Load (3.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 47ms (Views: 11.5ms | ActiveRecord: 18.5ms | Allocations: 16100)
+
+
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 58ms (Views: 9.4ms | ActiveRecord: 30.0ms | Allocations: 21803)
+
+
+Started GET "/" for ::1 at 2021-04-12 02:38:47 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 9367)
+Completed 200 OK in 31ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 12712)
+
+
+Started GET "/api/v1/members/currentMember" for ::1 at 2021-04-12 02:38:47 -0500
+Started GET "/api/v1/events/index" for ::1 at 2021-04-12 02:38:47 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/announcements/index" for ::1 at 2021-04-12 02:38:47 -0500
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 10.6ms | ActiveRecord: 7.0ms | Allocations: 14832)
+
+
+  [1m[36mAnnouncement Load (1.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 46ms (Views: 10.9ms | ActiveRecord: 26.2ms | Allocations: 20406)
+
+
+Started GET "/members/auth/google_oauth2" for ::1 at 2021-04-12 02:38:57 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/members/auth/google_oauth2/callback?state=211e468db00354605099f82af501681f12207c92d1925c85&code=4%2F0AY0e-g4Z50pRnWZUSvud-2KAx5CKeLdpM0Dy8JLtfJql4b3L00fGUtMpRa69c7NvIXKdzA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent" for ::1 at 2021-04-12 02:39:00 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"211e468db00354605099f82af501681f12207c92d1925c85", "code"=>"4/0AY0e-g4Z50pRnWZUSvud-2KAx5CKeLdpM0Dy8JLtfJql4b3L00fGUtMpRa69c7NvIXKdzA", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"consent"}
+  [1m[36mMember Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "reo.matsuda@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:32:in `from_google'
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."email" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["email", "reo.matsuda@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:33:in `from_google'
+Redirected to http://localhost:3000/memberpage
+Completed 302 Found in 33ms (ActiveRecord: 8.3ms | Allocations: 11785)
+
+
+Started GET "/memberpage" for ::1 at 2021-04-12 02:39:00 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 9349)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 11596)
+
+
+Started GET "/api/v1/members/currentMember" for ::1 at 2021-04-12 02:39:00 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:53:in `currentMember'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 1544)
+
+
+Started GET "/api/v1/members/currentMember" for ::1 at 2021-04-12 02:39:00 -0500
+Started GET "/api/v1/announcements/index/false" for ::1 at 2021-04-12 02:39:00 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/referrals/index/10" for ::1 at 2021-04-12 02:39:00 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"false"}
+  [1m[36mMember Load (3.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:53:in `currentMember'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 3.6ms | Allocations: 5007)
+
+
+Processing by Api::V1::ReferralsController#index as */*
+  Parameters: {"member_id"=>"10"}
+  [1m[36mAnnouncement Load (1.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", false]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+  [1m[36mReferral Load (1.0ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 10]]
+  ↳ app/controllers/api/v1/referrals_controller.rb:13:in `index'
+Completed 200 OK in 40ms (Views: 7.7ms | ActiveRecord: 19.1ms | Allocations: 19399)
+
+
+Completed 200 OK in 35ms (Views: 4.5ms | ActiveRecord: 22.3ms | Allocations: 18066)
+
+
+Started GET "/api/v1/members/currentMember" for ::1 at 2021-04-12 02:39:02 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:53:in `currentMember'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 1494)
+
+
+Started GET "/api/v1/members/currentMember" for ::1 at 2021-04-12 02:39:02 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/members/index" for ::1 at 2021-04-12 02:39:02 -0500
+Started GET "/api/v1/roles/index" for ::1 at 2021-04-12 02:39:02 -0500
+  [1m[36mMember Load (1.5ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Processing by Api::V1::MembersController#index as */*
+  ↳ app/controllers/api/v1/members_controller.rb:53:in `currentMember'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 3813)
+
+
+  [1m[36mMember Load (2.4ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 2.4ms | Allocations: 5096)
+
+
+Processing by Api::V1::RolesController#index as */*
+  [1m[36mRole Load (1.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."name" DESC[0m
+  ↳ app/controllers/api/v1/roles_controller.rb:10:in `index'
+Completed 200 OK in 16ms (Views: 4.6ms | ActiveRecord: 5.7ms | Allocations: 6929)
+
+
+Started GET "/api/v1/members/currentMember" for ::1 at 2021-04-12 02:39:07 -0500
+Started GET "/api/v1/events/index" for ::1 at 2021-04-12 02:39:07 -0500
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/announcements/index" for ::1 at 2021-04-12 02:39:07 -0500
+  [1m[36mMember Load (2.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Processing by Api::V1::AnnouncementsController#index as */*
+  ↳ app/controllers/api/v1/members_controller.rb:53:in `currentMember'
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 3682)
+
+
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mAnnouncement Load (2.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 2.1ms | Allocations: 4533)
+
+
+Completed 200 OK in 27ms (Views: 10.5ms | ActiveRecord: 11.7ms | Allocations: 16079)
+>>>>>>> origin
 
 
