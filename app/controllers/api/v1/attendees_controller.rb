@@ -57,7 +57,7 @@ module Api
 
       def update
         attendee = Attendee.find_by!(email: params[:email])
-        attendee.update(attendee_params)
+        attendee.update(name: params[:name])
         render json: attendee
       end
 
