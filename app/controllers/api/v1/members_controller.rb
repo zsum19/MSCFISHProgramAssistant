@@ -49,6 +49,10 @@ module Api
         ActiveRecord::Migration.add_column(:members, :updated_at, :timestamp)
       end
 
+      def currentMember
+        render json: current_member
+      end
+
       private
 
       def member_params

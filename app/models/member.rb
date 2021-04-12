@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Member < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   belongs_to :role, class_name: 'Role'
   has_many :announcements, class_name: 'Announcement', dependent: :nullify
   has_many :referrals, class_name: 'Referral', dependent: :delete_all
@@ -23,4 +25,11 @@ class Member < ApplicationRecord
   end
 
   devise :omniauthable, omniauth_providers: [:google_oauth2]
+  def self.from_google(email)
+    email = email[:email]
+    members = Member.all
+    
+    return nil unless Member.where(email: email).exists?
+    return Member.where(email: email).first
+  end
 end

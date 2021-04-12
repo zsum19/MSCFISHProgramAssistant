@@ -30,7 +30,7 @@ describe 'New checkin page', :type => :feature do
       fill_in 'Your First Name', with: 'Test First Name'
       fill_in 'Your Last Name', with: 'Test Last Name'
       fill_in 'Your Email', with: 'test@test.com'
-      page.select 'Test 1 Test 1', from: 'Referred By'
+      page.select 'Test1 Test1', from: 'Referred By'
     end
     click_on('Check In')
     # should increment the member's number of referrals
@@ -47,7 +47,7 @@ describe 'New checkin page', :type => :feature do
       fill_in 'Your First Name', with: 'Test First Name'
       fill_in 'Your Last Name', with: 'Test Last Name'
       fill_in 'Your Email', with: ''
-      page.select 'Test 1 Test 1', from: 'Referred By'
+      page.select 'Test1 Test1', from: 'Referred By'
     end
     click_on('Check In')
     expect(page).to have_content('Check in to')
