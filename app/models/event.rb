@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class Event < ApplicationRecord
-  has_many :announcements, class_name: 'Announcement'
-  has_many :eventattendances, class_name: 'Eventattendance'
+  has_many :announcements, class_name: 'Announcement', dependent: :delete_all
+  has_many :eventattendances, class_name: 'Eventattendance', dependent: :delete_all
   has_many :attendees, through: :eventattendances
 
   validates :name, presence: true
@@ -11,7 +11,7 @@ class Event < ApplicationRecord
   validates :num_checked_in, presence: true
 
   def self.to_csv
-    attributes = %w[id name max_size tickets_sold num_checked_in date description]
+    attributes = %w[id name location event_type max_size tickets_sold num_checked_in date description]
     CSV.generate(headers: true) do |csv|
       csv << attributes
 

@@ -10,21 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_08_010052) do
+ActiveRecord::Schema.define(version: 2021_02_15_220810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "announcements", force: :cascade do |t|
-    t.bigint "author_id"
+    t.bigint "member_id"
     t.bigint "event_id"
     t.string "title", null: false
     t.text "content", null: false
     t.boolean "external", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["author_id"], name: "index_announcements_on_author_id"
     t.index ["event_id"], name: "index_announcements_on_event_id"
+    t.index ["member_id"], name: "index_announcements_on_member_id"
   end
 
   create_table "attendees", force: :cascade do |t|
@@ -87,6 +87,6 @@ ActiveRecord::Schema.define(version: 2021_04_08_010052) do
   end
 
   add_foreign_key "announcements", "events"
-  add_foreign_key "announcements", "members", column: "author_id"
+  add_foreign_key "announcements", "members"
   add_foreign_key "members", "roles"
 end
