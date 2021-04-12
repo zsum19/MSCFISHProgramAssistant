@@ -27,9 +27,9 @@ class Member < ApplicationRecord
   devise :omniauthable, omniauth_providers: [:google_oauth2]
   def self.from_google(email)
     email = email[:email]
-    members = Member.all
-    
+
     return nil unless Member.where(email: email).exists?
-    return Member.where(email: email).first
+
+    Member.find_by(email: email)
   end
 end

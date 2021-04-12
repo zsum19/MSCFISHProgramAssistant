@@ -4,11 +4,11 @@ module Api
   module V1
     class ReferralsController < ApplicationController
       def index
-        if(params.has_key?(:member_id))
-          referral = Referral.where(:member_id => params[:member_id])
-        else
-          referral = Referral.all.order(created_at: :desc)
-        end
+        referral = if params.key?(:member_id)
+                     Referral.where(member_id: params[:member_id])
+                   else
+                     Referral.all.order(created_at: :desc)
+                   end
 
         render json: referral
       end

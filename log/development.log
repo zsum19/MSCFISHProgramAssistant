@@ -18863,3 +18863,998 @@ Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 2.0ms | Allocations: 4094)
 Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 3.8ms | Allocations: 5540)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:45:37 -0500
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  Peer authentication failed for user "postgres"
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:45:58 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 272)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/treydinges/Documents/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 0b9b731fef217d31b40f
+Version: webpack 4.46.0
+Time: 6571ms
+Built at: 04/12/2021 2:46:08 AM
+                                                              Asset       Size       Chunks                         Chunk Names
+                                   js/Index-8944fef8d808097078f3.js   2.93 MiB        Index  [emitted] [immutable]  Index
+                               js/Index-8944fef8d808097078f3.js.map   3.03 MiB        Index  [emitted] [dev]        Index
+                             js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+                         js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                                                      manifest.json  779 bytes               [emitted]              
+media/components/MSC-FISH-LOGO-c1ab8a3d409b9300eb7f1b2202683daa.png   10.1 KiB               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-8944fef8d808097078f3.js js/Index-8944fef8d808097078f3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 668 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 4.58 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 87 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9677.9ms | Allocations: 10082)
+Completed 200 OK in 9699ms (Views: 9687.7ms | ActiveRecord: 0.0ms | Allocations: 13416)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:46:09 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:46:09 -0500
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:46:09 -0500
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (11.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 110ms (Views: 18.7ms | ActiveRecord: 67.9ms | Allocations: 11537)
+
+
+  [1m[36mEvent Load (3.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 248ms (Views: 36.2ms | ActiveRecord: 117.9ms | Allocations: 22532)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-12 02:46:12 -0500
+Started GET "/members/auth/google_oauth2/callback?state=f57c25f1d159bc000e7d6d0e0ea25581b32445c68d8d4141&code=4%2F0AY0e-g5tuQvygWo3hmTXaHRigBNfQyTo5smuNoLTtJZtw6NMiPTnyhlkIIIgr4iiyq61Gw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:46:13 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"f57c25f1d159bc000e7d6d0e0ea25581b32445c68d8d4141", "code"=>"4/0AY0e-g5tuQvygWo3hmTXaHRigBNfQyTo5smuNoLTtJZtw6NMiPTnyhlkIIIgr4iiyq61Gw", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Exists? (10.5ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:32:in `from_google'
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."email" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:33:in `from_google'
+Redirected to http://localhost:3000/memberpage
+Completed 302 Found in 87ms (ActiveRecord: 17.0ms | Allocations: 10154)
+
+
+Started GET "/memberpage" for 127.0.0.1 at 2021-04-12 02:46:13 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 5358)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.0ms | Allocations: 5850)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:46:14 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (12.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:53:in `currentMember'
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 12.1ms | Allocations: 1431)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:46:15 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (3.0ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:53:in `currentMember'
+Completed 200 OK in 42ms (Views: 0.9ms | ActiveRecord: 3.0ms | Allocations: 1356)
+
+
+Started GET "/api/v1/announcements/index/false" for 127.0.0.1 at 2021-04-12 02:46:15 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"false"}
+Started GET "/api/v1/referrals/index/11" for 127.0.0.1 at 2021-04-12 02:46:15 -0500
+Processing by Api::V1::ReferralsController#index as */*
+  [1m[36mAnnouncement Load (21.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", false]]
+  Parameters: {"member_id"=>"11"}
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 41ms (Views: 18.1ms | ActiveRecord: 21.6ms | Allocations: 4837)
+
+
+  [1m[36mReferral Load (4.8ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 11]]
+  ↳ app/controllers/api/v1/referrals_controller.rb:13:in `index'
+Completed 200 OK in 55ms (Views: 5.7ms | ActiveRecord: 21.7ms | Allocations: 4267)
+
+
+Started GET "/members/sign_out" for 127.0.0.1 at 2021-04-12 02:46:22 -0500
+Processing by Members::SessionsController#destroy as HTML
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 1.1ms | Allocations: 1941)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:46:22 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.7ms | Allocations: 5354)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms | Allocations: 5839)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:46:23 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:46:23 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:46:23 -0500
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (22.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 38ms (Views: 11.3ms | ActiveRecord: 22.2ms | Allocations: 3358)
+
+
+  [1m[36mEvent Load (28.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 59ms (Views: 14.5ms | ActiveRecord: 28.6ms | Allocations: 5950)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:48:33 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.1ms | Allocations: 8265)
+Completed 200 OK in 105ms (Views: 88.3ms | ActiveRecord: 0.0ms | Allocations: 11599)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:48:34 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:48:34 -0500
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:48:34 -0500
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (41.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 183ms (Views: 73.6ms | ActiveRecord: 49.4ms | Allocations: 14925)
+
+
+  [1m[36mAnnouncement Load (22.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 206ms (Views: 9.2ms | ActiveRecord: 95.1ms | Allocations: 20182)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-12 02:48:39 -0500
+Started GET "/members/auth/google_oauth2/callback?state=205f5c845f573bfc01fc3ae963ed041a1d31f763e1e09670&code=4%2F0AY0e-g6fr4Ge8XKeUs2937LkM3_aB5Z91LO3V0btAYLwsp_5KSqmBdZURUuxlIkpACMfGw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:48:39 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"205f5c845f573bfc01fc3ae963ed041a1d31f763e1e09670", "code"=>"4/0AY0e-g6fr4Ge8XKeUs2937LkM3_aB5Z91LO3V0btAYLwsp_5KSqmBdZURUuxlIkpACMfGw", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:31:in `from_google'
+Redirected to http://localhost:3000/
+Completed 302 Found in 47ms (ActiveRecord: 13.3ms | Allocations: 5701)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:48:39 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 5341)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms | Allocations: 5830)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:48:41 -0500
+Processing by Api::V1::EventsController#index as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:48:41 -0500
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:48:41 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (21.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 304)
+
+
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mAnnouncement Load (14.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 58ms (Views: 39.6ms | ActiveRecord: 14.0ms | Allocations: 5577)
+
+
+Completed 200 OK in 73ms (Views: 40.8ms | ActiveRecord: 21.0ms | Allocations: 5787)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:49:06 -0500
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.4ms | Allocations: 8265)
+Completed 200 OK in 111ms (Views: 99.7ms | ActiveRecord: 0.0ms | Allocations: 11599)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:49:07 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:49:07 -0500
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (6.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 101ms (Views: 36.9ms | ActiveRecord: 19.5ms | Allocations: 8901)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:49:08 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (9.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 78ms (Views: 11.1ms | ActiveRecord: 21.7ms | Allocations: 9951)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-12 02:49:11 -0500
+Started GET "/members/auth/google_oauth2/callback?state=36990d393eff717adc882472f3fd4ed4709526f384f5cf9a&code=4%2F0AY0e-g7MtCKQHMbJyBbwmAxY5tIypz0QeVFaOzG74nz6xgaeFMHT7F0k2R0d14ZYjqSIDQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:49:12 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"36990d393eff717adc882472f3fd4ed4709526f384f5cf9a", "code"=>"4/0AY0e-g7MtCKQHMbJyBbwmAxY5tIypz0QeVFaOzG74nz6xgaeFMHT7F0k2R0d14ZYjqSIDQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:32:in `from_google'
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."email" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:34:in `from_google'
+Redirected to http://localhost:3000/memberpage
+Completed 302 Found in 103ms (ActiveRecord: 9.6ms | Allocations: 10153)
+
+
+Started GET "/memberpage" for 127.0.0.1 at 2021-04-12 02:49:12 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 117.1ms | Allocations: 5350)
+Completed 200 OK in 125ms (Views: 123.8ms | ActiveRecord: 0.0ms | Allocations: 5840)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:49:13 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 0.9ms | Allocations: 1417)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:49:14 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (2.9ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 39ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 1369)
+
+
+Started GET "/api/v1/announcements/index/false" for 127.0.0.1 at 2021-04-12 02:49:14 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"false"}
+  [1m[36mAnnouncement Load (1.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", false]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 35ms (Views: 26.7ms | ActiveRecord: 1.0ms | Allocations: 2222)
+
+
+Started GET "/api/v1/referrals/index/11" for 127.0.0.1 at 2021-04-12 02:49:14 -0500
+Processing by Api::V1::ReferralsController#index as */*
+  Parameters: {"member_id"=>"11"}
+  [1m[36mReferral Load (12.7ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 11]]
+  ↳ app/controllers/api/v1/referrals_controller.rb:13:in `index'
+Completed 200 OK in 44ms (Views: 5.8ms | ActiveRecord: 14.8ms | Allocations: 2410)
+
+
+Started GET "/members/sign_out" for 127.0.0.1 at 2021-04-12 02:49:49 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Members::SessionsController#destroy as HTML
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms (ActiveRecord: 24.7ms | Allocations: 11540)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:49:50 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.3ms | Allocations: 8252)
+Completed 200 OK in 123ms (Views: 114.2ms | ActiveRecord: 0.0ms | Allocations: 10466)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:49:51 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:49:52 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:49:52 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (21.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 146ms (Views: 42.2ms | ActiveRecord: 38.6ms | Allocations: 13578)
+
+
+  [1m[36mEvent Load (5.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 220ms (Views: 43.4ms | ActiveRecord: 86.7ms | Allocations: 19880)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-12 02:49:55 -0500
+Started GET "/members/auth/google_oauth2/callback?state=28ec4b16f4f3284d8984e09333fb39bfe3d15dcdde8926bb&code=4%2F0AY0e-g60iBvRt07ywShcYY7nnoZXrVSpTdM7ZBUMDjdkR-sEfFhw5hhVvYCquLRXnbNmwg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:49:56 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"28ec4b16f4f3284d8984e09333fb39bfe3d15dcdde8926bb", "code"=>"4/0AY0e-g60iBvRt07ywShcYY7nnoZXrVSpTdM7ZBUMDjdkR-sEfFhw5hhVvYCquLRXnbNmwg", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:32:in `from_google'
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms | Allocations: 1200)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:49:56 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.3ms | Allocations: 5349)
+Completed 200 OK in 85ms (Views: 84.6ms | ActiveRecord: 0.0ms | Allocations: 5840)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:49:57 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:49:57 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:49:57 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (19.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mAnnouncement Load (10.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 33ms (Views: 11.4ms | ActiveRecord: 19.2ms | Allocations: 2943)
+
+
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 64ms (Views: 31.3ms | ActiveRecord: 10.1ms | Allocations: 6539)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:50:12 -0500
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 74.9ms | Allocations: 8265)
+Completed 200 OK in 106ms (Views: 88.3ms | ActiveRecord: 0.0ms | Allocations: 11599)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:50:14 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:50:14 -0500
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:50:14 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (12.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 138ms (Views: 39.5ms | ActiveRecord: 45.9ms | Allocations: 13256)
+
+
+  [1m[36mEvent Load (9.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 237ms (Views: 49.1ms | ActiveRecord: 135.0ms | Allocations: 20998)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-12 02:50:18 -0500
+Started GET "/members/auth/google_oauth2/callback?state=e9706974b27b945e0accdb8cecc92b469e9e140df031693d&code=4%2F0AY0e-g76UtCHpONHZUZjSNKAIUdJKDBJAam8Bno5lVaDtX7K-4unK7-mqVFejuYj88w54Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:50:18 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"e9706974b27b945e0accdb8cecc92b469e9e140df031693d", "code"=>"4/0AY0e-g76UtCHpONHZUZjSNKAIUdJKDBJAam8Bno5lVaDtX7K-4unK7-mqVFejuYj88w54Q", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Exists? (19.1ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:32:in `from_google'
+  [1m[36mMember Load (1.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."email" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:34:in `from_google'
+Redirected to http://localhost:3000/memberpage
+Completed 302 Found in 93ms (ActiveRecord: 33.2ms | Allocations: 10126)
+
+
+Started GET "/memberpage" for 127.0.0.1 at 2021-04-12 02:50:18 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 195.1ms | Allocations: 5354)
+Completed 200 OK in 216ms (Views: 210.9ms | ActiveRecord: 0.0ms | Allocations: 5844)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:50:20 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (1.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 31ms (Views: 1.9ms | ActiveRecord: 1.6ms | Allocations: 1417)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:50:21 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (2.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 2.8ms | Allocations: 1369)
+
+
+Started GET "/api/v1/announcements/index/false" for 127.0.0.1 at 2021-04-12 02:50:21 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"false"}
+  [1m[36mAnnouncement Load (1.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", false]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 1.5ms | Allocations: 2242)
+
+
+Started GET "/api/v1/referrals/index/11" for 127.0.0.1 at 2021-04-12 02:50:21 -0500
+Processing by Api::V1::ReferralsController#index as */*
+  Parameters: {"member_id"=>"11"}
+  [1m[36mReferral Load (0.8ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 11]]
+  ↳ app/controllers/api/v1/referrals_controller.rb:13:in `index'
+Completed 200 OK in 35ms (Views: 1.9ms | ActiveRecord: 22.8ms | Allocations: 2809)
+
+
+Started GET "/memberpage" for 127.0.0.1 at 2021-04-12 02:50:41 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.4ms | Allocations: 8266)
+Completed 200 OK in 116ms (Views: 86.1ms | ActiveRecord: 0.0ms | Allocations: 11603)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:50:42 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 56ms (Views: 0.6ms | ActiveRecord: 24.3ms | Allocations: 6948)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:50:43 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (6.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 6.4ms | Allocations: 1372)
+
+
+Started GET "/api/v1/announcements/index/false" for 127.0.0.1 at 2021-04-12 02:50:43 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/referrals/index/11" for 127.0.0.1 at 2021-04-12 02:50:43 -0500
+  Parameters: {"external"=>"false"}
+Processing by Api::V1::ReferralsController#index as */*
+  Parameters: {"member_id"=>"11"}
+  [1m[36mAnnouncement Load (9.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", false]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 162ms (Views: 76.6ms | ActiveRecord: 50.2ms | Allocations: 9527)
+
+
+  [1m[36mReferral Load (6.7ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 11]]
+  ↳ app/controllers/api/v1/referrals_controller.rb:13:in `index'
+Completed 200 OK in 213ms (Views: 3.9ms | ActiveRecord: 159.9ms | Allocations: 12496)
+
+
+Started GET "/members/sign_out" for 127.0.0.1 at 2021-04-12 02:50:45 -0500
+Processing by Members::SessionsController#destroy as HTML
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (ActiveRecord: 1.1ms | Allocations: 5203)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:50:46 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 5349)
+Completed 200 OK in 85ms (Views: 83.7ms | ActiveRecord: 0.0ms | Allocations: 5834)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:50:47 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:50:47 -0500
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:50:47 -0500
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (56.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 72ms (Views: 8.4ms | ActiveRecord: 56.0ms | Allocations: 5655)
+
+
+  [1m[36mEvent Load (27.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 133ms (Views: 36.1ms | ActiveRecord: 34.2ms | Allocations: 12982)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-12 02:50:52 -0500
+Started GET "/members/auth/google_oauth2/callback?state=5d64311be24e05089f24e450fd5bd647e7380a659b45f962&code=4%2F0AY0e-g55HRLsP4sRLTsp4MAZ0gwdZYAx15y8PfgXAgUAxX8BpTthKRJg6Ybuyn1Z_sZfiA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:50:52 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"5d64311be24e05089f24e450fd5bd647e7380a659b45f962", "code"=>"4/0AY0e-g55HRLsP4sRLTsp4MAZ0gwdZYAx15y8PfgXAgUAxX8BpTthKRJg6Ybuyn1Z_sZfiA", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."email" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:31:in `from_google'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.0ms | Allocations: 1560)
+
+
+  
+ArgumentError (You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`.):
+  
+app/models/member.rb:31:in `from_google'
+app/controllers/members/omniauth_callbacks_controller.rb:6:in `google_oauth2'
+Started GET "/members/auth/google_oauth2/callback?state=5d64311be24e05089f24e450fd5bd647e7380a659b45f962&code=4%2F0AY0e-g55HRLsP4sRLTsp4MAZ0gwdZYAx15y8PfgXAgUAxX8BpTthKRJg6Ybuyn1Z_sZfiA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:51:16 -0500
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Members::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"5d64311be24e05089f24e450fd5bd647e7380a659b45f962", "code"=>"4/0AY0e-g55HRLsP4sRLTsp4MAZ0gwdZYAx15y8PfgXAgUAxX8BpTthKRJg6Ybuyn1Z_sZfiA", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 7711)
+
+
+  
+NameError (undefined local variable or method `new_member_session_path' for #<Members::OmniauthCallbacksController:0x00000000007cb0>):
+  
+app/controllers/members/omniauth_callbacks_controller.rb:23:in `after_omniauth_failure_path_for'
+Started GET "/members/auth/google_oauth2/callback?state=5d64311be24e05089f24e450fd5bd647e7380a659b45f962&code=4%2F0AY0e-g55HRLsP4sRLTsp4MAZ0gwdZYAx15y8PfgXAgUAxX8BpTthKRJg6Ybuyn1Z_sZfiA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:52:17 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Members::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"5d64311be24e05089f24e450fd5bd647e7380a659b45f962", "code"=>"4/0AY0e-g55HRLsP4sRLTsp4MAZ0gwdZYAx15y8PfgXAgUAxX8BpTthKRJg6Ybuyn1Z_sZfiA", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms | Allocations: 4614)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:52:18 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 178.7ms | Allocations: 8240)
+Completed 200 OK in 215ms (Views: 212.8ms | ActiveRecord: 0.0ms | Allocations: 10490)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:52:20 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:52:20 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:52:20 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (30.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 160ms (Views: 46.6ms | ActiveRecord: 101.2ms | Allocations: 14330)
+
+
+  [1m[36mEvent Load (7.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 247ms (Views: 59.1ms | ActiveRecord: 71.6ms | Allocations: 20188)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-12 02:52:24 -0500
+Started GET "/members/auth/google_oauth2/callback?state=19af66afbd25b9e375013977f257d6373a98d38f627c8310&code=4%2F0AY0e-g5_78clnbpkVYb00EHJAnXVsFxk95yio1BN1jBy5irvlfJV6nvTQKc2dOBt7iCg-w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:52:25 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"19af66afbd25b9e375013977f257d6373a98d38f627c8310", "code"=>"4/0AY0e-g5_78clnbpkVYb00EHJAnXVsFxk95yio1BN1jBy5irvlfJV6nvTQKc2dOBt7iCg-w", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:32:in `from_google'
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."email" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:34:in `from_google'
+Redirected to http://localhost:3000/memberpage
+Completed 302 Found in 74ms (ActiveRecord: 22.9ms | Allocations: 6856)
+
+
+Started GET "/memberpage" for 127.0.0.1 at 2021-04-12 02:52:25 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.9ms | Allocations: 5356)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.0ms | Allocations: 5847)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:52:26 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 1433)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:52:27 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (1.9ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 1.9ms | Allocations: 1367)
+
+
+Started GET "/api/v1/announcements/index/false" for 127.0.0.1 at 2021-04-12 02:52:27 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"false"}
+Started GET "/api/v1/referrals/index/11" for 127.0.0.1 at 2021-04-12 02:52:27 -0500
+Processing by Api::V1::ReferralsController#index as */*
+  Parameters: {"member_id"=>"11"}
+  [1m[36mAnnouncement Load (1.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", false]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 130ms (Views: 127.2ms | ActiveRecord: 1.9ms | Allocations: 6124)
+
+
+  [1m[36mReferral Load (3.1ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 11]]
+  ↳ app/controllers/api/v1/referrals_controller.rb:13:in `index'
+Completed 200 OK in 232ms (Views: 101.5ms | ActiveRecord: 51.0ms | Allocations: 8935)
+
+
+Started GET "/members/sign_out" for 127.0.0.1 at 2021-04-12 02:52:32 -0500
+Processing by Members::SessionsController#destroy as HTML
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.7ms | Allocations: 1898)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:52:32 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 5353)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 5837)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:52:33 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:52:33 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (15.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 32ms (Views: 12.3ms | ActiveRecord: 15.1ms | Allocations: 3120)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:52:34 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (4.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 10.4ms | ActiveRecord: 4.6ms | Allocations: 2763)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:53:16 -0500
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 8265)
+Completed 200 OK in 124ms (Views: 92.3ms | ActiveRecord: 0.0ms | Allocations: 11599)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:53:18 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:53:18 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:53:18 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (29.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 131ms (Views: 42.4ms | ActiveRecord: 43.7ms | Allocations: 14148)
+
+
+  [1m[36mEvent Load (6.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 227ms (Views: 64.2ms | ActiveRecord: 63.0ms | Allocations: 20169)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-12 02:53:20 -0500
+Started GET "/members/auth/google_oauth2/callback?state=155f4b50af06ff9eb3300c729277dff7ef676fac410774b2&code=4%2F0AY0e-g4615ySP6W6EQt3E2jqDn4SKET5XcgNcDxb-ib6CwGhXys0uNnkjAoTqiGmpisjNg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:53:21 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"155f4b50af06ff9eb3300c729277dff7ef676fac410774b2", "code"=>"4/0AY0e-g4615ySP6W6EQt3E2jqDn4SKET5XcgNcDxb-ib6CwGhXys0uNnkjAoTqiGmpisjNg", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Exists? (3.8ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:31:in `from_google'
+  [1m[36mMember Load (1.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."email" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:33:in `from_google'
+Redirected to http://localhost:3000/memberpage
+Completed 302 Found in 93ms (ActiveRecord: 11.7ms | Allocations: 10126)
+
+
+Started GET "/memberpage" for 127.0.0.1 at 2021-04-12 02:53:21 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 111.5ms | Allocations: 5350)
+Completed 200 OK in 117ms (Views: 115.7ms | ActiveRecord: 0.0ms | Allocations: 5840)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:53:23 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (8.9ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 39ms (Views: 0.6ms | ActiveRecord: 8.9ms | Allocations: 1433)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:53:23 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (16.2ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 28ms (Views: 0.8ms | ActiveRecord: 16.2ms | Allocations: 1372)
+
+
+Started GET "/api/v1/announcements/index/false" for 127.0.0.1 at 2021-04-12 02:53:23 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"false"}
+  [1m[36mAnnouncement Load (1.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", false]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 1.2ms | Allocations: 2242)
+
+
+Started GET "/api/v1/referrals/index/11" for 127.0.0.1 at 2021-04-12 02:53:24 -0500
+Processing by Api::V1::ReferralsController#index as */*
+  Parameters: {"member_id"=>"11"}
+  [1m[36mReferral Load (1.0ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 11]]
+  ↳ app/controllers/api/v1/referrals_controller.rb:13:in `index'
+Completed 200 OK in 68ms (Views: 16.8ms | ActiveRecord: 3.3ms | Allocations: 2416)
+
+
+Started GET "/members/sign_out" for 127.0.0.1 at 2021-04-12 02:53:27 -0500
+Processing by Members::SessionsController#destroy as HTML
+  [1m[36mMember Load (2.5ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.5ms | Allocations: 1904)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:53:27 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 5353)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms | Allocations: 5837)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:53:29 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:53:29 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:53:29 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (5.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 59ms (Views: 23.4ms | ActiveRecord: 5.7ms | Allocations: 4486)
+
+
+  [1m[36mEvent Load (17.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 68ms (Views: 32.5ms | ActiveRecord: 17.0ms | Allocations: 5933)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:53:57 -0500
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 146.4ms | Allocations: 8266)
+Completed 200 OK in 183ms (Views: 163.8ms | ActiveRecord: 0.0ms | Allocations: 11600)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:53:59 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:53:59 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:53:59 -0500
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (14.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 129ms (Views: 27.0ms | ActiveRecord: 62.2ms | Allocations: 12581)
+
+
+  [1m[36mEvent Load (27.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 260ms (Views: 25.5ms | ActiveRecord: 161.5ms | Allocations: 21447)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-12 02:54:02 -0500
+Started GET "/members/auth/google_oauth2/callback?state=7be521243ffbdac2d2ddf3eb0e12150f167a098f3a2f2d35&code=4%2F0AY0e-g62tjJVOeSU3z7zgtdq_Vvr5hT41rORaY_p38s7OpVNNpf2ukF3xdbFoyoI6Dz0zw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-12 02:54:02 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"7be521243ffbdac2d2ddf3eb0e12150f167a098f3a2f2d35", "code"=>"4/0AY0e-g62tjJVOeSU3z7zgtdq_Vvr5hT41rORaY_p38s7OpVNNpf2ukF3xdbFoyoI6Dz0zw", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Exists? (10.9ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:31:in `from_google'
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:33:in `from_google'
+Redirected to http://localhost:3000/memberpage
+Completed 302 Found in 72ms (ActiveRecord: 15.8ms | Allocations: 10043)
+
+
+Started GET "/memberpage" for 127.0.0.1 at 2021-04-12 02:54:02 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 5350)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms | Allocations: 5841)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:54:04 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (9.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 9.4ms | Allocations: 1487)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:54:04 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (3.3ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 3.3ms | Allocations: 2775)
+
+
+Started GET "/api/v1/referrals/index/11" for 127.0.0.1 at 2021-04-12 02:54:04 -0500
+Processing by Api::V1::ReferralsController#index as */*
+Started GET "/api/v1/announcements/index/false" for 127.0.0.1 at 2021-04-12 02:54:04 -0500
+  Parameters: {"member_id"=>"11"}
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"false"}
+  [1m[36mAnnouncement Load (1.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", false]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 68ms (Views: 51.5ms | ActiveRecord: 15.6ms | Allocations: 3175)
+
+
+  [1m[36mReferral Load (2.6ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 11]]
+  ↳ app/controllers/api/v1/referrals_controller.rb:13:in `index'
+Completed 200 OK in 118ms (Views: 51.5ms | ActiveRecord: 8.8ms | Allocations: 5421)
+
+
+Started GET "/members/sign_out" for 127.0.0.1 at 2021-04-12 02:54:10 -0500
+Processing by Members::SessionsController#destroy as HTML
+  [1m[36mMember Load (1.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 1.6ms | Allocations: 1901)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-12 02:54:10 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 5353)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms | Allocations: 5837)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 02:54:12 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 02:54:12 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 02:54:12 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (6.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 61ms (Views: 30.9ms | ActiveRecord: 6.6ms | Allocations: 4322)
+
+
+  [1m[36mEvent Load (4.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 78ms (Views: 55.7ms | ActiveRecord: 4.3ms | Allocations: 6152)
+
+

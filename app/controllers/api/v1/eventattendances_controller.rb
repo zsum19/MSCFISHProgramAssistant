@@ -1,20 +1,27 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     class EventattendancesController < ApplicationController
       def create
         eventattendance = Eventattendance.create!(eventattendance_params)
+        if eventattendance
+          render json: eventattendance
+        else
+          render json: eventattendance.errors
+        end
       end
 
-#       def remigrate
-#         ActiveRecord::Migration.drop_table(:eventattendances, force: :cascade)
-#         ActiveRecord::Migration.create_table(:eventattendances)
-#         ActiveRecord::Migration.add_column(:eventattendances, :event_id, :bigserial)
-#         ActiveRecord::Migration.add_foreign_key(:eventattendances, :events, column: :event_id)
-#         ActiveRecord::Migration.add_column(:eventattendances, :attendee_id, :bigserial)
-#         ActiveRecord::Migration.add_foreign_key(:eventattendances, :attendees, column: :attendee_id)
-#         ActiveRecord::Migration.add_column(:eventattendances, :created_at, :timestamp)
-#         ActiveRecord::Migration.add_column(:eventattendances, :updated_at, :timestamp)
-#       end
+      # def remigrate
+      #   ActiveRecord::Migration.drop_table(:eventattendances, force: :cascade)
+      #   ActiveRecord::Migration.create_table(:eventattendances)
+      #   ActiveRecord::Migration.add_column(:eventattendances, :event_id, :bigserial)
+      #   ActiveRecord::Migration.add_foreign_key(:eventattendances, :events, column: :event_id)
+      #   ActiveRecord::Migration.add_column(:eventattendances, :attendee_id, :bigserial)
+      #   ActiveRecord::Migration.add_foreign_key(:eventattendances, :attendees, column: :attendee_id)
+      #   ActiveRecord::Migration.add_column(:eventattendances, :created_at, :timestamp)
+      #   ActiveRecord::Migration.add_column(:eventattendances, :updated_at, :timestamp)
+      # end
 
       private
 
@@ -27,4 +34,4 @@ module Api
       end
     end
   end
-end 
+end

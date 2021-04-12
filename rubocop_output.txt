@@ -1,61 +1,61 @@
-Inspecting 34 files
-....C.C.C......CC.C.C.............
+Inspecting 39 files
+....CCCCC..CC..........................
 
 Offenses:
 
-app/controllers/api/v1/attendees_controller.rb:11:7: C: Metrics/AbcSize: Assignment Branch Condition size for create is too high. [<3, 24, 2> 24.27/17]
+app/controllers/api/v1/attendees_controller.rb:11:7: C: Metrics/AbcSize: Assignment Branch Condition size for create is too high. [<3, 26, 2> 26.25/17]
       def create ...
       ^^^^^^^^^^
-app/controllers/api/v1/attendees_controller.rb:11:7: C: Metrics/MethodLength: Method has too many lines. [14/10]
+app/controllers/api/v1/attendees_controller.rb:11:7: C: Metrics/MethodLength: Method has too many lines. [15/10]
       def create ...
       ^^^^^^^^^^
-app/controllers/api/v1/attendees_controller.rb:15:16: C: Rails/SkipsModelValidations: Avoid using increment! because it skips validations.
+app/controllers/api/v1/attendees_controller.rb:16:16: C: Rails/SkipsModelValidations: Avoid using increment! because it skips validations.
         member.increment!(:num_referrals)
                ^^^^^^^^^^
 app/controllers/api/v1/attendees_controller.rb:23:15: C: Rails/SkipsModelValidations: Avoid using increment! because it skips validations.
         event.increment!(:num_checked_in)
               ^^^^^^^^^^
+app/controllers/api/v1/eventattendances_controller.rb:21:101: C: Layout/LineLength: Line is too long. [102/100]
+      #   ActiveRecord::Migration.add_foreign_key(:eventattendances, :attendees, column: :attendee_id)
+                                                                                                    ^^
+app/controllers/api/v1/events_controller.rb:35:101: C: Layout/LineLength: Line is too long. [103/100]
+      #   ActiveRecord::Migration.add_column(:events, :tickets_sold, :integer, default: 0, null: false)
+                                                                                                    ^^^
+app/controllers/api/v1/events_controller.rb:36:101: C: Layout/LineLength: Line is too long. [105/100]
+      #   ActiveRecord::Migration.add_column(:events, :num_checked_in, :integer, default: 0, null: false)
+                                                                                                    ^^^^^
 app/controllers/api/v1/members_controller.rb:23:11: C: Style/IdenticalConditionalBranches: Move render json: member out of the conditional.
           render json: member
           ^^^^^^^^^^^^^^^^^^^
 app/controllers/api/v1/members_controller.rb:25:11: C: Style/IdenticalConditionalBranches: Move render json: member out of the conditional.
           render json: member
           ^^^^^^^^^^^^^^^^^^^
-app/controllers/homepage_controller.rb:4:3: C: Metrics/AbcSize: Assignment Branch Condition size for index is too high. [<20, 74, 3> 76.71/17]
+app/controllers/api/v1/members_controller.rb:29:7: C: Metrics/MethodLength: Method has too many lines. [11/10]
+      def remigrate ...
+      ^^^^^^^^^^^^^
+app/controllers/api/v1/members_controller.rb:53:11: C: Naming/MethodName: Use snake_case for method names.
+      def currentMember
+          ^^^^^^^^^^^^^
+app/controllers/api/v1/referrals_controller.rb:39:11: C: Style/IdenticalConditionalBranches: Move render json: referral out of the conditional.
+          render json: referral
+          ^^^^^^^^^^^^^^^^^^^^^
+app/controllers/api/v1/referrals_controller.rb:41:11: C: Style/IdenticalConditionalBranches: Move render json: referral out of the conditional.
+          render json: referral
+          ^^^^^^^^^^^^^^^^^^^^^
+app/controllers/homepage_controller.rb:7:3: C: Metrics/AbcSize: Assignment Branch Condition size for index is too high. [<20, 38, 5> 43.23/17]
   def index ...
   ^^^^^^^^^
-app/controllers/homepage_controller.rb:4:3: C: Metrics/MethodLength: Method has too many lines. [52/10]
+app/controllers/homepage_controller.rb:7:3: C: Metrics/MethodLength: Method has too many lines. [44/10]
   def index ...
   ^^^^^^^^^
-app/controllers/homepage_controller.rb:13:5: C: Metrics/BlockLength: Block has too many lines. [43/25]
+app/controllers/homepage_controller.rb:8:5: C: Metrics/BlockLength: Block has too many lines. [42/25]
     respond_to do |format| ...
     ^^^^^^^^^^^^^^^^^^^^^^
-app/controllers/homepage_controller.rb:15:7: C: Metrics/BlockLength: Block has too many lines. [40/25]
+app/controllers/homepage_controller.rb:10:7: C: Metrics/BlockLength: Block has too many lines. [39/25]
       format.zip do ...
       ^^^^^^^^^^^^^
-app/controllers/homepage_controller.rb:23:9: C: Metrics/BlockLength: Block has too many lines. [28/25]
-        Zip::File.open(zipname, Zip::File::CREATE) do |zipfile| ...
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app/models/attendee.rb:4:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
-  has_many :referrals, class_name: 'Referral'
-  ^^^^^^^^
-app/models/attendee.rb:6:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
-  has_many :eventattendances, class_name: 'Eventattendance'
-  ^^^^^^^^
-app/models/event.rb:4:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
-  has_many :announcements, class_name: 'Announcement'
-  ^^^^^^^^
-app/models/event.rb:5:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
-  has_many :eventattendances, class_name: 'Eventattendance'
-  ^^^^^^^^
-app/models/member.rb:5:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
-  has_many :announcements, class_name: 'Announcement'
-  ^^^^^^^^
-app/models/member.rb:6:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
-  has_many :referrals, class_name: 'Referral'
-  ^^^^^^^^
-app/models/role.rb:4:3: C: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
-  has_many :member, class_name: 'Member'
-  ^^^^^^^^
+app/controllers/members/omniauth_callbacks_controller.rb:5:5: C: Metrics/MethodLength: Method has too many lines. [11/10]
+    def google_oauth2 ...
+    ^^^^^^^^^^^^^^^^^
 
-34 files inspected, 18 offenses detected
+39 files inspected, 18 offenses detected

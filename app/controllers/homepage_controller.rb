@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'rubygems'
 require 'zip'
 
@@ -7,22 +8,22 @@ class HomepageController < ApplicationController
     respond_to do |format|
       format.html
       format.zip do
-        if !current_member
+        unless current_member
           current_directory = Dir.pwd
-          zipname = current_directory + '/public/downloads/you_should_not_have_this.zip'
+          zipname = "#{current_directory}/public/downloads/you_should_not_have_this.zip"
           File.delete(zipname) if File.exist?(zipname)
-    
+
           ::Zip::File.open(zipname, ::Zip::File::CREATE) do |zipfile|
-              file = File.open('README.txt', 'w')
-              File.write('README.txt', "SECURITY BREACH")
-              file.close
-              zipfile.add('README.txt', file)
+            file = File.open('README.txt', 'w')
+            File.write('README.txt', 'SECURITY BREACH')
+            file.close
+            zipfile.add('README.txt', file)
           end
-    
+
           send_file zipname
           return
         end
-        
+
         @announcements = Announcement.all
         @events = Event.all
         @attendees = Attendee.all
@@ -31,12 +32,13 @@ class HomepageController < ApplicationController
         @eventattendances = Eventattendance.all
         @referrals = Referral.all
 
-        objects = [@announcements, @events, @attendees, @members, @roles, @eventattendances, @referrals]
+        objects = [@announcements, @events, @attendees, @members, @roles, @eventattendances,
+                   @referrals]
         filenames = ['announcements.csv', 'events.csv', 'attendees.csv', 'members.csv',
                      'roles.csv', 'eventattendances.csv', 'referrals.csv']
 
         current_directory = Dir.pwd
-        zipname = current_directory + '/public/downloads/database_dump.zip'
+        zipname = "#{current_directory}/public/downloads/database_dump.zip"
         File.delete(zipname) if File.exist?(zipname)
 
         ::Zip::File.open(zipname, ::Zip::File::CREATE) do |zipfile|
