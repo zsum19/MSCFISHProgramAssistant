@@ -88,7 +88,7 @@ end
 
 9.times do |i|
   Announcement.create!(
-    author_id: 1,
+    member_id: 1,
     event_id: 1,
     title: "External Test Announcement \##{i+1}",
     content: "This is a test accoucement \##{i+1}",
