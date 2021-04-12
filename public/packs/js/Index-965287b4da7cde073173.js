@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _adminComponents_EventList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./adminComponents/EventList */ "./app/javascript/components/adminComponents/EventList.jsx");
 /* harmony import */ var _common_Navbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common/Navbar */ "./app/javascript/components/common/Navbar.jsx");
 /* harmony import */ var _adminComponents_AnnouncementList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./adminComponents/AnnouncementList */ "./app/javascript/components/adminComponents/AnnouncementList.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/AdminPage.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/AdminPage.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -144,18 +144,174 @@ var AdminPage = /*#__PURE__*/function (_React$Component) {
   var _super = _createSuper(AdminPage);
 
   function AdminPage() {
+    var _this;
+
     _classCallCheck(this, AdminPage);
 
-    return _super.call(this);
+    _this = _super.call(this);
+    _this.state = {
+      current_member: {}
+    };
+    return _this;
   }
 
   _createClass(AdminPage, [{
     key: "componentDidMount",
-    value: function componentDidMount() {// console.log("Hello");
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var url = "/api/v1/members/currentMember";
+      fetch(url).then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+
+        throw new Error("Network response was not ok.");
+      }).then(function (response) {
+        return _this2.setState({
+          current_member: response
+        });
+      })["catch"](function (error) {
+        return console.log(error.message);
+      });
     }
   }, {
     key: "render",
     value: function render() {
+      var current_member = this.state.current_member;
+      if (current_member == undefined || Object.keys(current_member).length == 0) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-fluid vh-100 row",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-12 align-self-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "m-auto d-flex justify-content-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 21
+        }
+      }, "You should not be here!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "m-auto d-flex justify-content-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 21
+        }
+      }, "Or you should sign in"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "my-4 d-flex justify-content-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        className: "to-button",
+        to: "/members/auth/google_oauth2",
+        text: "Sign In",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 21
+        }
+      }))));
+      if (current_member.role_id > 2) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-fluid vh-100 row",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-12 align-self-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "m-auto d-flex justify-content-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 21
+        }
+      }, "You should not be here!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "m-auto d-flex justify-content-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56,
+          columnNumber: 21
+        }
+      }, "If you think this is an issue, contact your director or chair.")));
+      var superAdminTabsComp = [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_adminComponents_MemberList__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        key: 1,
+        label: "Member List",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 13
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_adminComponents_EventList__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        key: 2,
+        label: "Event List",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63,
+          columnNumber: 13
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_adminComponents_AnnouncementList__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        key: 3,
+        label: "Announcement List",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64,
+          columnNumber: 13
+        }
+      })];
+      var adminTabsComp = [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_adminComponents_EventList__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        key: 2,
+        label: "Event List",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67,
+          columnNumber: 13
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_adminComponents_AnnouncementList__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        key: 3,
+        label: "Announcement List",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68,
+          columnNumber: 13
+        }
+      })];
+      ;
+      var tabsComponents = current_member && current_member.role_id == 1 ? superAdminTabsComp : adminTabsComp;
       var activeTab = this.props.match.params.activeTab;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: {
@@ -166,14 +322,14 @@ var AdminPage = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26,
+          lineNumber: 74,
           columnNumber: 13
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Navbar__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27,
+          lineNumber: 75,
           columnNumber: 17
         }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -181,66 +337,30 @@ var AdminPage = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 76,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 77,
           columnNumber: 21
         }
-      }, "Hello World!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        components: [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_adminComponents_MemberList__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          key: 1,
-          label: "Member List",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 33,
-            columnNumber: 25
-          }
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_adminComponents_EventList__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          key: 2,
-          label: "Event List",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 34,
-            columnNumber: 25
-          }
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_adminComponents_AnnouncementList__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          key: 3,
-          label: "Announcement List",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 35,
-            columnNumber: 25
-          }
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_adminComponents_AnnouncementList__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          key: 4,
-          label: "Referral List",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 36,
-            columnNumber: 25
-          }
-        })],
+      }, "Admin Page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        components: tabsComponents,
         activeTab: activeTab,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
+          lineNumber: 78,
           columnNumber: 21
         }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
+          lineNumber: 85,
           columnNumber: 21
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -249,7 +369,7 @@ var AdminPage = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 86,
           columnNumber: 25
         }
       }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -259,7 +379,7 @@ var AdminPage = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 87,
           columnNumber: 25
         }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -269,7 +389,7 @@ var AdminPage = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 88,
           columnNumber: 25
         }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -278,7 +398,7 @@ var AdminPage = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 89,
           columnNumber: 25
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -286,7 +406,7 @@ var AdminPage = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47,
+          lineNumber: 90,
           columnNumber: 29
         }
       }, "Download Database")))));
@@ -312,8 +432,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Events__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Events */ "./app/javascript/components/Events.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/AllEvents.jsx";
+/* harmony import */ var _common_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/Navbar */ "./app/javascript/components/common/Navbar.jsx");
+/* harmony import */ var _Events__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Events */ "./app/javascript/components/Events.jsx");
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/AllEvents.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -339,6 +460,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var AllEvents = /*#__PURE__*/function (_React$Component) {
   _inherits(AllEvents, _React$Component);
 
@@ -353,53 +475,80 @@ var AllEvents = /*#__PURE__*/function (_React$Component) {
   _createClass(AllEvents, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-        className: "jumbotron jumbotron-fluid text-center",
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          width: "100vw",
+          height: "105vh",
+          backgroundColor: "whitesmoke"
+        },
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16,
-          columnNumber: 17
+          columnNumber: 13
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container py-5",
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17,
           columnNumber: 17
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "display-4",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-fluid",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18,
-          columnNumber: 21
+          columnNumber: 17
         }
-      }, "MSC Fish Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "lead text-muted",
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        className: "jumbotron jumbotron-fluid text-center",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19,
           columnNumber: 21
         }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container py-5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "display-4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 25
+        }
+      }, "MSC Fish Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "lead text-muted",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 25
+        }
       }, "A list of all current events."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "py-5",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24,
-          columnNumber: 17
+          lineNumber: 27,
+          columnNumber: 21
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
         className: "container",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25,
-          columnNumber: 17
+          lineNumber: 28,
+          columnNumber: 21
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/",
@@ -407,8 +556,8 @@ var AllEvents = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 21
+          lineNumber: 29,
+          columnNumber: 25
         }
       }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/event",
@@ -416,25 +565,25 @@ var AllEvents = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27,
-          columnNumber: 21
+          lineNumber: 30,
+          columnNumber: 25
         }
       }, "Create New Event"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 21
+          lineNumber: 31,
+          columnNumber: 25
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Events__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Events__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 25
+          lineNumber: 33,
+          columnNumber: 29
         }
-      })))));
+      }))))));
     }
   }]);
 
@@ -457,7 +606,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/Announcement.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/Announcement.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -689,7 +838,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_EventBadge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/EventBadge */ "./app/javascript/components/common/EventBadge.jsx");
 /* harmony import */ var _common_LocaleBadge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/LocaleBadge */ "./app/javascript/components/common/LocaleBadge.jsx");
 /* harmony import */ var _common_LinkButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common/LinkButton */ "./app/javascript/components/common/LinkButton.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/AnnouncementView.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/AnnouncementView.jsx",
     _this = undefined;
 
 
@@ -802,7 +951,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _common_EventBadge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/EventBadge */ "./app/javascript/components/common/EventBadge.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/Announcements.jsx";
+/* harmony import */ var _common_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/Navbar */ "./app/javascript/components/common/Navbar.jsx");
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/Announcements.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -823,6 +973,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 
 
 
@@ -850,7 +1001,7 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var url = "/api/v1/announcements/index";
+      var url = "/api/v1/announcements/index/true";
       fetch(url).then(function (response) {
         if (response.ok) {
           return response.json();
@@ -878,7 +1029,7 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28,
+            lineNumber: 29,
             columnNumber: 13
           }
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -886,7 +1037,7 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 29,
+            lineNumber: 30,
             columnNumber: 17
           }
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
@@ -894,7 +1045,7 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 30,
+            lineNumber: 31,
             columnNumber: 21
           }
         }, announcement.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_EventBadge__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -902,7 +1053,7 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 31,
+            lineNumber: 32,
             columnNumber: 21
           }
         }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -910,7 +1061,7 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32,
+            lineNumber: 33,
             columnNumber: 21
           }
         }, announcement.content), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -921,22 +1072,22 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33,
+            lineNumber: 34,
             columnNumber: 21
           }
         }, " - ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 38,
+            lineNumber: 39,
             columnNumber: 25
           }
-        }, announcement.author_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, announcement.member_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "subtitle",
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39,
+            lineNumber: 40,
             columnNumber: 21
           }
         }, announcement.date_posted), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -945,7 +1096,7 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 40,
+            lineNumber: 41,
             columnNumber: 21
           }
         }, "View Announcement")));
@@ -955,14 +1106,14 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47,
+          lineNumber: 48,
           columnNumber: 13
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48,
+          lineNumber: 49,
           columnNumber: 17
         }
       }, "No announcements yet. Why not ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -970,57 +1121,84 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 50,
           columnNumber: 47
         }
       }, "create one")));
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-        className: "jumbotron jumbotron-fluid text-center",
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          width: "100vw",
+          height: "105vh",
+          backgroundColor: "whitesmoke"
+        },
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 56,
-          columnNumber: 17
+          columnNumber: 13
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container py-5",
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57,
           columnNumber: 17
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "display-4",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-fluid",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 58,
-          columnNumber: 21
+          columnNumber: 17
         }
-      }, "MSC Fish Announcements"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "lead text-muted",
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        className: "jumbotron jumbotron-fluid text-center",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 59,
           columnNumber: 21
         }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container py-5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "display-4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 25
+        }
+      }, "MSC Fish Announcements"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "lead text-muted",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 25
+        }
       }, "A list of all current announcements."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "py-5",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64,
-          columnNumber: 17
+          lineNumber: 67,
+          columnNumber: 21
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
         className: "container",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65,
-          columnNumber: 17
+          lineNumber: 68,
+          columnNumber: 21
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/",
@@ -1028,27 +1206,27 @@ var Announcements = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66,
-          columnNumber: 21
+          lineNumber: 69,
+          columnNumber: 25
         }
       }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/event",
+        to: "/announcement",
         className: "btn custom-button pull-right",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67,
-          columnNumber: 21
+          lineNumber: 70,
+          columnNumber: 25
         }
       }, "Create New Announcement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68,
-          columnNumber: 21
+          lineNumber: 71,
+          columnNumber: 25
         }
-      }, announcements.length > 0 ? allAnnouncements : noAnnouncement))));
+      }, announcements.length > 0 ? allAnnouncements : noAnnouncement)))));
     }
   }]);
 
@@ -1091,7 +1269,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/CheckIn.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/CheckIn.jsx";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -1135,7 +1313,8 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
       email: "",
       referral: "",
       members: [],
-      event_id: ""
+      event_id: "",
+      event_name: ""
     };
     _this.onChange = _this.onChange.bind(_assertThisInitialized(_this));
     _this.onSubmit = _this.onSubmit.bind(_assertThisInitialized(_this));
@@ -1165,6 +1344,22 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
 
         _this2.setState({
           referral: _this2.state.members[0].name
+        });
+      })["catch"](function (error) {
+        return console.log(error.message);
+      });
+      var event_id = this.props.match.params.event_id;
+      console.log(event_id);
+      var url2 = "/api/v1/events/show/".concat(event_id);
+      fetch(url2).then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+
+        throw new Error("Network response was not ok.");
+      }).then(function (response) {
+        _this2.setState({
+          event_name: response.name
         });
       })["catch"](function (error) {
         return console.log(error.message);
@@ -1230,13 +1425,16 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
           email = _this$state2.email,
           referral = _this$state2.referral,
           event_id = _this$state2.event_id;
+      var referral_first_name = referral.split(" ")[0];
+      var referral_last_name = referral.split(" ")[1];
       if (first_name.length == 0) return;
       if (last_name.length == 0) return;
       var body = {
         first_name: first_name,
         last_name: last_name,
         email: email,
-        referral: referral,
+        referral_first_name: referral_first_name,
+        referral_last_name: referral_last_name,
         event_id: event_id
       };
       var token = document.querySelector('meta[name="csrf-token"]').content;
@@ -1264,14 +1462,17 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this5 = this;
 
-      var members = this.state.members;
+      var _this$state3 = this.state,
+          members = _this$state3.members,
+          event_name = _this$state3.event_name;
       var memberOptionItems = members.map(function (members, index) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+          key: index,
           value: members.first_name + " " + members.last_name,
           __self: _this5,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 123,
+            lineNumber: 144,
             columnNumber: 11
           }
         }, members.first_name + " " + members.last_name);
@@ -1281,7 +1482,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126,
+          lineNumber: 147,
           columnNumber: 11
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1289,7 +1490,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127,
+          lineNumber: 148,
           columnNumber: 13
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1297,7 +1498,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128,
+          lineNumber: 149,
           columnNumber: 15
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -1305,15 +1506,15 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129,
+          lineNumber: 150,
           columnNumber: 17
         }
-      }, "Check in to Run The Ramps 2021"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Check in to ", event_name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         onSubmit: this.onSubmit,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 132,
+          lineNumber: 153,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1321,7 +1522,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133,
+          lineNumber: 154,
           columnNumber: 19
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
@@ -1329,7 +1530,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134,
+          lineNumber: 155,
           columnNumber: 21
         }
       }, "Your First Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -1342,7 +1543,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135,
+          lineNumber: 156,
           columnNumber: 21
         }
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1350,7 +1551,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144,
+          lineNumber: 165,
           columnNumber: 19
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
@@ -1358,7 +1559,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145,
+          lineNumber: 166,
           columnNumber: 21
         }
       }, "Your Last Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -1371,7 +1572,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146,
+          lineNumber: 167,
           columnNumber: 21
         }
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1379,7 +1580,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 155,
+          lineNumber: 176,
           columnNumber: 19
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
@@ -1387,7 +1588,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156,
+          lineNumber: 177,
           columnNumber: 21
         }
       }, "Your Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -1400,7 +1601,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157,
+          lineNumber: 178,
           columnNumber: 21
         }
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1408,7 +1609,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166,
+          lineNumber: 187,
           columnNumber: 19
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
@@ -1416,7 +1617,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 167,
+          lineNumber: 188,
           columnNumber: 21
         }
       }, "Referred By"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
@@ -1429,7 +1630,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168,
+          lineNumber: 189,
           columnNumber: 21
         }
       }, memberOptionItems)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -1438,7 +1639,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179,
+          lineNumber: 200,
           columnNumber: 19
         }
       }, "Check In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -1447,7 +1648,7 @@ var CheckIn = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 182,
+          lineNumber: 203,
           columnNumber: 19
         }
       }, "Back to Home")))));
@@ -1474,7 +1675,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _common_LinkButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/LinkButton */ "./app/javascript/components/common/LinkButton.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/Event.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/Event.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1894,7 +2095,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_RemainingTicketsBadge__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/RemainingTicketsBadge */ "./app/javascript/components/common/RemainingTicketsBadge.jsx");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/EventView.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/EventView.jsx",
     _this = undefined;
 
 
@@ -2073,7 +2274,7 @@ function getTime(ts) {
     }
   }, "View Event"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/checkin/".concat(props.id),
-    className: "btn custom-button pull-right",
+    className: "btn custom-button",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2126,7 +2327,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _EventView__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EventView */ "./app/javascript/components/EventView.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/Events.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/Events.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -2194,8 +2395,8 @@ var Events = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this3 = this;
 
-      var events = this.state.events;
-      console.log("EVENTS:", events);
+      var events = this.state.events; // console.log("EVENTS:", events);
+
       var allEvents = events.map(function (event, index) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           key: index,
@@ -2282,7 +2483,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_LinkButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/LinkButton */ "./app/javascript/components/common/LinkButton.jsx");
 /* harmony import */ var _LatestEventsView__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LatestEventsView */ "./app/javascript/components/LatestEventsView.jsx");
 /* harmony import */ var _common_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/Navbar */ "./app/javascript/components/common/Navbar.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/Home.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/Home.jsx",
     _this = undefined;
 
 
@@ -2295,8 +2496,7 @@ var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javas
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       width: "100vw",
-      height: "100vh",
-      backgroundColor: "whitesmoke"
+      height: "100vh"
     },
     __self: _this,
     __source: {
@@ -2379,74 +2579,7 @@ var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javas
       lineNumber: 26,
       columnNumber: 15
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "to-button",
-    to: "/allevents",
-    text: "Events",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 13
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "to-button",
-    to: "/announcements",
-    text: "Announcements",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 13
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "to-button",
-    to: "/checkin/1",
-    text: "Check In",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 13
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "to-button",
-    to: "/memberpage",
-    text: "Member Page",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 13
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "to-button",
-    to: "/admin",
-    text: "Admin Page",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 13
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "index/database_dump.zip",
-    download: "database_dump.zip",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "btn btn-lg custom-button",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 15
-    }
-  }, "Download Database")))));
+  })))));
 });
 
 /***/ }),
@@ -2465,7 +2598,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _AnnouncementView__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AnnouncementView */ "./app/javascript/components/AnnouncementView.jsx");
 /* harmony import */ var _common_EventBadge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/EventBadge */ "./app/javascript/components/common/EventBadge.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/LatestAnnouncementsView.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/LatestAnnouncementsView.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -2534,15 +2667,34 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this3 = this;
 
-      var announcements = this.state.announcements;
-      var allAnnouncements = announcements.map(function (announcement, index) {
+      var announcements = this.state.announcements; // console.log("STATE", this.state);
+      // console.log("announcements: ",announcements);
+      // console.log("announcements.length", announcements.length);
+      // console.log("announcements.length > 5 ?", announcements.length > 5);
+      //console.log()
+
+      var latestAnnouncements = [];
+
+      if (announcements.length > 5) {
+        // console.log("latest announcement", announcements[0]);
+        var latest = 5;
+
+        for (var i = 0; i < latest; i++) {
+          latestAnnouncements.push(announcements[i]);
+        }
+      } else {
+        latestAnnouncements = announcements;
+      }
+
+      var showAnnouncements = latestAnnouncements;
+      var allAnnouncements = showAnnouncements.map(function (announcement, index) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           key: index,
           className: "col-lg-12",
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 30,
+            lineNumber: 47,
             columnNumber: 13
           }
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2550,7 +2702,7 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 31,
+            lineNumber: 48,
             columnNumber: 17
           }
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
@@ -2558,7 +2710,7 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32,
+            lineNumber: 49,
             columnNumber: 21
           }
         }, announcement.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_EventBadge__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -2566,7 +2718,7 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33,
+            lineNumber: 50,
             columnNumber: 21
           }
         }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -2574,7 +2726,7 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 34,
+            lineNumber: 51,
             columnNumber: 21
           }
         }, announcement.content), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -2585,14 +2737,14 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 35,
+            lineNumber: 52,
             columnNumber: 21
           }
         }, " - ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 40,
+            lineNumber: 57,
             columnNumber: 25
           }
         }, announcement.author_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -2600,7 +2752,7 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 41,
+            lineNumber: 58,
             columnNumber: 21
           }
         }, announcement.date_posted), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -2609,24 +2761,24 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 42,
+            lineNumber: 59,
             columnNumber: 21
           }
         }, "View Announcement")));
       });
       var noAnnouncement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "vw-100 vh-50 d-flex align-items-center justify-content-center",
+        className: "d-flex align-items-center justify-content-center",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 67,
           columnNumber: 13
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50,
+          lineNumber: 68,
           columnNumber: 17
         }
       }, "No announcements yet. Why not ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -2634,19 +2786,16 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51,
+          lineNumber: 69,
           columnNumber: 47
         }
       }, "create one")));
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          border: "1px solid #bbb"
-        },
-        className: "announcements-view",
+        className: "announcements-view post-view",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57,
+          lineNumber: 75,
           columnNumber: 13
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2654,7 +2803,7 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58,
+          lineNumber: 76,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
@@ -2662,7 +2811,7 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59,
+          lineNumber: 77,
           columnNumber: 21
         }
       }, " LATEST ANNOUNCEMENTS ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2670,7 +2819,7 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61,
+          lineNumber: 79,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2678,7 +2827,7 @@ var LatestAnnouncementsView = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62,
+          lineNumber: 80,
           columnNumber: 21
         }
       }, announcements.length > 0 ? allAnnouncements : noAnnouncement)));
@@ -2706,7 +2855,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _EventView__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EventView */ "./app/javascript/components/EventView.jsx");
 /* harmony import */ var _Events__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Events */ "./app/javascript/components/Events.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/LatestEventsView.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/LatestEventsView.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -2758,8 +2907,8 @@ var LatestEvents = /*#__PURE__*/function (_React$Component) {
       var url = "/api/v1/events/index";
       fetch(url).then(function (response) {
         if (response.ok) {
-          var res = response.json();
-          console.log("RES", res);
+          var res = response.json(); // console.log("RES", res);
+
           return res;
         }
 
@@ -2777,19 +2926,33 @@ var LatestEvents = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this3 = this;
 
-      console.log("THIS.STATE", this.state);
-      console.log("THIS.STATE.EVENTS", this.state.events);
+      // console.log("THIS.STATE", this.state);
+      // console.log("THIS.STATE.EVENTS", this.state.events);
       var events = this.state.events; //console.log("THIS.STATE", this.state);
+      // console.log("EVENTS:", events);
 
-      console.log("EVENTS:", events);
-      var allEvents = events.map(function (event, index) {
+      var latestEvents = [];
+
+      if (events.length > 5) {
+        // console.log("latest event", events[0]);
+        var latest = 5;
+
+        for (var i = 0; i < latest; i++) {
+          latestEvents.push(events[i]);
+        }
+      } else {
+        latestEvents = events;
+      }
+
+      var showEvents = latestEvents;
+      var allEvents = showEvents.map(function (event, index) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           key: index,
           className: "col-lg-12",
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 37,
+            lineNumber: 49,
             columnNumber: 13
           }
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_EventView__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -2805,24 +2968,24 @@ var LatestEvents = /*#__PURE__*/function (_React$Component) {
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 38,
+            lineNumber: 50,
             columnNumber: 17
           }
         }));
       });
       var noEvent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "vw-100 vh-50 d-flex align-items-center justify-content-center",
+        className: "d-flex align-items-center justify-content-center",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52,
+          lineNumber: 64,
           columnNumber: 13
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53,
+          lineNumber: 65,
           columnNumber: 17
         }
       }, "No events yet. Why not ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -2830,7 +2993,7 @@ var LatestEvents = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54,
+          lineNumber: 66,
           columnNumber: 40
         }
       }, "create one")));
@@ -2839,18 +3002,15 @@ var LatestEvents = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60,
+          lineNumber: 72,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          border: "1px solid #bbb"
-        },
-        className: "events-view",
+        className: "events-view post-view",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62,
+          lineNumber: 74,
           columnNumber: 21
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2858,7 +3018,7 @@ var LatestEvents = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63,
+          lineNumber: 75,
           columnNumber: 25
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
@@ -2866,7 +3026,7 @@ var LatestEvents = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64,
+          lineNumber: 76,
           columnNumber: 29
         }
       }, " LATEST EVENTS ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2874,26 +3034,18 @@ var LatestEvents = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66,
+          lineNumber: 78,
           columnNumber: 25
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12 col-lg-12",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67,
-          columnNumber: 29
-        }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70,
+          lineNumber: 80,
           columnNumber: 37
         }
-      }, events.length > 0 ? allEvents : noEvent))))));
+      }, events.length > 0 ? allEvents : noEvent))));
     }
   }]);
 
@@ -2927,7 +3079,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/MemberPage.jsx";
+/* harmony import */ var _common_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/Navbar */ "./app/javascript/components/common/Navbar.jsx");
+/* harmony import */ var _memberComponents_MemberAnnouncements__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./memberComponents/MemberAnnouncements */ "./app/javascript/components/memberComponents/MemberAnnouncements.jsx");
+/* harmony import */ var _memberComponents_MemberAbout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./memberComponents/MemberAbout */ "./app/javascript/components/memberComponents/MemberAbout.jsx");
+/* harmony import */ var _memberComponents_MemberReferrals__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./memberComponents/MemberReferrals */ "./app/javascript/components/memberComponents/MemberReferrals.jsx");
+/* harmony import */ var _css_MemberPage_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./css/MemberPage.css */ "./app/javascript/components/css/MemberPage.css");
+/* harmony import */ var _css_MemberPage_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_MemberPage_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _common_LinkButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common/LinkButton */ "./app/javascript/components/common/LinkButton.jsx");
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/MemberPage.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -2952,45 +3111,259 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
+
+
+
+
+
 var MemberPage = /*#__PURE__*/function (_React$Component) {
   _inherits(MemberPage, _React$Component);
 
   var _super = _createSuper(MemberPage);
 
   function MemberPage() {
+    var _this;
+
     _classCallCheck(this, MemberPage);
 
-    return _super.call(this);
+    _this = _super.call(this);
+    _this.state = {
+      current_member: {}
+    };
+    return _this;
   }
 
   _createClass(MemberPage, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var url = "/api/v1/members/currentMember";
+      fetch(url).then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+
+        throw new Error("Network response was not ok.");
+      }).then(function (response) {
+        return _this2.setState({
+          current_member: response
+        });
+      })["catch"](function (error) {
+        return console.log(error.message);
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "",
+      var current_member = this.state.current_member;
+      if (current_member == undefined || Object.keys(current_member).length == 0) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-fluid vh-100 row",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11,
+          lineNumber: 38,
           columnNumber: 13
         }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-12 align-self-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39,
+          columnNumber: 17
+        }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "m-auto d-flex justify-content-center",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12,
-          columnNumber: 17
+          lineNumber: 40,
+          columnNumber: 21
         }
-      }, "Hello World!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
-        className: "btn btn-link mt-3",
+      }, "You should not be here!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "m-auto d-flex justify-content-center",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 41,
+          columnNumber: 21
+        }
+      }, "Or you should sign in"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "my-4 d-flex justify-content-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        className: "to-button",
+        to: "/members/auth/google_oauth2",
+        text: "Sign In",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 21
+        }
+      }))));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          width: "100vw",
+          height: "100vh",
+          backgroundColor: "whitesmoke"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51,
           columnNumber: 17
         }
-      }, "Home"));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container d-flex flex-column p-3 h-100",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "my-5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 21
+        }
+      }, current_member.first_name, "'s Dashboard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container mainContent",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row h-100",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col col-md-5 h-100",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "d-flex flex-column justify-content-between h-100",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57,
+          columnNumber: 33
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "p-2 dashItem announcements",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58,
+          columnNumber: 37
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "title",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 41
+        }
+      }, "Announcements"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_memberComponents_MemberAnnouncements__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 41
+        }
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "p-2 dashItem about",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 37
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63,
+          columnNumber: 41
+        }
+      }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_memberComponents_MemberAbout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        member: current_member,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64,
+          columnNumber: 41
+        }
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col col-md-7 h-100",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "p-2 h-100 dashItem referrals",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69,
+          columnNumber: 33
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70,
+          columnNumber: 37
+        }
+      }, "Referrals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_memberComponents_MemberReferrals__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        member_id: current_member.id,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71,
+          columnNumber: 37
+        }
+      }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        className: "to-button",
+        to: "/members/sign_out",
+        text: "Sign Out",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76,
+          columnNumber: 21
+        }
+      })));
     }
   }]);
 
@@ -3013,7 +3386,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/NewMember.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/NewMember.jsx";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -3315,7 +3688,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/AnnouncementForm.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/AnnouncementForm.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -3516,7 +3889,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _common_LinkButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/LinkButton */ "./app/javascript/components/common/LinkButton.jsx");
 /* harmony import */ var _AnnouncementView__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../AnnouncementView */ "./app/javascript/components/AnnouncementView.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/AnnouncementList.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/AnnouncementList.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -3629,7 +4002,7 @@ var AnnouncementList = /*#__PURE__*/function (_React$Component) {
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AnnouncementView__WEBPACK_IMPORTED_MODULE_3__["default"], {
           title: announcement.title,
           content: announcement.content,
-          author: announcement.author_id,
+          author: announcement.member_id,
           date_posted: announcement.date_posted,
           id: announcement.id,
           event_id: announcement.event_id,
@@ -3710,7 +4083,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/EventForm.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/EventForm.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -4040,7 +4413,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _common_LinkButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/LinkButton */ "./app/javascript/components/common/LinkButton.jsx");
 /* harmony import */ var _EventView__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../EventView */ "./app/javascript/components/EventView.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/EventList.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/EventList.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -4230,7 +4603,7 @@ var EventList = /*#__PURE__*/function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/MemberForm.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/MemberForm.jsx";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -4273,11 +4646,14 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
       var _this$state = _this.state,
           first_name = _this$state.first_name,
           last_name = _this$state.last_name,
-          email = _this$state.email;
+          email = _this$state.email,
+          role_id = _this$state.role_id;
+      console.log(_this.state);
       var body = {
         first_name: first_name,
         last_name: last_name,
-        email: email
+        email: email,
+        role_id: role_id
       };
       var token = document.querySelector('meta[name="csrf-token"]').content;
       fetch(url, {
@@ -4296,7 +4672,7 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
       }).then(function (response) {
         return _this.props.history.push("/admin");
       })["catch"](function (error) {
-        return _this.tryUpdate();
+        return console.log(error.message);
       });
     };
 
@@ -4327,7 +4703,9 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       first_name: "",
       last_name: "",
-      email: ""
+      email: "",
+      role_id: "",
+      roles: []
     };
     _this.onChange = _this.onChange.bind(_assertThisInitialized(_this));
     _this.confirmDelete = _this.confirmDelete.bind(_assertThisInitialized(_this));
@@ -4351,7 +4729,8 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
       this.setState({
         first_name: member.first_name,
         last_name: member.last_name,
-        email: member.email
+        email: member.email,
+        role_id: member.role_id
       });
     }
   }, {
@@ -4360,6 +4739,19 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
       var _this2 = this;
 
       var member = this.props.member;
+      var roles = this.props.roles;
+      var roleOptionItems = roles.map(function (role, index) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+          key: index,
+          value: role.id.toString(),
+          __self: _this2,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 91,
+            columnNumber: 13
+          }
+        }, role.name);
+      });
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         className: "form-inline row my-1",
         onSubmit: function onSubmit() {
@@ -4368,7 +4760,7 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87,
+          lineNumber: 94,
           columnNumber: 13
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4376,7 +4768,7 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88,
+          lineNumber: 95,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -4392,7 +4784,7 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89,
+          lineNumber: 96,
           columnNumber: 21
         }
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4400,7 +4792,7 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99,
+          lineNumber: 106,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -4416,7 +4808,7 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100,
+          lineNumber: 107,
           columnNumber: 21
         }
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4424,7 +4816,7 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110,
+          lineNumber: 117,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -4440,16 +4832,41 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111,
+          lineNumber: 118,
           columnNumber: 21
         }
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group col-md-2",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 128,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        name: "role_id",
+        type: "text",
+        id: "role_id",
+        className: "form-control",
+        value: this.state.role_id //For future joining of tables
+        ,
+        style: {
+          width: '100%'
+        },
+        onChange: this.onChange,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 129,
+          columnNumber: 21
+        }
+      }, roleOptionItems)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "submit",
         className: "btn custom-button mx-3",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121,
+          lineNumber: 142,
           columnNumber: 17
         }
       }, "Update"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -4461,7 +4878,7 @@ var MemberForm = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122,
+          lineNumber: 143,
           columnNumber: 17
         }
       }, "Delete"));
@@ -4488,7 +4905,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _common_LinkButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/LinkButton */ "./app/javascript/components/common/LinkButton.jsx");
 /* harmony import */ var _MemberForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MemberForm */ "./app/javascript/components/adminComponents/MemberForm.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/MemberList.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/MemberList.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -4526,12 +4943,90 @@ var MemberList = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this);
     _this.state = {
-      members: []
+      members: [],
+      roles: []
     };
     return _this;
   }
 
   _createClass(MemberList, [{
+    key: "onChange",
+    value: function onChange(evt) {
+      function ToJSON(csv) {
+        var lines = csv.split("\n");
+        var result = [];
+        var headers = lines[0].split(",");
+
+        for (var i = 1; i < lines.length - 1; i++) {
+          var obj = {};
+          var current_line = lines[i].split(",");
+
+          for (var j = 0; j < headers.length; j++) {
+            obj[headers[j]] = current_line[j];
+          }
+
+          result.push(obj);
+        }
+
+        return result;
+      }
+
+      function InOrderFetches(table, json, current) {
+        if (current >= json.length) {
+          return;
+        }
+
+        var url = "/api/v1/".concat(table, "/");
+        var token = document.querySelector('meta[name="csrf-token"]').content;
+        var obj = json[current];
+        var controller_method = "create";
+        fetch(url + controller_method, {
+          method: "POST",
+          headers: {
+            "X-CSRF-Token": token,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(obj)
+        }).then(function (response) {
+          if (response.ok) {
+            InOrderFetches(table, json, current + 1);
+          }
+        });
+      }
+
+      function DeleteAndUpdate(table, json) {
+        var url = "/api/v1/".concat(table, "/");
+        var token = document.querySelector('meta[name="csrf-token"]').content;
+        var i = 0;
+        fetch(url + "remigrate", {
+          method: "POST",
+          headers: {
+            "X-CSRF-Token": token,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(json)
+        }).then(function (response) {
+          if (response.ok) {
+            InOrderFetches(table, json, 0);
+          }
+        });
+      }
+
+      var file = evt.target.files[0];
+
+      if (file.name == "members.csv") {
+        var reader = new FileReader();
+        reader.file = file;
+
+        reader.onload = function (e) {
+          var json_data = ToJSON(e.target.result);
+          DeleteAndUpdate('members', json_data);
+        };
+
+        reader.readAsText(file);
+      }
+    }
+  }, {
     key: "test",
     value: function test(id) {
       console.log(id);
@@ -4559,22 +5054,39 @@ var MemberList = /*#__PURE__*/function (_React$Component) {
       })["catch"](function (error) {
         return console.log(error.message);
       });
+      var url2 = "/api/v1/roles/index";
+      fetch(url2).then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+
+        throw new Error("Network response was not ok.");
+      }).then(function (response) {
+        _this2.setState({
+          roles: response
+        });
+      })["catch"](function (error) {
+        return console.log(error.message);
+      });
     }
   }, {
     key: "render",
     value: function render() {
       var _this3 = this;
 
-      var members = this.state.members;
+      var _this$state = this.state,
+          members = _this$state.members,
+          roles = _this$state.roles;
       var memberForms = members.map(function (member, index) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MemberForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
           key: member.id,
           member: member,
+          roles: roles,
           test: _this3.test,
           __self: _this3,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36,
+            lineNumber: 126,
             columnNumber: 13
           }
         });
@@ -4584,7 +5096,7 @@ var MemberList = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 130,
           columnNumber: 13
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4592,7 +5104,7 @@ var MemberList = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 131,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -4600,7 +5112,7 @@ var MemberList = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
+          lineNumber: 132,
           columnNumber: 17
         }
       }, "Member List"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LinkButton__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4610,15 +5122,42 @@ var MemberList = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 133,
           columnNumber: 17
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        "for": "file",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 134,
+          columnNumber: 17
+        }
+      }, "Upload Members:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "file",
+        id: "file",
+        name: "file",
+        className: "btn custom-button",
+        onChange: this.onChange,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 135,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 135,
+          columnNumber: 114
         }
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 137,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4626,7 +5165,7 @@ var MemberList = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 138,
           columnNumber: 21
         }
       }, "First Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4634,7 +5173,7 @@ var MemberList = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47,
+          lineNumber: 139,
           columnNumber: 21
         }
       }, "Last Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4642,10 +5181,18 @@ var MemberList = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48,
+          lineNumber: 140,
           columnNumber: 21
         }
-      }, "Email")), memberForms);
+      }, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-2 ml-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 141,
+          columnNumber: 21
+        }
+      }, "Role")), memberForms);
     }
   }]);
 
@@ -4669,7 +5216,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _AnnouncementForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AnnouncementForm */ "./app/javascript/components/adminComponents/AnnouncementForm.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/NewAnnouncement.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/NewAnnouncement.jsx";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -4709,7 +5256,7 @@ var NewAnnouncement = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      author_id: 1,
+      member_id: 1,
       event_id: 1,
       title: "",
       content: "",
@@ -4739,13 +5286,13 @@ var NewAnnouncement = /*#__PURE__*/function (_React$Component) {
       e.preventDefault();
       var url = "/api/v1/announcements/create";
       var _this$state = this.state,
-          author_id = _this$state.author_id,
+          member_id = _this$state.member_id,
           event_id = _this$state.event_id,
           title = _this$state.title,
           content = _this$state.content,
           external = _this$state.external;
       var body = {
-        author_id: author_id,
+        member_id: member_id,
         event_id: event_id,
         title: title,
         content: content,
@@ -4841,7 +5388,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _EventForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EventForm */ "./app/javascript/components/adminComponents/EventForm.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/NewEvent.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/NewEvent.jsx";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -5022,7 +5569,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _AnnouncementForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AnnouncementForm */ "./app/javascript/components/adminComponents/AnnouncementForm.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/UpdateAnnouncement.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/UpdateAnnouncement.jsx";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -5061,7 +5608,7 @@ var UpdateAnnouncement = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      author_id: 1,
+      member_id: 1,
       event_id: 1,
       title: "",
       content: "",
@@ -5088,7 +5635,7 @@ var UpdateAnnouncement = /*#__PURE__*/function (_React$Component) {
         throw new Error("Network response was not ok.");
       }).then(function (response) {
         return _this2.setState({
-          author_id: response.author_id,
+          member_id: response.member_id,
           event_id: response.event_id,
           title: response.title,
           content: response.content,
@@ -5117,13 +5664,13 @@ var UpdateAnnouncement = /*#__PURE__*/function (_React$Component) {
       var id = this.props.match.params.id;
       var url = "/api/v1/announcements/update/".concat(id);
       var _this$state = this.state,
-          author_id = _this$state.author_id,
+          member_id = _this$state.member_id,
           event_id = _this$state.event_id,
           title = _this$state.title,
           content = _this$state.content,
           external = _this$state.external;
       var body = {
-        author_id: author_id,
+        member_id: member_id,
         event_id: event_id,
         title: title,
         content: content,
@@ -5219,7 +5766,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _EventForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EventForm */ "./app/javascript/components/adminComponents/EventForm.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/adminComponents/UpdateEvent.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/adminComponents/UpdateEvent.jsx";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -5429,7 +5976,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _GenericBadge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GenericBadge */ "./app/javascript/components/common/GenericBadge.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/common/AttendanceBadge.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/common/AttendanceBadge.jsx",
     _this = undefined;
 
 
@@ -5471,7 +6018,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _GenericBadge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GenericBadge */ "./app/javascript/components/common/GenericBadge.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/common/CalendarBadge.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/common/CalendarBadge.jsx",
     _this = undefined;
 
 
@@ -5513,7 +6060,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _GenericBadge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GenericBadge */ "./app/javascript/components/common/GenericBadge.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/common/EventBadge.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/common/EventBadge.jsx",
     _this = undefined;
 
 
@@ -5546,7 +6093,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return InfoBadge; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/common/GenericBadge.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/common/GenericBadge.jsx";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -5628,7 +6175,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/common/LinkButton.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/common/LinkButton.jsx",
     _this = undefined;
 
 
@@ -5664,7 +6211,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _GenericBadge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GenericBadge */ "./app/javascript/components/common/GenericBadge.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/common/LocaleBadge.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/common/LocaleBadge.jsx",
     _this = undefined;
 
 
@@ -5706,77 +6253,266 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _MSC_FISH_LOGO_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MSC-FISH-LOGO.png */ "./app/javascript/components/MSC-FISH-LOGO.png");
-/* harmony import */ var _MSC_FISH_LOGO_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_MSC_FISH_LOGO_png__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/common/Navbar.jsx",
-    _this = undefined;
+/* harmony import */ var _LinkButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LinkButton */ "./app/javascript/components/common/LinkButton.jsx");
+/* harmony import */ var _MSC_FISH_LOGO_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../MSC-FISH-LOGO.png */ "./app/javascript/components/MSC-FISH-LOGO.png");
+/* harmony import */ var _MSC_FISH_LOGO_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_MSC_FISH_LOGO_png__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/common/Navbar.jsx";
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (typeof call === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "sidebar",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 5
+
+
+var Navbar = /*#__PURE__*/function (_React$Component) {
+  _inherits(Navbar, _React$Component);
+
+  var _super = _createSuper(Navbar);
+
+  function Navbar(props) {
+    var _this;
+
+    _classCallCheck(this, Navbar);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      current_member: {}
+    };
+    return _this;
+  }
+
+  _createClass(Navbar, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var url = "/api/v1/members/currentMember";
+      fetch(url).then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+
+        throw new Error("Network response was not ok.");
+      }).then(function (response) {
+        return _this2.setState({
+          current_member: response
+        });
+      })["catch"](function (error) {
+        return console.log(error.message);
+      });
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _MSC_FISH_LOGO_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "MSC FISH logo",
-    style: {
-      width: '90%',
-      margin: 'auto',
-      paddingTop: '5%',
-      display: 'block'
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 9
+  }, {
+    key: "render",
+    value: function render() {
+      var adminOnly = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "priveleged-navbar-content navbar-content",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+        className: "priveleged-navbar-splitter",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "custom-button lg",
+        to: "/memberpage",
+        text: "Member Page",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 17
+        }
+      }, "Member Page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "custom-button lg",
+        to: "/admin",
+        text: "Admin Page",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 17
+        }
+      }, "Admin Page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "index/database_dump.zip",
+        className: "custom-button lg",
+        download: "database_dump.zip",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 17
+        }
+      }, "Download Database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "custom-button lg",
+        to: "/members/sign_out",
+        text: "Sign Out",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37,
+          columnNumber: 17
+        }
+      }, "Sign Out"));
+      var memberOnly = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "priveleged-navbar-content navbar-content",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+        className: "priveleged-navbar-splitter",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "custom-button lg",
+        to: "/memberpage",
+        text: "Member Page",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 17
+        }
+      }, "Member Page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "custom-button lg",
+        to: "/members/sign_out",
+        text: "Sign Out",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 17
+        }
+      }, "Sign Out"));
+      var everyone = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "priveleged-navbar-content navbar-content",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+        className: "priveleged-navbar-splitter",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "custom-button lg",
+        to: "/members/auth/google_oauth2",
+        text: "Sign In",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 17
+        }
+      }, "Sign In"));
+      var current_member = this.state.current_member;
+      var adminSeg = current_member && current_member.role_id > 2 ? memberOnly : adminOnly;
+      var memberSeg = current_member == undefined || Object.keys(current_member).length == 0 ? everyone : adminSeg;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "sidebar",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _MSC_FISH_LOGO_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+        alt: "MSC FISH logo",
+        style: {
+          width: '90%',
+          margin: 'auto',
+          paddingTop: '5%',
+          display: 'block'
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "basic-navbar-content navbar-content",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "custom-button lg",
+        to: "/",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 21
+        }
+      }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "custom-button lg",
+        to: "/allevents",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63,
+          columnNumber: 21
+        }
+      }, "Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "custom-button lg",
+        to: "/announcements",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64,
+          columnNumber: 21
+        }
+      }, "Announcements")), memberSeg);
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "custom-button lg",
-    to: "/allevents",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 9
-    }
-  }, "Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "custom-button lg",
-    to: "/announcements",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 9
-    }
-  }, "Announcements"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "custom-button lg",
-    to: "/checkin/1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
-    }
-  }, "Check In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "index/database_dump.zip",
-    className: "custom-button lg",
-    download: "database_dump.zip",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 9
-    }
-  }, "Download Database"));
-});
+  }]);
+
+  return Navbar;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Navbar);
 
 /***/ }),
 
@@ -5792,7 +6528,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _GenericBadge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GenericBadge */ "./app/javascript/components/common/GenericBadge.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/common/RemainingTicketsBadge.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/common/RemainingTicketsBadge.jsx",
     _this = undefined;
 
 
@@ -5834,7 +6570,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _GenericBadge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GenericBadge */ "./app/javascript/components/common/GenericBadge.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/common/TypeBadge.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/common/TypeBadge.jsx",
     _this = undefined;
 
 
@@ -5852,6 +6588,35 @@ var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javas
     }
   });
 });
+
+/***/ }),
+
+/***/ "./app/javascript/components/css/MemberPage.css":
+/*!******************************************************!*\
+  !*** ./app/javascript/components/css/MemberPage.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??ref--5-2!./MemberPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/components/css/MemberPage.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 
@@ -5884,6 +6649,470 @@ module.exports = content.locals || {};
 
 /***/ }),
 
+/***/ "./app/javascript/components/memberComponents/MemberAbout.jsx":
+/*!********************************************************************!*\
+  !*** ./app/javascript/components/memberComponents/MemberAbout.jsx ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/memberComponents/MemberAbout.jsx";
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (typeof call === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var MemberAbout = /*#__PURE__*/function (_React$Component) {
+  _inherits(MemberAbout, _React$Component);
+
+  var _super = _createSuper(MemberAbout);
+
+  function MemberAbout(props) {
+    var _this;
+
+    _classCallCheck(this, MemberAbout);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      member: {}
+    };
+    return _this;
+  }
+
+  _createClass(MemberAbout, [{
+    key: "render",
+    value: function render() {
+      var member = this.props.member;
+      console.log(this.props);
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 17
+        }
+      }, "Name: ", member.first_name + " " + member.last_name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 17
+        }
+      }, "Email: ", member.email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 17
+        }
+      }, member.num_referrals, " Referrals"));
+    }
+  }]);
+
+  return MemberAbout;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (MemberAbout);
+
+/***/ }),
+
+/***/ "./app/javascript/components/memberComponents/MemberAnnouncements.jsx":
+/*!****************************************************************************!*\
+  !*** ./app/javascript/components/memberComponents/MemberAnnouncements.jsx ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _common_EventBadge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/EventBadge */ "./app/javascript/components/common/EventBadge.jsx");
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/memberComponents/MemberAnnouncements.jsx";
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (typeof call === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var MemberAnnouncements = /*#__PURE__*/function (_React$Component) {
+  _inherits(MemberAnnouncements, _React$Component);
+
+  var _super = _createSuper(MemberAnnouncements);
+
+  function MemberAnnouncements(props) {
+    var _this;
+
+    _classCallCheck(this, MemberAnnouncements);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      announcements: []
+    };
+    return _this;
+  }
+
+  _createClass(MemberAnnouncements, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var url = "/api/v1/announcements/index/false";
+      fetch(url).then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+
+        throw new Error("Network response was not ok.");
+      }).then(function (response) {
+        return _this2.setState({
+          announcements: response
+        });
+      })["catch"](function (error) {
+        return console.log(error.message);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var announcements = this.state.announcements;
+      var allAnnouncements = announcements.map(function (announcement, index) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
+          className: "col-lg-12",
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "single-post announcement-view",
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+          className: "post-heading",
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 21
+          }
+        }, announcement.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_EventBadge__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          text: announcement.event_id,
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35,
+            columnNumber: 21
+          }
+        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "single-event-description",
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 36,
+            columnNumber: 21
+          }
+        }, announcement.content), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          style: {
+            fontSize: "medium",
+            fontWeight: "lighter"
+          },
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 37,
+            columnNumber: 21
+          }
+        }, " - ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42,
+            columnNumber: 25
+          }
+        }, announcement.member_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "subtitle",
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 43,
+            columnNumber: 21
+          }
+        }, announcement.date_posted), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+          to: "/announcement/".concat(announcement.id),
+          className: "btn custom-button",
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 44,
+            columnNumber: 21
+          }
+        }, "View Announcement")));
+      });
+      var noAnnouncement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "vw-100 vh-50 d-flex align-items-center justify-content-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 17
+        }
+      }, "No announcements!"));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small-padding announcement-scroll-box",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 17
+        }
+      }, announcements.length > 0 ? allAnnouncements : noAnnouncement));
+    }
+  }]);
+
+  return MemberAnnouncements;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (MemberAnnouncements);
+
+/***/ }),
+
+/***/ "./app/javascript/components/memberComponents/MemberReferrals.jsx":
+/*!************************************************************************!*\
+  !*** ./app/javascript/components/memberComponents/MemberReferrals.jsx ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _common_EventBadge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/EventBadge */ "./app/javascript/components/common/EventBadge.jsx");
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/memberComponents/MemberReferrals.jsx";
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (typeof call === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var MemberReferrals = /*#__PURE__*/function (_React$Component) {
+  _inherits(MemberReferrals, _React$Component);
+
+  var _super = _createSuper(MemberReferrals);
+
+  function MemberReferrals(props) {
+    var _this;
+
+    _classCallCheck(this, MemberReferrals);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      referrals: []
+    };
+    return _this;
+  }
+
+  _createClass(MemberReferrals, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var member_id = this.props.member_id;
+      var url = "/api/v1/referrals/index/".concat(member_id);
+      fetch(url).then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+
+        throw new Error("Network response was not ok.");
+      }).then(function (response) {
+        return _this2.setState({
+          referrals: response
+        });
+      })["catch"](function (error) {
+        return console.log(error.message);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var referrals = this.state.referrals;
+      var allReferrals = referrals.map(function (referral, index) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          __self: _this3,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 17
+          }
+        }, referral.attendee_id));
+      });
+      var noReferrals = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40,
+          columnNumber: 17
+        }
+      }, "No referrals!"));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small-padding announcement-scroll-box",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 29
+        }
+      }, "Attendee ID")), referrals.length > 0 ? allReferrals : noReferrals)));
+    }
+  }]);
+
+  return MemberReferrals;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (MemberReferrals);
+
+/***/ }),
+
 /***/ "./app/javascript/components/util/Tab.jsx":
 /*!************************************************!*\
   !*** ./app/javascript/components/util/Tab.jsx ***!
@@ -5897,7 +7126,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/util/Tab.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/util/Tab.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -6001,7 +7230,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Tab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Tab */ "./app/javascript/components/util/Tab.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/components/util/Tabs.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/components/util/Tabs.jsx";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -6140,7 +7369,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_js_bootstrap_bundle_min__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap/dist/js/bootstrap.bundle.min */ "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js");
 /* harmony import */ var bootstrap_dist_js_bootstrap_bundle_min__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_js_bootstrap_bundle_min__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/App */ "./app/javascript/components/App.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/packs/Index.jsx",
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/packs/Index.jsx",
     _this = undefined;
 
 
@@ -6189,7 +7418,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_NewMember__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/NewMember */ "./app/javascript/components/NewMember.jsx");
 /* harmony import */ var _components_adminComponents_UpdateEvent__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/adminComponents/UpdateEvent */ "./app/javascript/components/adminComponents/UpdateEvent.jsx");
 /* harmony import */ var _components_adminComponents_UpdateAnnouncement__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/adminComponents/UpdateAnnouncement */ "./app/javascript/components/adminComponents/UpdateAnnouncement.jsx");
-var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javascript/routes/Index.jsx";
+var _jsxFileName = "/Users/reomatsuda/MSCFISHProgramAssistant/app/javascript/routes/Index.jsx";
 
 
 
@@ -6341,9 +7570,9 @@ var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javas
     columnNumber: 7
   }
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-  path: "/admin",
+  path: "/memberpage/:member_id",
   exact: true,
-  component: _components_AdminPage__WEBPACK_IMPORTED_MODULE_12__["default"],
+  component: _components_MemberPage__WEBPACK_IMPORTED_MODULE_11__["default"],
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -6351,7 +7580,7 @@ var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javas
     columnNumber: 7
   }
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-  path: "/admin/:activeTab",
+  path: "/admin",
   exact: true,
   component: _components_AdminPage__WEBPACK_IMPORTED_MODULE_12__["default"],
   __self: undefined,
@@ -6361,13 +7590,23 @@ var _jsxFileName = "/home/treydinges/Documents/MSCFISHProgramAssistant/app/javas
     columnNumber: 7
   }
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  path: "/admin/:activeTab",
+  exact: true,
+  component: _components_AdminPage__WEBPACK_IMPORTED_MODULE_12__["default"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 37,
+    columnNumber: 7
+  }
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
   path: "/member/create",
   exact: true,
   component: _components_NewMember__WEBPACK_IMPORTED_MODULE_13__["default"],
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37,
+    lineNumber: 38,
     columnNumber: 7
   }
 }))));
@@ -9305,6 +10544,24 @@ module.exports = content.locals || {};
   });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/components/css/MemberPage.css":
+/*!**************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/components/css/MemberPage.css ***!
+  \**************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".dashItem {\n    border: 5px solid #ddd;\n    border-radius: 30px;\n}\n\n.mainContent {\n    height: 80%;\n}\n\n.announcements {\n    height: 70%;\n    max-height: 70%;\n    display: flex;\n    flex-flow: column;\n}\n\n.about {\n    height: 25%;\n}\n\n.announcement-scroll-box{\n    flex-grow: 1;\n    overflow-y: auto;\n}", "",{"version":3,"sources":["MemberPage.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,WAAW;IACX,eAAe;IACf,aAAa;IACb,iBAAiB;AACrB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,YAAY;IACZ,gBAAgB;AACpB","file":"MemberPage.css","sourcesContent":[".dashItem {\n    border: 5px solid #ddd;\n    border-radius: 30px;\n}\n\n.mainContent {\n    height: 80%;\n}\n\n.announcements {\n    height: 70%;\n    max-height: 70%;\n    display: flex;\n    flex-flow: column;\n}\n\n.about {\n    height: 25%;\n}\n\n.announcement-scroll-box{\n    flex-grow: 1;\n    overflow-y: auto;\n}"]}]);
+// Exports
+module.exports = exports;
+
 
 /***/ }),
 
@@ -55752,4 +57009,4 @@ module.exports = function (module) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=Index-452b5a95b3c943882eef.js.map
+//# sourceMappingURL=Index-965287b4da7cde073173.js.map
