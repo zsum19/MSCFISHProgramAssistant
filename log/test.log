@@ -35018,3 +35018,1387 @@ Processing by HomepageController#index as ZIP
 Sent file /home/treydinges/Documents/MSCFISHProgramAssistant/public/downloads/database_dump.zip (5.1ms)
 Completed 200 OK in 440ms (ActiveRecord: 87.0ms | Allocations: 32673)
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 04:50:15 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 3611)
+Completed 200 OK in 67ms (Views: 41.6ms | ActiveRecord: 0.0ms | Allocations: 7203)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:50:16 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 298)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcement" for 127.0.0.1 at 2021-04-12 04:50:17 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcement"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 2875)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 3283)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:50:17 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/event" for 127.0.0.1 at 2021-04-12 04:50:18 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"event"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 2875)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms | Allocations: 3280)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:50:18 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 04:50:19 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 2874)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:50:19 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 04:50:20 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 2874)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms | Allocations: 3271)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:50:20 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 04:50:20 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 04:50:20 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (2.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 82ms (Views: 31.5ms | ActiveRecord: 26.6ms | Allocations: 12063)
+Completed 200 OK in 118ms (Views: 34.3ms | ActiveRecord: 51.7ms | Allocations: 15300)
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-04-12 04:50:21 -0500
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mAttendee Load (0.4ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mEventattendance Load (8.2ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mReferral Load (1.9ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+Sent file /home/treydinges/Documents/MSCFISHProgramAssistant/public/downloads/database_dump.zip (5.7ms)
+Completed 200 OK in 296ms (ActiveRecord: 41.4ms | Allocations: 20565)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 04:55:09 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 3611)
+Completed 200 OK in 83ms (Views: 60.1ms | ActiveRecord: 0.0ms | Allocations: 7208)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:55:10 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 298)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcement" for 127.0.0.1 at 2021-04-12 04:55:11 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcement"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 2875)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms | Allocations: 3283)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:55:11 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+Started GET "/event" for 127.0.0.1 at 2021-04-12 04:55:12 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"event"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 2875)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 3276)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:55:12 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 243)
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 04:55:13 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 2874)
+Completed 200 OK in 73ms (Views: 71.9ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:55:13 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 04:55:14 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 2874)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:55:14 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 04:55:14 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 04:55:14 -0500
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (6.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 99ms (Views: 28.0ms | ActiveRecord: 38.2ms | Allocations: 11916)
+Completed 200 OK in 115ms (Views: 43.4ms | ActiveRecord: 67.6ms | Allocations: 14072)
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-04-12 04:55:15 -0500
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mEvent Load (8.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mAttendee Load (0.4ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mEventattendance Load (0.3ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mReferral Load (0.4ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+Sent file /home/treydinges/Documents/MSCFISHProgramAssistant/public/downloads/database_dump.zip (4.6ms)
+Completed 200 OK in 461ms (ActiveRecord: 61.1ms | Allocations: 20590)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 04:57:36 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 3611)
+Completed 200 OK in 70ms (Views: 45.9ms | ActiveRecord: 0.0ms | Allocations: 7208)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:57:38 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 298)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcement" for 127.0.0.1 at 2021-04-12 04:57:38 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcement"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 2875)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.0ms | Allocations: 3283)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:57:39 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/event" for 127.0.0.1 at 2021-04-12 04:57:39 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"event"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 2875)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.0ms | Allocations: 3276)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:57:40 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 243)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 04:57:40 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 2874)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:57:41 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 04:57:41 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.4ms | Allocations: 2874)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 04:57:42 -0500
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 04:57:42 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 04:57:42 -0500
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 241)
+  [1m[36mAnnouncement Load (1.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 122ms (Views: 45.6ms | ActiveRecord: 25.0ms | Allocations: 12542)
+Completed 200 OK in 154ms (Views: 60.7ms | ActiveRecord: 86.3ms | Allocations: 15779)
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-04-12 04:57:42 -0500
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+Sent file /home/treydinges/Documents/MSCFISHProgramAssistant/public/downloads/you_should_not_have_this.zip (7.3ms)
+Completed 200 OK in 83ms (ActiveRecord: 0.0ms | Allocations: 3376)
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcements" for 127.0.0.1 at 2021-04-12 05:00:11 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.1ms | Allocations: 3612)
+Completed 200 OK in 194ms (Views: 127.6ms | ActiveRecord: 0.0ms | Allocations: 7214)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:13 -0500
+Started GET "/api/v1/announcements/index/true" for 127.0.0.1 at 2021-04-12 05:00:13 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 298)
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"true"}
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+Completed 200 OK in 90ms (Views: 50.5ms | ActiveRecord: 31.4ms | Allocations: 5858)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcements" for 127.0.0.1 at 2021-04-12 05:00:14 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 2875)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 3283)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:15 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 243)
+Started GET "/api/v1/announcements/index/true" for 127.0.0.1 at 2021-04-12 05:00:15 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"true"}
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 1364)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcements" for 127.0.0.1 at 2021-04-12 05:00:16 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 2875)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 3276)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:16 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/announcements/index/true" for 127.0.0.1 at 2021-04-12 05:00:16 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"true"}
+  [1m[36mAnnouncement Load (9.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+Completed 200 OK in 22ms (Views: 6.0ms | ActiveRecord: 9.1ms | Allocations: 1426)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/checkin/1" for 127.0.0.1 at 2021-04-12 05:00:19 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 2874)
+Completed 200 OK in 45ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:00:19 -0500
+Processing by Api::V1::MembersController#index as */*
+Started GET "/api/v1/events/show/1" for 127.0.0.1 at 2021-04-12 05:00:19 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (3.0ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 65ms (Views: 27.9ms | ActiveRecord: 29.1ms | Allocations: 7761)
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 98ms (Views: 31.3ms | ActiveRecord: 38.2ms | Allocations: 11281)
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (22.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/checkin/1" for 127.0.0.1 at 2021-04-12 05:00:20 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 2875)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms | Allocations: 3274)
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:00:20 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 2296)
+Started GET "/api/v1/events/show/1" for 127.0.0.1 at 2021-04-12 05:00:20 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (7.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 7.7ms | Allocations: 1109)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/checkin/1" for 127.0.0.1 at 2021-04-12 05:00:21 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 2874)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.0ms | Allocations: 3272)
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:00:21 -0500
+Started GET "/api/v1/events/show/1" for 127.0.0.1 at 2021-04-12 05:00:21 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 484)
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 25ms (Views: 6.5ms | ActiveRecord: 0.6ms | Allocations: 2295)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/checkin/1" for 127.0.0.1 at 2021-04-12 05:00:23 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 2874)
+Completed 200 OK in 48ms (Views: 41.4ms | ActiveRecord: 0.0ms | Allocations: 3271)
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:00:23 -0500
+Processing by Api::V1::MembersController#index as */*
+Started GET "/api/v1/events/show/1" for 127.0.0.1 at 2021-04-12 05:00:23 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (4.8ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 4.8ms | Allocations: 3230)
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 2722)
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/allevents" for 127.0.0.1 at 2021-04-12 05:00:25 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"allevents"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 2874)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:26 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:00:26 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (4.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 4.4ms | Allocations: 1753)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/allevents" for 127.0.0.1 at 2021-04-12 05:00:26 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"allevents"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 2874)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:27 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:00:27 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (4.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 4.6ms | Allocations: 1727)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/allevents" for 127.0.0.1 at 2021-04-12 05:00:27 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"allevents"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.3ms | Allocations: 2874)
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:28 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:00:28 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 2.0ms | Allocations: 1727)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/allevents" for 127.0.0.1 at 2021-04-12 05:00:30 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"allevents"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 2874)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:31 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:00:31 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 2.1ms | Allocations: 1727)
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:00:33 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 2874)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 3273)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:33 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 05:00:33 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:00:33 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (16.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 24ms (Views: 6.5ms | ActiveRecord: 16.1ms | Allocations: 3394)
+  [1m[36mEvent Load (16.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 22ms (Views: 4.7ms | ActiveRecord: 16.7ms | Allocations: 3999)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:00:35 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 2874)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:35 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:00:35 -0500
+Processing by Api::V1::EventsController#index as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 05:00:35 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (10.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 22ms (Views: 10.4ms | ActiveRecord: 10.8ms | Allocations: 2777)
+  [1m[36mAnnouncement Load (16.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 28ms (Views: 10.5ms | ActiveRecord: 16.5ms | Allocations: 3997)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:36 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:00:36 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (5.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 5.1ms | Allocations: 1717)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:00:36 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 2874)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:36 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 05:00:36 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:00:36 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (21.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 28ms (Views: 5.2ms | ActiveRecord: 21.5ms | Allocations: 3342)
+  [1m[36mEvent Load (14.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 34ms (Views: 18.8ms | ActiveRecord: 14.5ms | Allocations: 4641)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:37 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/announcements/index/true" for 127.0.0.1 at 2021-04-12 05:00:37 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"true"}
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.3ms | Allocations: 1362)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:00:37 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 2874)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:38 -0500
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 05:00:38 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:00:38 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (11.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 25ms (Views: 11.8ms | ActiveRecord: 11.8ms | Allocations: 3778)
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 1.5ms | Allocations: 4016)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 05:00:39 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 2874)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:39 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcement" for 127.0.0.1 at 2021-04-12 05:00:40 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcement"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 2874)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms | Allocations: 3272)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:40 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/event" for 127.0.0.1 at 2021-04-12 05:00:40 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"event"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 2874)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:41 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 05:00:42 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 2874)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:00:42 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (28.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (8.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (7.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (4.0ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (8.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (11.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (21.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (2.7ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (1.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (16.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:00:43 -0500
+Processing by Api::V1::MembersController#index as HTML
+  [1m[36mMember Load (2.6ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 12ms (Views: 7.8ms | ActiveRecord: 2.6ms | Allocations: 2299)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/members/create" for 127.0.0.1 at 2021-04-12 05:00:43 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/members/create"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 2893)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms | Allocations: 3295)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/members/show" for 127.0.0.1 at 2021-04-12 05:00:43 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/members/show"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 2888)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.0ms | Allocations: 3288)
+  [1m[36mTRANSACTION (8.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/members/destroy" for 127.0.0.1 at 2021-04-12 05:00:43 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/members/destroy"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 2888)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 3288)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/referrals/index" for 127.0.0.1 at 2021-04-12 05:00:44 -0500
+Processing by Api::V1::ReferralsController#index as HTML
+  [1m[36mReferral Load (2.3ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."created_at" DESC[0m
+Completed 200 OK in 24ms (Views: 2.7ms | ActiveRecord: 15.3ms | Allocations: 1442)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/referrals/create" for 127.0.0.1 at 2021-04-12 05:00:44 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/referrals/create"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 2888)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 3288)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/referrals/show" for 127.0.0.1 at 2021-04-12 05:00:44 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/referrals/show"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 2888)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 3289)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/referrals/destroy" for 127.0.0.1 at 2021-04-12 05:00:44 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/referrals/destroy"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2888)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 3288)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (10.7ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 1], ["first_name", "test1"], ["last_name", "test1"], ["email", "test@test.com"], ["created_at", "2021-04-12 10:00:44.242301"], ["updated_at", "2021-04-12 10:00:44.242301"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:00:44 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 2888)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 3223)
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:00:44 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 2883)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.0ms | Allocations: 3218)
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcements" for 127.0.0.1 at 2021-04-12 05:02:51 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 90.0ms | Allocations: 3611)
+Completed 200 OK in 217ms (Views: 155.4ms | ActiveRecord: 0.0ms | Allocations: 7203)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:02:54 -0500
+Started GET "/api/v1/announcements/index/true" for 127.0.0.1 at 2021-04-12 05:02:54 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 29ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 298)
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"true"}
+  [1m[36mAnnouncement Load (2.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+Completed 200 OK in 115ms (Views: 66.1ms | ActiveRecord: 45.8ms | Allocations: 5873)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcements" for 127.0.0.1 at 2021-04-12 05:02:56 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 2875)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.0ms | Allocations: 3283)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:02:57 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/announcements/index/true" for 127.0.0.1 at 2021-04-12 05:02:57 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"true"}
+  [1m[36mAnnouncement Load (2.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 2.8ms | Allocations: 1364)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcements" for 127.0.0.1 at 2021-04-12 05:02:57 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcements"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 2874)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:02:58 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/announcements/index/true" for 127.0.0.1 at 2021-04-12 05:02:58 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"true"}
+  [1m[36mAnnouncement Load (3.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+Completed 200 OK in 17ms (Views: 9.4ms | ActiveRecord: 3.0ms | Allocations: 1374)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/checkin/1" for 127.0.0.1 at 2021-04-12 05:03:01 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 2875)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 3274)
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:03:02 -0500
+Processing by Api::V1::MembersController#index as */*
+Started GET "/api/v1/events/show/1" for 127.0.0.1 at 2021-04-12 05:03:02 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (7.4ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 70ms (Views: 43.6ms | ActiveRecord: 23.9ms | Allocations: 7760)
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 108ms (Views: 0.6ms | ActiveRecord: 58.2ms | Allocations: 11267)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/checkin/1" for 127.0.0.1 at 2021-04-12 05:03:02 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 2875)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 3274)
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:03:03 -0500
+Processing by Api::V1::MembersController#index as */*
+Started GET "/api/v1/events/show/1" for 127.0.0.1 at 2021-04-12 05:03:03 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (5.7ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 19ms (Views: 12.4ms | ActiveRecord: 5.7ms | Allocations: 3230)
+  [1m[36mEvent Load (4.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 0.8ms | ActiveRecord: 4.4ms | Allocations: 2731)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/checkin/1" for 127.0.0.1 at 2021-04-12 05:03:04 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.5ms | Allocations: 2874)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/events/show/1" for 127.0.0.1 at 2021-04-12 05:03:05 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"1"}
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:03:05 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mEvent Load (20.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.9ms | ActiveRecord: 20.0ms | Allocations: 2039)
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 0.6ms | Allocations: 2810)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/checkin/1" for 127.0.0.1 at 2021-04-12 05:03:07 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"checkin/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 2874)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms | Allocations: 3273)
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:03:07 -0500
+Processing by Api::V1::MembersController#index as */*
+Started GET "/api/v1/events/show/1" for 127.0.0.1 at 2021-04-12 05:03:07 -0500
+Processing by Api::V1::EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (7.0ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 28ms (Views: 20.2ms | ActiveRecord: 7.0ms | Allocations: 3230)
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 2722)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/allevents" for 127.0.0.1 at 2021-04-12 05:03:10 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"allevents"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 2874)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:11 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:03:11 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (5.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 5.2ms | Allocations: 1753)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/allevents" for 127.0.0.1 at 2021-04-12 05:03:12 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"allevents"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.9ms | Allocations: 2874)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:13 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:03:13 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.3ms | Allocations: 1727)
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/allevents" for 127.0.0.1 at 2021-04-12 05:03:14 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"allevents"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.1ms | Allocations: 2874)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:15 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:03:15 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (2.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 2.4ms | Allocations: 1717)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/allevents" for 127.0.0.1 at 2021-04-12 05:03:17 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"allevents"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 2874)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:17 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:03:17 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (7.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 7.5ms | Allocations: 1718)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:03:20 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 2874)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 3273)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:20 -0500
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 05:03:20 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:03:20 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1727)
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mAnnouncement Load (5.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 11ms (Views: 4.1ms | ActiveRecord: 5.6ms | Allocations: 2810)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:03:21 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 2875)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms | Allocations: 3271)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:22 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:03:22 -0500
+Processing by Api::V1::EventsController#index as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 05:03:22 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (5.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 18ms (Views: 11.6ms | ActiveRecord: 5.1ms | Allocations: 2744)
+  [1m[36mAnnouncement Load (19.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 33ms (Views: 13.0ms | ActiveRecord: 19.4ms | Allocations: 3989)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:22 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:03:22 -0500
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mEvent Load (5.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 5.0ms | Allocations: 1727)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:03:23 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 2874)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:23 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:03:23 -0500
+Processing by Api::V1::EventsController#index as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 05:03:23 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (9.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 30ms (Views: 19.0ms | ActiveRecord: 9.8ms | Allocations: 2777)
+  [1m[36mAnnouncement Load (16.1ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 30ms (Views: 13.5ms | ActiveRecord: 16.1ms | Allocations: 4030)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:24 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/announcements/index/true" for 127.0.0.1 at 2021-04-12 05:03:24 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"true"}
+  [1m[36mAnnouncement Load (2.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+Completed 200 OK in 23ms (Views: 3.2ms | ActiveRecord: 2.2ms | Allocations: 1362)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:03:24 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2874)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:25 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-12 05:03:25 -0500
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-12 05:03:25 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (4.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+Completed 200 OK in 10ms (Views: 4.3ms | ActiveRecord: 4.6ms | Allocations: 2606)
+  [1m[36mEvent Load (7.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 29ms (Views: 21.0ms | ActiveRecord: 7.2ms | Allocations: 4002)
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 05:03:26 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 2874)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:26 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/announcement" for 127.0.0.1 at 2021-04-12 05:03:26 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"announcement"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 2874)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 3272)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:27 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/event" for 127.0.0.1 at 2021-04-12 05:03:27 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"event"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 2874)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:28 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin" for 127.0.0.1 at 2021-04-12 05:03:28 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 2874)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.0ms | Allocations: 3270)
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-12 05:03:28 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (10.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (16.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (15.5ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Load (19.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (8.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (13.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (11.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (16.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (2.7ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (14.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (2.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (3.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Load (9.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-12 05:03:29 -0500
+Processing by Api::V1::MembersController#index as HTML
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.5ms | Allocations: 2299)
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/members/create" for 127.0.0.1 at 2021-04-12 05:03:29 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/members/create"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 2893)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 3295)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/members/show" for 127.0.0.1 at 2021-04-12 05:03:29 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/members/show"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 2888)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 3288)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/members/destroy" for 127.0.0.1 at 2021-04-12 05:03:29 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/members/destroy"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 2888)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 3288)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/referrals/index" for 127.0.0.1 at 2021-04-12 05:03:29 -0500
+Processing by Api::V1::ReferralsController#index as HTML
+  [1m[36mReferral Load (0.5ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."created_at" DESC[0m
+Completed 200 OK in 19ms (Views: 1.6ms | ActiveRecord: 14.3ms | Allocations: 1442)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/referrals/create" for 127.0.0.1 at 2021-04-12 05:03:29 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/referrals/create"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 2889)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 3290)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/referrals/show" for 127.0.0.1 at 2021-04-12 05:03:29 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/referrals/show"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2888)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 3288)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/referrals/destroy" for 127.0.0.1 at 2021-04-12 05:03:30 -0500
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"api/v1/referrals/destroy"}
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2888)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 3288)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Create (0.9ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 1], ["first_name", "test1"], ["last_name", "test1"], ["email", "test@test.com"], ["created_at", "2021-04-12 10:03:30.042517"], ["updated_at", "2021-04-12 10:03:30.042517"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:03:30 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2888)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 3223)
+Started GET "/" for 127.0.0.1 at 2021-04-12 05:03:30 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2883)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 3218)
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[31mROLLBACK[0m

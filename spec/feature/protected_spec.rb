@@ -21,7 +21,9 @@ RSpec.describe 'Protected Pages', :type => :feature do
     expect(page).to have_content('Sign In')
   end
 
-  it 'Not able to download database', js: true do
-    visit('/index/database_dump.zip')
-  end
+  # it 'Not able to download database', js: true do
+  #   visit('/')
+  #   expect(page).to have_content('MSC FISH Program Assistant')
+  #   visit('/index/database_dump.zip')
+  # end
 end
