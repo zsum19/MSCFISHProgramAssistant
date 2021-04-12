@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import JSZip, { forEach } from "jszip";
 
 import LinkButton from "./common/LinkButton";
 import MemberList from "./adminComponents/MemberList";
@@ -15,119 +14,6 @@ import AnnouncementList from "./adminComponents/AnnouncementList";
 class AdminPage extends React.Component {
   constructor() {
     super();
-  }
-
-  onChange(evt) {
-    function ToJSON(csv) {
-      var lines = csv.split("\n");
-      var result = [];
-      var headers = lines[0].split(",");
-      
-      for (var i = 1; i < lines.length-1; i++) {
-        var obj = {};
-        var current_line = lines[i].split(",");
-
-        for (var j = 0; j < headers.length; j++) {
-          obj[headers[j]] = current_line[j];
-        }
-
-        result.push(obj);
-      }
-
-      return result;
-    }
-
-    function InOrderFetches(table, json, current) {
-      if (current >= json.length) {
-        return new Promise((resolve, reject) => {
-          if (1==1) {
-            resolve("done");
-          } else {
-            reject("error");
-          }
-        });
-      }
-      const url = `/api/v1/${table}/`;
-      const token = document.querySelector('meta[name="csrf-token"]').content;
-      
-      var obj = json[current];
-      var controller_method = `create`;
-
-      if (table == 'attendee') {
-        controller_method = `create_this_only`;
-      }
-      
-      fetch(url + controller_method, {
-        method: "POST",
-        headers: {
-          "X-CSRF-Token": token,
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(obj)
-      })
-        .then(response => {
-          if (response.ok) {
-            return InOrderFetches(table, json, current+1);
-          }
-        })
-    }
-
-    function DeleteAndUpdate(table, json) {
-      const url = `/api/v1/${table}/`;
-      const token = document.querySelector('meta[name="csrf-token"]').content;
-      var i = 0;
-      fetch(url + `remigrate`, {
-          method: "POST",
-          headers: {
-            "X-CSRF-Token": token,
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(json)
-        })
-          .then(response => {
-            if (response.ok) {
-              return InOrderFetches(table, json, 0);
-            }
-          })
-    }
-
-    function handleFile(f) {
-      JSZip.loadAsync(f).then(async function(zip) {
-        // zip.file("events.csv").async("string").then(function (data) {
-        //   var json_data = ToJSON(data);
-        //   DeleteAndUpdate('events', json_data);
-        // });
-        // zip.file("roles.csv").async("string").then(function (data) {
-        //   var json_data = ToJSON(data);
-        //   DeleteAndUpdate('roles', json_data);
-        // });
-        zip.file("members.csv").async("string").then(function (data) {
-          var json_data = ToJSON(data);
-          DeleteAndUpdate('members', json_data);
-        });
-        // zip.file("announcements.csv").async("string").then(function (data) {
-        //   var json_data = ToJSON(data);
-        //   DeleteAndUpdate('announcements', json_data);
-        // });
-        // zip.file("attendees.csv").async("string").then(function (data) {
-        //   var json_data = ToJSON(data);
-        //   DeleteAndUpdate('attendees', json_data);
-        // });
-        // zip.file("eventattendances.csv").async("string").then(function (data) {
-        //   var json_data = ToJSON(data);
-        //   DeleteAndUpdate('eventattendances', json_data);
-        // });
-        // zip.file("referrals.csv").async("string").then(function (data) {
-        //   var json_data = ToJSON(data);
-        //   DeleteAndUpdate('referrals', json_data);
-        // });
-      });
-    }
-
-    var files = evt.target.files;
-    for (var i = 0; i < files.length; i++) {
-      handleFile(files[i]);
-    }
   }
 
   componentDidMount() {
@@ -157,13 +43,9 @@ class AdminPage extends React.Component {
                     <Link to="/" className="btn btn-link mt-3">Home</Link>
                     <LinkButton className =  "to-button" to = "/allevents" text = "Events"></LinkButton>
                     <LinkButton className =  "to-button" to = "/announcements" text = "Announcements"></LinkButton>
-                    <div>
-                        <a href="index/database_dump.zip" download = "database_dump.zip">
-                            <button className = "btn btn-lg custom-button">Download Database</button>
-                        </a>
-
-                        <input type="file" id="file" name="file" multiple className="btn custom-button" onChange={this.onChange}/><br/>
-                    </div>
+                    <a href="index/database_dump.zip" download = "database_dump.zip">
+                      <button className = "btn btn-lg custom-button">Download Database</button>
+                    </a>
                 </div>
             </div>
         </div>
