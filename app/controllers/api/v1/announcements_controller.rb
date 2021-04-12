@@ -4,11 +4,11 @@ module Api
   module V1
     class AnnouncementsController < ApplicationController
       def index
-        if(params.has_key?(:external))
-          announcement = Announcement.where(:external => true?(params[:external]))
-        else
-          announcement = Announcement.all.order(created_at: :desc)
-        end
+        announcement = if params.key?(:external)
+                         Announcement.where(external: true?(params[:external]))
+                       else
+                         Announcement.all.order(created_at: :desc)
+                       end
 
         render json: announcement
       end
@@ -57,7 +57,7 @@ module Api
       private
 
       def true?(obj)
-        obj.to_s.downcase == "true"
+        obj.to_s.casecmp('true').zero?
       end
 
       def announcement_params

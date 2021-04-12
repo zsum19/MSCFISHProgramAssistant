@@ -1,8 +1,15 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     class RolesController < ApplicationController
       def create
         role = Role.create!(role_params)
+        if role
+          render json: role
+        else
+          render json: role.errors
+        end
       end
 
       def index
@@ -10,15 +17,15 @@ module Api
         render json: role
       end
 
-#       def remigrate
-#         ActiveRecord::Migration.drop_table(:roles, force: :cascade)
-#         ActiveRecord::Migration.create_table(:roles)
-#         ActiveRecord::Migration.add_column(:roles, :name, :string)
-#         ActiveRecord::Migration.add_index(:roles, :name, unique: true)
-#         ActiveRecord::Migration.add_column(:roles, :description, :text)
-#         ActiveRecord::Migration.add_column(:roles, :created_at, :timestamp)
-#         ActiveRecord::Migration.add_column(:roles, :updated_at, :timestamp)
-#       end
+      # def remigrate
+      #   ActiveRecord::Migration.drop_table(:roles, force: :cascade)
+      #   ActiveRecord::Migration.create_table(:roles)
+      #   ActiveRecord::Migration.add_column(:roles, :name, :string)
+      #   ActiveRecord::Migration.add_index(:roles, :name, unique: true)
+      #   ActiveRecord::Migration.add_column(:roles, :description, :text)
+      #   ActiveRecord::Migration.add_column(:roles, :created_at, :timestamp)
+      #   ActiveRecord::Migration.add_column(:roles, :updated_at, :timestamp)
+      # end
 
       private
 

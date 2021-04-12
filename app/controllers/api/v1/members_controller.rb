@@ -34,7 +34,8 @@ module Api
         ActiveRecord::Migration.add_column(:members, :first_name, :string, null: false)
         ActiveRecord::Migration.add_column(:members, :last_name, :string, null: false)
         ActiveRecord::Migration.add_column(:members, :email, :string, null: false)
-        ActiveRecord::Migration.add_column(:members, :num_referrals, :integer, default: 0 , null: false)
+        ActiveRecord::Migration.add_column(:members, :num_referrals, :integer, default: 0,
+                                                                               null: false)
         ActiveRecord::Migration.add_column(:members, :created_at, :timestamp)
         ActiveRecord::Migration.add_column(:members, :updated_at, :timestamp)
       end

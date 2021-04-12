@@ -11,7 +11,8 @@ class Event < ApplicationRecord
   validates :num_checked_in, presence: true
 
   def self.to_csv
-    attributes = %w[id name location event_type max_size tickets_sold num_checked_in date description]
+    attributes = %w[id name location event_type max_size tickets_sold num_checked_in date
+                    description]
     CSV.generate(headers: true) do |csv|
       csv << attributes
 
