@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   # devise_for :members
   devise_for :members, controllers: { omniauth_callbacks: 'members/omniauth_callbacks' }
-  # devise_scope :member do
-  #   get 'members/sign_in', to: 'members/sessions#new', as: :new_admin_session
-  #   get 'members/sign_out', to: 'members/sessions#destroy', as: :destroy_admin_session
-  # end
+  devise_scope :member do
+    # get 'members/sign_in', to: 'members/sessions#new', as: :new_admin_session
+    get 'members/sign_out', to: 'members/sessions#destroy', as: :destroy_member_session
+  end
   namespace :api do
     namespace :v1 do
       get 'events/index'

@@ -4,10 +4,25 @@ require 'zip'
 
 class HomepageController < ApplicationController
   def index
-
     respond_to do |format|
       format.html
       format.zip do
+        if !current_member
+          current_directory = Dir.pwd
+          zipname = current_directory + '/public/downloads/you_should_not_have_this.zip'
+          File.delete(zipname) if File.exist?(zipname)
+    
+          ::Zip::File.open(zipname, ::Zip::File::CREATE) do |zipfile|
+              file = File.open('README.txt', 'w')
+              File.write('README.txt', "SECURITY BREACH")
+              file.close
+              zipfile.add('README.txt', file)
+          end
+    
+          send_file zipname
+          return
+        end
+        
         @announcements = Announcement.all
         @events = Event.all
         @attendees = Attendee.all
