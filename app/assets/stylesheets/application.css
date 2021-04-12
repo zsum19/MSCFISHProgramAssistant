@@ -168,9 +168,9 @@
     margin-bottom: 5px;
   }
   .colored-heading{
-    background: hsl(185, 61%, 57%);
+    background: hsl(185, 61%, 65%);
     /*background: linear-gradient(90deg, rgba(116,213,221,1) 0%, rgba(241,241,241,1) 83%);*/
-    color: hsl(185, 61%, 17%);
+    color: hsl(185, 61%, 22%);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
