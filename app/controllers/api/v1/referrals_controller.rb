@@ -58,7 +58,3 @@ module Api
     end
   end
 end
-<<<<<<< HEAD
-=======
-
->>>>>>> f2b0b1889333e158051fecaa7d541d8835f0bd2f
