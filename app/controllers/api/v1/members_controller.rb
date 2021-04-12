@@ -47,6 +47,9 @@ module Api
         ActiveRecord::Migration.add_column(:members, :num_referrals, :integer, default: 0 , null: false)
         ActiveRecord::Migration.add_column(:members, :created_at, :timestamp)
         ActiveRecord::Migration.add_column(:members, :updated_at, :timestamp)
+
+      def currentMember
+        render json: current_member
       end
 
       private

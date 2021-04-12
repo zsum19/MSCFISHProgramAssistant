@@ -10,7 +10,8 @@ class CheckIn extends React.Component {
             email: "",
             referral: "",
             members: [],
-            event_id: ""
+            event_id: "",
+            event_name: ""
         };
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -32,6 +33,22 @@ class CheckIn extends React.Component {
             this.setState({ referral: this.state.members[0].name });
           })
           .catch(error => console.log(error.message));
+
+          const event_id = this.props.match.params.event_id;
+          console.log(event_id);
+
+          const url2 = `/api/v1/events/show/${event_id}`;
+          fetch(url2)
+            .then(response => {
+              if (response.ok) {
+                return response.json();
+              }
+              throw new Error("Network response was not ok.");
+            })
+            .then(response => {
+              this.setState({ event_name: response.name });
+            })
+            .catch(error => console.log(error.message));
     }
 
     stripHtmlEntities(str) {
@@ -82,7 +99,10 @@ class CheckIn extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/attendees/create";
-        const { first_name, last_name, email, referral, event_id } = this.state;
+        const { first_name, last_name, email, referral, event_id} = this.state;
+
+        var referral_first_name = referral.split(" ")[0];
+        var referral_last_name = referral.split(" ")[1];
     
         if (first_name.length == 0)
           return;
@@ -94,7 +114,8 @@ class CheckIn extends React.Component {
             first_name,
             last_name,
             email,
-            referral,
+            referral_first_name,
+            referral_last_name,
             event_id
         };
     
@@ -118,16 +139,16 @@ class CheckIn extends React.Component {
     }
 
     render() {
-        const { members } = this.state;
+        const { members, event_name } = this.state;
         let memberOptionItems = members.map((members, index) => (
-          <option value={members.first_name + " " + members.last_name}>{members.first_name + " " + members.last_name}</option>
+          <option key={index} value={members.first_name + " " + members.last_name}>{members.first_name + " " + members.last_name}</option>
         ));
         return (
           <div className="container mt-5">
             <div className="row">
               <div className="col-sm-12 col-lg-6 offset-lg-3">
                 <h1 className="font-weight-normal mb-5">
-                  Check in to Run The Ramps 2021
+                  Check in to {event_name}
                 </h1>
                 <form onSubmit={this.onSubmit}>
                   <div className="form-group">

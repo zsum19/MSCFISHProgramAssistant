@@ -4,7 +4,12 @@ module Api
   module V1
     class AnnouncementsController < ApplicationController
       def index
-        announcement = Announcement.all.order(created_at: :desc)
+        if(params.has_key?(:external))
+          announcement = Announcement.where(:external => true?(params[:external]))
+        else
+          announcement = Announcement.all.order(created_at: :desc)
+        end
+
         render json: announcement
       end
 
@@ -50,6 +55,10 @@ module Api
       end
 
       private
+
+      def true?(obj)
+        obj.to_s.downcase == "true"
+      end
 
       def announcement_params
         params.permit(:member_id, :event_id, :title, :content, :external)
