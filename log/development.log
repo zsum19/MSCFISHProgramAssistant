@@ -14798,3 +14798,195 @@ Processing by Api::V1::EventsController#index as */*
 Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 5.0ms | Allocations: 2736)
 
 
+Started GET "/memberpage" for ::1 at 2021-04-11 19:57:43 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 9370)
+Completed 200 OK in 27ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 12717)
+
+
+Started GET "/memberpage" for ::1 at 2021-04-11 19:57:44 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 6430)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 6928)
+
+
+Started GET "/" for ::1 at 2021-04-11 19:57:58 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 6430)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 6926)
+
+
+Started GET "/" for ::1 at 2021-04-11 19:57:58 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 6430)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 6926)
+
+
+Started GET "/api/v1/events/index" for ::1 at 2021-04-11 19:57:58 -0500
+Started GET "/api/v1/announcements/index" for ::1 at 2021-04-11 19:57:58 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (1.2ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 20ms (Views: 8.1ms | ActiveRecord: 6.2ms | Allocations: 12325)
+
+
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 7.7ms | ActiveRecord: 19.6ms | Allocations: 21402)
+
+
+Started GET "/" for ::1 at 2021-04-11 19:59:45 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+Started GET "/" for ::1 at 2021-04-11 19:59:45 -0500
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1085)
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 216)
+[Webpacker] Compiling...
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/reomatsuda/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 6a75ee66d4a7eb232c6b
+Version: webpack 4.46.0
+Time: 2285ms
+Built at: 04/11/2021 7:59:48 PM
+                                                              Asset       Size       Chunks                         Chunk Names
+                                   js/Index-4346997096334770bd93.js   2.91 MiB        Index  [emitted] [immutable]  Index
+                               js/Index-4346997096334770bd93.js.map   3.01 MiB        Index  [emitted] [dev]        Index
+                             js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+                         js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                                                      manifest.json  779 bytes               [emitted]              
+media/components/MSC-FISH-LOGO-c1ab8a3d409b9300eb7f1b2202683daa.png   10.1 KiB               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-4346997096334770bd93.js js/Index-4346997096334770bd93.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 659 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 4.57 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 87 hidden modules
+
+[Webpacker] Compiled all packs in /Users/reomatsuda/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: 6a75ee66d4a7eb232c6b
+Version: webpack 4.46.0
+Time: 2293ms
+Built at: 04/11/2021 7:59:48 PM
+                                                              Asset       Size       Chunks                         Chunk Names
+                                   js/Index-4346997096334770bd93.js   2.91 MiB        Index  [emitted] [immutable]  Index
+                               js/Index-4346997096334770bd93.js.map   3.01 MiB        Index  [emitted] [dev]        Index
+                             js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+                         js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                                                      manifest.json  779 bytes               [emitted]              
+media/components/MSC-FISH-LOGO-c1ab8a3d409b9300eb7f1b2202683daa.png   10.1 KiB               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-4346997096334770bd93.js js/Index-4346997096334770bd93.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 659 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 4.57 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 87 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3311.5ms | Allocations: 18082)
+Completed 200 OK in 3313ms (Views: 3312.1ms | ActiveRecord: 0.0ms | Allocations: 18612)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3324.8ms | Allocations: 23245)
+Completed 200 OK in 3336ms (Views: 3328.3ms | ActiveRecord: 0.0ms | Allocations: 28152)
+
+
+Started GET "/api/v1/announcements/index/true" for ::1 at 2021-04-11 19:59:49 -0500
+Started GET "/api/v1/events/index" for ::1 at 2021-04-11 19:59:49 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  Parameters: {"external"=>"true"}
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 10.7ms | ActiveRecord: 7.5ms | Allocations: 13256)
+
+
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 41ms (Views: 7.0ms | ActiveRecord: 24.1ms | Allocations: 20010)
+
+
+Started GET "/" for ::1 at 2021-04-11 19:59:55 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/reomatsuda/MSCFISHProgramAssistant/public/packs
+[Webpacker] Hash: e7098e9a851e35febf35
+Version: webpack 4.46.0
+Time: 2058ms
+Built at: 04/11/2021 7:59:58 PM
+                                                              Asset       Size       Chunks                         Chunk Names
+                                   js/Index-7dd001ebc554cc71c1c8.js   2.91 MiB        Index  [emitted] [immutable]  Index
+                               js/Index-7dd001ebc554cc71c1c8.js.map   3.01 MiB        Index  [emitted] [dev]        Index
+                             js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+                         js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                                                      manifest.json  779 bytes               [emitted]              
+media/components/MSC-FISH-LOGO-c1ab8a3d409b9300eb7f1b2202683daa.png   10.1 KiB               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint Index = js/Index-7dd001ebc554cc71c1c8.js js/Index-7dd001ebc554cc71c1c8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 659 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 4.57 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 87 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3050.2ms | Allocations: 8147)
+Completed 200 OK in 3051ms (Views: 3050.7ms | ActiveRecord: 0.0ms | Allocations: 8636)
+
+
+Started GET "/api/v1/announcements/index/true" for ::1 at 2021-04-11 19:59:58 -0500
+Started GET "/api/v1/events/index" for ::1 at 2021-04-11 19:59:58 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"true"}
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (1.4ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", true]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+  [1m[36mEvent Load (1.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.4ms | Allocations: 2799)
+
+
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 1.9ms | Allocations: 4699)
+
+
