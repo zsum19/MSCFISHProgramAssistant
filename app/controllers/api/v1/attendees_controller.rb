@@ -57,7 +57,7 @@ module Api
 
       def update
         attendee = Attendee.find_by!(email: params[:email])
-        attendee.update(update_params)
+        attendee.update(attendee_params)
         render json: attendee
       end
 
@@ -67,13 +67,13 @@ module Api
         params.permit(:first_name, :last_name, :email, :created_at, :updated_at)
       end
 
-      def update_params
-        params.permit(:first_name, :last_name, :created_at, :updated_at)
-      end
+      # def update_params
+      #   params.permit(:first_name, :last_name, :created_at, :updated_at)
+      # end
 
-      def backup_params
-        params.permit(:first_name, :last_name, :email, :created_at, :updated_at)
-      end
+      # def backup_params
+      #   params.permit(:first_name, :last_name, :email, :created_at, :updated_at)
+      # end
 
       def attendee
         @attendee ||= Attendee.find(params[:id])
