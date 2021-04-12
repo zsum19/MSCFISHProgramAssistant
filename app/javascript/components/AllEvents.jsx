@@ -27,7 +27,6 @@ class AllEvents extends React.Component {
                     <div className="py-5">
                     <main className="container">
                         <Link to="/" className="btn btn-link">Home</Link>
-                        <Link to="/event" className="btn custom-button pull-right">Create New Event</Link>
                         <div className="row">
                             
                             <Events></Events>

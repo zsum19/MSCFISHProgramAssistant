@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import LinkButton from "../common/LinkButton";
 import AnnouncementForm from "./AnnouncementForm";
 
 class NewAnnouncement extends React.Component {
@@ -10,13 +12,28 @@ class NewAnnouncement extends React.Component {
             event_id: 1,
             title: "",
             content: "",
-            external: false
+            external: false,
+            current_member: {}
         };
 
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
-        this.stripHtmlEntities = this.stripHtmlEntities.bind(this);
+        this.stripHtmlEntities = this.stripHtmlEntities.bind(this);   
     }
+
+    componentDidMount() {
+      const url = `/api/v1/members/currentMember`;
+  
+      fetch(url)
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error("Network response was not ok.");
+        })
+        .then(response => this.setState({current_member: response}))
+        .catch(error => console.log(error.message));
+  }
 
     stripHtmlEntities(str) {
         return String(str)
@@ -61,6 +78,29 @@ class NewAnnouncement extends React.Component {
     }
     
     render() {
+        const { current_member } = this.state;
+
+        if(current_member == undefined || Object.keys(current_member).length == 0) return (
+            <div className="container-fluid vh-100 row">
+                <div className="col-12 align-self-center">
+                    <h1 className="m-auto d-flex justify-content-center">You should not be here!</h1>
+                    <h4 className="m-auto d-flex justify-content-center">Or you should sign in</h4>
+                    <div className="my-4 d-flex justify-content-center">
+                    <LinkButton className="to-button" to = "/members/auth/google_oauth2" text = "Sign In"></LinkButton>
+                    </div>
+                </div>
+            </div>
+        );
+
+        if(current_member.role_id > 2 ) return (
+            <div className="container-fluid vh-100 row">
+                <div className="col-12 align-self-center">
+                    <h1 className="m-auto d-flex justify-content-center">You should not be here!</h1>
+                    <h4 className="m-auto d-flex justify-content-center">If you think this is an issue, contact your director or chair.</h4>
+                </div>
+            </div>
+        );
+
         return (
           <div className="container mt-5">
             <div className="row">

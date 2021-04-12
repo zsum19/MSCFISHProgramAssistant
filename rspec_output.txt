@@ -3,16 +3,9 @@ Announcements page
 Capybara starting Puma...
 * Version 5.2.2 , codename: Fettisdagsbulle
 * Min threads: 0, max threads: 4
-* Listening on http://127.0.0.1:35709
+* Listening on http://127.0.0.1:41701
 .  Able to open announcements page
-.  Able to open link to create new announcements
 .  Able to go back home from announcements page
-
-New announcement page
-.  Able to open new announcement page
-.  New announcement form valid inputs
-.  New announcement form invalid inputs
-.  Back to all announcements link on new announcement page
 
 Card (view announcement link)
 .  Able to view announcement details if there is an announcement created
@@ -25,24 +18,23 @@ New checkin page
 
 Events page
 .  Able to open events page
-.  Able to open link to create new events
 .  Able to go back home from events page
-
-New event page
-.  Able to open new event page
-.  New event form valid inputs
-.  New event form invalid inputs
-.  Back to all events link on new event page
 
 Card (view event link)
 .  Able to view event details if there is an event created
+.  Able to check in from all events page
 
 Homepage
 .  Able to open home page
 .  Link to events page
 .  Link to announcements page
-.  Link to check in page
-.  Button to download database
+.  Link to sign in
+
+Protected Pages
+.  Not able to open admin page
+.  Not able to open new announcement page
+.  Not able to open new event page
+.  Not able to open new member page
 
 Announcement
 .  does not save an announcement without any arguments
@@ -86,12 +78,25 @@ Api::V1::Members
   GET /destroy
 .    returns http success
 
+Api::V1::Referrals
+  GET /index
+.    returns http success
+  GET /create
+.    returns http success
+  GET /show
+.    returns http success
+  GET /destroy
+.    returns http success
 
-Finished in 39.08 seconds (files took 4.17 seconds to load)
-53 examples, 0 failures
-
-Finished in 39.08 seconds (files took 4.17 seconds to load)
-53 examples, 0 failures
+Sessions
+.  signs user in and out
 
 
-Coverage report generated for RSpec to /home/treydinges/Documents/MSCFISHProgramAssistant/coverage. 500 / 556 LOC (89.93%) covered.
+Finished in 49.89 seconds (files took 11.48 seconds to load)
+52 examples, 0 failures
+
+Finished in 49.89 seconds (files took 11.48 seconds to load)
+52 examples, 0 failures
+
+
+Coverage report generated for RSpec to /home/treydinges/Documents/MSCFISHProgramAssistant/coverage. 452 / 591 LOC (76.48%) covered.
