@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/feature/announcements_spec.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/feature/announcements_spec.rb": {
         "lines": [
           null,
           null,
@@ -97,7 +97,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/rails_helper.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/rails_helper.rb": {
         "lines": [
           null,
           1,
@@ -166,7 +166,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/environment.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -175,7 +175,7 @@
           1
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/application.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/application.rb": {
         "lines": [
           1,
           null,
@@ -203,7 +203,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/boot.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -211,7 +211,7 @@
           1
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/environments/test.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -275,7 +275,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/application_controller_renderer.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -287,7 +287,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/assets.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -305,7 +305,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/backtrace_silencers.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -317,7 +317,7 @@
           1
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/content_security_policy.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -351,7 +351,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/cookies_serializer.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/cookies_serializer.rb": {
         "lines": [
           null,
           null,
@@ -360,7 +360,7 @@
           1
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/devise.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/devise.rb": {
         "lines": [
           null,
           null,
@@ -678,7 +678,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/filter_parameter_logging.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -688,7 +688,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/inflections.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -708,7 +708,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/mime_types.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -716,7 +716,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/permissions_policy.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -731,7 +731,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/initializers/wrap_parameters.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -749,7 +749,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/config/routes.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/config/routes.rb": {
         "lines": [
           1,
           1,
@@ -765,7 +765,14 @@
           1,
           1,
           1,
+          1,
           null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
           1,
           1,
           null,
@@ -782,7 +789,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/helpers/application_helper.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/helpers/application_helper.rb": {
         "lines": [
           null,
           null,
@@ -790,7 +797,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/helpers/homepage_helper.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/helpers/homepage_helper.rb": {
         "lines": [
           null,
           null,
@@ -798,7 +805,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/feature/checkin_spec.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/feature/checkin_spec.rb": {
         "lines": [
           1,
           null,
@@ -857,7 +864,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/feature/events_spec.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/feature/events_spec.rb": {
         "lines": [
           1,
           null,
@@ -961,7 +968,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/feature/homepage_spec.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/feature/homepage_spec.rb": {
         "lines": [
           1,
           null,
@@ -1005,7 +1012,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/model/announcements_spec.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/model/announcements_spec.rb": {
         "lines": [
           null,
           null,
@@ -1045,7 +1052,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/models/announcement.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/models/announcement.rb": {
         "lines": [
           null,
           null,
@@ -1069,7 +1076,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/models/application_record.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -1078,7 +1085,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/model/attendees_spec.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/model/attendees_spec.rb": {
         "lines": [
           1,
           null,
@@ -1111,7 +1118,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/models/attendee.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/models/attendee.rb": {
         "lines": [
           null,
           null,
@@ -1138,7 +1145,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/model/events_spec.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/model/events_spec.rb": {
         "lines": [
           null,
           null,
@@ -1178,7 +1185,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/models/event.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/models/event.rb": {
         "lines": [
           null,
           null,
@@ -1205,7 +1212,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/model/members_spec.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/model/members_spec.rb": {
         "lines": [
           1,
           null,
@@ -1248,7 +1255,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/models/member.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/models/member.rb": {
         "lines": [
           null,
           null,
@@ -1278,7 +1285,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/spec/requests/api/v1/members_spec.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/requests/api/v1/members_spec.rb": {
         "lines": [
           1,
           null,
@@ -1314,7 +1321,43 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/homepage_controller.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/spec/requests/api/v1/referrals_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/controllers/homepage_controller.rb": {
         "lines": [
           null,
           1,
@@ -1323,9 +1366,9 @@
           1,
           1,
           null,
-          29,
-          29,
-          29,
+          32,
+          32,
+          32,
           1,
           1,
           1,
@@ -1362,7 +1405,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/application_controller.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -1370,7 +1413,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/announcements_controller.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/announcements_controller.rb": {
         "lines": [
           null,
           null,
@@ -1379,6 +1422,11 @@
           1,
           1,
           13,
+          0,
+          null,
+          13,
+          null,
+          null,
           13,
           null,
           null,
@@ -1419,11 +1467,15 @@
           0,
           null,
           null,
+          1,
+          0,
+          null,
+          null,
           null,
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/members_controller.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/members_controller.rb": {
         "lines": [
           null,
           null,
@@ -1477,7 +1529,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/events_controller.rb": {
         "lines": [
           null,
           null,
@@ -1530,7 +1582,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/models/role.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/models/role.rb": {
         "lines": [
           null,
           null,
@@ -1550,7 +1602,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/models/eventattendance.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/models/eventattendance.rb": {
         "lines": [
           null,
           null,
@@ -1571,7 +1623,7 @@
           null
         ]
       },
-      "/home/treydinges/Documents/MSCFISHProgramAssistant/app/models/referral.rb": {
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/models/referral.rb": {
         "lines": [
           null,
           null,
@@ -1591,8 +1643,62 @@
           null,
           null
         ]
+      },
+      "/home/ubuntu/Documents/MSCFISHProgramAssistant/app/controllers/api/v1/referrals_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1617509287
+    "timestamp": 1618197248
   }
 }

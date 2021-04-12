@@ -35,6 +35,6 @@ describe 'Homepage', :type => :feature do
   it 'Button to download database', js: true do
     homepage.visit_homepage
     expect(page).to have_link(nil, href: 'index/database_dump.zip')
-    click_button('Download Database')
+    click_link(nil, href:'index/database_dump.zip')
   end
 end
