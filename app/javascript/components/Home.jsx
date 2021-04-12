@@ -8,7 +8,7 @@ import Navbar from "./common/Navbar";
 export default () => (
   
 
-      <div style = {{width: "100vw", height: "100vh", backgroundColor: "whitesmoke"}}>
+      <div style = {{width: "100vw", height: "100vh"}}>
         
         <Navbar/>
         
@@ -26,15 +26,9 @@ export default () => (
               <LatestEventsView></LatestEventsView>
             </div>
             
-            <LinkButton className =  "to-button" to = "/allevents" text = "Events"></LinkButton>
-            <LinkButton className =  "to-button" to = "/announcements" text = "Announcements"></LinkButton>
-            <LinkButton className =  "to-button" to = "/checkin/1" text = "Check In"></LinkButton>
-            <LinkButton className =  "to-button" to = "/memberpage" text = "Member Page"></LinkButton>
-            <LinkButton className =  "to-button" to = "/admin" text = "Admin Page"></LinkButton>
-            <LinkButton className =  "to-button" to = "/members/auth/google_oauth2" text = "Sign In"></LinkButton>
-            <a href="index/database_dump.zip" download = "database_dump.zip">
-              <button className = "btn btn-lg custom-button">Download Database</button>
-            </a>
+
+            
+            
         </div>       
       </div>
     </div>

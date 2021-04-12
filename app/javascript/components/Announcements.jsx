@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import EventBadge from "./common/EventBadge"
+import Navbar from "./common/Navbar";
 class Announcements extends React.Component {
     constructor(props) {
         super(props);
@@ -10,7 +11,7 @@ class Announcements extends React.Component {
     }
 
     componentDidMount() {
-        const url = "/api/v1/announcements/index";
+        const url = "/api/v1/announcements/index/true";
         fetch(url)
           .then(response => {
             if (response.ok) {
@@ -52,25 +53,28 @@ class Announcements extends React.Component {
         );
 
         return (
-            <>
-                <section className="jumbotron jumbotron-fluid text-center">
-                <div className="container py-5">
-                    <h1 className="display-4">MSC Fish Announcements</h1>
-                    <p className="lead text-muted">
-                    A list of all current announcements.
-                    </p>
-                </div>
-                </section>
-                <div className="py-5">
-                <main className="container">
-                    <Link to="/" className="btn btn-link">Home</Link>
-                    <Link to="/announcement" className="btn custom-button pull-right">Create New Announcement</Link>
-                    <div className="row">
-                    {announcements.length > 0 ? allAnnouncements : noAnnouncement}
+            <div style = {{width: "100vw", height: "105vh", backgroundColor: "whitesmoke"}}>
+                <Navbar/>
+                <div className="container-fluid">
+                    <section className="jumbotron jumbotron-fluid text-center">
+                    <div className="container py-5">
+                        <h1 className="display-4">MSC Fish Announcements</h1>
+                        <p className="lead text-muted">
+                        A list of all current announcements.
+                        </p>
                     </div>
-                </main>
+                    </section>
+                    <div className="py-5">
+                    <main className="container">
+                        <Link to="/" className="btn btn-link">Home</Link>
+                        <Link to="/announcement" className="btn custom-button pull-right">Create New Announcement</Link>
+                        <div className="row">
+                        {announcements.length > 0 ? allAnnouncements : noAnnouncement}
+                        </div>
+                    </main>
+                    </div>
                 </div>
-            </>
+            </div>
         );
     }
 }

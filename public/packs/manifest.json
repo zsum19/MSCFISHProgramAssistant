@@ -4,6 +4,7 @@
   "Index.js.map": "/packs/js/Index-81aab149ef6b6a1321db.js.map",
   "application.js": "/packs/js/application-b6e4fdae9ac7a31556ff.js",
   "application.js.map": "/packs/js/application-b6e4fdae9ac7a31556ff.js.map",
+
   "entrypoints": {
     "application": {
       "js": [
@@ -22,6 +23,7 @@
       ],
       "js.map": [
         "/packs/js/Index-81aab149ef6b6a1321db.js.map"
+
       ]
     }
   },
