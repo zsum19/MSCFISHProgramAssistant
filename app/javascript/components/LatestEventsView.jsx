@@ -18,7 +18,7 @@ class LatestEvents extends React.Component {
           .then(response => {
             if (response.ok) {
                 let res = response.json();
-                console.log("RES", res);
+                // console.log("RES", res);
                 return res;
             }
             throw new Error("Network response was not ok.");
@@ -28,14 +28,14 @@ class LatestEvents extends React.Component {
       }
 
     render() {
-        console.log("THIS.STATE", this.state);
-        console.log("THIS.STATE.EVENTS", this.state.events);
+        // console.log("THIS.STATE", this.state);
+        // console.log("THIS.STATE.EVENTS", this.state.events);
         const { events } = this.state;
         //console.log("THIS.STATE", this.state);
-        console.log("EVENTS:", events);
+        // console.log("EVENTS:", events);
         var latestEvents = [];
         if(events.length > 5){
-            console.log("latest event", events[0]);
+            // console.log("latest event", events[0]);
             var latest = 5;
             for(var i = 0; i < latest; i++){
                 latestEvents.push(events[i]);

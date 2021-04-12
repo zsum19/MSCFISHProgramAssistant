@@ -7,6 +7,7 @@ import MemberAbout from "./memberComponents/MemberAbout";
 import MemberReferrals from "./memberComponents/MemberReferrals";
 
 import "./css/MemberPage.css"
+import LinkButton from "./common/LinkButton";
 
 class MemberPage extends React.Component {
     constructor() {
@@ -33,7 +34,17 @@ class MemberPage extends React.Component {
 
     render() {
         const { current_member } = this.state;
-        if(Object.keys(current_member).length == 0) return null;
+        if(current_member == undefined || Object.keys(current_member).length == 0) return (
+            <div className="container-fluid vh-100 row">
+                <div className="col-12 align-self-center">
+                    <h1 className="m-auto d-flex justify-content-center">You should not be here!</h1>
+                    <h4 className="m-auto d-flex justify-content-center">Or you should sign in</h4>
+                    <div className="my-4 d-flex justify-content-center">
+                    <LinkButton className="to-button" to = "/members/auth/google_oauth2" text = "Sign In"></LinkButton>
+                    </div>
+                </div>
+            </div>
+        );
 
         return (
             <div style = {{width: "100vw", height: "100vh", backgroundColor: "whitesmoke"}}>
@@ -62,6 +73,7 @@ class MemberPage extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <LinkButton className =  "to-button" to = "/members/sign_out" text = "Sign Out"></LinkButton>
                 </div>
             </div>
         );

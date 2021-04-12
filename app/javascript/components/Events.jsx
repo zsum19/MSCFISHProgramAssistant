@@ -26,7 +26,7 @@ class Events extends React.Component {
 
     render() {
         const { events } = this.state;
-        console.log("EVENTS:", events);
+        // console.log("EVENTS:", events);
         const allEvents = events.map((event, index) => (
             <div key={index} className="col-md-6 col-lg-4">
                 <EventView 

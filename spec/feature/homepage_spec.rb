@@ -26,15 +26,4 @@ describe 'Homepage', :type => :feature do
     homepage.visit_homepage
     expect(page).to have_link(nil, href: '/announcements')
   end
-
-  it 'Link to check in page', js: true do
-    homepage.visit_homepage
-    expect(page).to have_link(nil, href: '/checkin/1')
-  end
-
-  it 'Button to download database', js: true do
-    homepage.visit_homepage
-    expect(page).to have_link(nil, href: 'index/database_dump.zip')
-    click_link(nil, href: 'index/database_dump.zip')
-  end
 end

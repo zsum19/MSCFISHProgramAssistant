@@ -26,14 +26,14 @@ class LatestAnnouncementsView extends React.Component {
 
     render() {
         const { announcements } = this.state;
-        console.log("STATE", this.state);
-        console.log("announcements: ",announcements);
-        console.log("announcements.length", announcements.length);
-        console.log("announcements.length > 5 ?", announcements.length > 5);
+        // console.log("STATE", this.state);
+        // console.log("announcements: ",announcements);
+        // console.log("announcements.length", announcements.length);
+        // console.log("announcements.length > 5 ?", announcements.length > 5);
         //console.log()
         var latestAnnouncements = [];
         if(announcements.length > 5){
-            console.log("latest announcement", announcements[0]);
+            // console.log("latest announcement", announcements[0]);
             var latest = 5;
             for(var i = 0; i < latest; i++){
                 latestAnnouncements.push(announcements[i]);
