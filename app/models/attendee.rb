@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class Attendee < ApplicationRecord
-  has_many :referrals, class_name: 'Referral'
+  has_many :referrals, class_name: 'Referral', dependent: :nullify
   has_many :referred_by, through: :referrals
-  has_many :eventattendances, class_name: 'Eventattendance'
+  has_many :eventattendances, class_name: 'Eventattendance', dependent: :nullify
   has_many :events, through: :eventattendances
 
   validates :first_name, presence: true
@@ -11,7 +11,7 @@ class Attendee < ApplicationRecord
   validates :email, presence: true
 
   def self.to_csv
-    attributes = %w[id name email]
+    attributes = %w[id first_name last_name email]
     CSV.generate(headers: true) do |csv|
       csv << attributes
 

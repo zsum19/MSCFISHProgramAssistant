@@ -39,7 +39,7 @@ class MemberAnnouncements extends React.Component {
                             fontSize: "medium",
                             fontWeight: "lighter"
                         }}
-                    > - <i>{announcement.author_id}</i></p>
+                    > - <i>{announcement.member_id}</i></p>
                     <p className = "subtitle">{announcement.date_posted}</p>
                     <Link to={`/announcement/${announcement.id}`} className="btn custom-button">
                     View Announcement

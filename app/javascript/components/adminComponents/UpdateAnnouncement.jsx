@@ -5,7 +5,7 @@ class UpdateAnnouncement extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            author_id: 1,
+            member_id: 1,
             event_id: 1,
             title: "",
             content: "",
@@ -34,7 +34,7 @@ class UpdateAnnouncement extends React.Component {
           throw new Error("Network response was not ok.");
         })
         .then(response => this.setState({ 
-            author_id: response.author_id,
+            member_id: response.member_id,
             event_id: response.event_id,
             title: response.title,
             content: response.content,
@@ -62,10 +62,10 @@ class UpdateAnnouncement extends React.Component {
         } = this.props;
 
         const url = `/api/v1/announcements/update/${id}`;
-        const { author_id, event_id, title, content, external } = this.state;
+        const { member_id, event_id, title, content, external } = this.state;
     
         const body = {
-          author_id,
+          member_id,
           event_id,
           title,
           content,

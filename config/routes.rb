@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       patch 'events/update/:id', to: 'events#update'
       get 'events/show/:id', to: 'events#show'
       delete 'events/destroy/:id', to: 'events#destroy'
+      # post 'events/remigrate'
 
       get 'announcements/index'
       get 'announcements/index/:external', to: 'announcements#index'
@@ -19,9 +20,12 @@ Rails.application.routes.draw do
       patch 'announcements/update/:id', to: 'announcements#update'
       get 'announcements/show/:id', to: 'announcements#show'
       delete 'announcements/destroy/:id', to: 'announcements#destroy'
+      # post 'announcements/remigrate'
 
       post 'attendees/create'
       patch 'attendees/update'
+      # post 'attendees/remigrate'
+      # post 'attendees/create_this_only'
 
       get 'members/index'
       post 'members/create'
@@ -29,12 +33,21 @@ Rails.application.routes.draw do
       get 'members/show/:id', to: 'members#show'
       delete 'members/destroy/:id', to: 'members#destroy'
       get 'members/currentMember'
+      post 'members/remigrate'
 
       get 'referrals/index'
       get 'referrals/index/:member_id', to: 'referrals#index'
       post 'referrals/create'
       get 'referrals/show/:id', to: 'referrals#show'
       delete 'referrals/destroy', to: 'referrals#destroy'
+      # post 'referrals/create'
+      # post 'referrals/remigrate'
+
+      # post 'roles/create'
+      # post 'roles/remigrate'
+
+      # post 'eventattendances/create'
+      # post 'eventattendances/remigrate'
     end
   end
   root 'homepage#index'

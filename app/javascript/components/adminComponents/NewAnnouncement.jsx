@@ -6,7 +6,7 @@ class NewAnnouncement extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            author_id: 1,
+            member_id: 1,
             event_id: 1,
             title: "",
             content: "",
@@ -31,10 +31,10 @@ class NewAnnouncement extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/announcements/create";
-        const { author_id, event_id, title, content, external } = this.state;
+        const { member_id, event_id, title, content, external } = this.state;
     
         const body = {
-          author_id,
+          member_id,
           event_id,
           title,
           content,
