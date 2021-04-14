@@ -17,7 +17,8 @@ class MemberList extends React.Component {
           var result = [];
           var headers = lines[0].split(",");
           for (var i = 0; i < headers.length; i++) {
-            var stripped_word = current_line[j].replace(/\r?\n|\r/g, "");
+            var stripped_word = current_line[j].replace(/(\r\n|\n|\r)/gm, "");
+            console.log(stripped_word);
             headers[i] = stripped_word;
           }
     
