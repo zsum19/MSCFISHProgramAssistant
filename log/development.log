@@ -29298,3 +29298,45 @@ Processing by Api::V1::RolesController#index as */*
 Completed 200 OK in 56ms (Views: 5.1ms | ActiveRecord: 44.0ms | Allocations: 1468)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-14 16:20:30 -0500
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 74.2ms | Allocations: 8320)
+Completed 200 OK in 108ms (Views: 84.1ms | ActiveRecord: 0.0ms | Allocations: 11549)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-14 16:20:33 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-14 16:20:33 -0500
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-14 16:20:33 -0500
+Processing by Api::V1::EventsController#index as */*
+Processing by Api::V1::AnnouncementsController#index as */*
+  [1m[36mEvent Load (12.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 156ms (Views: 48.6ms | ActiveRecord: 65.9ms | Allocations: 16032)
+
+
+  [1m[36mAnnouncement Load (50.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 173ms (Views: 19.5ms | ActiveRecord: 96.3ms | Allocations: 20134)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-14 16:20:44 -0500
+Started GET "/members/auth/google_oauth2/callback?state=27539acb0fb16429e48c56d8278802de8ed75eb9c0b39564&code=4%2F0AY0e-g7JREVmG1K9DeVOmNNZHcUpS1fak0zEWU_b4OuPBKql-AhZFNeh9F1w-r2mxPqbsw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-14 16:20:45 -0500
+  
+SyntaxError (/home/treydinges/Documents/MSCFISHProgramAssistant/app/controllers/members/omniauth_callbacks_controller.rb:16: syntax error, unexpected local variable or method, expecting `end'
+...rotocal => "https://" root_path
+...                      ^~~~~~~~~
+):
+  
+app/controllers/members/omniauth_callbacks_controller.rb:16: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/members/omniauth_callbacks_controller.rb:16: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/members/omniauth_callbacks_controller.rb:16: syntax error, unexpected local variable or method, expecting `end'
