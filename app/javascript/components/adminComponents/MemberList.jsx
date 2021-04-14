@@ -13,8 +13,11 @@ class MemberList extends React.Component {
 
     onChange(evt) {
         function ToJSON(csv) {
+          console.log(csv);
           var no_r = csv.split("\r").join();
+          console.log(no_r);
           var lines = no_r.split("\n");
+          console.log(lines);
           var result = [];
           var headers = lines[0].split(",");
     
