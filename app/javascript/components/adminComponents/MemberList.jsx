@@ -17,7 +17,7 @@ class MemberList extends React.Component {
           var result = [];
           var headers = lines[0].split(",");
           for (var i = 0; i < headers.length; i++) {
-            var stripped_word = headers[j].replace(/(\r\n|\n|\r)/gm, "");
+            var stripped_word = headers[j].replace('/(\r\n|\n|\r)/gm', "");
             console.log(stripped_word);
             headers[i] = stripped_word;
           }
@@ -26,7 +26,7 @@ class MemberList extends React.Component {
             var obj = {};
             var current_line = lines[i].split(",");
             for (var j = 0; j < current_line.length; j++) {
-              var stripped_word = current_line[j].replace(/\r?\n|\r/g, "");
+              var stripped_word = current_line[j].replace('/(\r\n|\n|\r)/gm', "");
               current_line[j] = stripped_word;
             }
     
