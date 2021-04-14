@@ -19243,3 +19243,554 @@ Processing by Api::V1::MembersController#currentMember as */*
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 350)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-13 23:18:57 -0500
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 166.7ms | Allocations: 8320)
+Completed 200 OK in 207ms (Views: 177.1ms | ActiveRecord: 0.0ms | Allocations: 11549)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:19:02 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-13 23:19:02 -0500
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-13 23:19:02 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::EventsController#index as */*
+  [1m[36mAnnouncement Load (9.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 166ms (Views: 69.3ms | ActiveRecord: 62.2ms | Allocations: 11234)
+
+
+  [1m[36mEvent Load (5.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 304ms (Views: 52.3ms | ActiveRecord: 83.0ms | Allocations: 21377)
+
+
+Started GET "/members/auth/google_oauth2" for 127.0.0.1 at 2021-04-13 23:19:08 -0500
+Started GET "/members/auth/google_oauth2/callback?state=1192dcc9b07d9b12041380e0c5ced8cab2194f94894ce355&code=4%2F0AY0e-g6aHcuMkeo7vLx0Ph6h8CzXlOwo7wzWMQDyb6OHhEZidr229wzNTobY2TSZQP_qvg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&hd=tamu.edu&prompt=none" for 127.0.0.1 at 2021-04-13 23:19:09 -0500
+Processing by Members::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"1192dcc9b07d9b12041380e0c5ced8cab2194f94894ce355", "code"=>"4/0AY0e-g6aHcuMkeo7vLx0Ph6h8CzXlOwo7wzWMQDyb6OHhEZidr229wzNTobY2TSZQP_qvg", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "hd"=>"tamu.edu", "prompt"=>"none"}
+  [1m[36mMember Exists? (10.3ms)[0m  [1m[34mSELECT 1 AS one FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:31:in `from_google'
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."email" = $1 LIMIT $2[0m  [["email", "treydinges@tamu.edu"], ["LIMIT", 1]]
+  ↳ app/models/member.rb:33:in `from_google'
+Redirected to http://localhost:3000/memberpage
+Completed 302 Found in 93ms (ActiveRecord: 14.8ms | Allocations: 10040)
+
+
+Started GET "/memberpage" for 127.0.0.1 at 2021-04-13 23:19:09 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 5379)
+Completed 200 OK in 65ms (Views: 46.0ms | ActiveRecord: 0.0ms | Allocations: 5871)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:19:11 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 1487)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:19:11 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (5.3ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 5.3ms | Allocations: 1369)
+
+
+Started GET "/api/v1/announcements/index/false" for 127.0.0.1 at 2021-04-13 23:19:11 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+  Parameters: {"external"=>"false"}
+  [1m[36mAnnouncement Load (2.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."external" = $1[0m  [["external", false]]
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 2.7ms | Allocations: 2242)
+
+
+Started GET "/api/v1/referrals/index/11" for 127.0.0.1 at 2021-04-13 23:19:11 -0500
+Processing by Api::V1::ReferralsController#index as */*
+  Parameters: {"member_id"=>"11"}
+  [1m[36mReferral Load (9.4ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 11]]
+  ↳ app/controllers/api/v1/referrals_controller.rb:13:in `index'
+Completed 200 OK in 39ms (Views: 14.3ms | ActiveRecord: 13.1ms | Allocations: 2411)
+
+
+Started GET "/index/database_dump.zip" for 127.0.0.1 at 2021-04-13 23:19:21 -0500
+Processing by HomepageController#index as ZIP
+  Parameters: {"path"=>"index/database_dump"}
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/homepage_controller.rb:11:in `block (2 levels) in index'
+  [1m[36mAnnouncement Load (1.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/announcement.rb:15:in `block in to_csv'
+  [1m[36mEvent Load (5.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/event.rb:19:in `block in to_csv'
+  [1m[36mAttendee Load (4.6ms)[0m  [1m[34mSELECT "attendees".* FROM "attendees" ORDER BY "attendees"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/attendee.rb:18:in `block in to_csv'
+  [1m[36mMember Load (8.8ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/member.rb:21:in `block in to_csv'
+  [1m[36mRole Load (10.9ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/role.rb:11:in `block in to_csv'
+  [1m[36mEventattendance Load (5.1ms)[0m  [1m[34mSELECT "eventattendances".* FROM "eventattendances" ORDER BY "eventattendances"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/eventattendance.rb:12:in `block in to_csv'
+  [1m[36mReferral Load (0.8ms)[0m  [1m[34mSELECT "referrals".* FROM "referrals" ORDER BY "referrals"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ app/models/referral.rb:12:in `block in to_csv'
+Sent file /home/treydinges/Documents/MSCFISHProgramAssistant/public/downloads/database_dump.zip (0.6ms)
+Completed 200 OK in 215ms (ActiveRecord: 60.7ms | Allocations: 19769)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:20:41 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (4.7ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 4.7ms | Allocations: 1356)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:20:42 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 1356)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-13 23:20:42 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 0.9ms | Allocations: 3091)
+
+
+Started GET "/api/v1/roles/index" for 127.0.0.1 at 2021-04-13 23:20:42 -0500
+Processing by Api::V1::RolesController#index as */*
+  [1m[36mRole Load (3.6ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."name" DESC[0m
+  ↳ app/controllers/api/v1/roles_controller.rb:17:in `index'
+Completed 200 OK in 13ms (Views: 6.5ms | ActiveRecord: 3.6ms | Allocations: 1464)
+
+
+Started DELETE "/api/v1/members/destroy/9" for 127.0.0.1 at 2021-04-13 23:20:52 -0500
+Processing by Api::V1::MembersController#destroy as */*
+  Parameters: {"id"=>"9", "member"=>{}}
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:64:in `member'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+  [1m[36mAnnouncement Update All (0.9ms)[0m  [1m[33mUPDATE "announcements" SET "member_id" = $1 WHERE "announcements"."member_id" = $2[0m  [["member_id", nil], ["member_id", 9]]
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+  [1m[36mReferral Destroy (7.4ms)[0m  [1m[31mDELETE FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 9]]
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+  [1m[36mMember Destroy (7.2ms)[0m  [1m[31mDELETE FROM "members" WHERE "members"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+Completed 200 OK in 79ms (Views: 0.2ms | ActiveRecord: 20.7ms | Allocations: 7757)
+
+
+Started GET "/admin" for 127.0.0.1 at 2021-04-13 23:20:55 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 5372)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 5869)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:20:56 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (6.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 6.4ms | Allocations: 1356)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:20:57 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (2.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 2.4ms | Allocations: 1356)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-13 23:20:57 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (2.5ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 2.5ms | Allocations: 2995)
+
+
+Started GET "/api/v1/roles/index" for 127.0.0.1 at 2021-04-13 23:20:57 -0500
+Processing by Api::V1::RolesController#index as */*
+  [1m[36mRole Load (4.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."name" DESC[0m
+  ↳ app/controllers/api/v1/roles_controller.rb:17:in `index'
+Completed 200 OK in 20ms (Views: 14.2ms | ActiveRecord: 4.4ms | Allocations: 1420)
+
+
+Started DELETE "/api/v1/members/destroy/8" for 127.0.0.1 at 2021-04-13 23:21:00 -0500
+Processing by Api::V1::MembersController#destroy as */*
+  Parameters: {"id"=>"8", "member"=>{}}
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:64:in `member'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+  [1m[36mAnnouncement Update All (0.9ms)[0m  [1m[33mUPDATE "announcements" SET "member_id" = $1 WHERE "announcements"."member_id" = $2[0m  [["member_id", nil], ["member_id", 8]]
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+  [1m[36mReferral Destroy (1.2ms)[0m  [1m[31mDELETE FROM "referrals" WHERE "referrals"."member_id" = $1[0m  [["member_id", 8]]
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+  [1m[36mMember Destroy (10.3ms)[0m  [1m[31mDELETE FROM "members" WHERE "members"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:49:in `destroy'
+Completed 200 OK in 54ms (Views: 0.2ms | ActiveRecord: 27.6ms | Allocations: 4708)
+
+
+Started GET "/admin" for 127.0.0.1 at 2021-04-13 23:21:01 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 5371)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 5862)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:21:02 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 1360)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:21:03 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (2.7ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 2.7ms | Allocations: 1356)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-13 23:21:03 -0500
+Started GET "/api/v1/roles/index" for 127.0.0.1 at 2021-04-13 23:21:03 -0500
+Processing by Api::V1::RolesController#index as */*
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (3.4ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+  [1m[36mRole Load (26.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."name" DESC[0m
+Completed 200 OK in 55ms (Views: 30.7ms | ActiveRecord: 3.4ms | Allocations: 3217)
+
+
+  ↳ app/controllers/api/v1/roles_controller.rb:17:in `index'
+Completed 200 OK in 73ms (Views: 36.4ms | ActiveRecord: 26.5ms | Allocations: 4539)
+
+
+Started POST "/api/v1/members/remigrate" for 127.0.0.1 at 2021-04-13 23:22:06 -0500
+Processing by Api::V1::MembersController#remigrate as */*
+  Parameters: {"_json"=>[{"id"=>"1", "first_name"=>"Test1", "last_name"=>"Test1", "email"=>"test1@test.com", "num_referrals"=>"0", "role_id"=>"3"}, {"id"=>"2", "first_name"=>"Test2", "last_name"=>"Test2", "email"=>"test2@test.com", "num_referrals"=>"0", "role_id"=>"3"}, {"id"=>"3", "first_name"=>"Test3", "last_name"=>"Test3", "email"=>"test3@test.com", "num_referrals"=>"0", "role_id"=>"3"}, {"id"=>"4", "first_name"=>"Test4", "last_name"=>"Test4", "email"=>"test4@test.com", "num_referrals"=>"0", "role_id"=>"3"}, {"id"=>"5", "first_name"=>"Test5", "last_name"=>"Test5", "email"=>"test5@test.com", "num_referrals"=>"0", "role_id"=>"3"}, {"id"=>"6", "first_name"=>"Test6", "last_name"=>"Test6", "email"=>"test6@test.com", "num_referrals"=>"0", "role_id"=>"3"}, {"id"=>"7", "first_name"=>"Test7", "last_name"=>"Test7", "email"=>"test7@test.com", "num_referrals"=>"0", "role_id"=>"3"}, {"id"=>"8", "first_name"=>"Test8", "last_name"=>"Test8", "email"=>"test8@test.com", "num_referrals"=>"0", "role_id"=>"3"}, {"id"=>"9", "first_name"=>"Test9", "last_name"=>"Test9", "email"=>"test9@test.com", "num_referrals"=>"0", "role_id"=>"3"}, {"id"=>"10", "first_name"=>"Reo", "last_name"=>"Matsuda", "email"=>"reo.matsuda@gmail.com", "num_referrals"=>"0", "role_id"=>"1"}, {"id"=>"11", "first_name"=>"Trey", "last_name"=>"Dinges", "email"=>"treydinges@tamu.edu", "num_referrals"=>"0", "role_id"=>"1"}, {"id"=>"12", "first_name"=>"Michael", "last_name"=>"Gallegos", "email"=>"snowspeeder@tamu.edu", "num_referrals"=>"0", "role_id"=>"1"}, {"id"=>"13", "first_name"=>"Zachary", "last_name"=>"Summers", "email"=>"zsum19@tamu.edu", "num_referrals"=>"0", "role_id"=>"1"}, {"id"=>"14", "first_name"=>"Nicholas", "last_name"=>"Belovoskey", "email"=>"nhb368@tamu.edu", "num_referrals"=>"0", "role_id"=>"1"}], "member"=>{}}
+  [1m[35m (34.2ms)[0m  [1m[35mDROP TABLE "members" CASCADE[0m
+  ↳ app/controllers/api/v1/members_controller.rb:30:in `remigrate'
+  [1m[35m (44.0ms)[0m  [1m[35mCREATE TABLE "members" ("id" bigserial primary key)[0m
+  ↳ app/controllers/api/v1/members_controller.rb:31:in `remigrate'
+  [1m[35m (9.2ms)[0m  [1m[35mALTER TABLE "members" ADD "role_id" bigserial[0m
+  ↳ app/controllers/api/v1/members_controller.rb:32:in `remigrate'
+  [1m[35m (10.1ms)[0m  [1m[35mALTER TABLE "members" ADD CONSTRAINT "fk_rails_ba7343b1aa"
+FOREIGN KEY ("role_id")
+  REFERENCES "roles" ("id")
+[0m
+  ↳ app/controllers/api/v1/members_controller.rb:33:in `remigrate'
+  [1m[35m (9.9ms)[0m  [1m[35mALTER TABLE "members" ADD "first_name" character varying NOT NULL[0m
+  ↳ app/controllers/api/v1/members_controller.rb:34:in `remigrate'
+  [1m[35m (3.9ms)[0m  [1m[35mALTER TABLE "members" ADD "last_name" character varying NOT NULL[0m
+  ↳ app/controllers/api/v1/members_controller.rb:35:in `remigrate'
+  [1m[35m (2.9ms)[0m  [1m[35mALTER TABLE "members" ADD "email" character varying NOT NULL[0m
+  ↳ app/controllers/api/v1/members_controller.rb:36:in `remigrate'
+  [1m[35m (3.3ms)[0m  [1m[35mALTER TABLE "members" ADD "num_referrals" integer DEFAULT 0 NOT NULL[0m
+  ↳ app/controllers/api/v1/members_controller.rb:37:in `remigrate'
+  [1m[35m (2.6ms)[0m  [1m[35mALTER TABLE "members" ADD "created_at" timestamp[0m
+  ↳ app/controllers/api/v1/members_controller.rb:39:in `remigrate'
+  [1m[35m (2.6ms)[0m  [1m[35mALTER TABLE "members" ADD "updated_at" timestamp[0m
+  ↳ app/controllers/api/v1/members_controller.rb:40:in `remigrate'
+No template found for Api::V1::MembersController#remigrate, rendering head :no_content
+Completed 204 No Content in 183ms (ActiveRecord: 128.0ms | Allocations: 9633)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:06 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"1", "first_name"=>"Test1", "last_name"=>"Test1", "email"=>"test1@test.com", "num_referrals"=>"0", "role_id"=>"3", "member"=>{"id"=>"1", "role_id"=>"3", "first_name"=>"Test1", "last_name"=>"Test1", "email"=>"test1@test.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (0.9ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (6.1ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 3], ["first_name", "Test1"], ["last_name", "Test1"], ["email", "test1@test.com"], ["created_at", "2021-04-14 04:22:06.787973"], ["updated_at", "2021-04-14 04:22:06.787973"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 103ms (Views: 0.3ms | ActiveRecord: 19.6ms | Allocations: 8979)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:06 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"2", "first_name"=>"Test2", "last_name"=>"Test2", "email"=>"test2@test.com", "num_referrals"=>"0", "role_id"=>"3", "member"=>{"id"=>"2", "role_id"=>"3", "first_name"=>"Test2", "last_name"=>"Test2", "email"=>"test2@test.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (9.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (3.5ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 3], ["first_name", "Test2"], ["last_name", "Test2"], ["email", "test2@test.com"], ["created_at", "2021-04-14 04:22:06.981323"], ["updated_at", "2021-04-14 04:22:06.981323"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 71ms (Views: 0.4ms | ActiveRecord: 25.0ms | Allocations: 4075)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:07 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"3", "first_name"=>"Test3", "last_name"=>"Test3", "email"=>"test3@test.com", "num_referrals"=>"0", "role_id"=>"3", "member"=>{"id"=>"3", "role_id"=>"3", "first_name"=>"Test3", "last_name"=>"Test3", "email"=>"test3@test.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (12.7ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (3.3ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 3], ["first_name", "Test3"], ["last_name", "Test3"], ["email", "test3@test.com"], ["created_at", "2021-04-14 04:22:07.203060"], ["updated_at", "2021-04-14 04:22:07.203060"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 79ms (Views: 1.0ms | ActiveRecord: 28.7ms | Allocations: 4079)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:07 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"4", "first_name"=>"Test4", "last_name"=>"Test4", "email"=>"test4@test.com", "num_referrals"=>"0", "role_id"=>"3", "member"=>{"id"=>"4", "role_id"=>"3", "first_name"=>"Test4", "last_name"=>"Test4", "email"=>"test4@test.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (3.5ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 3], ["first_name", "Test4"], ["last_name", "Test4"], ["email", "test4@test.com"], ["created_at", "2021-04-14 04:22:07.449991"], ["updated_at", "2021-04-14 04:22:07.449991"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 61ms (Views: 0.3ms | ActiveRecord: 15.6ms | Allocations: 4077)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:07 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"5", "first_name"=>"Test5", "last_name"=>"Test5", "email"=>"test5@test.com", "num_referrals"=>"0", "role_id"=>"3", "member"=>{"id"=>"5", "role_id"=>"3", "first_name"=>"Test5", "last_name"=>"Test5", "email"=>"test5@test.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (10.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (0.9ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (2.2ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 3], ["first_name", "Test5"], ["last_name", "Test5"], ["email", "test5@test.com"], ["created_at", "2021-04-14 04:22:07.554223"], ["updated_at", "2021-04-14 04:22:07.554223"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 47ms (Views: 0.5ms | ActiveRecord: 17.4ms | Allocations: 4074)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:07 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"6", "first_name"=>"Test6", "last_name"=>"Test6", "email"=>"test6@test.com", "num_referrals"=>"0", "role_id"=>"3", "member"=>{"id"=>"6", "role_id"=>"3", "first_name"=>"Test6", "last_name"=>"Test6", "email"=>"test6@test.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (5.9ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (5.6ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 3], ["first_name", "Test6"], ["last_name", "Test6"], ["email", "test6@test.com"], ["created_at", "2021-04-14 04:22:07.691051"], ["updated_at", "2021-04-14 04:22:07.691051"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 48ms (Views: 0.5ms | ActiveRecord: 23.9ms | Allocations: 4074)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:07 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"7", "first_name"=>"Test7", "last_name"=>"Test7", "email"=>"test7@test.com", "num_referrals"=>"0", "role_id"=>"3", "member"=>{"id"=>"7", "role_id"=>"3", "first_name"=>"Test7", "last_name"=>"Test7", "email"=>"test7@test.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (1.8ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 3], ["first_name", "Test7"], ["last_name", "Test7"], ["email", "test7@test.com"], ["created_at", "2021-04-14 04:22:07.895677"], ["updated_at", "2021-04-14 04:22:07.895677"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 30ms (Views: 0.3ms | ActiveRecord: 13.3ms | Allocations: 4074)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:07 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"8", "first_name"=>"Test8", "last_name"=>"Test8", "email"=>"test8@test.com", "num_referrals"=>"0", "role_id"=>"3", "member"=>{"id"=>"8", "role_id"=>"3", "first_name"=>"Test8", "last_name"=>"Test8", "email"=>"test8@test.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (2.3ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 3], ["first_name", "Test8"], ["last_name", "Test8"], ["email", "test8@test.com"], ["created_at", "2021-04-14 04:22:07.980096"], ["updated_at", "2021-04-14 04:22:07.980096"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 44ms (Views: 0.4ms | ActiveRecord: 7.9ms | Allocations: 4092)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:08 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"9", "first_name"=>"Test9", "last_name"=>"Test9", "email"=>"test9@test.com", "num_referrals"=>"0", "role_id"=>"3", "member"=>{"id"=>"9", "role_id"=>"3", "first_name"=>"Test9", "last_name"=>"Test9", "email"=>"test9@test.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (12.6ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 3], ["first_name", "Test9"], ["last_name", "Test9"], ["email", "test9@test.com"], ["created_at", "2021-04-14 04:22:08.065300"], ["updated_at", "2021-04-14 04:22:08.065300"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 39ms (Views: 0.4ms | ActiveRecord: 22.4ms | Allocations: 4074)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:08 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"10", "first_name"=>"Reo", "last_name"=>"Matsuda", "email"=>"reo.matsuda@gmail.com", "num_referrals"=>"0", "role_id"=>"1", "member"=>{"id"=>"10", "role_id"=>"1", "first_name"=>"Reo", "last_name"=>"Matsuda", "email"=>"reo.matsuda@gmail.com", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (2.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (4.9ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 1], ["first_name", "Reo"], ["last_name", "Matsuda"], ["email", "reo.matsuda@gmail.com"], ["created_at", "2021-04-14 04:22:08.245969"], ["updated_at", "2021-04-14 04:22:08.245969"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 57ms (Views: 3.6ms | ActiveRecord: 15.2ms | Allocations: 4074)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:08 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"11", "first_name"=>"Trey", "last_name"=>"Dinges", "email"=>"treydinges@tamu.edu", "num_referrals"=>"0", "role_id"=>"1", "member"=>{"id"=>"11", "role_id"=>"1", "first_name"=>"Trey", "last_name"=>"Dinges", "email"=>"treydinges@tamu.edu", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (3.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (3.7ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 1], ["first_name", "Trey"], ["last_name", "Dinges"], ["email", "treydinges@tamu.edu"], ["created_at", "2021-04-14 04:22:08.403246"], ["updated_at", "2021-04-14 04:22:08.403246"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 45ms (Views: 8.9ms | ActiveRecord: 16.4ms | Allocations: 4074)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:08 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"12", "first_name"=>"Michael", "last_name"=>"Gallegos", "email"=>"snowspeeder@tamu.edu", "num_referrals"=>"0", "role_id"=>"1", "member"=>{"id"=>"12", "role_id"=>"1", "first_name"=>"Michael", "last_name"=>"Gallegos", "email"=>"snowspeeder@tamu.edu", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (0.9ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (5.0ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 1], ["first_name", "Michael"], ["last_name", "Gallegos"], ["email", "snowspeeder@tamu.edu"], ["created_at", "2021-04-14 04:22:08.498657"], ["updated_at", "2021-04-14 04:22:08.498657"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 34ms (Views: 0.5ms | ActiveRecord: 13.1ms | Allocations: 4074)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:08 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"13", "first_name"=>"Zachary", "last_name"=>"Summers", "email"=>"zsum19@tamu.edu", "num_referrals"=>"0", "role_id"=>"1", "member"=>{"id"=>"13", "role_id"=>"1", "first_name"=>"Zachary", "last_name"=>"Summers", "email"=>"zsum19@tamu.edu", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (9.6ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (3.2ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 1], ["first_name", "Zachary"], ["last_name", "Summers"], ["email", "zsum19@tamu.edu"], ["created_at", "2021-04-14 04:22:08.671821"], ["updated_at", "2021-04-14 04:22:08.671821"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 85ms (Views: 0.5ms | ActiveRecord: 22.7ms | Allocations: 4080)
+
+
+Started POST "/api/v1/members/create" for 127.0.0.1 at 2021-04-13 23:22:08 -0500
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"id"=>"14", "first_name"=>"Nicholas", "last_name"=>"Belovoskey", "email"=>"nhb368@tamu.edu", "num_referrals"=>"0", "role_id"=>"1", "member"=>{"id"=>"14", "role_id"=>"1", "first_name"=>"Nicholas", "last_name"=>"Belovoskey", "email"=>"nhb368@tamu.edu", "num_referrals"=>"0"}}
+[31mUnpermitted parameters: :id, :member[0m
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mRole Load (0.7ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mMember Create (3.5ms)[0m  [1m[32mINSERT INTO "members" ("role_id", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["role_id", 1], ["first_name", "Nicholas"], ["last_name", "Belovoskey"], ["email", "nhb368@tamu.edu"], ["created_at", "2021-04-14 04:22:08.852176"], ["updated_at", "2021-04-14 04:22:08.852176"]]
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/members_controller.rb:12:in `create'
+Completed 200 OK in 51ms (Views: 0.4ms | ActiveRecord: 18.3ms | Allocations: 4074)
+
+
+Started GET "/admin" for 127.0.0.1 at 2021-04-13 23:22:13 -0500
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 5371)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms | Allocations: 5862)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:22:14 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 1361)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:22:14 -0500
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mMember Load (2.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 2.8ms | Allocations: 1379)
+
+
+Started GET "/api/v1/members/index" for 127.0.0.1 at 2021-04-13 23:22:14 -0500
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (19.1ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."first_name" DESC[0m
+  ↳ app/controllers/api/v1/members_controller.rb:8:in `index'
+Completed 200 OK in 45ms (Views: 19.4ms | ActiveRecord: 19.1ms | Allocations: 4763)
+
+
+Started GET "/api/v1/roles/index" for 127.0.0.1 at 2021-04-13 23:22:14 -0500
+Processing by Api::V1::RolesController#index as */*
+  [1m[36mRole Load (4.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."name" DESC[0m
+  ↳ app/controllers/api/v1/roles_controller.rb:17:in `index'
+Completed 200 OK in 24ms (Views: 18.4ms | ActiveRecord: 4.5ms | Allocations: 1457)
+
+
+Started GET "/api/v1/members/currentMember" for 127.0.0.1 at 2021-04-13 23:22:22 -0500
+Started GET "/api/v1/announcements/index" for 127.0.0.1 at 2021-04-13 23:22:22 -0500
+Processing by Api::V1::AnnouncementsController#index as */*
+Processing by Api::V1::MembersController#currentMember as */*
+  [1m[36mAnnouncement Load (9.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" ORDER BY "announcements"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/announcements_controller.rb:13:in `index'
+Started GET "/api/v1/events/index" for 127.0.0.1 at 2021-04-13 23:22:22 -0500
+Completed 200 OK in 30ms (Views: 18.2ms | ActiveRecord: 9.5ms | Allocations: 5513)
+
+
+  [1m[36mMember Load (32.0ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Processing by Api::V1::EventsController#index as */*
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+  [1m[36mMember Load (2.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/members_controller.rb:54:in `currentMember'
+Completed 200 OK in 93ms (Views: 0.4ms | ActiveRecord: 34.6ms | Allocations: 9195)
+
+
+  [1m[36mEvent Load (3.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 97ms (Views: 3.3ms | ActiveRecord: 62.5ms | Allocations: 7479)
+
+
