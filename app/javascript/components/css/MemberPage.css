@@ -1,6 +1,6 @@
 .dashItem {
     border: 5px solid #ddd;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .mainContent {
@@ -21,4 +21,15 @@
 .announcement-scroll-box{
     flex-grow: 1;
     overflow-y: auto;
+}
+
+th {
+    background-color: hsl(185, 61%, 65%);
+}
+tr:nth-child(odd) {
+    background-color: hsl(185, 61%, 90%);
+}
+
+th,td{
+    padding: 8px;
 }

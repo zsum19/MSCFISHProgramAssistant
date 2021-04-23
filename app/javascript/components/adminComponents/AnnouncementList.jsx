@@ -7,8 +7,30 @@ class AnnouncementList extends React.Component {
     constructor() {
         super();
         this.state = {
-            announcements: []
+            announcements: [],
+            members: [],
+            events: []
         }
+    }
+
+    getMemberName(members, id) {
+        var name = "UNDEFINED"
+        members.forEach(function (member) {
+            if(member.id == id){
+                name =  member.first_name + ' ' + member.last_name;
+            }
+        });
+        return name;
+    }
+
+    getEventName(events, id) {
+        var name = "UNDEFINED"
+        events.forEach(function (event) {
+            if(event.id == id){
+                name =  event.name;
+            }
+        });
+        return name;
     }
 
     test(id) {
@@ -16,7 +38,7 @@ class AnnouncementList extends React.Component {
     }
 
     componentDidMount() {
-        const url = "/api/v1/announcements/index";
+        var url = "/api/v1/announcements/index";
         fetch(url)
           .then(response => {
             if (response.ok) {
@@ -28,6 +50,28 @@ class AnnouncementList extends React.Component {
             this.setState({ announcements: response });
           })
           .catch(error => console.log(error.message));
+
+          url = "/api/v1/members/index/";
+          fetch(url)
+          .then(response => {
+              if (response.ok) {
+              return response.json();
+              }
+              throw new Error("Network response was not ok.");
+          })
+          .then(response => this.setState({ members: response }))
+          .catch(() => this.props.history.push("/"));
+          
+          url = "/api/v1/events/index";
+          fetch(url)
+          .then(response => {
+              if (response.ok) {
+              return response.json();
+              }
+              throw new Error("Network response was not ok.");
+          })
+          .then(response => this.setState({ events: response }))
+          .catch(() => this.props.history.push("/"));
     }
 
     confirmDelete = (announcement) => {
@@ -54,16 +98,17 @@ class AnnouncementList extends React.Component {
     }
 
     render() {
-        const { announcements } = this.state;
+        const { announcements, members, events } = this.state;
         const allAnnouncements = announcements.map((announcement, index) => (
             <div key={index} className="col-lg-4 col-md-6 m-a">
                 <AnnouncementView 
                     title = {announcement.title}
                     content = {announcement.content}
-                    author = {announcement.member_id}
+                    author = {this.getMemberName(members, announcement.member_id)}
                     date_posted = {announcement.date_posted}
                     id = {announcement.id}
                     event_id = {announcement.event_id}
+                    event_name = {this.getEventName(events, announcement.event_id)}
                     onClick = {() => this.confirmDelete(announcement)}
                     admin = {true}
                 ></AnnouncementView>

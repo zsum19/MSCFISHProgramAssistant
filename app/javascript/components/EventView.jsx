@@ -67,7 +67,9 @@ function getDate(ts){
     return ts.split("T")[0];
 };
 function getTime(ts){
-    return ts.split("T")[1];
+    var time = ts.split("T")[1];
+
+    return time.split(".")[0];
 }
 
 export default (props) => ( 
@@ -80,7 +82,7 @@ export default (props) => (
         <CalendarBadge text = {formatDay(props.date)}></CalendarBadge>
         
         <p className = "single-event-description">{props.description}</p>
-        <p className = "subtitle">{getTime(props.date)}</p>
+        {/* <p className = "subtitle">{getTime(props.date)}</p> */}
 
         {(props.admin == false || props.admin == undefined) ? (
         <>

@@ -13,7 +13,7 @@ class AllEvents extends React.Component {
     render() {
         
         return (
-            <div style = {{width: "100vw", height: "105vh", backgroundColor: "whitesmoke"}}>
+            <div style = {{width: "100vw", height: "100vh"}}>
                 <Navbar/>
                 <div className="container-fluid">
                     <section className="jumbotron jumbotron-fluid text-center">
@@ -26,7 +26,6 @@ class AllEvents extends React.Component {
                     </section>
                     <div className="py-5">
                     <main className="container">
-                        <Link to="/" className="btn btn-link">Home</Link>
                         <div className="row">
                             
                             <Events></Events>

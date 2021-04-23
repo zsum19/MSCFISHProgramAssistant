@@ -22,6 +22,7 @@ Rails.application.routes.draw do
       delete 'announcements/destroy/:id', to: 'announcements#destroy'
       # post 'announcements/remigrate'
 
+      get 'attendees/index'
       post 'attendees/create'
       patch 'attendees/update'
       # post 'attendees/remigrate'
