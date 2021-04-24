@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LinkButton from "./common/LinkButton";
 
 class NewMember extends React.Component {
     constructor(props) {
@@ -10,11 +11,39 @@ class NewMember extends React.Component {
             last_name: "Doe",
             email: "johndoe@gmail.com",
             num_referrals: 0,
+            current_member: {},
+            roles: []
         };
 
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
         this.stripHtmlEntities = this.stripHtmlEntities.bind(this);
+    }
+
+    componentDidMount() {
+      var url = `/api/v1/members/currentMember`;
+  
+      fetch(url)
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error("Network response was not ok.");
+        })
+        .then(response => this.setState({current_member: response}))
+        .catch(error => console.log(error.message));
+
+      url = `/api/v1/roles/index`;
+  
+      fetch(url)
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error("Network response was not ok.");
+        })
+        .then(response => this.setState({roles: response}))
+        .catch(error => console.log(error.message));
     }
 
     stripHtmlEntities(str) {
@@ -60,6 +89,41 @@ class NewMember extends React.Component {
     }
     
     render() {
+        const { current_member, roles } = this.state;
+
+        if(current_member == undefined || Object.keys(current_member).length == 0) return (
+            <div className="container-fluid vh-100 row">
+                <div className="col-12 align-self-center">
+                    <h1 className="m-auto d-flex justify-content-center">You should not be here!</h1>
+                    <h4 className="m-auto d-flex justify-content-center">Or you should sign in</h4>
+                    <div className="my-4 d-flex justify-content-center">
+                    <LinkButton className="to-button" to = "/members/auth/google_oauth2" text = "Sign In"></LinkButton>
+                    </div>
+                </div>
+            </div>
+        );
+
+        if(current_member.role_id > 2 ) return (
+            <div className="container-fluid vh-100 row">
+                <div className="col-12 align-self-center">
+                    <h1 className="m-auto d-flex justify-content-center">You should not be here!</h1>
+                    <h4 className="m-auto d-flex justify-content-center">If you think this is an issue, contact your director or chair.</h4>
+                </div>
+            </div>
+        );
+
+      //   if(roles == undefined) return (
+      //     <div className="container-fluid vh-100 row">
+      //         <div className="col-12 align-self-center">
+      //             <h1 className="m-auto d-flex justify-content-center">No Role Error!</h1>
+      //             <h4 className="m-auto d-flex justify-content-center">If you think this is an issue, contact your director or chair.</h4>
+      //         </div>
+      //     </div>
+      // );
+        let roleOptionItems = roles.map((role, index) => (
+          <option key={index} value={role.id.toString()}>{role.name}</option>
+        ));
+
         return (
           <div className="container mt-5">
             <div className="row">
@@ -112,6 +176,20 @@ class NewMember extends React.Component {
                         required
                         onChange={this.onChange}
                     />
+                </div>
+                <div className="form-group">
+                <label htmlFor="external">Related Event</label>
+                <select
+                    type="select"
+                    name="role_id"
+                    id="role_id"
+                    className="form-control"
+                    required
+                    onChange={this.onChange}
+                    value={this.state.role_id}
+                >
+                    {roleOptionItems}
+                </select>
                 </div>
                 <button type="submit" className="btn custom-button mt-3">
                 Create Member

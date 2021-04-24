@@ -76,7 +76,7 @@ class MemberReferrals extends React.Component {
         if(attendees.length == 0) return noReferrals;
 
         const allReferrals = referrals.map((referral, index) => (
-            <tr>
+            <tr key={index}>
                 <td><i>{referral.attendee_id}</i></td>
                 <td>{this.getAttendeeName(attendees, referral.attendee_id)}</td>
                 <td>{this.getAttendeeEmail(attendees, referral.attendee_id)}</td>
@@ -84,18 +84,18 @@ class MemberReferrals extends React.Component {
         ));        
 
         return (
-            <div className = "small-padding announcement-scroll-box"> 
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Attendee ID</th>
-                            <th>Attendee Name</th>
-                            <th>Attendee Email</th>
-                        </tr>
-                        {referrals.length > 0 ? allReferrals : noReferrals}
-                    </tbody>
-                </table>
-            </div>
+            <>
+            <table className = "small-padding announcement-scroll-box">
+                <tbody>
+                    <tr key='999999'>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                    {referrals.length > 0 ? allReferrals : noReferrals}
+                </tbody>
+            </table>
+            </>
         );
       }
 }

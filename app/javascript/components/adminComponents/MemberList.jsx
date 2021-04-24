@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LinkButton from "../common/LinkButton";
 import MemberForm from "./MemberForm";
 
@@ -132,9 +133,20 @@ class MemberList extends React.Component {
         return (
             <div className="container-fluid mb-4 px-3">
                 <div className="container-fluid d-flex justify-content-between my-3">
-                <h1 className="d-inline-block">Member List</h1>
-                <LinkButton className =  "to-button pull-right" to = "/member/create" text = "Add Member"/>
-                <label for="file">Upload Members:</label>
+                <h1 className="d-inline-block my-auto">Member List</h1>
+                {/* <LinkButton className =  "to-button pull-right" to = "/member/create" text = "Add Member"/> */}
+                <Link
+                  to= "/member/create"
+                  className="btn btn-lg custom-button px-2 py-0 my-auto"
+                  role="button"
+                  style = {{
+                      marginRight: "10px",
+                      height: "30px"
+                  }}
+                >
+                    Create New
+                </Link>
+                <label className="my-auto" for="file">Upload Members:</label>
                 <input type="file" id="file" name="file" className="btn custom-button" onChange={this.onChange}/><br/>
                 </div>
                 <div className="row">
