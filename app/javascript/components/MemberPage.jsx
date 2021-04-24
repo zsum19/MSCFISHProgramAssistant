@@ -77,7 +77,6 @@ class MemberPage extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <a onClick={this.clicked}>CLICK ME</a>
                 </div>
             </div>
         );
