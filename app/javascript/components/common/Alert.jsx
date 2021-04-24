@@ -30,7 +30,7 @@ class Alert extends React.Component {
         const message = this.props.message;
         const alertClassName = `alert ${ this.alertClass(message.type) } fade in`;
 
-        console.log(message);
+        // console.log(message.text);
 
         return(
             <div className={ alertClassName }>
@@ -38,7 +38,7 @@ class Alert extends React.Component {
                 onClick={ this.props.onClose }>
                 &times;
             </button>
-            { message }
+            { message.text }
             </div>
         );
     }
