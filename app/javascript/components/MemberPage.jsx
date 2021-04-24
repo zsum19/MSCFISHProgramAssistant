@@ -32,6 +32,10 @@ class MemberPage extends React.Component {
           .catch(error => console.log(error.message));
     }
 
+    clicked() {
+        window.flash_messages.addMessage("Hello World!");
+    }
+
     render() {
         const { current_member } = this.state;
         if(current_member == undefined || Object.keys(current_member).length == 0) return (
@@ -73,6 +77,7 @@ class MemberPage extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <a onClick={this.clicked}>CLICK ME</a>
                 </div>
             </div>
         );
