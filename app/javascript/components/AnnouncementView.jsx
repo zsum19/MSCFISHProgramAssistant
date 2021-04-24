@@ -7,7 +7,7 @@ import LinkButton from "./common/LinkButton";
 export default (props) => ( 
     <div className = "single-post announcement-view">
         <h2 className = "post-heading">{props.title}</h2>
-        <EventBadge text = {props.event_id}></EventBadge>
+        <EventBadge text = {props.event_name}></EventBadge>
         <p className = "single-event-description">{props.content}</p>
         <p 
             style = {{

@@ -7,12 +7,34 @@ class LatestAnnouncementsView extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            announcements: []
+            announcements: [],
+            members: [],
+            events: []
         };
     }
 
+    getMemberName(members, id) {
+        var name = "UNDEFINED"
+        members.forEach(function (member) {
+            if(member.id == id){
+                name =  member.first_name + ' ' + member.last_name;
+            }
+        });
+        return name;
+    }
+
+    getEventName(events, id) {
+        var name = "UNDEFINED"
+        events.forEach(function (event) {
+            if(event.id == id){
+                name =  event.name;
+            }
+        });
+        return name;
+    }
+
     componentDidMount() {
-        const url = "/api/v1/announcements/index";
+        var url = "/api/v1/announcements/index";
         fetch(url)
           .then(response => {
             if (response.ok) {
@@ -22,15 +44,43 @@ class LatestAnnouncementsView extends React.Component {
           })
           .then(response => this.setState({ announcements: response }))
           .catch(() => this.props.history.push("/"));
+
+        url = "/api/v1/members/index/";
+        fetch(url)
+        .then(response => {
+            if (response.ok) {
+            return response.json();
+            }
+            throw new Error("Network response was not ok.");
+        })
+        .then(response => this.setState({ members: response }))
+        .catch(() => this.props.history.push("/"));
+        
+        url = "/api/v1/events/index";
+        fetch(url)
+        .then(response => {
+            if (response.ok) {
+            return response.json();
+            }
+            throw new Error("Network response was not ok.");
+        })
+        .then(response => this.setState({ events: response }))
+        .catch(() => this.props.history.push("/"));
       }
 
     render() {
-        const { announcements } = this.state;
-        // console.log("STATE", this.state);
-        // console.log("announcements: ",announcements);
-        // console.log("announcements.length", announcements.length);
-        // console.log("announcements.length > 5 ?", announcements.length > 5);
-        //console.log()
+        const { announcements, members, events } = this.state;
+
+        const noAnnouncement = (
+            <div className="d-flex align-items-center justify-content-center">
+                <h4>
+                No announcements yet. Why not <Link to="/new_announcement">create one</Link>
+                </h4>
+            </div>
+        );
+
+        if(members.length == 0 || events.length == 0) return noAnnouncement;
+
         var latestAnnouncements = [];
         if(announcements.length > 5){
             // console.log("latest announcement", announcements[0]);
@@ -47,14 +97,14 @@ class LatestAnnouncementsView extends React.Component {
             <div key={index} className="col-lg-12">               
                 <div className = "single-post announcement-view">
                     <h2 className = "post-heading">{announcement.title}</h2>
-                    <EventBadge text = {announcement.event_id}></EventBadge>
+                    <EventBadge text = {this.getEventName(events, announcement.event_id)}></EventBadge>
                     <p className = "single-event-description">{announcement.content}</p>
                     <p 
                         style = {{
                             fontSize: "medium",
                             fontWeight: "lighter"
                         }}
-                    > - <i>{announcement.author_id}</i></p>
+                    > - <i>{this.getMemberName(members, announcement.member_id)}</i></p>
                     <p className = "subtitle">{announcement.date_posted}</p>
                     <Link to={`/announcement/${announcement.id}`} className="btn custom-button">
                     View Announcement
@@ -63,13 +113,7 @@ class LatestAnnouncementsView extends React.Component {
             </div>
         ));
         
-        const noAnnouncement = (
-            <div className="d-flex align-items-center justify-content-center">
-                <h4>
-                No announcements yet. Why not <Link to="/new_announcement">create one</Link>
-                </h4>
-            </div>
-        );
+        
 
         return (
             <div className = "announcements-view post-view">

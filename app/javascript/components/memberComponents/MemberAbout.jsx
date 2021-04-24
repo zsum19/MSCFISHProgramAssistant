@@ -19,7 +19,7 @@ class MemberAbout extends React.Component {
             <div>
                 <p>Name: {member.first_name + " " + member.last_name}</p>
                 <p>Email: {member.email}</p>
-                <p>{member.num_referrals} Referrals</p>
+                <p style={{textAlign:'center'}}><b>{member.num_referrals} Referrals</b></p>
             </div>
         );
       }

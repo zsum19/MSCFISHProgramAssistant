@@ -73,7 +73,6 @@ class MemberPage extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <LinkButton className =  "to-button" to = "/members/sign_out" text = "Sign Out"></LinkButton>
                 </div>
             </div>
         );
