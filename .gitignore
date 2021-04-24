@@ -4,3 +4,7 @@ node_modules
 tmp
 .vscode
 log/*.log
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+node_modules/

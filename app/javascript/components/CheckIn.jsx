@@ -35,7 +35,7 @@ class CheckIn extends React.Component {
           .catch(error => console.log(error.message));
 
           const event_id = this.props.match.params.event_id;
-          console.log(event_id);
+          // console.log(event_id);
 
           const url2 = `/api/v1/events/show/${event_id}`;
           fetch(url2)
@@ -92,7 +92,10 @@ class CheckIn extends React.Component {
             }
             throw new Error("Network response was not ok.");
           })
-          .then(response => this.props.history.push(`/`))
+          .then(response => {
+            window.flash_messages.addMessage({ id: 'id', text: 'Checked In!', type: 'success' });
+            this.props.history.push(`/`);
+          })
           .catch(error => console.log(error.message));
     }
 
@@ -134,7 +137,10 @@ class CheckIn extends React.Component {
             }
             throw new Error("Network response was not ok.");
           })
-          .then(response => this.props.history.push(`/`))
+          .then(response => {
+            window.flash_messages.addMessage({ id: 'id', text: 'Checked In!', type: 'success' });
+            this.props.history.push(`/`);
+          })
           .catch(error => this.tryUpdate());
     }
 
