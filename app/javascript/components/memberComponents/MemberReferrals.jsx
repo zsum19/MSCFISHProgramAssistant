@@ -36,8 +36,8 @@ class MemberReferrals extends React.Component {
         })
         .then(response => {
             this.setState({ attendees: response });
-            console.log('ATTENDESS:');
-            console.log(response);
+            // console.log('ATTENDESS:');
+            // console.log(response);
         })
         .catch(() => this.props.history.push("/"));
     }
@@ -65,7 +65,7 @@ class MemberReferrals extends React.Component {
     render() {
         const { referrals, attendees } = this.state;
 
-        console.log(attendees);
+        // console.log(attendees);
 
         const noReferrals = (
             <tr>

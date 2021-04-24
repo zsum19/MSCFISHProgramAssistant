@@ -25,7 +25,7 @@ class FlashMessages extends React.Component {
   render () {
     const { messages } = this.state;
 
-    console.log(messages);
+    // console.log(messages);
 
     const alerts = messages.map( message =>
       <Alert 
