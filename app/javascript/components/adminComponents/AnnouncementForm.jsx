@@ -8,6 +8,11 @@ class AnnouncementForm extends React.Component {
 
     render() {
         const { onSubmit, onChange, btnLabel, state } = this.props;
+
+        let eventOptionItems = state.events.map((event, index) => (
+            <option key={index} value={event.id.toString()}>{event.name}</option>
+        ));
+
         return (
             <>
             <form onSubmit={onSubmit}>
@@ -48,6 +53,20 @@ class AnnouncementForm extends React.Component {
                 >
                     <option value={false}>Internal</option>
                     <option value={true}>External</option>
+                </select>
+                </div>
+                <div className="form-group">
+                <label htmlFor="external">Related Event</label>
+                <select
+                    type="select"
+                    name="event_id"
+                    id="event_id"
+                    className="form-control"
+                    required
+                    onChange={onChange}
+                    value={state.event_id}
+                >
+                    {eventOptionItems}
                 </select>
                 </div>
                 <button type="submit" className="btn custom-button mt-3">
