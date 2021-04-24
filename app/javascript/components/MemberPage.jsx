@@ -54,7 +54,7 @@ class MemberPage extends React.Component {
             <div style = {{width: "100vw", height: "100vh", backgroundColor: "whitesmoke"}}>
                 <Navbar/>
                 <div className="container d-flex flex-column p-3 h-100">
-                    <h1 className="my-5">{current_member.first_name}'s Dashboard</h1>
+                    <h1 className="my-5"><b>{current_member.first_name}'s Dashboard</b></h1>
                     <div className="container mainContent">
                         <div className="row h-100">
                             <div className="col col-md-5 h-100">

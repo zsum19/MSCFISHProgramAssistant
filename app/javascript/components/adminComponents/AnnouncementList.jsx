@@ -118,8 +118,19 @@ class AnnouncementList extends React.Component {
         return (
             <div className="container-fluid mb-4 px-3">
                 <div className="container-fluid d-flex justify-content-between my-3">
-                    <h1 className="d-inline-block">Announcement List</h1>
-                    <LinkButton className =  "to-button pull-right" to = "/announcement" text = "Create Event"/>
+                    <h1 className="d-inline-block my-auto">Announcement List</h1>
+                    {/* <LinkButton className =  "to-button pull-right p-0" to = "/announcement" text = "Create Event"/> */}
+                    <Link
+                    to= "/announcement"
+                    className="btn btn-lg custom-button px-2 py-0 my-auto"
+                    role="button"
+                    style = {{
+                        marginRight: "10px",
+                        height: "30px"
+                    }}
+                    >
+                        Create New
+                    </Link>
                 </div>
                 <div className="row m-a">
                     {allAnnouncements}

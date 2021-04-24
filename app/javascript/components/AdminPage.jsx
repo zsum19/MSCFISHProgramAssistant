@@ -74,7 +74,7 @@ class AdminPage extends React.Component {
             <div style = {{width: "100vw", height: "100vh"}}>
                 <Navbar/>
                 <div className="container p-3">
-                    <h1>Admin Page</h1>
+                    <h1><b>Admin Page</b></h1>
                     <Tabs
                         components=
                         {tabsComponents}

@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import EventBadge from "./common/EventBadge"
 import Navbar from "./common/Navbar";
+
+import "./css/Home.css";
+
 class Announcements extends React.Component {
     constructor(props) {
         super(props);
@@ -113,21 +116,24 @@ class Announcements extends React.Component {
         return (
             <div style = {{width: "100vw", height: "100vh"}}>
                 <Navbar/>
-                <div className="container-fluid">
-                    <section className="jumbotron jumbotron-fluid text-center">
-                    <div className="container py-5">
-                        <h1 className="display-4">MSC Fish Announcements</h1>
-                        <p className="lead text-muted">
-                        A list of all current announcements.
-                        </p>
-                    </div>
-                    </section>
-                    <div className="py-5">
-                    <main className="container">
-                        <div className="row">
-                        {announcements.length > 0 ? allAnnouncements : noAnnouncement}
+
+                <div className="homeMainContent">
+                    <div className="container-fluid px-0">
+                        <section className="jumbotron jumbotron-fluid text-center">
+                        <div className="container py-5">
+                            <h1 className="display-4">MSC Fish Announcements</h1>
+                            <p className="lead text-muted">
+                            A list of all current announcements.
+                            </p>
                         </div>
-                    </main>
+                        </section>
+                        <div className="py-5">
+                        <main className="container">
+                            <div className="row">
+                            {announcements.length > 0 ? allAnnouncements : noAnnouncement}
+                            </div>
+                        </main>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -46,7 +46,7 @@ class NewAnnouncement extends React.Component {
         })
         .then(response => this.setState({events: response}))
         .catch(error => console.log(error.message));
-  }
+    }
 
     stripHtmlEntities(str) {
         return String(str)

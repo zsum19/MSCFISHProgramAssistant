@@ -1,0 +1,9 @@
+.homeMainContent {
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .homeMainContent {
+        margin-left: 0;
+    }
+}
