@@ -9,7 +9,8 @@ class UpdateAnnouncement extends React.Component {
             event_id: 1,
             title: "",
             content: "",
-            external: false
+            external: false,
+            events: []
         };
 
         this.onChange = this.onChange.bind(this);
@@ -24,7 +25,7 @@ class UpdateAnnouncement extends React.Component {
         }
       } = this.props;
   
-      const url = `/api/v1/announcements/show/${id}`;
+      var url = `/api/v1/announcements/show/${id}`;
   
       fetch(url)
         .then(response => {
@@ -41,6 +42,18 @@ class UpdateAnnouncement extends React.Component {
             external: response.external
         }))
         .catch(() => this.props.history.push("/events"));
+
+      url = `/api/v1/events/index`;
+
+      fetch(url)
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error("Network response was not ok.");
+        })
+        .then(response => this.setState({events: response}))
+        .catch(error => console.log(error.message));
     }
 
     stripHtmlEntities(str) {

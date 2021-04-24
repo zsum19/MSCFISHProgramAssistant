@@ -13,7 +13,8 @@ class NewAnnouncement extends React.Component {
             title: "",
             content: "",
             external: false,
-            current_member: {}
+            current_member: {},
+            events: []
         };
 
         this.onChange = this.onChange.bind(this);
@@ -22,7 +23,7 @@ class NewAnnouncement extends React.Component {
     }
 
     componentDidMount() {
-      const url = `/api/v1/members/currentMember`;
+      var url = `/api/v1/members/currentMember`;
   
       fetch(url)
         .then(response => {
@@ -32,6 +33,18 @@ class NewAnnouncement extends React.Component {
           throw new Error("Network response was not ok.");
         })
         .then(response => this.setState({current_member: response}))
+        .catch(error => console.log(error.message));
+
+      url = `/api/v1/events/index`;
+  
+      fetch(url)
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error("Network response was not ok.");
+        })
+        .then(response => this.setState({events: response}))
         .catch(error => console.log(error.message));
   }
 
@@ -48,8 +61,10 @@ class NewAnnouncement extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         const url = "/api/v1/announcements/create";
-        const { member_id, event_id, title, content, external } = this.state;
+        const { current_member, event_id, title, content, external } = this.state;
     
+        const member_id = current_member.id;
+
         const body = {
           member_id,
           event_id,
@@ -108,7 +123,7 @@ class NewAnnouncement extends React.Component {
                 <h1 className="font-weight-normal mb-5">
                   Create a new announcement
                 </h1>
-                <AnnouncementForm onSubmit={this.onSubmit} onChange={this.onChange} btnLabel="Create Announcement" state={this.state} />
+                <AnnouncementForm onSubmit={this.onSubmit} onChange={this.onChange} btnLabel="Create Announcement" state={this.state}/>
               </div>
             </div>
           </div>
