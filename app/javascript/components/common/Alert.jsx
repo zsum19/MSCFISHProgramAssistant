@@ -38,7 +38,7 @@ class Alert extends React.Component {
                 onClick={ this.props.onClose }>
                 &times;
             </button>
-            { message }
+            { message.text }
             </div>
         );
     }
