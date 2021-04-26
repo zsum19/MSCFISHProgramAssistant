@@ -34,20 +34,20 @@ class Navbar extends React.Component {
                 <a href="index/database_dump.zip" className =  "custom-button lg" download = "database_dump.zip">
                     Download Database
                 </a>
-                <Link className =  "custom-button lg" to = "/members/sign_out" text = "Sign Out">Sign Out</Link>
+                <Link className =  "custom-button lg" to = "/members/sign_out" onClick={() => window.location.href="/members/sign_out"} text = "Sign Out">Sign Out</Link>
             </div>
         );
         const memberOnly = (
             <div className = "priveleged-navbar-content navbar-content">
                 <hr className = "priveleged-navbar-splitter"></hr>
                 <Link className =  "custom-button lg" to = "/memberpage" text = "Member Page">Member Page</Link>
-                <Link className =  "custom-button lg" to = "/members/sign_out" text = "Sign Out">Sign Out</Link>
+                <Link className =  "custom-button lg" to = "/members/sign_out" onClick={() => window.location.href="/members/sign_out"} text = "Sign Out">Sign Out</Link>
             </div>
         );
         const everyone = (
             <div className = "priveleged-navbar-content navbar-content">
                 <hr className = "priveleged-navbar-splitter"></hr>
-                <Link className =  "custom-button lg" to = "/members/auth/google_oauth2" text = "Sign In">Sign In</Link>
+                <Link className =  "custom-button lg" to = "/members/auth/google_oauth2" onClick={() => window.location.href="/members/auth/google_oauth2"} text = "Sign In">Sign In</Link>
             </div>
         );
 
