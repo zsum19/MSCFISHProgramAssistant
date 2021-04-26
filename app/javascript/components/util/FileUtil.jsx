@@ -8,7 +8,7 @@ class FileUtil extends React.Component {
     }
   }
 	
-	function ToJSON(csv) {
+	ToJSON(csv) {
 		var lines = csv.split("\n");
 		var result = [];
 		var headers = lines[0].split(",");
@@ -27,7 +27,7 @@ class FileUtil extends React.Component {
 		return result;
 	}
 
-	function InOrderFetches(table, json, current) {
+	InOrderFetches(table, json, current) {
 		if (current >= json.length) {
 			return;
 		}
@@ -52,7 +52,7 @@ class FileUtil extends React.Component {
 			})
 	}
 
-	function DeleteAndUpdate(table, json) {
+	DeleteAndUpdate(table, json) {
 		const url = `/api/v1/${table}/`;
 		const token = document.querySelector('meta[name="csrf-token"]').content;
 		var i = 0;
