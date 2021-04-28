@@ -3,29 +3,53 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-## Setup - Windows/Linux
+## Versions:
+* Ruby - 3.0.1
+* Rails - 6.1.3.1
+* Node - 14.16.0
+* Yarn - 1.22.5
 
-* Ruby version
-
-* System dependencies
+## Setup - Windows(WSL)/Linux/Mac (Assuming Ruby and Rails have already been installed)
 
 1. sudo -u postgres psql 
 2. CREATE USER mscfishpa_user WITH PASSWORD 'password1';
 3. ALTER USER mscfishpa_user CREATEDB;
 4. \q (to exit postgres)
+5. Might need to change how the user is authenticated in postgres config file:
+    * Follow instructions in this link: https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge
+6. Change user in database.yml to use the mscfishpa_user and password to test locally
 
-After this is done, run "rails db:create" and "rails db:migrate" to create the database on your local machine.
+## Executing the code
 
-## Setup - Mac
+1. bundle install
+2. yarn
+3. rails db:create
+4. rails db:migrate
+5. rails db:seed (seed the development database)
+6. RAILS_ENV=test rake db:test:prepare db:seed (seed)
+7. rails s (to start server)
 
-### (Steps for railsTest branch.)
+## Deployment on Heroku (Assuming a Heroku account has already been made and is installed on the system)
 
-1. psql postgres
-2. CREATE USER mscfishpa_user WITH PASSWORD 'password1';
-3. ALTER USER mscfishpa_user CREATEDB;
-4. \q (to exit postgres)
-5. bundle install
-6. yarn
-7. db:create, db:migrate
-8. db:seed
-9. rails s (to start server)
+1. Reo, please insert steps here to do a basic Heroku deployment (not on a pipeline)
+2. .
+3. .
+4. .
+
+#### *** Be sure to include packs when committing to Github so that the front-end changes are recompiled ***
+
+## Committing to Github - CI/CD
+
+#### *** Be sure to change the user in database.yml back to postgres user and password before committing to allow CI to pass ***
+
+### CI - on Github
+
+* No additional steps are required to set up CI. CI is managed by the main.yml file in the .github/workflows folder. If you would like when CI is run (currently on pushs, pull requests, and merges to main) you may modify this file before committing your code to Github
+
+### CD - on Heroku
+
+* Please see previous steps on how to deploy to Heroku
+* Set up a Heroku pipeline with any necessary applications
+    * We used a staging application with automatic deployments from the main branch and a production app that would be directly fed from the staging app
+    * There was also some use of a sub-staging app that was used to test production versions of code (automatically deployed from a Github branch) to avoid merging to main while       committing code
+* No additional steps are required after the pipeline is setup and automatic deploys are configured. You may test on the staging application before promoting to the production application
