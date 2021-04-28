@@ -62,7 +62,7 @@ class LatestEvents extends React.Component {
             </div>
         ));
         const noEvent = (
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center" style={{width: "400px"}}>
                 <h4>
                 No events!
                 </h4>
@@ -74,7 +74,7 @@ class LatestEvents extends React.Component {
                     
                     <div className = "events-view post-view">
                         <div className = "colored-heading">
-                            <h2 className = "text test"> LATEST EVENTS </h2>
+                            <h2 className = "text test" style={{textAlign: "center"}}>LATEST EVENTS</h2>
                         </div>
                         <div className = "small-padding scroll-box"> 
                             
