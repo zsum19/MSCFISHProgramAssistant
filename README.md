@@ -31,10 +31,8 @@ application up and running.
 
 ## Deployment on Heroku (Assuming a Heroku account has already been made and is installed on the system)
 
-1. Reo, please insert steps here to do a basic Heroku deployment (not on a pipeline)
-2. .
-3. .
-4. .
+* No extra steps are required to deploy the application on Heroku. Simply pull from main and follow this tutorial to set up a basic deployment:
+   * https://devcenter.heroku.com/articles/git
 
 #### *** Be sure to include packs when committing to Github so that the front-end changes are recompiled ***
 
