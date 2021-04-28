@@ -18,9 +18,9 @@ export default () => (
             </div>
 
             <div className="container d-flex w-100 flex-wrap">
-              {/* <div className="left">
+              <div className="left">
                 <LatestAnnouncementsView></LatestAnnouncementsView>
-              </div> */}
+              </div>
       
               <div className="right">
                 <LatestEventsView></LatestEventsView>
