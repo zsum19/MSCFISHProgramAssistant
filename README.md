@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Please install Ruby, Rails, Node, Yarn, and PostgresSQL before following the README instructions.
 
 ## Versions:
 * Ruby - 3.0.1
@@ -9,7 +8,7 @@ application up and running.
 * Node - 14.16.0
 * Yarn - 1.22.5
 
-## Setup - Windows(WSL)/Linux/Mac (Assuming Ruby, Rails, and pSQL have already been installed)
+## Setup - Windows(WSL)/Linux/Mac (Assuming Ruby, Rails, and PostgresSQL have already been installed)
 
 1. sudo -u postgres psql 
 2. CREATE USER mscfishpa_user WITH PASSWORD 'password1';
@@ -34,20 +33,20 @@ application up and running.
 * No extra steps are required to deploy the application on Heroku. Simply pull from main and follow this tutorial to set up a basic deployment:
    * https://devcenter.heroku.com/articles/git
 
-#### *** Be sure to include packs when committing to Github so that the front-end changes are recompiled ***
+#### *** Be sure to include packs when committing to Github so that the front-end changes are recompiled. ***
 
 ## Committing to Github - CI/CD
 
-#### *** Be sure to change the user in database.yml back to postgres user and password before committing to allow CI to pass ***
+#### *** Be sure to change the user in database.yml back to postgres user and password before committing to allow CI to pass. ***
 
 ### CI - on Github
 
-* No additional steps are required to set up CI. CI is managed by the main.yml file in the .github/workflows folder. If you would like when CI is run (currently on pushs, pull requests, and merges to main) you may modify this file before committing your code to Github
+* No additional steps are required to set up CI. CI is managed by the main.yml file in the .github/workflows folder. If you would like when CI is run (currently on pushs, pull requests, and merges to main) you may modify this file before committing your code to Github.
 
 ### CD - on Heroku
 
-* Please see previous steps on how to deploy to Heroku
-* Set up a Heroku pipeline with any necessary applications
-    * We used a staging application with automatic deployments from the main branch and a production app that would be directly fed from the staging app
-    * There was also some use of a sub-staging app that was used to test production versions of code (automatically deployed from a Github branch) to avoid merging to main while       committing code
-* No additional steps are required after the pipeline is setup and automatic deploys are configured. You may test on the staging application before promoting to the production application
+* Please see previous steps on how to deploy to Heroku.
+* Set up a Heroku pipeline with any necessary applications and connect it to the main branch.
+    * We used a staging application with automatic deployments from the main branch and a production app that would be directly fed from the staging app.
+    * There was also some use of a sub-staging app that was used to test production versions of code (automatically deployed from a Github branch) to avoid merging to main while       committing code.
+* No additional steps are required after the pipeline is setup and automatic deploys are configured. You may test on the staging application before promoting to the production application.
