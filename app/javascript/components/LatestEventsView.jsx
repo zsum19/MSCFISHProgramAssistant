@@ -52,6 +52,7 @@ class LatestEvents extends React.Component {
                     location = {event.location}
                     event_type = {event.event_type}
                     max_size = {event.max_size}
+                    num_checked_in = {event.num_checked_in}
                     tickets_sold = {event.tickets_sold}
                     description = {event.description}
                     date = {event.date}
