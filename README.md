@@ -25,7 +25,7 @@ Please install Ruby, Rails, Node, Yarn, and PostgresSQL before following the REA
 3. rails db:create
 4. rails db:migrate
 5. rails db:seed (seed the development database)
-6. RAILS_ENV=test rake db:test:prepare db:seed (seed)
+6. RAILS_ENV=test rake db:test:prepare db:seed (seed the test database)
 7. rails s (to start server)
 
 ## Deployment on Heroku (Assuming a Heroku account has already been made and is installed on the system)
