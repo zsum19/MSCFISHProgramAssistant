@@ -16,7 +16,7 @@ Please install Ruby, Rails, Node, Yarn, and PostgresSQL before following the REA
 4. \q (to exit postgres)
 5. Might need to change how the user is authenticated in postgres config file:
     * Follow instructions in this link: https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge
-6. Change user in database.yml to use the mscfishpa_user and password to test locally
+6. Change user and password in database.yml to use the mscfishpa_user information to test locally (currently commented out)
 
 ## Executing the code
 
