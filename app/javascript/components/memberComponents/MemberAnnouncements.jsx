@@ -73,11 +73,9 @@ class MemberAnnouncements extends React.Component {
         const { announcements, members, events } = this.state;
 
         const noAnnouncement = (
-            <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
-                <h4>
-                No announcements!
-                </h4>
-            </div>
+            <tr>
+                <td>No announcements!</td>
+            </tr>
         );
 
         if(members.length == 0 || events.length == 0) return noAnnouncement;

@@ -28,11 +28,7 @@ class AllEvents extends React.Component {
                         </section>
                         <div className="py-5">
                         <main className="container">
-                            <div className="row">
-                                
-                                <Events></Events>
-                                
-                            </div>
+                            <Events></Events>
                         </main>
                         </div>
                     </div>
