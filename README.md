@@ -9,7 +9,7 @@ application up and running.
 * Node - 14.16.0
 * Yarn - 1.22.5
 
-## Setup - Windows(WSL)/Linux/Mac (Assuming Ruby and Rails have already been installed)
+## Setup - Windows(WSL)/Linux/Mac (Assuming Ruby, Rails, and pSQL have already been installed)
 
 1. sudo -u postgres psql 
 2. CREATE USER mscfishpa_user WITH PASSWORD 'password1';
