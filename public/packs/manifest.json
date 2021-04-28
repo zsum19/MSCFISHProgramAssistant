@@ -1,15 +1,15 @@
 {
-  "Index.js": "/packs/js/Index-7cd581805991926ad2e8.js",
-  "Index.js.map": "/packs/js/Index-7cd581805991926ad2e8.js.map",
-  "application.js": "/packs/js/application-79e5c84259d909f1c1ae.js",
-  "application.js.map": "/packs/js/application-79e5c84259d909f1c1ae.js.map",
+  "Index.js": "/packs/js/Index-7bd1a67fa6ca8d0fa148.js",
+  "Index.js.map": "/packs/js/Index-7bd1a67fa6ca8d0fa148.js.map",
+  "application.js": "/packs/js/application-0de22d13ac5dd128ab74.js",
+  "application.js.map": "/packs/js/application-0de22d13ac5dd128ab74.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-79e5c84259d909f1c1ae.js"
+        "/packs/js/application-0de22d13ac5dd128ab74.js"
       ],
       "js.map": [
-        "/packs/js/application-79e5c84259d909f1c1ae.js.map"
+        "/packs/js/application-0de22d13ac5dd128ab74.js.map"
       ]
     },
     "hello_react": {
@@ -22,18 +22,18 @@
     },
     "Index": {
       "js": [
-        "/packs/js/Index-7cd581805991926ad2e8.js"
+        "/packs/js/Index-7bd1a67fa6ca8d0fa148.js"
       ],
       "js.map": [
-        "/packs/js/Index-7cd581805991926ad2e8.js.map"
+        "/packs/js/Index-7bd1a67fa6ca8d0fa148.js.map"
       ]
     },
     "server_rendering": {
       "js": [
-        "/packs/js/server_rendering-a8fa324614c1410c2641.js"
+        "/packs/js/server_rendering-afe53287bcdd3487e6bf.js"
       ],
       "js.map": [
-        "/packs/js/server_rendering-a8fa324614c1410c2641.js.map"
+        "/packs/js/server_rendering-afe53287bcdd3487e6bf.js.map"
       ]
     }
   },
@@ -42,6 +42,6 @@
   "media/components/MSC-FISH-LOGO.png": "/packs/media/components/MSC-FISH-LOGO-c1ab8a3d409b9300eb7f1b2202683daa.png",
   "media/components/common/logo.jpeg": "/packs/media/components/common/logo-460bc08816245c602d20848f7f2cfb11.jpeg",
   "media/components/logo.jpeg": "/packs/media/components/logo-460bc08816245c602d20848f7f2cfb11.jpeg",
-  "server_rendering.js": "/packs/js/server_rendering-a8fa324614c1410c2641.js",
-  "server_rendering.js.map": "/packs/js/server_rendering-a8fa324614c1410c2641.js.map"
+  "server_rendering.js": "/packs/js/server_rendering-afe53287bcdd3487e6bf.js",
+  "server_rendering.js.map": "/packs/js/server_rendering-afe53287bcdd3487e6bf.js.map"
 }
