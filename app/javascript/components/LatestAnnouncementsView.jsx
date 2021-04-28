@@ -74,7 +74,7 @@ class LatestAnnouncementsView extends React.Component {
         const noAnnouncement = (
             <div className="d-flex align-items-center justify-content-center">
                 <h4>
-                No announcements yet. Why not <Link to="/new_announcement">create one</Link>
+                No announcements!
                 </h4>
             </div>
         );
@@ -106,7 +106,7 @@ class LatestAnnouncementsView extends React.Component {
                         }}
                     > - <i>{this.getMemberName(members, announcement.member_id)}</i></p>
                     <p className = "subtitle">{announcement.date_posted}</p>
-                    <Link to={`/announcement/${announcement.id}`} className="btn custom-button">
+                    <Link to={`/announcement/${announcement.id}/true`} className="btn custom-button">
                     View Announcement
                     </Link>
                 </div>                 

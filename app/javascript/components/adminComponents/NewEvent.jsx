@@ -95,7 +95,7 @@ class NewEvent extends React.Component {
                     <h1 className="m-auto d-flex justify-content-center">You should not be here!</h1>
                     <h4 className="m-auto d-flex justify-content-center">Or you should sign in</h4>
                     <div className="my-4 d-flex justify-content-center">
-                    <LinkButton className="to-button" to = "/members/auth/google_oauth2" text = "Sign In"></LinkButton>
+                    <Link className =  "custom-button lg" to = "/members/auth/google_oauth2" onClick={() => window.location.href="/members/auth/google_oauth2"} text = "Sign In">Sign In</Link>
                     </div>
                 </div>
             </div>
