@@ -79,7 +79,7 @@ class LatestEvents extends React.Component {
                         <div className = "small-padding scroll-box"> 
                             
                                     <div className="row">
-                                        {   events.length > 0 ? allEvents : noEvent}
+                                        {events.length > 0 ? allEvents : noEvent}
                                     </div>      
                                
                         </div>

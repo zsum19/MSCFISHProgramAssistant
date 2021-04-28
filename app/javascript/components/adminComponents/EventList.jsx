@@ -68,6 +68,13 @@ class EventList extends React.Component {
                 ></EventView>
             </div>
         ));
+        const noEvent = (
+            <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
+                <h4>
+                No events!
+                </h4>
+            </div>
+        );
 
         return (
             <div className="container-fluid mb-4 px-3">
@@ -87,7 +94,7 @@ class EventList extends React.Component {
                     </Link>
                 </div>
                 <div className="row m-a">
-                    {allEvents}
+                    {events.length > 0 ? allEvents : noEvent}
                 </div>
             </div>
         );

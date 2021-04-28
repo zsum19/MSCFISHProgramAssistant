@@ -90,7 +90,7 @@ class Announcements extends React.Component {
             </div>
         );
 
-        if(members.length == 0 || events.length == 0) return noAnnouncement;
+        // if(members.length == 0 || events.length == 0) return noAnnouncement;
 
         const allAnnouncements = announcements.map((announcement, index) => (
             <div key={index} className="col-md-6 col-lg-4">               

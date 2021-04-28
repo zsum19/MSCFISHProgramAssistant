@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AnnouncementsView from "./LatestAnnouncementsView";
+import LatestAnnouncementsView from "./LatestAnnouncementsView";
 import LinkButton from "./common/LinkButton";
 import LatestEventsView from "./LatestEventsView";
 import Navbar from "./common/Navbar";
@@ -19,7 +19,7 @@ export default () => (
 
             <div className="container d-flex w-100 flex-wrap">
               <div className="left">
-                <AnnouncementsView></AnnouncementsView>
+                <LatestAnnouncementsView></LatestAnnouncementsView>
               </div>
       
               <div className="right">

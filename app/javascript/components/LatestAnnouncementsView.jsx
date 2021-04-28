@@ -79,7 +79,7 @@ class LatestAnnouncementsView extends React.Component {
             </div>
         );
 
-        if(members.length == 0 || events.length == 0) return noAnnouncement;
+        // if(members.length == 0 || events.length == 0) return noAnnouncement;
 
         var latestAnnouncements = [];
         if(announcements.length > 5){
@@ -116,16 +116,22 @@ class LatestAnnouncementsView extends React.Component {
         
 
         return (
-            <div className = "announcements-view post-view">
-                <div className = "colored-heading">
-                    <h2 className = "text test"> LATEST ANNOUNCEMENTS </h2>
-                </div>
-                <div className = "small-padding scroll-box"> 
-                    <div className="row">
-                        {announcements.length > 0 ? allAnnouncements : noAnnouncement}
+            <div className="row">
+                        
+                <div className = "announcements-view post-view">
+                    <div className = "colored-heading">
+                        <h2 className = "text test"> LATEST ANNOUNCEMENTS </h2>
+                    </div>
+                    <div className = "small-padding scroll-box"> 
+                        
+                                <div className="row">
+                                    {announcements.length > 0 ? allAnnouncements : noAnnouncement}
+                                </div>      
+                        
                     </div>
                 </div>
-            </div>               
+            
+            </div>              
         );
     }
 }

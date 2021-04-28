@@ -112,8 +112,15 @@ class AnnouncementList extends React.Component {
                     onClick = {() => this.confirmDelete(announcement)}
                     admin = {true}
                 ></AnnouncementView>
-            </div>
+            </div> 
         ));
+        const noAnnouncement = (
+            <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
+                <h4>
+                No announcements!
+                </h4>
+            </div>
+        );
 
         return (
             <div className="container-fluid mb-4 px-3">
@@ -133,7 +140,7 @@ class AnnouncementList extends React.Component {
                     </Link>
                 </div>
                 <div className="row m-a">
-                    {allAnnouncements}
+                    {announcements.length > 0 ? allAnnouncements : noAnnouncement}
                 </div>
             </div>
         );
