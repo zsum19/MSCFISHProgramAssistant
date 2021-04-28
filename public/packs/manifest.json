@@ -34,7 +34,6 @@
       ],
       "js.map": [
         "/packs/js/server_rendering-a8fa324614c1410c2641.js.map"
-      ]
     }
   },
   "hello_react.js": "/packs/js/hello_react-f39220aa3280b133458b.js",

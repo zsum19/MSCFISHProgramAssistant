@@ -72,7 +72,7 @@ class LatestAnnouncementsView extends React.Component {
         const { announcements, members, events } = this.state;
 
         const noAnnouncement = (
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center" style={{width: "400px"}}>
                 <h4>
                 No announcements!
                 </h4>
@@ -120,7 +120,7 @@ class LatestAnnouncementsView extends React.Component {
                         
                 <div className = "announcements-view post-view">
                     <div className = "colored-heading">
-                        <h2 className = "text test"> LATEST ANNOUNCEMENTS </h2>
+                        <h2 className = "text test" style={{textAlign: "center"}}>LATEST ANNOUNCEMENTS</h2>
                     </div>
                     <div className = "small-padding scroll-box"> 
                         
