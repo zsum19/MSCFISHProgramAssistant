@@ -63,7 +63,7 @@ class LatestEvents extends React.Component {
         const noEvent = (
             <div className="d-flex align-items-center justify-content-center">
                 <h4>
-                No events yet. Why not <Link to="/new_event">create one</Link>
+                No events!
                 </h4>
             </div>
         );
