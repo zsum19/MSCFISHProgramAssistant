@@ -1,5 +1,8 @@
 # README
 
+Link to unedited README Video (1080p): https://drive.google.com/file/d/10RfqUfVjsD2qS2eBn0st2oYTK05aCnO-/view?usp=sharing
+Link to edited README Video (360p):https://drive.google.com/file/d/19lEJb4FMGhf94dzvxyiNcgZGzNsGNa4-/view?usp=sharing
+
 Please install Ruby, Rails, Node, Yarn, and PostgresSQL before following the README instructions.
 
 ## Versions:
